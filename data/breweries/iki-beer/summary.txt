@@ -1,0 +1,7 @@
+iKi Beer
+City: 's-Hertogenbosch, Noord-Brabant
+Website: https://ikibeer.com/
+KVK: 34228852
+Status: Active. Fusion beers with Asian ingredients (Yuzu, Ginger, Sencha). Contract brew.
+Beers: 5 listed.
+Notes: Folder contains homepage.html, dutchbeer.html.

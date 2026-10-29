@@ -1,0 +1,7 @@
+Hertog Jan Brouwerij
+City: Arcen, Limburg
+Website: https://hertogjan.nl/
+KVK: 20080399 (Arcense Bierbrouwerij)
+Status: Active. Owned by AB InBev. Visitor center, tours, Grand Prestige famous.
+Beers: 8+ listed (Pils, Grand Prestige, Bock, etc.).
+Notes: Folder contains homepage.html, contact.html, dutchbeer.html.

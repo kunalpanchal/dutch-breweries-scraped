@@ -1,0 +1,7 @@
+Speciaalbierbrouwerij Duits & Lauret
+City: Everdingen, Utrecht
+Website: https://duitslauret.com/
+KVK: 62739301
+Status: Active. Founded 2009 by Marco Lauret and Daniëlle Duits. Contract + local.
+Beers: 10 listed.
+Notes: Folder contains homepage.html, dutchbeer.html.
