@@ -1,7 +1,6 @@
-Bruut Bier
-Amsterdam nano/social craft brewery.
+Brewery: bruut-bier
+Title: Bruut Bier
+Scraped: 2026-10-29
+Source: homepage.html
 KVK: 77490584
-Status: Active
-Website: https://bruutbier.nl/
-Beers: Eigenwijs, Gajes, Pink Pogo, etc.
-Notes: Unfiltered, Belgian-inspired. Homepage and shop links extracted.
+Status: active

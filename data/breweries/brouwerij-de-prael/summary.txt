@@ -1,7 +1,6 @@
-Brouwerij De Prael
-Social enterprise brewery in Amsterdam and Den Haag.
-KVK: 34153314 (main), others for locations.
-Status: Active, some locations closed (e.g. Groningen 2024, Amsterdam brewery 2025).
-Website: https://www.deprael.nl/ or http://www.depraelamsterdam.nl/
-Beers listed: 1 on dutch.beer
-Notes: Focus on people with distance to labor market. Homepage scraped as text.
+Brewery: brouwerij-de-prael
+Title: Brouwerij De Prael | Mensen & Bier
+Scraped: 2026-10-29
+Source: homepage.html
+KVK: 64004732
+Status: active

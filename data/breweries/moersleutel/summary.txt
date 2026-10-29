@@ -1,6 +1,6 @@
-Moersleutel Craft Brewery
-Alkmaar, high-volume craft (410 beers listed).
+Brewery: moersleutel
+Title: Moersleutel Craft Brewery
+Scraped: 2026-10-29
+Source: homepage.html
 KVK: 88778118
-Status: Active
-Website: https://moersleutel.com/
-Notes: Brothers Zomerdijk, machine-built, exports. Contact and legal pages noted.
+Status: active
