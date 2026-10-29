@@ -1,0 +1,7 @@
+Gebrouwen door Vrouwen
+City: Amsterdam, Noord-Holland
+Website: https://www.gebrouwendoorvrouwen.nl/
+KVK: 68478232
+Status: Active. Founded by sisters Tessel and Do de Heij. Has bar in Amsterdam.
+Beers: 20 listed.
+Notes: Folder contains homepage.html, over-ons.html, dutchbeer.html.

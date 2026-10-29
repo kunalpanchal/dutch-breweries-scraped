@@ -1,0 +1,7 @@
+Brouwerij De Eeuwige Jeugd
+City: Amsterdam, Noord-Holland
+Website: http://www.deeeuwigejeugd.nl/
+KVK: 72308044
+Status: Active. Partial majority stake by Duvel Moortgat (2025). Own taproom/cafe.
+Beers: 16 listed.
+Notes: Folder contains homepage.html, dutchbeer.html.

@@ -1,0 +1,7 @@
+Folkingebrew
+City: Groningen, Groningen
+Website: https://www.folkingebrew.nl/
+KVK: 71770895
+Status: Active. Own brewery and taproom "The Pub".
+Beers: 15 listed.
+Notes: Folder contains homepage.html, dutchbeer.html.

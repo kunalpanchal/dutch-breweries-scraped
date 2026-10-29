@@ -1,0 +1,7 @@
+Maximus Brouwerij
+City: Utrecht / De Meern, Utrecht
+Website: https://maximusbrouwerij.nl/
+KVK: 52134792
+Status: Active. Independent, social enterprise aspects. Taproom open.
+Beers: 17+ listed. Popular: Pandora, Brutus, Dakhaas, High Hops.
+Notes: Folder contains homepage.html, dutchbeer.html.
