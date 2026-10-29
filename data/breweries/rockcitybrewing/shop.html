@@ -1,0 +1,4688 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script data-source-attribution="shopify.exit_interstitial">(()=>{var s=Function.prototype.bind.bind(Function.prototype.call),yt=(l,r)=>{for(let f=l;f;f=Object.getPrototypeOf(f)){let y=Object.getOwnPropertyDescriptor(f,r);if(y)return y}throw new TypeError(`${r} is not defined`)},u=(l,r)=>s(yt(l,r).get),B=(l,r)=>s(yt(l,r).set);var Se=s(String.prototype.endsWith),k=s(RegExp.prototype.exec),Re=/^_(self|top|parent)$/i,xe=/(^|\s)noreferrer(\s|$)/i,ht=/^(no-referrer(-when-downgrade)?|same-origin|(strict-)?origin(-when-cross-origin)?|unsafe-url)$/i,Pe=/^(never|default|always|origin-when-crossorigin)$/i,Et=/^(no-referrer|same-origin|never)$/i,mt=l=>{let r=`.${l}`;return f=>f===l||Se(f,r)},wt=(l,r,f)=>l!==void 0&&(l.protocol==="https:"||l.protocol==="http:")&&l.origin!==r&&!f(l.hostname),bt=(l,r,f)=>l!==null&&k(xe,l)!==null?!0:r!==null&&k(ht,r)!==null?k(Et,r)!==null:f,_t=(l,r)=>k(ht,l)!==null||k(Pe,l)!==null?k(Et,l)!==null:r,A=(l,{metaKey:r,ctrlKey:f,shiftKey:y,button:S})=>l&&k(Re,l)===null?l:r||f||y||S===1?"_blank":"";var Le="http://www.w3.org/2000/svg",Oe="http://www.w3.org/1999/xlink",G=["rel","referrerpolicy","download","ping","hreflang","type"];function kt(l){let r=window;if(r.top!==r)return;let f=document,y=r.navigation,S=location.origin,v=URL,q=u(v.prototype,"href"),vt=u(v.prototype,"origin"),Nt=u(v.prototype,"protocol"),St=u(v.prototype,"hostname"),Y=s(Event.prototype.preventDefault),Rt=s(Event.prototype.stopPropagation),j=s(Event.prototype.stopImmediatePropagation),V=s(Event.prototype.composedPath),xt=u(Event.prototype,"type"),Pt=u(Event.prototype,"cancelable"),X=u(Event.prototype,"defaultPrevented"),Lt=u(Event.prototype,"bubbles"),Ot=u(Event.prototype,"currentTarget"),At=u(Event.prototype,"eventPhase"),{CAPTURING_PHASE:It}=Event,z=u(Event.prototype,"cancelBubble"),Tt=B(Event.prototype,"cancelBubble"),Wt=u(MouseEvent.prototype,"button"),Mt=u(MouseEvent.prototype,"metaKey"),Ct=u(MouseEvent.prototype,"ctrlKey"),Dt=u(MouseEvent.prototype,"shiftKey"),Ft=y&&u(NavigateEvent.prototype,"destination"),Ht=y&&u(NavigationDestination.prototype,"url"),J=y&&u(NavigateEvent.prototype,"navigationType"),$t=y&&u(NavigateEvent.prototype,"formData"),Q=y&&"sourceElement"in NavigateEvent.prototype?u(NavigateEvent.prototype,"sourceElement"):void 0,m=s(Element.prototype.getAttribute),Kt=s(Element.prototype.getAttributeNS),I=s(Element.prototype.setAttribute),Ut=u(Element.prototype,"localName"),Bt=u(Element.prototype,"namespaceURI"),Gt=s(Document.prototype.querySelector),qt=s(Document.prototype.querySelectorAll),Yt=u(NodeList.prototype,"length"),jt=s(NodeList.prototype.item),T=u(Node.prototype,"baseURI"),Vt=s(Document.prototype.createElement),Xt=s(HTMLElement.prototype.click),zt=s(r.open),Jt=s(location.assign),Qt=s(location.replace),Zt=encodeURIComponent,te=s(String.prototype.startsWith),Z=s(r.setTimeout),ee=s(r.addEventListener),ne=s(r.removeEventListener),tt=s(EventTarget.prototype.addEventListener),et=s(EventTarget.prototype.removeEventListener),nt=Object.defineProperties,ot=t=>{let e=[],n=[HTMLElement.prototype,SVGElement.prototype,Document.prototype,r];for(let o=0;o<n.length;o+=1)try{e[e.length]={get:u(n[o],t),set:B(n[o],t)}}catch{}return e},oe={click:ot("onclick"),auxclick:ot("onauxclick")},rt=WeakMap,re=WeakSet,st=s(WeakMap.prototype.get),se=s(WeakMap.prototype.set),ce=s(WeakMap.prototype.delete),ie=s(WeakSet.prototype.add),ae=s(WeakSet.prototype.has),le=mt(l.site),ct=q(new v(l.exitPath,S)),ue=`${ct}?`,P=(t,e)=>{try{let n=new v(t,e);return{href:q(n),origin:vt(n),protocol:Nt(n),hostname:St(n)}}catch{return}},pe=(t,e,n)=>{let o=n?"&noreferrer=1":"";return`${ct}?q=${Zt(t.href)}&trigger=${e}${o}`},it=()=>{let t=qt(f,'meta[name="referrer" i][content]'),e=!1;for(let n=0;n<Yt(t);n+=1)e=_t(m(jt(t,n),"content"),e);return e},at=(t,e,{target:n,noReferrer:o,replaces:i})=>{let d=pe(t,e,o);if(n){zt(r,d,n,"noopener");return}(i?Qt:Jt)(location,d)},W=t=>wt(t,S,le),L=0,M,C=!1,fe=t=>{if(L>0){M=t;return}t()},de=t=>{if(L-=1,t&&(C=!0),L>0)return;let e=C?void 0:M;M=void 0,C=!1,e&&e()},ge=t=>t!==void 0&&te(t.href,ue),lt=t=>{try{return Ut(t)}catch{return}},ut=t=>bt(m(t,"rel"),m(t,"referrerpolicy"),it()),ye=t=>{let e=Q?Q(t):null,n=e===null?void 0:lt(e);return n==="a"||n==="area"?ut(e):it()},he=t=>{let e=P(Ht(Ft(t)));if(ge(e)){j(t);return}if(!Pt(t)||J(t)==="traverse"||!W(e)||$t(t)!==null)return;Y(t);let n={target:"",noReferrer:ye(t),replaces:J(t)==="replace"};fe(()=>at(e,"navigate",n))},R=t=>{let e=m(t,"href");return e===null&&Bt(t)===Le?Kt(t,Oe,"href"):e},Ee=t=>{let e=V(t);for(let n=0;n<e.length;n+=1){let o=e[n],i=lt(o);if(i==="a"||i==="area"){let d=R(o);if(d!==null)return{node:o,href:d}}}},D=t=>{let e=m(t,"target");if(e!==null)return e;let n=Gt(f,"base[target]");return n?m(n,"target"):""},me=t=>{try{return{metaKey:Mt(t),ctrlKey:Ct(t),shiftKey:Dt(t),button:Wt(t)}}catch{return}},pt=new re,we=t=>{let e=!1,n=()=>{e=!0},o=()=>e||ae(pt,t);return nt(t,{__proto__:null,preventDefault:{__proto__:null,configurable:!0,value:n},defaultPrevented:{__proto__:null,configurable:!0,get:o},returnValue:{__proto__:null,configurable:!0,get:()=>!o(),set:i=>{i||n()}}}),o},be={click:new rt,auxclick:new rt},_e=(t,e)=>{let n=oe[t],o=be[t],i=[],d=p=>{for(let a=0;a<i.length;a+=1)if(i[a]===p)return!0;return!1},w=(p,a,E)=>{let g=s(E);function O(_){let x=g(this,_);return x===!1&&typeof _=="object"&&_!==null&&ie(pt,_),x}return{target:p,accessor:a,handler:E,wrapper:O,inFlight:0}},b=()=>{for(let p=0;p<e.length;p+=1)for(let a=0;a<n.length;a+=1){let E;try{E=n[a].get(e[p])}catch{continue}if(typeof E=="function"){let g=st(o,e[p]);(!g||g.wrapper!==E)&&(g=w(e[p],n[a],E),n[a].set(e[p],g.wrapper),se(o,e[p],g)),d(g)||(g.inFlight+=1,i[i.length]=g)}break}};return b(),{wrap:b,unwrap:()=>{for(let p=0;p<i.length;p+=1){let a=i[p];a.inFlight-=1,!(a.inFlight>0)&&(st(o,a.target)===a&&ce(o,a.target),a.accessor.get(a.target)===a.wrapper&&a.accessor.set(a.target,a.handler))}}}},ft=(t,e,n)=>{let o=R(t),i=o===null?void 0:P(o,T(f));if(!W(i))return;let d={target:A(D(t),n),noReferrer:ut(t),replaces:!1};return{inWindow:d.target==="",go:()=>at(i,e,d)}},dt=t=>{let e=R(t);if(e===null||m(t,"download")===null)return!1;let n=P(e,T(f));return n!==void 0&&(n.origin===S||n.protocol==="blob:"||n.protocol==="data:")},ke=(t,e)=>R(t)!==null&&!dt(t)&&A(D(t),e)==="",ve=(t,e)=>{let n=R(t);if(n===null)return!1;let o=Vt(f,"a"),i=A(D(t),e);I(o,"href",n),I(o,"target",i||"_self");for(let d=0;d<G.length;d+=1){let w=m(t,G[d]);w!==null&&I(o,G[d],w)}return Xt(o),i===""&&!dt(t)},Ne=(t,e,n,o)=>{L+=1;let i=V(t),d=i.length-1,w=0,b=!1,F=!1,p=c=>{F||(F=!0,de(c))},a=c=>{if(b)return;b=!0;let N=X(t),h=N?void 0:ft(n,e,o),U;!N&&(h||c)&&(Y(t),U=we(t)),Z(r,()=>{if(!U){p(!X(t)&&ke(n,o));return}if(U()){p(!1);return}if(c&&(h=ft(n,e,o),!h)){p(ve(n,o));return}h.go(),p(h.inWindow)},0)},E=(c,N)=>{for(let h=0;h<i.length;h+=1)if(i[h]===c)return N===It?d-h:i.length+h;return-1},g=()=>{E(Ot(t),At(t))<=w&&a(!0)},O=c=>{c===t&&a(!1)},_=_e(e,i),x=c=>N=>{if(N===t){if(w=c,z(t)){a(!1);return}_.wrap()}},H=[],$=[],K=Lt(t);if(K){for(let c=0;c<d;c+=1)H[c]=x(d-c),$[c]=x(i.length+c),tt(i[c],e,H[c],!0),tt(i[c],e,$[c],!1);ee(r,e,O,!1)}if(Z(r,()=>{if(b||p(!1),b=!0,_.unwrap(),!!K){for(let c=0;c<d;c+=1)et(i[c],e,H[c],!0),et(i[c],e,$[c],!1);ne(r,e,O,!1)}},0),!K){a(!0);return}nt(t,{__proto__:null,stopPropagation:{__proto__:null,configurable:!0,value:()=>{g(),Rt(t)}},stopImmediatePropagation:{__proto__:null,configurable:!0,value:()=>{a(!0),j(t)}},cancelBubble:{__proto__:null,configurable:!0,get:()=>z(t),set:c=>{c&&g(),Tt(t,c)}}})},gt=t=>{let e=xt(t),n=me(t);if(!n||e==="auxclick"&&n.button!==1)return;let o=Ee(t);!o||!W(P(o.href,T(f)))||Ne(t,e,o.node,n)};y?.addEventListener("navigate",he,!0),r.addEventListener("click",gt,!0),r.addEventListener("auxclick",gt,!0)}kt({"site":"rockcitybrewing.nl","exitPath":"\/url"});})();
+//# sourceURL=exit-interstitial.js
+</script>
+
+  <meta name="google-site-verification" content="C121ggQnz4LbxyzO5-uS_u_LD59XOMmEgEXJs26-EhA" />
+
+	<meta charset="utf-8"><title>
+		Rock City - Amersfoorts Craft bier
+	</title>
+
+	<script type="text/javascript">
+		document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+	</script>
+
+	
+	<meta name="description" content="Een verrassend smaakvol avontuur">
+	
+
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+
+	<!-- /snippets/social-meta-tags.liquid -->
+
+
+<meta property="og:site_name" content="Rock City">
+<meta property="og:url" content="https://rockcitybrewing.nl/">
+<meta property="og:title" content="Rock City - Amersfoorts Craft bier">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Een verrassend smaakvol avontuur">
+
+<meta property="og:image" content="http://rockcitybrewing.nl/cdn/shop/files/Screenshot_2023-05-19_at_12.02.18_f59c35a7-c9e5-4bf3-a9ee-539fea2f980e_1200x1200.png?v=1701122061">
+<meta property="og:image:alt" content="Rock City">
+<meta property="og:image:secure_url" content="https://rockcitybrewing.nl/cdn/shop/files/Screenshot_2023-05-19_at_12.02.18_f59c35a7-c9e5-4bf3-a9ee-539fea2f980e_1200x1200.png?v=1701122061">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rock City - Amersfoorts Craft bier">
+<meta name="twitter:description" content="Een verrassend smaakvol avontuur">
+
+
+	<link rel="canonical" href="https://rockcitybrewing.nl/" />
+
+	<!-- CSS -->
+	<style>
+/*============================================================================
+  Typography
+==============================================================================*/
+
+
+
+
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("//rockcitybrewing.nl/cdn/fonts/poppins/poppins_n8.580200d05bca09e2e0c6f4c922047c227dfa8e8c.woff2") format("woff2"),
+       url("//rockcitybrewing.nl/cdn/fonts/poppins/poppins_n8.f4450f472fdcbe9e829f3583ebd559988f5a3d25.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//rockcitybrewing.nl/cdn/fonts/open_sans/opensans_n4.c32e4d4eca5273f6d4ee95ddf54b5bbb75fc9b61.woff2") format("woff2"),
+       url("//rockcitybrewing.nl/cdn/fonts/open_sans/opensans_n4.5f3406f8d94162b37bfa232b486ac93ee892406d.woff") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//rockcitybrewing.nl/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2") format("woff2"),
+       url("//rockcitybrewing.nl/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff") format("woff");
+}
+
+
+  @font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//rockcitybrewing.nl/cdn/fonts/open_sans/opensans_n7.a9393be1574ea8606c68f4441806b2711d0d13e4.woff2") format("woff2"),
+       url("//rockcitybrewing.nl/cdn/fonts/open_sans/opensans_n7.7b8af34a6ebf52beb1a4c1d8c73ad6910ec2e553.woff") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//rockcitybrewing.nl/cdn/fonts/open_sans/opensans_i4.6f1d45f7a46916cc95c694aab32ecbf7509cbf33.woff2") format("woff2"),
+       url("//rockcitybrewing.nl/cdn/fonts/open_sans/opensans_i4.4efaa52d5a57aa9a57c1556cc2b7465d18839daa.woff") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("//rockcitybrewing.nl/cdn/fonts/open_sans/opensans_i7.916ced2e2ce15f7fcd95d196601a15e7b89ee9a4.woff2") format("woff2"),
+       url("//rockcitybrewing.nl/cdn/fonts/open_sans/opensans_i7.99a9cff8c86ea65461de497ade3d515a98f8b32a.woff") format("woff");
+}
+
+
+
+/*============================================================================
+  #General Variables
+==============================================================================*/
+
+:root {
+  
+  --page-background: #ffffff;
+  --color-primary: #292929;
+  --color-primary-light: rgba(41, 41, 41, 0.2);
+  --disabled-color-primary: rgba(41, 41, 41, 0.5);
+  --color-primary-opacity: rgba(41, 41, 41, 0.03);
+  --link-color: #7A7A7A;
+  --active-link-color: #292929;
+
+  --button-background-color: #292929;
+  --button-background-hover-color: #7D7D7D;
+  --button-background-hover-color-lighten: #8a8a8a;
+  --button-text-color: #fafafa;
+
+  --sale-color: #ec1946;
+  --sale-text-color: #ffffff;
+  --sale-color-faint: rgba(236, 25, 70, 0.1);
+  --sold-out-color: #292929;
+  --sold-out-text-color: #fafafa;
+
+  --header-background: #fddced;
+  --header-top-bar: #ec1946;
+  --header-text: #000000;
+  --header-border-color: #D6D6D6;
+  --header-hover-background-color: rgba(0, 0, 0, 0.1);
+  --header-hover-text: rgba(0, 0, 0, 0.3);
+  --header-overlay-text: #F6F6F6;
+
+  --sticky-header-background: #fddced;
+  --sticky-header-hover-background: rgba(41, 41, 41, 0.1);
+  --sticky-header-top-bar: #DCDCDC;
+  --sticky-header-text: #292929;
+  --sticky-header-hover-text: rgba(41, 41, 41, 0.3);
+
+  --mobile-menu-text: #292929;
+  --mobile-menu-background: #F1F1F1;
+  --mobile-menu-border-color: rgba(41, 41, 41, 0.5);
+
+  --footer-background: #a5deef;
+  --footer-text: #000000;
+  --footer-hover-background-color: rgba(0, 0, 0, 0.1);
+
+  --pop-up-text: #292929;
+  --pop-up-background: #fafafa;
+
+  --free-shipping-background: #DFDFDF;
+  --free-shipping-text: #292929;
+  
+  
+  
+  --free-shipping-bar-solid: #292929;
+  --free-shipping-bar-opacity: rgba(41, 41, 41, 0.5);
+
+  --select-padding: 5px;
+  --select-radius: 2px;
+
+  --border-color: rgba(214, 214, 214, 0.5);
+  --border-search: rgba(0, 0, 0, 0.1);
+  --border-color-subtle: rgba(214, 214, 214, 0.1);
+  --border-color-subtle-darken: #c9c9c9;
+
+  --header-font-stack: Poppins, sans-serif;
+  --header-font-weight: 800;
+  --header-font-style: normal;
+  --header-font-transform: uppercase;
+
+  
+  --header-letter-spacing: 2px;
+  
+
+  --body-font-stack: "Open Sans", sans-serif;
+  --body-font-weight: 400;
+  --body-font-style: normal;
+  --body-font-size-int: 15;
+  --body-font-size: 15px;
+  --body-line-height: 1.6;
+
+  --subheading-font-stack: Poppins, sans-serif;
+  --subheading-font-weight: 700;
+  --subheading-font-style: normal;
+  --subheading-font-transform: uppercase;
+  --subheading-case: uppercase;
+
+  
+  --heading-base: 40;
+  --subheading-base: 18;
+  --subheading-2-font-size: 20px;
+  --subheading-2-line-height: 28px;
+  --product-titles: 28;
+  --subpage-header: 28;
+  --subpage-header-px: 28px;
+  --subpage-header-line-height: 40px;
+  --heading-font-size: 40px;
+  --heading-line-height: 52px;
+  --subheading-font-size: 18px;
+  --subheading-line-height: 26px;
+  
+
+  --color-image-overlay: #292929;
+  --color-image-overlay-text: #fafafa;
+  --image-overlay-opacity: calc(25 / 100);
+
+  
+  --mobile-menu-link-transform: uppercase;
+  --mobile-menu-link-letter-spacing: 2px;
+  
+
+  
+  --buttons-transform: uppercase;
+  --buttons-letter-spacing: 2px;
+  
+
+  
+    --button-font-family: var(--subheading-font-stack);
+    --button-font-weight: var(--subheading-font-weight);
+    --button-font-style: var(--subheading-font-style);
+  
+
+  --button-font-size: 14px;
+
+  
+    --button-font-size-int: var(--body-font-size-int);
+  
+
+  
+    --subheading-letter-spacing: 1px;
+  
+
+  
+    --nav-font-family: var(--subheading-font-stack);
+    --nav-font-weight: var(--subheading-font-weight);
+    --nav-font-style: var(--subheading-font-style);
+  
+
+  
+    --nav-text-transform: uppercase;
+    --nav-letter-spacing: 2px;
+  
+
+  
+    --nav-font-size-int: var(--body-font-size-int);
+  
+
+  --password-text-color: #000000;
+  --password-error-background: #feebeb;
+  --password-error-text: #7e1412;
+  --password-login-background: #111111;
+  --password-login-text: #b8b8b8;
+  --password-btn-text: #ffffff;
+  --password-btn-background: rgba(0, 0, 0, 1);
+  --password-btn-background-hover: rgba(125, 125, 125, .6);
+  --password-btn-background-success: #4caf50;
+  --success-color: #28a745;
+  --error-color: #b94a48;
+
+  --delete-button-png: //rockcitybrewing.nl/cdn/shop/t/3/assets/delete.png?v=890;
+  --loader-svg: //rockcitybrewing.nl/cdn/shop/t/3/assets/loader.svg?v=119822953187440061741700726479;
+
+  /* Shop Pay Installments variables */
+  --color-body: #ffffff;
+  --color-bg: #ffffff;
+}
+</style>
+
+
+	
+  		<link rel="preload" href="//rockcitybrewing.nl/cdn/shop/t/3/assets/theme-index.min.css?v=93404865323023710081700726479" as="style">
+		<link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/theme-index.min.css?v=93404865323023710081700726479" rel="stylesheet" type="text/css" media="all" />
+	
+
+	<link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/custom.css?v=60929843993882887651700726478" rel="stylesheet" type="text/css" media="all" />
+
+	
+
+
+
+	
+		<link rel="shortcut icon" href="//rockcitybrewing.nl/cdn/shop/files/favicon_32x32.png?v=1701173986" type="image/png">
+	
+
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+	<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="facebook-domain-verification" content="4ctgtet72hn8cziz1fuoi1vbbl6xdz">
+<meta name="google-site-verification" content="hA0lZGbAW_Vf2uBZtAq88uRpsWtEWiSpDAjjf111OVE">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/29088645168/digital_wallets/dialog">
+<link rel="ucp" href="/.well-known/ucp" version="2026-08-25"><script async="async" src="/checkouts/internal/preloads.js?locale=en-NL"></script>
+<script id="shopify-features" type="application/json">{"accessToken":"3de2474f0a4966d51b4c8ab9cb08d854","betas":["rich-media-storefront-analytics"],"domain":"rockcitybrewing.nl","predictiveSearch":true,"shopId":29088645168,"locale":"en"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "rockcitybrewing.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"EUR","rate":"1.0"};
+Shopify.country = "NL";
+Shopify.theme = {"name":"Fresh","id":155681161565,"schema_name":"Fresh","schema_version":"32.1.0","theme_store_id":908,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "rockcitybrewing.nl/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
+Shopify.SignInWithShop = Shopify.SignInWithShop || {};
+Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
+Shopify.SignInWithShop.User.recognized = false;</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  window.Shopify.SignInWithShop = window.Shopify.SignInWithShop || {};
+  window.Shopify.SignInWithShop.assetMetrics = { sampleRate: 0.25 };
+  window.Shopify.SignInWithShop.eligible = true;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
+<script defer="defer" async type="module" src="https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js"></script>
+<script type="module">
+  await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true,"backendHost":"cm9ja2NpdHlicmV3aW5nLm5s"});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["https:\/\/tools.luckyorange.com\/core\/lo.js?site-id=9ce5e6fe\u0026shop=rockcitybrewing.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":29088645168,"offset":3600,"reqid":"80e19a6a-e329-4bad-bf92-0e8a9eb88b50-1793236851","pageurl":"rockcitybrewing.nl\/shop","u":"6dcbf9f9a53a","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-FYHzja/5XSmzkjz6zHj7s4rACJGFuVoYZdumgoO2Ecs=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//rockcitybrewing.nl/cdn/shopifycloud/storefront/assets/storefront/load_feature-ed94c51f.js" crossorigin="anonymous"></script>
+<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//rockcitybrewing.nl/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="//cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab40a.js" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
+<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/rockcitybrewing.nl\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-23c12384.js","sha256-r8Pww6V2udgtSdaVbcRtdZ4Kg+gXP7aLPZOtQSJPrbM=");})();
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://rockcitybrewing.nl/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<script id='scb4127' type='text/javascript' async='' src='https://rockcitybrewing.nl/cdn/shopifycloud/privacy-banner/privacy-banner.js'></script>
+<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+	<script type="text/javascript">
+	window.lazySizesConfig = window.lazySizesConfig || {};
+	window.lazySizesConfig.rias = window.lazySizesConfig.rias || {};
+
+	// configure available widths to replace with the {width} placeholder
+	window.lazySizesConfig.rias.widths = [150, 300, 600, 900, 1200, 1500, 1800, 2100];
+
+	window.wetheme = {
+		name: 'Fresh',
+	};
+	</script>
+
+	
+
+	
+<!-- BEGIN app block: shopify://apps/font-picker/blocks/app-embed/2caf2c68-0038-455e-b0b9-066a7c2ad923 --><script src='https://cdn.shopify.com/extensions/019f8ada-04ff-79e6-a3a7-9a4cb6ec76c1/font-picker-4/assets/font.js' defer></script>
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/mida-replay-heatmaps/blocks/mida_recorder/e4c350c5-eabf-426d-8014-47ef50412bd0 -->
+    <script>
+        window.msrPageTitle = "Rock City - Amersfoorts Craft bier";
+        
+        window.msrCart = {"note":null,"attributes":{},"original_total_price":0,"total_price":0,"total_discount":0,"total_weight":0.0,"item_count":0,"items":[],"requires_shipping":false,"currency":"EUR","items_subtotal_price":0,"cart_level_discount_applications":[],"checkout_charge_amount":0}
+        window.msrCustomer = {
+            email: "",
+            id: "",
+        }
+
+        
+
+        
+
+        
+
+        if (!window.msrProduct) {
+            window.msrProduct = null;
+        }
+
+        if (window.msrProduct) {
+            window.sessionStorage.setItem(window.msrProduct.id, "" || "Default")
+        }
+        window.msrTheme = {
+            name: "",
+            type: "index",
+        };
+        window.msrData = Object.freeze({
+            proxy: '',
+        });
+    </script>
+    
+    
+        <script src='https://cdn.shopify.com/extensions/01a17b2b-42b5-768a-993c-e76585af065f/version_0ade4c17-2026-10-27_09h23m/assets/recorder.msr.js' defer='defer'></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+<!-- END app block --><link href="https://cdn.shopify.com/extensions/019f8ada-04ff-79e6-a3a7-9a4cb6ec76c1/font-picker-4/assets/font.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>
+  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
+</script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 29088645168,storefrontBaseUrl: "https://rockcitybrewing.nl",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://rockcitybrewing.nl/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["7b21cf0b","4c64608a"],webPixelsConfigList: [{"id":"4841603421","configuration":"{\"config\":\"{\\\"google_tag_ids\\\":[\\\"G-VG0YWC1BSY\\\",\\\"AW-16566693647\\\",\\\"GT-NF7NM8LF\\\"],\\\"target_country\\\":\\\"ZZ\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-VG0YWC1BSY\\\",\\\"AW-16566693647\\\/63yACMbnk4wcEI_ezts9\\\"]},{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-VG0YWC1BSY\\\",\\\"AW-16566693647\\\/hmClCJLEnYwcEI_ezts9\\\"]},{\\\"type\\\":\\\"remove_from_cart\\\",\\\"action_label\\\":\\\"G-VG0YWC1BSY\\\"},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-VG0YWC1BSY\\\",\\\"AW-16566693647\\\/pvShCM_nk4wcEI_ezts9\\\",\\\"MC-CPEWQ387NJ\\\"]},{\\\"type\\\":\\\"add_shipping_info\\\",\\\"action_label\\\":\\\"G-VG0YWC1BSY\\\"},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-VG0YWC1BSY\\\",\\\"AW-16566693647\\\/j6o-CMPnk4wcEI_ezts9\\\",\\\"MC-CPEWQ387NJ\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-VG0YWC1BSY\\\",\\\"AW-16566693647\\\/dmzhCMznk4wcEI_ezts9\\\",\\\"MC-CPEWQ387NJ\\\"]},{\\\"type\\\":\\\"view_item_list\\\",\\\"action_label\\\":\\\"G-VG0YWC1BSY\\\"},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-VG0YWC1BSY\\\",\\\"AW-16566693647\\\/TfMRCJXEnYwcEI_ezts9\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-VG0YWC1BSY\\\",\\\"AW-16566693647\\\/_DuOCMnnk4wcEI_ezts9\\\"]},{\\\"type\\\":\\\"view_cart\\\",\\\"action_label\\\":\\\"G-VG0YWC1BSY\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a3321ca85cf5aaf6b57585fcd8d67b3a","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"1410859357","configuration":"{\"siteId\":\"9ce5e6fe\",\"environment\":\"production\",\"isPlusUser\":\"false\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"6e817d921cf85e9215b0e5e4b99ed737","type":"APP","apiClientId":187969,"privacyPurposes":["ANALYTICS","MARKETING"],"capabilities":["advanced_dom_events"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"1239253341","configuration":"{\"domain\":\"rockcitybrewing.myshopify.com\",\"proxy\":\"1\",\"mask_checkout\":\"false\",\"require_consent\":\"false\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"8e1ab0617c66423ba17483b20b3a556d","type":"APP","apiClientId":2850947073,"privacyPurposes":[],"capabilities":["advanced_dom_events"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"446202205","configuration":"{\"pixel_id\":\"1630738927849158\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"bd2f978c17a94bbb8a74d43de2165dc5","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"177996125","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS"],"name":"Google Analytics tag (migrated)"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Rock City","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"rockcitybrewing.myshopify.com","countryCode":"NL","storefrontUrl":"https:\/\/rockcitybrewing.nl"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[{"id":"16633574916445","handle":"ring-my-bell-ddh-dipa-x-fine-balance-8","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"66200574427485","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"16614118457693","handle":"randomness-chocolate-custard-sticky-toffee-stout-8-4","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"66131059605853","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"16614096175453","handle":"hop-hammer-orange-ddh-dutch-fresh-hop-double-ipa-8","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"66131016319325","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]}],"purchasingCompany":null},},"https://rockcitybrewing.nl/cdn","264bf420w2e1681cap8d55857fm7d879f9c",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"true","themeId":"155681161565","themeStoreId":"908","themePublished":"true","eventMetadataId":"7c7a5d0f-c13e-4e75-85dc-76420fabd4ce","pageType":"home","shopId":"29088645168","storefrontBaseUrl":"https:\/\/rockcitybrewing.nl","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"7b21cf0b\", \"4c64608a\"]","isMerchantRequest":"false","hashVersion":"264bf420w2e1681cap8d55857fm7d879f9c","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'EUR';
+  var meta = {"page":{"pageType":"home","requestId":"80e19a6a-e329-4bad-bf92-0e8a9eb88b50-1793236851"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        if (method == 'track' || method == 'page') {
+          var pageUrl;
+          try {
+            pageUrl = window.location.href;
+          } catch (e) {}
+          var pageReferrer;
+          try {
+            pageReferrer = document.referrer;
+          } catch (e) {}
+          try {
+            if (window.__TREKKIE_SHIM_QUEUE == null) {
+              window.__TREKKIE_SHIM_QUEUE = [];
+            }
+            window.__TREKKIE_SHIM_QUEUE.push({
+              from: 'trekkie-stub',
+              method: method,
+              args: args.slice(1),
+              pageContext: {
+                url: pageUrl,
+                referrer: pageReferrer
+              }
+            });
+          } catch (e) {
+            // no-op
+          }
+        }
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.onerror = function(e) {
+  var scriptFallback = document.createElement('script');
+  scriptFallback.type = 'text/javascript';
+  scriptFallback.onerror = function(error) {
+          var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 29088645168,
+      theme_id: 155681161565,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//rockcitybrewing.nl/cdn/s/trekkie.storefront.387430da5919a2f9b410f0ffaf5b70216a61abfb.min.js"});
+
+  };
+  scriptFallback.async = true;
+  scriptFallback.src = '//rockcitybrewing.nl/cdn/s/trekkie.storefront.387430da5919a2f9b410f0ffaf5b70216a61abfb.min.js';
+  first.parentNode.insertBefore(scriptFallback, first);
+};
+script.async = true;
+script.src = '//rockcitybrewing.nl/cdn/s/trekkie.storefront.387430da5919a2f9b410f0ffaf5b70216a61abfb.min.js';
+first.parentNode.insertBefore(script, first);
+
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":29088645168,"isMerchantRequest":null,"themeId":155681161565,"themeCityHash":"16098165489554002836","contentLanguage":"en","currency":"EUR","eventMetadataId":"7c7a5d0f-c13e-4e75-85dc-76420fabd4ce"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["7b21cf0b","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"80e19a6a-e329-4bad-bf92-0e8a9eb88b50-1793236851","shopifyEmitted":true});
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "//rockcitybrewing.nl/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+})();</script>
+  <script>
+  if (!window.ga || (window.ga && typeof window.ga !== 'function')) {
+    window.ga = function ga() {
+      (window.ga.q = window.ga.q || []).push(arguments);
+      if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+        window.Shopify.analytics.publish("ga_stub_called", {}, {sendTo: "google_osp_migration"});
+      }
+      console.error("Shopify's Google Analytics stub called with:", Array.from(arguments), "\nSee https://help.shopify.com/manual/promoting-marketing/pixels/pixel-migration#google for more information.");
+    };
+    if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+      window.Shopify.analytics.publish("ga_stub_initialized", {}, {sendTo: "google_osp_migration"});
+    }
+  }
+</script>
+<script
+  defer
+  src="https://rockcitybrewing.nl/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.13.1.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="29088645168"
+  data-render-region="gcp-us-east1"
+  data-page-type="index"
+  data-theme-instance-id="155681161565"
+  data-theme-name="Fresh"
+  data-theme-version="32.1.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://rockcitybrewing.nl/api/collect"
+></script>
+<meta name="shopify-y" content="c4d9b0d3-eb59-4290-8959-608a5e693d61" data-expiration="1824794452000"><meta name="shopify-s" content="9ce08163-dc95-4167-b758-20e9ded825b7" data-expiration="1793238652000"><meta name="request-id" content="80e19a6a-e329-4bad-bf92-0e8a9eb88b50-1793236851"        >
+</head>
+
+
+
+
+<body
+	id="rock-city-amersfoorts-craft-bier"
+	class="page-title--rock-city-amersfoorts-craft-bier template-index flexbox-wrapper"
+	data-cart-type="drawer"
+	
+>
+	<div class="main-body-wrapper" id="PageContainer" data-cart-action="cart" data-cart-type="drawer">
+		
+			<aside id="cartSlideoutAside">
+  <form
+    action="/cart"
+    method="post"
+    novalidate
+    class="cart-drawer-form"
+  >
+    <div
+      id="cartSlideoutWrapper"
+      class="fresh-shopping-right slideout-panel-hidden cart-drawer-right"
+      role="dialog"
+      aria-labelledby="cart_dialog_label"
+      aria-describedby="cart_dialog_status"
+      aria-modal="true"
+    >
+
+    
+
+
+      <div class="cart-drawer__top">
+        <div class="cart-drawer__empty-div"></div>
+        <h2
+          class="type-subheading type-subheading--1 wow"
+          id="cart_dialog_label"
+        >
+          <span class="cart-drawer--title">Your Cart</span>
+        </h2>
+
+        <div class="cart-close-icon-wrapper">
+          <button
+            class="slide-menu cart-close-icon cart-menu-close alt-focus"
+            aria-label="Open cart sidebar"
+            type="button"
+          >
+            <i data-feather="x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="ajax-cart--top-wrapper">
+
+        <div class="ajax-cart--cart-discount">
+          <div
+            class="cart--order-discount-wrapper custom-font ajax-cart-discount-wrapper"
+          ></div>
+        </div>
+
+        <span class="cart-price-text">Subtotal</span>
+
+        <div class="ajax-cart--cart-original-price">
+          <span class="cart-item-original-total-price"
+            ><span class="money">€0,00</span></span
+          >
+        </div>
+
+        <div class="ajax-cart--total-price">
+          <h2
+            id="cart_dialog_status"
+            role="status"
+            class="js-cart-drawer-status sr-only"
+          ></h2>
+
+          <h3 id="cart_drawer_subtotal">
+            <span class="cart-total-price js-cart-total" id="cart-price">
+              <span class="money">€0,00</span>
+            </span>
+          </h3>
+        </div><p class="cart--shipping-message taxes-and-shipping-message">Tax included. <a href="/policies/shipping-policy">Shipping</a> calculated at checkout.
+</p>
+
+        <div class="slide-checkout-buttons">
+          <button
+            type="submit"
+            name="checkout"
+            class="btn alt-focus cart-button-checkout"
+          >
+            <span class="cart-button-checkout-text">Place your order</span>
+            <span class="cart-button-checkout-spinner lds-dual-ring hide"></span>
+          </button>
+
+          
+
+          <button
+            class="btn btn-default cart-menu-close secondary-button alt-focus"
+            type="button"
+          >
+            Continue Shopping
+          </button>
+        </div>
+
+        
+        <div class="ajax-cart--checkout-add-note">
+          <label for="note">Add a note for the seller&hellip;</label>
+          <textarea id="note" name="note" class="form-control"></textarea>
+        </div>
+        
+
+      </div>
+
+      <div class="cart-error-box"></div>
+
+      <div aria-live="polite" class="cart-empty-box">
+        Your basket is empty
+      </div>
+
+      <script type="application/template" id="cart-item-template">
+        <li>
+        	<article class="cart-item">
+        		<div class="cart-item-image--wrapper">
+        			<a class="cart-item-link" href="" tabindex="-1">
+        				<img
+        					class="cart-item-image"
+        					src="/product/image.jpg"
+        					alt=""
+        				/>
+        			</a>
+        		</div>
+        		<div class="cart-item-details--wrapper">
+        			<h3 class="cart-item__title">
+        				<a href="" class="cart-item-link cart-item-details--product-title-wrapper">
+        					<span class="cart-item-product-title"></span>
+        					<span class="cart-item-variant-title hide"></span>
+        					<span class="cart-item-selling-plan hide"></span>
+        				</a>
+        			</h3>
+
+        			<div class="cart-item-price-wrapper">
+        				<span class="sr-only">Now</span>
+        				<span class="cart-item-price"></span>
+        				<span class="sr-only">Was</span>
+        				<span class="cart-item-price-original"></span>
+        				<span class="cart-item-price-per-unit"></span>
+        			</div>
+
+              <ul class="cart-item-drawer-properties"></ul>
+
+        			<ul class="order-discount--cart-list" aria-label="Discount"></ul>
+
+        			<div class="cart-item--quantity-remove-wrapper">
+        				<div class="cart-item--quantity-wrapper">
+        					<button
+        						type="button"
+        						class="alt-focus cart-item-quantity-button cart-item-decrease"
+        						data-amount="-1"
+        						aria-label="Reduce item quantity by one"
+        					>-</button>
+                  <label for="cart-item--quantity-input" class="sr-only"></label>
+        					<input
+                    id="cart-item--quantity-input"
+        						type="text"
+        						class="cart-item-quantity"
+        						min="1"
+        						pattern="[0-9]*"
+        						aria-label="Quantity"
+        					>
+        					<button
+        						type="button"
+        						class="alt-focus cart-item-quantity-button cart-item-increase"
+        						data-amount="1"
+        						aria-label="Increase item quantity by one"
+        					>+</button>
+        				</div>
+
+        				<div class="cart-item-remove-button-container">
+        					<button type="button" id="cart-item-remove-button" class="alt-focus" aria-label="Remove product">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-trash-2" viewBox="0 0 24 24"><path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2M10 11v6M14 11v6"/></svg>
+                  </button>
+        				</div>
+        			</div>
+
+              <div class="errors hide"></div>
+
+        		</div>
+        	</article>
+        </li>
+      </script>
+      <script type="application/json" id="initial-cart">
+        {"note":null,"attributes":{},"original_total_price":0,"total_price":0,"total_discount":0,"total_weight":0.0,"item_count":0,"items":[],"requires_shipping":false,"currency":"EUR","items_subtotal_price":0,"cart_level_discount_applications":[],"checkout_charge_amount":0}
+      </script>
+
+      <ul class="cart-items"></ul>
+    </div>
+  </form>
+</aside>
+
+		
+
+		<div id="main-body" data-editor-open="false">
+
+			<noscript>
+				<div class="no-js disclaimer container">
+					<p>This store requires javascript to be enabled for some features to work correctly</p>
+				</div>
+			</noscript>
+
+			<div id="slideout-overlay"></div>
+
+			<!-- BEGIN sections: header-group -->
+<div id="shopify-section-sections--20246111551837__announcement-bar" class="shopify-section shopify-section-group-header-group"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-announcement-bar.min.css?v=95941561520219434021700726479" rel="stylesheet" type="text/css" media="all" />
+
+
+
+  
+  
+
+  
+
+    <style>
+      .notification-bar{
+        background-color: #ec1946;
+        color: #ffffff;
+      }
+
+      .notification-bar a{
+        color: #ffffff;
+      }
+    </style>
+
+    <div class="notification-bar custom-font notification-bar--with-text notification-bar--with-icons">
+      
+        <div class="notification-bar__empty-div">
+        </div>
+      
+
+      
+        <div class="notification-bar__message">
+        
+          <a href="/collections/all">
+            <p>GRATIS VERZENDEN VANAF 55,-</p>
+          </a>
+        
+        </div>
+      
+
+      
+        <div class="header-social-links">
+          
+      
+
+<ul class="sm-icons" class="clearfix">
+
+	
+		<li class="sm-facebook">
+			<a href="https://www.facebook.com/rockcitybeers" target="_blank" rel="noopener noreferrer" aria-labelledby="facebook_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>Facebook icon</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg>	
+				<p class="d-none m-0" id="facebook_title">Facebook</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+		<li class="sm-instagram">
+			<a href="https://www.instagram.com/rockcitybrewing/" target="_blank" rel="noopener noreferrer" aria-labelledby="instagram_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+				<p class="d-none m-0" id="instagram_title">Instagram</p>
+			</a>
+		</li>
+	
+
+	
+		<li class="sm-youtube">
+			<a href="https://www.youtube.com/channel/UCftxiEU8uyE_JyCUBcvwfyg/videos" target="_blank" rel="noopener noreferrer" aria-labelledby="youtube_title">
+				<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>YouTube icon</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+				<p class="d-none m-0" id="youtube_title">YouTube</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+		<li class="sm-tiktok">
+			<a href="https://www.tiktok.com/@rock.city.brewing" target="_blank" rel="noopener noreferrer" aria-labelledby="tiktok_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok icon</title><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+				<p class="d-none m-0" id="tiktok_title">TikTok</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		<li class="sm-linkedin">
+			<a href="https://www.linkedin.com/company/rock-city-brewing/" target="_blank" rel="noopener noreferrer" aria-labelledby="linkedin_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+				<p class="d-none m-0" id="linkedin_title">LinkedIn</p>
+			</a>
+		</li>
+	
+
+</ul>
+
+
+
+    
+        </div>
+      
+    </div>
+
+  
+
+
+
+
+</div><div id="shopify-section-sections--20246111551837__header" class="shopify-section shopify-section-group-header-group"><style>
+  .site-header__logo-image img,
+  .overlay-logo-image {
+    max-width: 200px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .site-header__logo-image img,
+    .overlay-logo-image {
+      width: 200px;
+    }
+    .header-content--logo {
+      width: 200px;
+      flex-basis: 200px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #site-header svg, .sticky-header-wrapper svg {
+        height: 24px;
+    }
+  }
+
+  .header-wrapper:not(.header-search--expanded) .top-search #search-wrapper {
+    background: var(--header-background)!important;
+    border: 1px solid transparent !important;
+    border-bottom: 1px solid var(--header-background)!important;
+  }
+
+  .header-wrapper:not(.header-search--expanded) .top-search input {
+    color: var(--header-text)!important;
+  }
+
+  .header-wrapper:not(.header-search--expanded)  #top-search-wrapper #search_text::placeholder {
+    color: var(--header-text);
+  }
+
+  .header-wrapper:not(.header-search--expanded) #top-search-wrapper #search_text::-webkit-input-placeholder {
+    color: var(--header-text);
+  }
+
+  .header-wrapper:not(.header-search--expanded) #top-search-wrapper #search_text:-ms-input-placeholder {
+    color: var(--header-text);
+  }
+
+  .header-wrapper:not(.header-search--expanded) #top-search-wrapper #search_text::-moz-placeholder {
+    color: var(--header-text);
+  }
+
+  .header-wrapper:not(.header-search--expanded) #top-search-wrapper #search_text:-moz-placeholder {
+    color: var(--header-text);
+  }
+
+  .header-wrapper .predictive-search-group {
+    background-color: var(--header-background)!important;
+  }
+
+  .header-wrapper .search-results__meta {
+    background: var(--header-background)!important;
+  }
+
+  .header-wrapper .search-results__meta-view-all a {
+    color: var(--header-text)!important;
+  }
+
+  .header-wrapper .search-results-panel .predictive-search-group h2 {
+    color: var(--header-text);
+  }
+
+  .header-wrapper .search-results-panel .predictive-search-group .search-vendor, .search-results-panel .predictive-search-group .money {
+    color: var(--header-text);
+  }
+
+  .header-wrapper .search--result-group h5 a {
+    color: var(--header-text)!important;
+  }
+
+  .header-wrapper .predictive-loading {
+    color: var(--header-text)!important;
+  }
+
+  .header-wrapper,
+  .header-content--top-bar,
+  .sticky-header-wrapper {
+    border-bottom: none;
+  }
+
+  .mega-menu--dropdown-wrapper .dropdown-menu:not(.dropdown-menu--mega) {
+    border: none;
+  }
+
+  .mega-menu--dropdown-wrapper .dropdown-menu--mega {
+    border-top: none;
+  }
+
+  .mega-menu .dropdown-submenu {
+    border-right: none;
+  }
+
+</style>
+
+
+
+
+
+
+<div id="theme-section-header" class="header-wrapper logo-placement--center sticky-scroll-up" data-wetheme-section-type="header" data-wetheme-section-id="sections--20246111551837__header">
+
+
+<div class="sticky-header-wrapper">
+  <div class="sticky-header-wrapper__inner">
+    <div class="sticky-desktop-header d-none d-lg-block"></div>
+    <div class="sticky-desktop-menu d-none d-lg-block "></div>
+    <div class="sticky-header-search d-none d-lg-block">
+      <li class="sticky-header-search-icon">
+        
+          <button
+            type="button"
+            class="icons--inline search-show alt-focus header-link header-link--button"
+            title="Search" tabindex="0"
+            aria-label="Open search bar"
+            aria-controls="top-search-wrapper"
+          >
+            
+              <span class="header-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20"><circle cx="8.571" cy="8.571" r="8.071" stroke="currentColor"/><path stroke="currentColor" d="M0-.5h8.081" transform="rotate(45 -10.316 23.87)"/></svg>
+              </span>
+            
+          </button>
+        
+      </li>
+    </div>
+    <div class="sticky-mobile-header d-lg-none">
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="header-logo-wrapper" data-section-id="sections--20246111551837__header" data-section-type="header-section">
+
+<nav
+  id="theme-menu"
+  class="mobile-menu-wrapper slideout-panel-hidden"
+  role="dialog"
+  aria-label="Navigation"
+  aria-modal="true"
+>
+  
+
+
+<script type="application/json" id="mobile-menu-data">
+  {
+      
+          
+          
+          "0": {
+              "level": 0,
+              "url": "/pages/brewpub",
+              "title": "RESTAURANT",
+              "links": [
+                  
+                      "0--0",
+                  
+                      "0--1"
+                  
+              ]
+          }
+          
+            
+              , "0--0": {
+              "level": 1,
+              "url": "https://cdn.shopify.com/s/files/1/0290/8864/5168/files/MenuKaart_-_v10_-_Q1_2026_-web.pdf?v=1773824302",
+              "title": "Bekijk Menu",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "0--1": {
+              "level": 1,
+              "url": "/pages/groepen-en-events",
+              "title": "Groepen en events",
+              "links": [
+                  
+              ]
+          }
+          
+          
+      
+          
+          ,
+          "1": {
+              "level": 0,
+              "url": "/pages/brewpub",
+              "title": "Bezoek",
+              "links": [
+                  
+                      "1--0",
+                  
+                      "1--1",
+                  
+                      "1--2",
+                  
+                      "1--3",
+                  
+                      "1--4"
+                  
+              ]
+          }
+          
+            
+              , "1--0": {
+              "level": 1,
+              "url": "/pages/brewpub",
+              "title": "Brewpub",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "1--1": {
+              "level": 1,
+              "url": "/pages/brouwerij",
+              "title": "Brouwerij",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "1--2": {
+              "level": 1,
+              "url": "/pages/beers-brains-rock-citys-pubquiz",
+              "title": "Pubquiz",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "1--3": {
+              "level": 1,
+              "url": "https://bookings.zenchef.com/results?rid=386064&pid=1001&shxpid=117214",
+              "title": "Comedy",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "1--4": {
+              "level": 1,
+              "url": "/pages/rock-city-friends",
+              "title": "ROCK CITY \u0026 FRIENDS",
+              "links": [
+                  
+              ]
+          }
+          
+          
+      
+          
+          ,
+          "2": {
+              "level": 0,
+              "url": "/collections",
+              "title": "SHOP",
+              "links": [
+                  
+                      "2--0",
+                  
+                      "2--1",
+                  
+                      "2--2",
+                  
+                      "2--3",
+                  
+                      "2--4",
+                  
+                      "2--5",
+                  
+                      "2--6"
+                  
+              ]
+          }
+          
+            
+              , "2--0": {
+              "level": 1,
+              "url": "/collections/bierpakketten",
+              "title": "Bierpakketten",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "2--1": {
+              "level": 1,
+              "url": "/collections/rockstars",
+              "title": "Core",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "2--2": {
+              "level": 1,
+              "url": "/collections/all-season",
+              "title": "Seasonals",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "2--3": {
+              "level": 1,
+              "url": "/collections/limiteds",
+              "title": "Specials \u0026 Collabs",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "2--4": {
+              "level": 1,
+              "url": "/collections/non-alcoholic-1",
+              "title": "Non-Alcoholic",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "2--5": {
+              "level": 1,
+              "url": "/collections/gift",
+              "title": "Merch",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "2--6": {
+              "level": 1,
+              "url": "/pages/faq",
+              "title": "FAQ",
+              "links": [
+                  
+              ]
+          }
+          
+          
+      
+          
+          ,
+          "3": {
+              "level": 0,
+              "url": "/pages/over-ons",
+              "title": "OVER",
+              "links": [
+                  
+                      "3--0",
+                  
+                      "3--1",
+                  
+                      "3--2"
+                  
+              ]
+          }
+          
+            
+              , "3--0": {
+              "level": 1,
+              "url": "/pages/over-ons",
+              "title": "Over Rock City",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "3--1": {
+              "level": 1,
+              "url": "/blogs/vacature",
+              "title": "Vacatures",
+              "links": [
+                  
+              ]
+          }
+          
+          
+            
+              , "3--2": {
+              "level": 1,
+              "url": "/pages/about-en",
+              "title": "About (EN)",
+              "links": [
+                  
+              ]
+          }
+          
+          
+      
+          
+          ,
+          "4": {
+              "level": 0,
+              "url": "/pages/contact",
+              "title": "CONTACT",
+              "links": [
+                  
+              ]
+          }
+          
+      
+  }
+</script>
+  
+<script type="application/json" id="mobile-menu-data-topbar">
+  {
+      
+  }
+</script>
+
+<div>
+  <button
+    type="button"
+    class="slide-menu menu-close-icon mobile-menu-close alt-focus"
+    aria-label="Close navigation">
+    <i data-feather="x" aria-hidden="true"></i>
+  </button>
+</div>
+
+<ul
+  class="mobile-menu active mobile-menu-main search-enabled"
+  id="mobile-menu--main-menu"
+>
+
+  
+
+    
+    
+    
+  
+
+    <li  class="mobile-menu-link__has-submenu">
+      
+      <button
+        type="button"
+        class="alt-focus mobile-menu-link mobile-menu-sub mobile-menu-link__text type-subheading"
+        data-link="0"
+        aria-expanded="false"
+      >
+        RESTAURANT
+
+        <i data-feather="chevron-right"></i>
+      </button>
+      
+    </li>
+  
+
+    
+    
+    
+  
+
+    <li  class="mobile-menu-link__has-submenu">
+      
+      <button
+        type="button"
+        class="alt-focus mobile-menu-link mobile-menu-sub mobile-menu-link__text type-subheading"
+        data-link="1"
+        aria-expanded="false"
+      >
+        Bezoek
+
+        <i data-feather="chevron-right"></i>
+      </button>
+      
+    </li>
+  
+
+    
+    
+    
+  
+
+    <li  class="mobile-menu-link__has-submenu">
+      
+      <button
+        type="button"
+        class="alt-focus mobile-menu-link mobile-menu-sub mobile-menu-link__text type-subheading"
+        data-link="2"
+        aria-expanded="false"
+      >
+        SHOP
+
+        <i data-feather="chevron-right"></i>
+      </button>
+      
+    </li>
+  
+
+    
+    
+    
+  
+
+    <li  class="mobile-menu-link__has-submenu">
+      
+      <button
+        type="button"
+        class="alt-focus mobile-menu-link mobile-menu-sub mobile-menu-link__text type-subheading"
+        data-link="3"
+        aria-expanded="false"
+      >
+        OVER
+
+        <i data-feather="chevron-right"></i>
+      </button>
+      
+    </li>
+  
+
+    
+    
+    
+  
+
+    <li >
+      
+        <a
+          class="alt-focus mobile-menu-link mobile-menu-link__text type-subheading"
+          data-link="4"
+          href="/pages/contact"
+        >
+          CONTACT
+        </a>
+      
+    </li>
+  
+
+  
+
+  
+    
+      <li class="mobile-customer-link type-subheading"><a class="mobile-menu-link" href="/account/login" id="customer_login_link">Log in</a></li>
+      
+        <li class="mobile-customer-link type-subheading"><a class="mobile-menu-link" href="/account/register" id="customer_register_link">Create Account</a></li>
+      
+    
+  
+
+  
+
+<ul class="sm-icons" class="clearfix">
+
+	
+		<li class="sm-facebook">
+			<a href="https://www.facebook.com/rockcitybeers" target="_blank" rel="noopener noreferrer" aria-labelledby="facebook_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>Facebook icon</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg>	
+				<p class="d-none m-0" id="facebook_title">Facebook</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+		<li class="sm-instagram">
+			<a href="https://www.instagram.com/rockcitybrewing/" target="_blank" rel="noopener noreferrer" aria-labelledby="instagram_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+				<p class="d-none m-0" id="instagram_title">Instagram</p>
+			</a>
+		</li>
+	
+
+	
+		<li class="sm-youtube">
+			<a href="https://www.youtube.com/channel/UCftxiEU8uyE_JyCUBcvwfyg/videos" target="_blank" rel="noopener noreferrer" aria-labelledby="youtube_title">
+				<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>YouTube icon</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+				<p class="d-none m-0" id="youtube_title">YouTube</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+		<li class="sm-tiktok">
+			<a href="https://www.tiktok.com/@rock.city.brewing" target="_blank" rel="noopener noreferrer" aria-labelledby="tiktok_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok icon</title><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+				<p class="d-none m-0" id="tiktok_title">TikTok</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		<li class="sm-linkedin">
+			<a href="https://www.linkedin.com/company/rock-city-brewing/" target="_blank" rel="noopener noreferrer" aria-labelledby="linkedin_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+				<p class="d-none m-0" id="linkedin_title">LinkedIn</p>
+			</a>
+		</li>
+	
+
+</ul>
+
+
+
+</ul>
+
+<div class="mobile-menu mobile-menu-child mobile-menu-hidden">
+  <button
+    type="button"
+    class="mobile-menu-back alt-focus mobile-menu-link"
+    tabindex="-1"
+  >
+    <i data-feather="chevron-left" aria-hidden="true"></i>
+    <span>Back</span>
+  </button>
+
+  <ul
+    id="mobile-menu"
+  >
+    <li>
+      <a
+        href="#"
+        class="alt-focus mobile-menu-link top-link"
+        tabindex="-1"
+      >
+        <div class="mobile-menu-title type-subheading"></div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="mobile-menu mobile-menu-grandchild mobile-menu-hidden">
+  <button
+    type="button"
+    class="mobile-menu-back alt-focus mobile-menu-link"
+    tabindex="-1"
+  >
+    <i data-feather="chevron-left" aria-hidden="true"></i>
+    <span>Back</span>
+  </button>
+
+  <ul
+    id="mobile-submenu"
+  >
+    <li>
+        <a
+          href="#"
+          class="alt-focus mobile-menu-link top-link"
+          tabindex="-1"
+        >
+            <div class="mobile-menu-title type-subheading"></div>
+        </a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+<div class="d-flex d-lg-none">
+  <div class="mobile-header--wrapper">
+		<div class="mobile-side-column mobile-header-wrap--icons">
+			<button
+        type="button"
+        class="slide-menu slide-menu-mobile alt-focus header-link header-link--button"
+        aria-label="Open navigation"
+        aria-controls="mobile-menu--main-menu"
+      >
+        <i id="iconAnim" data-feather="menu"></i>
+			</button>
+		</div>
+
+		<div class="mobile-logo-column mobile-header-wrap--icons">
+			
+
+<div class="site-header__logo h1" itemscope itemtype="http://schema.org/Organization">
+
+  
+
+  
+	
+    <a href="/" itemprop="url" class="site-header__logo-image">
+      
+      
+
+      
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/RC-Logo-400px_1000x1000.png?v=1705332965"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt="Rock City"
+        
+        itemprop="logo"
+        
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/RC-Logo-400px_150x.png?v=1705332965"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/RC-Logo-400px_{width}x.png?v=1705332965"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+    
+        alt="Rock City"
+    
+    itemprop="logo"
+    
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    width="400"
+    height="81"
+/>
+
+
+
+      
+    </a>
+
+  
+	
+</div>
+
+		</div>
+
+		<div class="js mobile-side-column mobile-header-wrap--icons mobile-header-right">
+        <button
+          type="button"
+          class="icons--inline search-show alt-focus header-link header-link--button"
+          title="Search"
+          aria-label="Open search bar"
+          aria-controls="top-search-wrapper"
+        >
+          <span class="header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20"><circle cx="8.571" cy="8.571" r="8.071" stroke="currentColor"/><path stroke="currentColor" d="M0-.5h8.081" transform="rotate(45 -10.316 23.87)"/></svg>
+          </span>
+        </button>
+
+
+      
+        <button
+          type="button"
+          class="alt-focus header-link header-link--button slide-menu slide-menu-cart"
+          aria-label="Open cart sidebar"
+          aria-controls="cartSlideoutAside"
+        >
+          <span class="header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"><path stroke="currentColor" d="M1.257 7.5h17.486a.5.5 0 01.487.612l-2.538 11a.5.5 0 01-.488.388H3.796a.5.5 0 01-.488-.388l-2.538-11a.5.5 0 01.487-.612z"/><path fill="currentColor" fill-rule="evenodd" d="M16 7h1A7 7 0 103 7h1a6 6 0 1112 0z" clip-rule="evenodd"/></svg>
+          </span>
+        </button>
+      
+    </div>
+
+    <noscript>
+      <div class="mobile-side-column mobile-header-wrap--icons mobile-header-right">
+        <a href="/search" class="icons--inline search-show alt-focus header-link" title="Search" tabindex="0">
+          <span class="header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20"><circle cx="8.571" cy="8.571" r="8.071" stroke="currentColor"/><path stroke="currentColor" d="M0-.5h8.081" transform="rotate(45 -10.316 23.87)"/></svg>
+          </span>
+        </a>
+  
+        <a href="/cart" class="alt-focus header-link slide-menu">
+          <span class="header-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"><path stroke="currentColor" d="M1.257 7.5h17.486a.5.5 0 01.487.612l-2.538 11a.5.5 0 01-.488.388H3.796a.5.5 0 01-.488-.388l-2.538-11a.5.5 0 01.487-.612z"/><path fill="currentColor" fill-rule="evenodd" d="M16 7h1A7 7 0 103 7h1a6 6 0 1112 0z" clip-rule="evenodd"/></svg>
+          </span>
+        </a>
+      </div>
+    </noscript>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header id="site-header" class="clearfix d-none d-lg-block
+">
+    <div>
+
+      
+
+      <div class="header-content">
+
+        
+          <div class="header-content__item">
+            
+              
+  <noscript><form method="post" action="/localization" id="FooterCountryFormNoScript" accept-charset="UTF-8" class="localization-form localization-form__noscript localization-form__country" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization" /><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="return_to" value="/shop" /><div class="localization-form__select">
+            <h2 class="hide" id="FooterCountryLabelNoScript">Country/region</h2>
+            <select class="localization-selector link" name="country_code" aria-labelledby="FooterCountryLabelNoScript"><option value="BE">
+                Belgium (EUR €)
+                </option><option value="DE">
+                Germany (EUR €)
+                </option><option value="NL" selected>
+                Netherlands (EUR €)
+                </option></select>
+        </div>
+        <button class="btn alt-focus">Update country/region</button></form></noscript>
+
+    <localization-form>
+        <form method="post" action="/localization" id="FooterCountryForm" accept-charset="UTF-8" class="localization-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization" /><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="return_to" value="/shop" />
+        <div class="js">
+            <div class="disclosure">
+            <button type="button" class="disclosure__button alt-focus" aria-expanded="false" aria-controls="CountryList">
+                Netherlands (EUR €)
+
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                </svg>
+            </button>
+
+            <ul id="CountryList" role="list" class="disclosure__list localization__list" hidden>
+                
+                <li class="disclosure__item" tabindex="-1" >
+                    <a href="#" data-value="BE">
+                    Belgium (EUR €)
+                    </a>
+                </li>
+                
+                <li class="disclosure__item" tabindex="-1" >
+                    <a href="#" data-value="DE">
+                    Germany (EUR €)
+                    </a>
+                </li>
+                
+                <li class="disclosure__item" tabindex="-1" selected>
+                    <a href="#" aria-current="true" data-value="NL">
+                    Netherlands (EUR €)
+                    </a>
+                </li>
+                
+            </ul>
+
+            <input type="hidden" name="country_code" value="NL">
+            </div>
+        </div>
+        </form>
+    </localization-form><script src="//rockcitybrewing.nl/cdn/shop/t/3/assets/component-localization-form.js?v=57780020042596164541700726478" defer="defer" type="module"></script>
+
+
+            
+          </div>
+        
+
+        <div class="header-content__item header-logo-container header-content--logo">
+            
+
+<div class="site-header__logo h1" itemscope itemtype="http://schema.org/Organization">
+
+  
+
+  
+	
+    <a href="/" itemprop="url" class="site-header__logo-image">
+      
+      
+
+      
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/RC-Logo-400px_1000x1000.png?v=1705332965"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt="Rock City"
+        
+        itemprop="logo"
+        
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/RC-Logo-400px_150x.png?v=1705332965"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/RC-Logo-400px_{width}x.png?v=1705332965"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+    
+        alt="Rock City"
+    
+    itemprop="logo"
+    
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    width="400"
+    height="81"
+/>
+
+
+
+      
+    </a>
+
+  
+	
+</div>
+
+        </div>
+
+        <div class="header-content__item header-icons-container">
+          
+            
+                
+    <div class="js header-icons cart-link">
+        <ul>
+            
+                <li>
+                    
+                      <button
+                        type="button"
+                        class="icons--inline search-show alt-focus header-link header-link--button"
+                        title="Search" tabindex="0"
+                        aria-label="Open search bar"
+                        aria-controls="top-search-wrapper"
+                      >
+                        
+                          <span class="header-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20"><circle cx="8.571" cy="8.571" r="8.071" stroke="currentColor"/><path stroke="currentColor" d="M0-.5h8.081" transform="rotate(45 -10.316 23.87)"/></svg>
+                          </span>
+                        
+                      </button>
+                    
+                </li>
+            
+
+            
+                
+                    <li>
+                        <a
+                          href="/account/login"
+                          class="icons--inline alt-focus header-link"
+                          aria-label="Log in"
+                          title="Log in"
+                        >
+                          
+                            <span class="header-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" fill="none" viewBox="0 0 19 20"><path fill="currentColor" fill-rule="evenodd" d="M0 20a9.024 9.024 0 014.8-7.385c.316.236.653.446 1.007.626A8.027 8.027 0 001.002 20H0zm18.006 0a9.024 9.024 0 00-4.827-7.399 6.997 6.997 0 01-1.004.63A8.028 8.028 0 0117.003 20h1.003z" clip-rule="evenodd"/><circle cx="8.98" cy="7" r="6.5" stroke="currentColor"/></svg>
+
+                            </span>
+                          
+                        </a>
+                    </li>
+                
+            
+            <li>
+                
+                  <button
+                    type="button"
+                    class="icons--inline alt-focus header-link header-link--button btn-normalize slide-menu slide-menu-cart"
+                    title="Cart"
+                    aria-label="Open cart sidebar"
+                    aria-controls="cartSlideoutAside"
+                  >
+                    
+                      <span class="header-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"><path stroke="currentColor" d="M1.257 7.5h17.486a.5.5 0 01.487.612l-2.538 11a.5.5 0 01-.488.388H3.796a.5.5 0 01-.488-.388l-2.538-11a.5.5 0 01.487-.612z"/><path fill="currentColor" fill-rule="evenodd" d="M16 7h1A7 7 0 103 7h1a6 6 0 1112 0z" clip-rule="evenodd"/></svg>
+                      </span>
+                      
+                              <span class="header--supporting-text"><span class="cart-item-count-header cart-item-count-header--quantity">0</span></span>
+                          
+                    
+                  </button>
+                
+            </li>
+        </ul>
+    </div>
+    <noscript>
+      <div class="no-js header-icons cart-link">
+        <ul>
+          
+          <li>
+            <a href="/search" class="icons--inline search-show alt-focus header-link" title="Search" tabindex="0">
+              
+                <span class="header-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20"><circle cx="8.571" cy="8.571" r="8.071" stroke="currentColor"/><path stroke="currentColor" d="M0-.5h8.081" transform="rotate(45 -10.316 23.87)"/></svg>
+                </span>
+              
+            </a>
+          </li>
+          
+          
+            
+              <li>
+                  <a
+                    href="/account/login"
+                    class="icons--inline alt-focus header-link"
+                    aria-label="Log in"
+                    title="Log in"
+                  >
+                    
+                      <span class="header-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" fill="none" viewBox="0 0 19 20"><path fill="currentColor" fill-rule="evenodd" d="M0 20a9.024 9.024 0 014.8-7.385c.316.236.653.446 1.007.626A8.027 8.027 0 001.002 20H0zm18.006 0a9.024 9.024 0 00-4.827-7.399 6.997 6.997 0 01-1.004.63A8.028 8.028 0 0117.003 20h1.003z" clip-rule="evenodd"/><circle cx="8.98" cy="7" r="6.5" stroke="currentColor"/></svg>
+
+                      </span>
+                    
+                  </a>
+              </li>
+            
+          
+          <li>
+            <a href="/cart" class="icons--inline header-link slide-menu slide-menu-cart" title="Cart">
+                
+                  <span class="header-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"><path stroke="currentColor" d="M1.257 7.5h17.486a.5.5 0 01.487.612l-2.538 11a.5.5 0 01-.488.388H3.796a.5.5 0 01-.488-.388l-2.538-11a.5.5 0 01.487-.612z"/><path fill="currentColor" fill-rule="evenodd" d="M16 7h1A7 7 0 103 7h1a6 6 0 1112 0z" clip-rule="evenodd"/></svg>
+                  </span>
+                    
+                            <span class="header--supporting-text"><span class="cart-item-count-header cart-item-count-header--quantity">0</span></span>
+                        
+                
+            </a>
+          </li>
+        </ul>
+      </div>
+    </noscript>
+
+              
+          
+        </div>
+
+      </div>
+
+  	</div>
+
+  </header>
+
+  
+    
+
+<div
+  id="top-search-wrapper"
+  class=""
+  role="dialog"
+  aria-labelledby="search_label"
+  aria-modal="true"
+  aria-hidden="true"
+   data-predictive-search
+>
+  <div class="top-search-wrapper--expanded">
+    <div class="top-search">
+      <form id="search-page-form-header" action="/search">
+        <div id="search-wrapper">
+
+          <label for="search_text" class="sr-only" id="search_label">Search our site Rock City</label>
+
+          <input
+            id="search_text"
+            name="q"
+            type="text"
+            size="20"
+            placeholder=
+  
+    "Search..."
+  
+
+            autocomplete="off"
+            autocorrect="off"
+            spellcheck="false"
+            class="is-predictive"
+            data-show-prices="true"
+            data-show-vendor="false"
+            aria-hidden="true"
+            tabindex="-1"
+          />
+
+          <div class="search-bar--controls">
+            <button
+              id="search_submit"
+              type="submit"
+              aria-label="Submit Search"
+              aria-hidden="true"
+              tabindex="-1"
+              class="search-bar__button alt-focus"
+            >
+              <span class="header-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20"><circle cx="8.571" cy="8.571" r="8.071" stroke="currentColor"/><path stroke="currentColor" d="M0-.5h8.081" transform="rotate(45 -10.316 23.87)"/></svg>
+              </span>
+            </button>
+          </div>
+
+          <button
+            class="search-bar__button search-clear alt-focus"
+            id="search-bar--clear"
+            tabindex="-1"
+            aria-hidden="true"
+            aria-label="Clear search query"
+            type="button"
+          >
+            Clear
+          </button>
+
+          <button
+            class="search-bar__button search-close alt-focus"
+            id="search-bar--close"
+            tabindex="-1"
+            aria-hidden="true"
+            aria-label="Close search bar"
+            type="button"
+          >
+            <i data-feather="x"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    
+    <div class="predictive-loading hide">
+      <i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw js"></i><span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div class="search-summary"></div>
+  <div class="search-results-panel"></div>
+  
+</div>
+  
+
+  </div>
+
+  <div class="header-row">
+
+    <div class="header-menu-wrapper d-none d-lg-block">
+      
+        <div class="main-navigation-wrapper-main">
+          <div id="main-navigation-wrapper" class="main-navigation-wrapper">
+            <ul class="nav nav-pills">
+  
+    
+      
+
+      
+      
+
+      <li class="dropdown ">
+        <div class="mega-menu--dropdown-wrapper">
+          <a
+            class="dropdown-fresh-toggle alt-focus header-link"
+            data-delay="200"
+            href="/pages/brewpub"
+            aria-expanded="false"
+          >
+            <span class="nav-label">RESTAURANT</span>
+            <i data-feather="chevron-down"></i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu--standard">
+            
+
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="https://cdn.shopify.com/s/files/1/0290/8864/5168/files/MenuKaart_-_v10_-_Q1_2026_-web.pdf?v=1773824302"
+                    >
+                      Bekijk Menu
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/pages/groepen-en-events"
+                    >
+                      Groepen en events
+                    </a>
+                  </li>
+                
+              
+
+            
+          </ul>
+
+        </div>
+
+      </li>
+
+    
+
+  
+    
+      
+
+      
+      
+
+      <li class="dropdown ">
+        <div class="mega-menu--dropdown-wrapper">
+          <a
+            class="dropdown-fresh-toggle alt-focus header-link"
+            data-delay="200"
+            href="/pages/brewpub"
+            aria-expanded="false"
+          >
+            <span class="nav-label">Bezoek</span>
+            <i data-feather="chevron-down"></i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu--standard">
+            
+
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/pages/brewpub"
+                    >
+                      Brewpub
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/pages/brouwerij"
+                    >
+                      Brouwerij
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/pages/beers-brains-rock-citys-pubquiz"
+                    >
+                      Pubquiz
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="https://bookings.zenchef.com/results?rid=386064&pid=1001&shxpid=117214"
+                    >
+                      Comedy
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/pages/rock-city-friends"
+                    >
+                      ROCK CITY &amp; FRIENDS
+                    </a>
+                  </li>
+                
+              
+
+            
+          </ul>
+
+        </div>
+
+      </li>
+
+    
+
+  
+    
+      
+
+      
+      
+
+      <li class="dropdown ">
+        <div class="mega-menu--dropdown-wrapper">
+          <a
+            class="dropdown-fresh-toggle alt-focus header-link"
+            data-delay="200"
+            href="/collections"
+            aria-expanded="false"
+          >
+            <span class="nav-label">SHOP</span>
+            <i data-feather="chevron-down"></i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu--standard">
+            
+
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/collections/bierpakketten"
+                    >
+                      Bierpakketten
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/collections/rockstars"
+                    >
+                      Core
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/collections/all-season"
+                    >
+                      Seasonals
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/collections/limiteds"
+                    >
+                      Specials &amp; Collabs
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/collections/non-alcoholic-1"
+                    >
+                      Non-Alcoholic
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/collections/gift"
+                    >
+                      Merch
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/pages/faq"
+                    >
+                      FAQ
+                    </a>
+                  </li>
+                
+              
+
+            
+          </ul>
+
+        </div>
+
+      </li>
+
+    
+
+  
+    
+      
+
+      
+      
+
+      <li class="dropdown ">
+        <div class="mega-menu--dropdown-wrapper">
+          <a
+            class="dropdown-fresh-toggle alt-focus header-link"
+            data-delay="200"
+            href="/pages/over-ons"
+            aria-expanded="false"
+          >
+            <span class="nav-label">OVER</span>
+            <i data-feather="chevron-down"></i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu--standard">
+            
+
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/pages/over-ons"
+                    >
+                      Over Rock City
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/blogs/vacature"
+                    >
+                      Vacatures
+                    </a>
+                  </li>
+                
+              
+                
+                  <li >
+                    <a
+                      class="dropdown-submenu__link" 
+                      href="/pages/about-en"
+                    >
+                      About (EN)
+                    </a>
+                  </li>
+                
+              
+
+            
+          </ul>
+
+        </div>
+
+      </li>
+
+    
+
+  
+    
+
+      <li >
+        <a href="/pages/contact" class="header-link alt-focus" >CONTACT</a>
+      </li>
+
+    
+
+  
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+
+    
+
+  </div>
+
+  <noscript>
+    
+    <ul class="no-js-mobile-menu">
+    
+      
+        <li>
+            <a href="/pages/brewpub">RESTAURANT</a>
+            <ul>
+                <li>
+                  <a href="https://cdn.shopify.com/s/files/1/0290/8864/5168/files/MenuKaart_-_v10_-_Q1_2026_-web.pdf?v=1773824302">Bekijk Menu</a>
+                </li>
+              
+
+                <li>
+                  <a href="/pages/groepen-en-events">Groepen en events</a>
+                </li>
+              
+</ul>
+        </li>
+      
+    
+      
+        <li>
+            <a href="/pages/brewpub">Bezoek</a>
+            <ul>
+                <li>
+                  <a href="/pages/brewpub">Brewpub</a>
+                </li>
+              
+
+                <li>
+                  <a href="/pages/brouwerij">Brouwerij</a>
+                </li>
+              
+
+                <li>
+                  <a href="/pages/beers-brains-rock-citys-pubquiz">Pubquiz</a>
+                </li>
+              
+
+                <li>
+                  <a href="https://bookings.zenchef.com/results?rid=386064&pid=1001&shxpid=117214">Comedy</a>
+                </li>
+              
+
+                <li>
+                  <a href="/pages/rock-city-friends">ROCK CITY &amp; FRIENDS</a>
+                </li>
+              
+</ul>
+        </li>
+      
+    
+      
+        <li>
+            <a href="/collections">SHOP</a>
+            <ul>
+                <li>
+                  <a href="/collections/bierpakketten">Bierpakketten</a>
+                </li>
+              
+
+                <li>
+                  <a href="/collections/rockstars">Core</a>
+                </li>
+              
+
+                <li>
+                  <a href="/collections/all-season">Seasonals</a>
+                </li>
+              
+
+                <li>
+                  <a href="/collections/limiteds">Specials &amp; Collabs</a>
+                </li>
+              
+
+                <li>
+                  <a href="/collections/non-alcoholic-1">Non-Alcoholic</a>
+                </li>
+              
+
+                <li>
+                  <a href="/collections/gift">Merch</a>
+                </li>
+              
+
+                <li>
+                  <a href="/pages/faq">FAQ</a>
+                </li>
+              
+</ul>
+        </li>
+      
+    
+      
+        <li>
+            <a href="/pages/over-ons">OVER</a>
+            <ul>
+                <li>
+                  <a href="/pages/over-ons">Over Rock City</a>
+                </li>
+              
+
+                <li>
+                  <a href="/blogs/vacature">Vacatures</a>
+                </li>
+              
+
+                <li>
+                  <a href="/pages/about-en">About (EN)</a>
+                </li>
+              
+</ul>
+        </li>
+      
+    
+      
+        <li>
+          <a href="/pages/contact">CONTACT</a>
+        </li>
+      
+    
+    </ul>
+  </noscript>
+
+</div>
+
+
+
+
+</div>
+<!-- END sections: header-group -->
+
+			<main id="main">
+
+					
+
+					<div class="index-sections"><div id="shopify-section-template--20246111289693__image_image_with_text_overlay_mer4xN" class="shopify-section homepage-section--text-over-image-wrapper"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-image-with-text-overlay.min.css?v=28295643905018183371700726479" rel="stylesheet" type="text/css" media="all" />
+
+
+  <style>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+.hero--template--20246111289693__image_image_with_text_overlay_mer4xN .img {
+  background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_1800x.png?v=1789562058');
+  
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+}
+
+
+  
+@media (min-width: 901px) and (max-width: 1200px) {
+  .hero--template--20246111289693__image_image_with_text_overlay_mer4xN .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_2400x.png?v=1789562058');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .hero--template--20246111289693__image_image_with_text_overlay_mer4xN .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_3000x.png?v=1789562058');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1501px) and (max-width: 2000px) {
+  .hero--template--20246111289693__image_image_with_text_overlay_mer4xN .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_4000x.png?v=1789562058');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 2001px) {
+  .hero--template--20246111289693__image_image_with_text_overlay_mer4xN .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_8000x.png?v=1789562058');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+
+
+    .hero--template--20246111289693__image_image_with_text_overlay_mer4xN .img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+      .hero--template--20246111289693__image_image_with_text_overlay_mer4xN .img {
+        min-height: 100%;
+      }
+    }
+    
+
+  </style>
+
+
+
+<div
+    class="container-fluid homepage-slider-container"
+    data-wetheme-section-type="image--image-with-text-overlay"
+    data-wetheme-section-id="template--20246111289693__image_image_with_text_overlay_mer4xN"
+>
+    <div class="row">
+        <div class="page-width col-md-12">
+    		<div class="index-section index-section--flush parallax-wrapper">
+    		  <div class="hero hero--template--20246111289693__image_image_with_text_overlay_mer4xN hero--medium parallax wow">
+    		    
+                    <div class="img"></div>
+    		    
+
+    		    <div class="hero__inner wow">
+    		      <div class="page-width text-center">
+                
+    		        
+    		        
+    		          <div>
+                    <a href="/pages/rock-city-friends" class="btn">
+      		            MEER INFO & TICKETS
+      		          </a>
+                  </div>
+    		        
+    		      </div>
+    		    </div>
+    		  </div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+
+
+<style> @media only screen and (min-width: 750px) {#shopify-section-template--20246111289693__image_image_with_text_overlay_mer4xN {display: none; }} #shopify-section-template--20246111289693__image_image_with_text_overlay_mer4xN .btn {background: #13ace4; color: #fff; border-color: #13ace4;} </style></div><div id="shopify-section-template--20246111289693__image_image_with_text_block_8BKLEC" class="shopify-section homepage-section-image-with-text-block--wrapper"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-image-with-text-block.min.css?v=179964399661871925401700726479" rel="stylesheet" type="text/css" media="all" />
+
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-with-text-block--template--20246111289693__image_image_with_text_block_8BKLEC .image-text-block--wrapper .img {
+  background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_900x.png.jpg?v=1789562058');
+  
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+}
+
+
+  
+@media (min-width: 901px) and (max-width: 1200px) {
+  .image-with-text-block--template--20246111289693__image_image_with_text_block_8BKLEC .image-text-block--wrapper .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_1200x.png.jpg?v=1789562058');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .image-with-text-block--template--20246111289693__image_image_with_text_block_8BKLEC .image-text-block--wrapper .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_1500x.png.jpg?v=1789562058');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1501px) and (max-width: 2000px) {
+  .image-with-text-block--template--20246111289693__image_image_with_text_block_8BKLEC .image-text-block--wrapper .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_2000x.png.jpg?v=1789562058');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 2001px) {
+  .image-with-text-block--template--20246111289693__image_image_with_text_block_8BKLEC .image-text-block--wrapper .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_4000x.png.jpg?v=1789562058');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+
+
+.image-with-text-block--template--20246111289693__image_image_with_text_block_8BKLEC .image-text-block-row__text-container{
+  background: rgba(0,0,0,0);
+  color: #ffffff;
+}
+
+</style>
+
+<section class="homepage-image-text-block--content image-with-text-block--template--20246111289693__image_image_with_text_block_8BKLEC" data-wetheme-section-type="image--image-with-text-block">
+  <div class="homepage-image-text-block--text-wrapper homepage-image-text-block--center">
+    <div class="image-text-block-row__text-container wow">
+      
+      
+      
+        <div>
+          <a href="/pages/rock-city-friends" class="btn">
+            MEER INFO & TICKETS
+          </a>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="image-text-block--wrapper">
+    
+      <div class="image-text-block-row---mobile--image visible-xs">
+        
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: relative" class="lazyload-blur-wrapper feature-row__image--ll-wrapper">
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class="feature-row__image"
+        src="//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_1000x1000.png?v=1789562058"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt=""
+        
+        
+        
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    />
+</noscript>
+
+<img
+    class="lazyload feature-row__image "
+    src="//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_150x.png?v=1789562058"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_{width}x.png?v=1789562058"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+        data-lowsrc="//rockcitybrewing.nl/cdn/shop/files/header-tickets_c83447f5-6b09-4c34-852c-4c2b0f39357d_150x.png?v=1789562058"
+        data-blur="true"
+    
+    
+        alt=""
+    
+    
+    
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    width="2000"
+    height="500"
+/>
+
+
+</div>
+
+
+      </div>
+    
+  </div>
+</section>
+
+
+<style> @media (max-width: 768px) {#shopify-section-template--20246111289693__image_image_with_text_block_8BKLEC .image-text-block-row---mobile--image {display: none; }} @media (max-width: 768px) {#shopify-section-template--20246111289693__image_image_with_text_block_8BKLEC .image-with-text-block--template--20246111289693__image_image_with_text_block_8BKLEC {display: none; }} #shopify-section-template--20246111289693__image_image_with_text_block_8BKLEC .btn {background: #13ace4; color: #fff; border-color: #13ace4;} </style></div><div id="shopify-section-template--20246111289693__e99fcb57-fa54-4505-a5ba-dafcea6cf579" class="shopify-section homepage-section--text-and-image-wrapper"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-image-with-text.min.css?v=133083709851836339921700726479" rel="stylesheet" type="text/css" media="all" />
+
+
+
+<section class="homepage-sections-wrapper">
+
+    <div class="container">
+    	<div class="row">
+
+        <div class="index-section col-md-12">
+          <div class="page-width feature-row homepage-featured-content">
+
+          	<div class="feature-row__container">
+              <div class="feature-row feature-row--image-right">
+                <div class="feature-row__image col-md-6 col-12 wow">
+                  
+                    
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: relative" class="lazyload-blur-wrapper">
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/Rock-City-Fill-Smoker_1000x1000.jpg?v=1779189893"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt=""
+        
+        
+        
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/Rock-City-Fill-Smoker_150x.jpg?v=1779189893"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/Rock-City-Fill-Smoker_{width}x.jpg?v=1779189893"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+        data-lowsrc="//rockcitybrewing.nl/cdn/shop/files/Rock-City-Fill-Smoker_150x.jpg?v=1779189893"
+        data-blur="true"
+    
+    
+        alt=""
+    
+    
+    
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    width="896"
+    height="1190"
+/>
+
+
+</div>
+
+
+                  
+                </div>
+
+                <div class="feature-row__text col-md-6 col-12 wow">
+                  <div class="feature-row__text--inner">
+                    
+                      <div class="title-bar custom-font">
+                        
+                          <h3 class="type-subheading type-subheading--1 wow typography--padding-bottom">kom het ervaren in ons</h3>
+                        
+                        
+                          <h2 class="wow">restaurant</h2>
+                        
+                      </div>
+                    
+                    
+                      <div class="rte featured-row__subtext textarea"><p>Ontsnap aan de drukte en ontdek ons BBQ restaurant en craft beer brewpub in Amersfoort. Bij Rock City draait alles om vuur, smaak en beleving.<br/><br/>In onze industriële brewpub geniet je van comfort food en BBQ uit de smoker, bereid in een open keuken met zicht op de grill en het vuur. Hier komen slow-cooked gerechten en pure BBQ-smaken samen met een wisselend aanbod van craft bier van de tap. Met 22 taps vol vers gebrouwen Rock City bieren, rechtstreeks uit onze eigen ketels, is er altijd iets nieuws te ontdekken. Vanuit je stoel kijk je uit op de brouwerij waar onze bieren tot leven komen.<br/><br/>Binnen én buiten is er volop ruimte: een groot terras, een levendige bar en een sfeervolle setting maken het de ideale plek voor een borrel, diner of lange avond tafelen.<br/><br/></p></div>
+                    
+                    
+                      <a href="/pages/brewpub" class="btn">
+                        MEER INFO
+                      </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+</div><div id="shopify-section-template--20246111289693__image-image-with-text-overlay" class="shopify-section homepage-section--text-over-image-wrapper"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-image-with-text-overlay.min.css?v=28295643905018183371700726479" rel="stylesheet" type="text/css" media="all" />
+
+
+  <style>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+.hero--template--20246111289693__image-image-with-text-overlay .img {
+  background-image: url('//rockcitybrewing.nl/cdn/shop/files/Screenshot_2023-05-19_at_12.02.18_900x.png?v=1701114707');
+  
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+}
+
+
+  
+@media (min-width: 901px) and (max-width: 1200px) {
+  .hero--template--20246111289693__image-image-with-text-overlay .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/Screenshot_2023-05-19_at_12.02.18_1200x.png?v=1701114707');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .hero--template--20246111289693__image-image-with-text-overlay .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/Screenshot_2023-05-19_at_12.02.18_1500x.png?v=1701114707');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1501px) and (max-width: 2000px) {
+  .hero--template--20246111289693__image-image-with-text-overlay .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/Screenshot_2023-05-19_at_12.02.18_2000x.png?v=1701114707');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 2001px) {
+  .hero--template--20246111289693__image-image-with-text-overlay .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/Screenshot_2023-05-19_at_12.02.18_4000x.png?v=1701114707');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+
+
+    .hero--template--20246111289693__image-image-with-text-overlay .img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    
+
+  </style>
+
+
+
+<div
+    class="container-fluid homepage-slider-container"
+    data-wetheme-section-type="image--image-with-text-overlay"
+    data-wetheme-section-id="template--20246111289693__image-image-with-text-overlay"
+>
+    <div class="row">
+        <div class="page-width col-md-12">
+    		<div class="index-section index-section--flush parallax-wrapper">
+    		  <div class="hero hero--template--20246111289693__image-image-with-text-overlay hero--large wow">
+    		    
+                    <div class="img"></div>
+    		    
+
+    		    <div class="hero__inner wow">
+    		      <div class="page-width text-center">
+                
+                  <div class="title-bar custom-font">
+                    
+                    
+                      <h2>20+ bieren van de tap</h2>
+                    
+                  </div>
+                
+    		        
+    		          <div class="hero__text textarea rte"><p><strong>Gebrouwen in de koperen ketels waar je vanaf je stoel zicht op hebt.</strong></p></div>
+    		        
+    		        
+    		          <div>
+                    <a href="/pages/brewpub" class="btn">
+      		            bezoek onze brewpub
+      		          </a>
+                  </div>
+    		        
+    		      </div>
+    		    </div>
+    		  </div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+
+
+</div><div id="shopify-section-template--20246111289693__f912391e-c6c3-4137-9b25-b57580630642" class="shopify-section homepage-section--text-and-image-wrapper"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-image-with-text.min.css?v=133083709851836339921700726479" rel="stylesheet" type="text/css" media="all" />
+
+
+
+<section class="homepage-sections-wrapper">
+
+    <div class="container">
+    	<div class="row">
+
+        <div class="index-section col-md-12">
+          <div class="page-width feature-row homepage-featured-content">
+
+          	<div class="feature-row__container">
+              <div class="feature-row">
+                <div class="feature-row__image col-md-6 col-12 wow">
+                  
+                    
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: relative" class="lazyload-blur-wrapper">
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/3529e174-7f50-4226-8dfe-1c35f1f80894_1000x1000.png?v=1701114459"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt=""
+        
+        
+        
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/3529e174-7f50-4226-8dfe-1c35f1f80894_150x.png?v=1701114459"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/3529e174-7f50-4226-8dfe-1c35f1f80894_{width}x.png?v=1701114459"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+        data-lowsrc="//rockcitybrewing.nl/cdn/shop/files/3529e174-7f50-4226-8dfe-1c35f1f80894_150x.png?v=1701114459"
+        data-blur="true"
+    
+    
+        alt=""
+    
+    
+    
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    width="1437"
+    height="1876"
+/>
+
+
+</div>
+
+
+                  
+                </div>
+
+                <div class="feature-row__text col-md-6 col-12 wow">
+                  <div class="feature-row__text--inner">
+                    
+                      <div class="title-bar custom-font">
+                        
+                          <h3 class="type-subheading type-subheading--1 wow typography--padding-bottom">kom bij ons langs in de</h3>
+                        
+                        
+                          <h2 class="wow">brouwerij</h2>
+                        
+                      </div>
+                    
+                    
+                      <div class="rte featured-row__subtext textarea"><p>In ons koperen brouwhuis ontspringt een verhaal dat begint met de eenvoud van een graankorrel en eindigt in een goed glas bier. Dus geen ‘biertje’ want voor ons is craftbier niet slechts een drankje, het is een onvervalst avontuur. We zijn niet gebonden aan tradities, maar streven naar vernieuwing en innovatie. Het is juist de vrijheid om buiten de lijntjes te kleuren die onze ambacht definieert. We halen alles eruit wat erin zit. <a href="http://www.rockcitybrewing.nl/?ft-restaurant=ef255180&ft-ticket=6b4b3dda&ft-friend=DFFC09C2182C9E490B5B8D3A17367C96&_ga=2.89111451.1496018726.1701093374-2143961592.1659359390" target="_blank" title="boek-een-rondleiding">Ga je met ons mee op een smaakvol avontuur?<br/></a>.</p><p></p></div>
+                    
+                    
+                      <a href="https://shop.rockcitybrewing.nl/?ft-restaurant=ef255180&ft-ticket=6b4b3dda&ft-friend=DFFC09C2182C9E490B5B8D3A17367C96&_ga=2.89111451.1496018726.1701093374-2143961592.1659359390" class="btn">
+                        boek brouwerij tour
+                      </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+</div><div id="shopify-section-template--20246111289693__image_image_with_text_overlay_mPiraw" class="shopify-section homepage-section--text-over-image-wrapper"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-image-with-text-overlay.min.css?v=28295643905018183371700726479" rel="stylesheet" type="text/css" media="all" />
+
+
+  <style>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+.hero--template--20246111289693__image_image_with_text_overlay_mPiraw .img {
+  background-image: url('//rockcitybrewing.nl/cdn/shop/files/Rock-City-Flight-1_1800x.jpg?v=1779184579');
+  
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+}
+
+
+  
+@media (min-width: 901px) and (max-width: 1200px) {
+  .hero--template--20246111289693__image_image_with_text_overlay_mPiraw .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/Rock-City-Flight-1_2400x.jpg?v=1779184579');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .hero--template--20246111289693__image_image_with_text_overlay_mPiraw .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/Rock-City-Flight-1_3000x.jpg?v=1779184579');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1501px) and (max-width: 2000px) {
+  .hero--template--20246111289693__image_image_with_text_overlay_mPiraw .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/Rock-City-Flight-1_4000x.jpg?v=1779184579');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 2001px) {
+  .hero--template--20246111289693__image_image_with_text_overlay_mPiraw .img {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/Rock-City-Flight-1_8000x.jpg?v=1779184579');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+
+
+    .hero--template--20246111289693__image_image_with_text_overlay_mPiraw .img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+      .hero--template--20246111289693__image_image_with_text_overlay_mPiraw .img {
+        min-height: 100%;
+      }
+    }
+    
+
+  </style>
+
+
+
+<div
+    class="container-fluid homepage-slider-container"
+    data-wetheme-section-type="image--image-with-text-overlay"
+    data-wetheme-section-id="template--20246111289693__image_image_with_text_overlay_mPiraw"
+>
+    <div class="row">
+        <div class="page-width col-md-12">
+    		<div class="index-section index-section--flush parallax-wrapper">
+    		  <div class="hero hero--template--20246111289693__image_image_with_text_overlay_mPiraw hero--large parallax wow">
+    		    
+                    <div class="img"></div>
+    		    
+
+    		    <div class="hero__inner wow">
+    		      <div class="page-width text-center">
+                
+                  <div class="title-bar custom-font">
+                    
+                    
+                      <h2>ONTDEK EN BELEEF AMERSFOORTS CRAFTBIER</h2>
+                    
+                  </div>
+                
+    		        
+    		          <div class="hero__text textarea rte"><p><strong>Gebrouwen in de koperen ketels waar je vanaf je stoel zicht op hebt.</strong></p></div>
+    		        
+    		        
+    		          <div>
+                    <a href="/pages/brewpub" class="btn">
+      		            bekijk de brewpub
+      		          </a>
+                  </div>
+    		        
+    		      </div>
+    		    </div>
+    		  </div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+
+
+</div><div id="shopify-section-template--20246111289693__collection_featured_collection_WPPMqK" class="shopify-section homepage-section--featured-products-wrapper"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-featured-collection.min.css?v=59812489717759716721700726479" rel="stylesheet" type="text/css" media="all" />
+
+<section class="homepage-sections-wrapper">
+
+  <div class="container" data-wetheme-section-type="collection--featured-collection" data-wetheme-section-id="template--20246111289693__collection_featured_collection_WPPMqK">
+    <div class="row">
+      <div class="page-width col-md-12">
+
+      
+        <div class="title-bar custom-font">
+          
+            <h3 class="type-subheading type-subheading--1 wow typography--padding-bottom">Geniet thuis van onze bieren</h3>
+          
+          
+            <h2 class="wow">JUST LAUNCHED</h2>
+          
+        </div>
+      
+
+      
+
+      
+
+      
+
+      <div class="row homepage-featured-products">
+
+        
+          <div class="grid__item col-6 col-sm-4 col-md-4 three_columns zoomIn collection-image-anim no-bottom-margin">
+
+           
+
+
+
+
+
+
+
+
+
+
+
+<article class="indiv-product 
+  has-text-center">
+  <script type="application/json" id="product-grid-16633574916445" class="product-grid-json">
+    {"id":16633574916445,"title":"Ring my Bell - DDH  DIPA x Fine Balance - 8%","handle":"ring-my-bell-ddh-dipa-x-fine-balance-8","description":"\u003cp\u003e\u003cstrong\u003eRING MY BELL\u003cbr\u003e\u003c\/strong\u003eDouble Dryhopped Double IPA - 8%\u003cbr\u003e\u003cbr\u003eVisiting \u003cstrong\u003eFine Balance\u003c\/strong\u003e in Kingston, Canada, we brought a piece of the Netherlands: \u003cstrong\u003ea bicycle bell\u003c\/strong\u003e. We tied it to the brewhouse as a reminder that our door is always open to our Fine Balance friends. And they came back! Together, we brewed Ring My Bell, a soft, fluffy, \u003cstrong\u003elight-coloured\u003c\/strong\u003e Double IPA packed with Nelson Sauvin and Citra. Juicy, tropical and bursting with hop character. \u003cbr\u003e\u003cbr\u003eHops: \u003cbr\u003eMASH | Nelson Sauvin \u003cbr\u003eWHIRLPOOL | Citra Dynaboost \u003cbr\u003eDRYHOP 1 | Citra \u003cbr\u003eDRYHOP 2 | Freestyle selected Nelson \u0026amp; Nelson Sauvin Subzero Hopkief\u003cbr\u003e\u003c\/p\u003e","published_at":"2026-10-13T08:47:40+02:00","created_at":"2026-10-13T08:44:16+02:00","vendor":"rockcitybrewing","type":"","tags":["limited"],"price":815,"price_min":815,"price_max":815,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":66200574427485,"title":"Can (1x44cl blik)","option1":"Can (1x44cl blik)","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Ring my Bell - DDH  DIPA x Fine Balance - 8% - Can (1x44cl blik)","public_title":"Can (1x44cl blik)","options":["Can (1x44cl blik)"],"price":815,"weight":400,"compare_at_price":null,"inventory_management":"shopify","barcode":null,"requires_selling_plan":false,"selling_plan_allocations":[],"quantity_rule":{"min":1,"max":null,"increment":1}}],"images":["\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-Collab-Fine-Balance-44cl_1200px.png?v=1791873883"],"featured_image":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-Collab-Fine-Balance-44cl_1200px.png?v=1791873883","options":["Verpakking"],"media":[{"alt":null,"id":77639682457949,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1200,"width":1200,"src":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-Collab-Fine-Balance-44cl_1200px.png?v=1791873883"},"aspect_ratio":1.0,"height":1200,"media_type":"image","src":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-Collab-Fine-Balance-44cl_1200px.png?v=1791873883","width":1200}],"requires_selling_plan":false,"selling_plan_groups":[],"content":"\u003cp\u003e\u003cstrong\u003eRING MY BELL\u003cbr\u003e\u003c\/strong\u003eDouble Dryhopped Double IPA - 8%\u003cbr\u003e\u003cbr\u003eVisiting \u003cstrong\u003eFine Balance\u003c\/strong\u003e in Kingston, Canada, we brought a piece of the Netherlands: \u003cstrong\u003ea bicycle bell\u003c\/strong\u003e. We tied it to the brewhouse as a reminder that our door is always open to our Fine Balance friends. And they came back! Together, we brewed Ring My Bell, a soft, fluffy, \u003cstrong\u003elight-coloured\u003c\/strong\u003e Double IPA packed with Nelson Sauvin and Citra. Juicy, tropical and bursting with hop character. \u003cbr\u003e\u003cbr\u003eHops: \u003cbr\u003eMASH | Nelson Sauvin \u003cbr\u003eWHIRLPOOL | Citra Dynaboost \u003cbr\u003eDRYHOP 1 | Citra \u003cbr\u003eDRYHOP 2 | Freestyle selected Nelson \u0026amp; Nelson Sauvin Subzero Hopkief\u003cbr\u003e\u003c\/p\u003e"}
+  </script>
+
+  <div class="position-relative indiv-product__image-wrapper">
+    
+        <a
+          class="grid__image"
+          href="/products/ring-my-bell-ddh-dipa-x-fine-balance-8"
+          tabindex="-1"
+        >
+            <div class="aspect-ratio aspect-ratio--tall">
+                
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: relative" class="lazyload-blur-wrapper">
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-Collab-Fine-Balance-44cl_1200px_1000x1000.png?v=1791873883"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt="Ring my Bell - DDH  DIPA x Fine Balance - 8%"
+        
+        
+        
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-Collab-Fine-Balance-44cl_1200px_150x.png?v=1791873883"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-Collab-Fine-Balance-44cl_1200px_{width}x.png?v=1791873883"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+        data-lowsrc="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-Collab-Fine-Balance-44cl_1200px_150x.png?v=1791873883"
+        data-blur="true"
+    
+    
+        alt="Ring my Bell - DDH  DIPA x Fine Balance - 8%"
+    
+    
+    
+    width="1200"
+    height="1200"
+/>
+
+
+</div>
+
+
+            </div>
+        </a>
+    
+
+    
+      
+    
+  </div>
+
+  
+
+  
+
+
+  <div class="d-flex flex-grow-1 flex-column justify-content-between add-padding-details">
+    <div class="hp-title">
+      
+        
+          
+            <a href="/products/ring-my-bell-ddh-dipa-x-fine-balance-8" class="indiv-product__link">
+
+              <span class="indiv-product-title-text">Ring my Bell - DDH  DIPA x Fine Balance - 8%</span>
+            </a>
+
+          
+        
+          
+              <a href="/products/ring-my-bell-ddh-dipa-x-fine-balance-8" class="indiv-product__link">
+                <span class="money-styling">
+                  <span class="current-price">
+                    
+                      <span class="money">€8,15</span>
+                    
+                  </span>
+
+                  
+
+                  
+                  
+
+                </span>
+              </a>
+          
+        
+      
+    </div>
+
+    
+      
+        <div class="quick-add-wrapper is-singular">
+          
+
+
+              <form method="post" action="/cart/add" id="product_form_16633574916445" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" />
+                <input type="hidden" name="id" value="66200574427485" />
+
+                <button
+                  class="btn quick-add-button alt-focus w-100 my-0"
+                  type="submit"
+                  name="add"
+                  tabindex="0"
+                >
+                  Add to cart
+                </button>
+              <input type="hidden" name="product-id" value="16633574916445" /><input type="hidden" name="section-id" value="template--20246111289693__collection_featured_collection_WPPMqK" /></form>
+
+
+          
+        </div>
+      
+    
+  </div>
+
+</article>
+</div>
+
+        
+          <div class="grid__item col-6 col-sm-4 col-md-4 three_columns zoomIn collection-image-anim no-bottom-margin">
+
+           
+
+
+
+
+
+
+
+
+
+
+
+<article class="indiv-product 
+  has-text-center">
+  <script type="application/json" id="product-grid-16614118457693" class="product-grid-json">
+    {"id":16614118457693,"title":"Randomness - Chocolate Custard \u0026 Sticky Toffee Stout x Neon Raptor - 8.4%","handle":"randomness-chocolate-custard-sticky-toffee-stout-8-4","description":"\u003cp\u003e\u003cstrong\u003eRANDOMNESS x NEON RAPTOR (UK)\u003cbr\u003e\u003c\/strong\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eChocolate Custard \u0026amp; Sticky Toffee Stout\u003c\/span\u003e - 8.4%\u003cbr\u003e\u003cbr\u003e\u003cmeta charset=\"utf-8\"\u003e\u003c\/p\u003e\n\u003cp\u003eRandomness (Rock City Collab) - Chocolate Custard \u0026amp; Sticky Toffee Stout - R is for Rock City, our righteous and reliably rockin' friends from The Netherlands. This collaboration is a reckless yet rational blend of rich Dutch chocolate custard, and robust English sticky toffee pudding. Randomness reaps rewards!\u003c\/p\u003e\n\u003cp\u003eIngredients: Water, Barley (Gluten), Lactose (Milk), Oats, Hops, Vanilla, Yeast\u003c\/p\u003e\n\u003cp\u003eAllergens: Barley, and Lactose.\u003c\/p\u003e\n\u003cp\u003e\u003cbr\u003e\u003cbr\u003e\u003c\/p\u003e","published_at":"2026-10-06T10:41:26+02:00","created_at":"2026-10-06T10:39:30+02:00","vendor":"rockcitybrewing","type":"","tags":["limited"],"price":815,"price_min":815,"price_max":815,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":66131059605853,"title":"Can (1x44cl blik)","option1":"Can (1x44cl blik)","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Randomness - Chocolate Custard \u0026 Sticky Toffee Stout x Neon Raptor - 8.4% - Can (1x44cl blik)","public_title":"Can (1x44cl blik)","options":["Can (1x44cl blik)"],"price":815,"weight":400,"compare_at_price":null,"inventory_management":"shopify","barcode":null,"requires_selling_plan":false,"selling_plan_allocations":[],"quantity_rule":{"min":1,"max":null,"increment":1}}],"images":["\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-10_Randomness-44cl.png?v=1791276052"],"featured_image":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-10_Randomness-44cl.png?v=1791276052","options":["Verpakking"],"media":[{"alt":null,"id":77522805948765,"position":1,"preview_image":{"aspect_ratio":1.0,"height":3000,"width":3000,"src":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-10_Randomness-44cl.png?v=1791276052"},"aspect_ratio":1.0,"height":3000,"media_type":"image","src":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-10_Randomness-44cl.png?v=1791276052","width":3000}],"requires_selling_plan":false,"selling_plan_groups":[],"content":"\u003cp\u003e\u003cstrong\u003eRANDOMNESS x NEON RAPTOR (UK)\u003cbr\u003e\u003c\/strong\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eChocolate Custard \u0026amp; Sticky Toffee Stout\u003c\/span\u003e - 8.4%\u003cbr\u003e\u003cbr\u003e\u003cmeta charset=\"utf-8\"\u003e\u003c\/p\u003e\n\u003cp\u003eRandomness (Rock City Collab) - Chocolate Custard \u0026amp; Sticky Toffee Stout - R is for Rock City, our righteous and reliably rockin' friends from The Netherlands. This collaboration is a reckless yet rational blend of rich Dutch chocolate custard, and robust English sticky toffee pudding. Randomness reaps rewards!\u003c\/p\u003e\n\u003cp\u003eIngredients: Water, Barley (Gluten), Lactose (Milk), Oats, Hops, Vanilla, Yeast\u003c\/p\u003e\n\u003cp\u003eAllergens: Barley, and Lactose.\u003c\/p\u003e\n\u003cp\u003e\u003cbr\u003e\u003cbr\u003e\u003c\/p\u003e"}
+  </script>
+
+  <div class="position-relative indiv-product__image-wrapper">
+    
+        <a
+          class="grid__image"
+          href="/products/randomness-chocolate-custard-sticky-toffee-stout-8-4"
+          tabindex="-1"
+        >
+            <div class="aspect-ratio aspect-ratio--tall">
+                
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: relative" class="lazyload-blur-wrapper">
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-10_Randomness-44cl_1000x1000.png?v=1791276052"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt="Randomness - Chocolate Custard &amp; Sticky Toffee Stout x Neon Raptor - 8.4%"
+        
+        
+        
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-10_Randomness-44cl_150x.png?v=1791276052"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-10_Randomness-44cl_{width}x.png?v=1791276052"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+        data-lowsrc="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-10_Randomness-44cl_150x.png?v=1791276052"
+        data-blur="true"
+    
+    
+        alt="Randomness - Chocolate Custard &amp; Sticky Toffee Stout x Neon Raptor - 8.4%"
+    
+    
+    
+    width="3000"
+    height="3000"
+/>
+
+
+</div>
+
+
+            </div>
+        </a>
+    
+
+    
+      
+    
+  </div>
+
+  
+
+  
+
+
+  <div class="d-flex flex-grow-1 flex-column justify-content-between add-padding-details">
+    <div class="hp-title">
+      
+        
+          
+            <a href="/products/randomness-chocolate-custard-sticky-toffee-stout-8-4" class="indiv-product__link">
+
+              <span class="indiv-product-title-text">Randomness - Chocolate Custard & Sticky Toffee Stout x Neon Raptor - 8.4%</span>
+            </a>
+
+          
+        
+          
+              <a href="/products/randomness-chocolate-custard-sticky-toffee-stout-8-4" class="indiv-product__link">
+                <span class="money-styling">
+                  <span class="current-price">
+                    
+                      <span class="money">€8,15</span>
+                    
+                  </span>
+
+                  
+
+                  
+                  
+
+                </span>
+              </a>
+          
+        
+      
+    </div>
+
+    
+      
+        <div class="quick-add-wrapper is-singular">
+          
+
+
+              <form method="post" action="/cart/add" id="product_form_16614118457693" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" />
+                <input type="hidden" name="id" value="66131059605853" />
+
+                <button
+                  class="btn quick-add-button alt-focus w-100 my-0"
+                  type="submit"
+                  name="add"
+                  tabindex="0"
+                >
+                  Add to cart
+                </button>
+              <input type="hidden" name="product-id" value="16614118457693" /><input type="hidden" name="section-id" value="template--20246111289693__collection_featured_collection_WPPMqK" /></form>
+
+
+          
+        </div>
+      
+    
+  </div>
+
+</article>
+</div>
+
+        
+          <div class="grid__item col-6 col-sm-4 col-md-4 three_columns zoomIn collection-image-anim no-bottom-margin">
+
+           
+
+
+
+
+
+
+
+
+
+
+
+<article class="indiv-product 
+  has-text-center">
+  <script type="application/json" id="product-grid-16614096175453" class="product-grid-json">
+    {"id":16614096175453,"title":"Hop Hammer (Orange) - Dutch Fresh Hop Double IPA - 8%","handle":"hop-hammer-orange-ddh-dutch-fresh-hop-double-ipa-8","description":"\u003cp\u003e\u003cstrong\u003eHOP HAMMER (ORANGE LABEL)\u003cbr\u003e\u003c\/strong\u003eDutch Fresh Hop Double IPA - 8%\u003cbr\u003e\u003cbr\u003eWanneer de hopoogst begint, wordt de Hop Hammer geheven. Verse hop van de velden van MeierĳHop in Sint-Oedenrode, rechtstreeks de tanks in. Hop Hammer is een epische Double IPA, gesmeed met verse hop.\u003cbr\u003e\u003cbr\u003eDRYHOP: Fresh Hop Centennial van Meierijhop uit St. Oedenrode\u003cbr\u003e\u003cbr\u003e\u003c\/p\u003e","published_at":"2026-10-06T10:20:35+02:00","created_at":"2026-10-06T10:18:10+02:00","vendor":"rockcitybrewing","type":"","tags":["limited"],"price":615,"price_min":615,"price_max":615,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":66131016319325,"title":"Can (1x44cl blik)","option1":"Can (1x44cl blik)","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Hop Hammer (Orange) - Dutch Fresh Hop Double IPA - 8% - Can (1x44cl blik)","public_title":"Can (1x44cl blik)","options":["Can (1x44cl blik)"],"price":615,"weight":400,"compare_at_price":null,"inventory_management":"shopify","barcode":null,"requires_selling_plan":false,"selling_plan_allocations":[],"quantity_rule":{"min":1,"max":null,"increment":1}}],"images":["\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-10_Hophammer-ORANGE-44cl_1200px.png?v=1791274809"],"featured_image":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-10_Hophammer-ORANGE-44cl_1200px.png?v=1791274809","options":["Verpakking"],"media":[{"alt":null,"id":77522466373981,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1200,"width":1200,"src":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-10_Hophammer-ORANGE-44cl_1200px.png?v=1791274809"},"aspect_ratio":1.0,"height":1200,"media_type":"image","src":"\/\/rockcitybrewing.nl\/cdn\/shop\/files\/RockCityBrewing_2026-10_Hophammer-ORANGE-44cl_1200px.png?v=1791274809","width":1200}],"requires_selling_plan":false,"selling_plan_groups":[],"content":"\u003cp\u003e\u003cstrong\u003eHOP HAMMER (ORANGE LABEL)\u003cbr\u003e\u003c\/strong\u003eDutch Fresh Hop Double IPA - 8%\u003cbr\u003e\u003cbr\u003eWanneer de hopoogst begint, wordt de Hop Hammer geheven. Verse hop van de velden van MeierĳHop in Sint-Oedenrode, rechtstreeks de tanks in. Hop Hammer is een epische Double IPA, gesmeed met verse hop.\u003cbr\u003e\u003cbr\u003eDRYHOP: Fresh Hop Centennial van Meierijhop uit St. Oedenrode\u003cbr\u003e\u003cbr\u003e\u003c\/p\u003e"}
+  </script>
+
+  <div class="position-relative indiv-product__image-wrapper">
+    
+        <a
+          class="grid__image"
+          href="/products/hop-hammer-orange-ddh-dutch-fresh-hop-double-ipa-8"
+          tabindex="-1"
+        >
+            <div class="aspect-ratio aspect-ratio--tall">
+                
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: relative" class="lazyload-blur-wrapper">
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-10_Hophammer-ORANGE-44cl_1200px_1000x1000.png?v=1791274809"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt="Hop Hammer (Orange) - Dutch Fresh Hop Double IPA - 8%"
+        
+        
+        
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-10_Hophammer-ORANGE-44cl_1200px_150x.png?v=1791274809"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-10_Hophammer-ORANGE-44cl_1200px_{width}x.png?v=1791274809"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+        data-lowsrc="//rockcitybrewing.nl/cdn/shop/files/RockCityBrewing_2026-10_Hophammer-ORANGE-44cl_1200px_150x.png?v=1791274809"
+        data-blur="true"
+    
+    
+        alt="Hop Hammer (Orange) - Dutch Fresh Hop Double IPA - 8%"
+    
+    
+    
+    width="1200"
+    height="1200"
+/>
+
+
+</div>
+
+
+            </div>
+        </a>
+    
+
+    
+      
+    
+  </div>
+
+  
+
+  
+
+
+  <div class="d-flex flex-grow-1 flex-column justify-content-between add-padding-details">
+    <div class="hp-title">
+      
+        
+          
+            <a href="/products/hop-hammer-orange-ddh-dutch-fresh-hop-double-ipa-8" class="indiv-product__link">
+
+              <span class="indiv-product-title-text">Hop Hammer (Orange) - Dutch Fresh Hop Double IPA - 8%</span>
+            </a>
+
+          
+        
+          
+              <a href="/products/hop-hammer-orange-ddh-dutch-fresh-hop-double-ipa-8" class="indiv-product__link">
+                <span class="money-styling">
+                  <span class="current-price">
+                    
+                      <span class="money">€6,15</span>
+                    
+                  </span>
+
+                  
+
+                  
+                  
+
+                </span>
+              </a>
+          
+        
+      
+    </div>
+
+    
+      
+        <div class="quick-add-wrapper is-singular">
+          
+
+
+              <form method="post" action="/cart/add" id="product_form_16614096175453" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" />
+                <input type="hidden" name="id" value="66131016319325" />
+
+                <button
+                  class="btn quick-add-button alt-focus w-100 my-0"
+                  type="submit"
+                  name="add"
+                  tabindex="0"
+                >
+                  Add to cart
+                </button>
+              <input type="hidden" name="product-id" value="16614096175453" /><input type="hidden" name="section-id" value="template--20246111289693__collection_featured_collection_WPPMqK" /></form>
+
+
+          
+        </div>
+      
+    
+  </div>
+
+</article>
+</div>
+
+        
+      </div>
+
+      
+    </div>
+    </div>
+  </div>
+</section>
+
+
+</div><div id="shopify-section-template--20246111289693__newsletter-newsletter" class="shopify-section homepage-section--newsletter-wrapper"><link href="//rockcitybrewing.nl/cdn/shop/t/3/assets/section-newsletter.min.css?v=51615935274518254281700726479" rel="stylesheet" type="text/css" media="all" />
+
+<section class="homepage-sections-wrapper">
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-5 col-lg-6 newsletter__item">
+        <div class="newsletter__title wow">
+          
+            <div class="title-bar">
+              
+                <h3 class="type-subheading type-subheading--1 wow typography--padding-bottom">Mailing list</h3>
+              
+              
+                <h2 class="wow">BLIJF OP DE HOOGTE</h2>
+              
+              
+                <p><strong>Wil je op de hoogte blijven van alle ontwikkelingen, events en nieuwe releases? Meld je dan nu aan voor onze mailing list!</strong></p>
+              
+            </div>
+          
+        </div>
+      </div>
+
+      <div class="newsletter__item col-sm-12 col-md-7 col-lg-6">
+        <div class="newsletter_form wow">
+          <form method="post" action="/contact#newsletter_section_form" id="newsletter_section_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+    
+
+    
+        <input type="hidden" name="contact[tags]" value="newsletter">
+
+        <div class="text-center">
+            <div class="lds-dual-ring newsletter-spinner hide"></div>
+
+            <p class="note form-success hide">
+                <strong>Thanks for Joining!</strong>
+            </p>
+        </div>
+
+        <div id="newsletter-wrapper-template--20246111289693__newsletter-newsletter" >
+            <label for="newsletter_text" class="sr-only"></label>
+            <input
+                id="newsletter_text-template--20246111289693__newsletter-newsletter"
+                type="email"
+                value=""
+                placeholder="your@email.com"
+                name="contact[email]"
+                class="input-group-field email"
+                aria-label="your@email.com"
+                autocorrect="off"
+                autocomplete="email"
+                autocapitalize="off"
+                required
+            >
+
+            <button
+                type="submit"
+                id="newsletter_submit-template--20246111289693__newsletter-newsletter"
+                name="commit"
+                aria-label="Join"
+                class="btn"
+            >
+                Send
+            </button>
+        </div>
+    
+</form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+</div></div>
+
+					
+
+			</main>
+
+			<!-- BEGIN sections: footer-group -->
+<div id="shopify-section-sections--20246111519069__footer-main" class="shopify-section shopify-section-group-footer-group">
+
+
+
+
+
+<footer
+  class="footer"
+  data-wetheme-section-type="footer"
+  data-wetheme-section-id="sections--20246111519069__footer-main">
+
+  
+    <div class="container-xl">
+      <div class="row justify-content-center">
+        <a href="#theme-section-header" class="footer__back-to-top">
+          <div class="footer__back-to-top-chevron--wrapper">
+            <div class="footer__back-to-top-chevron">
+              
+            </div>
+          </div>
+          
+            Back to top
+          
+        </a>
+      </div>
+    </div>
+  
+
+
+  <div class="container-xl">
+    <div class="row">
+
+      
+
+        
+
+          <div class="col-sm-12 col-md-6 col-lg
+ footer__image-id--footer-0 footer__block-type--logo footer__block-wrapper" >
+              <div class="image-bar__item">
+              
+
+              
+              
+              <div class="image-bar__content" style="width: 
+                55%; opacity: 
+                100%;">
+                
+                  
+                  
+                  
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: relative" class="lazyload-blur-wrapper lazyload-blur-wrapper-center">
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/RC-SHIELD-246px_1000x1000.png?v=1705333056"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt="
+                    "
+        
+        
+        
+    style="max-width: 246px; object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/RC-SHIELD-246px_150x.png?v=1705333056"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/RC-SHIELD-246px_{width}x.png?v=1705333056"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+        data-lowsrc="//rockcitybrewing.nl/cdn/shop/files/RC-SHIELD-246px_150x.png?v=1705333056"
+        data-blur="true"
+    
+    
+        alt="
+                    "
+    
+    
+    
+    style="max-width: 246px; object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    width="246"
+    height="246"
+/>
+
+
+</div>
+
+
+                
+              </div>
+
+              
+              </div>
+            
+
+          </div>
+        
+      
+
+        
+
+          <div class="col-sm-12 col-md-6 col-lg
+ footer__block-type--text footer__block-wrapper" >
+            
+              <h3 class="type-subheading type-subheading--1">Rock City Brewpub</h3>
+            
+            <div class="rte footer__block-text"><p>Mijnbouwweg 15<br/>3812 RT Amersfoort</p></div>
+          </div>
+
+          
+      
+
+        
+
+          <div class="col-sm-12 col-md-6 col-lg
+ footer__block-type--text footer__block-wrapper" >
+            
+              <h3 class="type-subheading type-subheading--1">Openingstijden</h3>
+            
+            <div class="rte footer__block-text"><p>wo 15 – 22 uur<br/>do 15 – 22 uur<br/>vr 15 – 23 uur<br/>za 12 – 23 uur<br/>zo 12 – 20 uur</p></div>
+          </div>
+
+          
+      
+
+        
+
+          <div class="col-sm-12 col-md-6 col-lg
+ footer__block-type--text footer__block-wrapper" >
+            
+              <h3 class="type-subheading type-subheading--1">Over Rock City</h3>
+            
+            <div class="rte footer__block-text"><p>Avontuurlijk genieten van craft en speciaalbier. Ontdek onze unieke bieren in Amersfoort. Proef kwaliteit, creativiteit en lef in elke blik en vaasje. Voor echte smaakavonturiers. Kom langs en proef!</p></div>
+          </div>
+
+          
+      
+
+        
+
+          
+            <div class="col-sm-12 col-md-6 col-lg
+ footer__block-wrapper footer__block-type--social-media" >
+              
+                <h3 class="type-subheading type-subheading--1">Get connected</h3>
+              
+              <div class="footer__social-icons ">
+                
+
+<ul class="sm-icons" class="clearfix">
+
+	
+		<li class="sm-facebook">
+			<a href="https://www.facebook.com/rockcitybeers" target="_blank" rel="noopener noreferrer" aria-labelledby="facebook_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>Facebook icon</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg>	
+				<p class="d-none m-0" id="facebook_title">Facebook</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+		<li class="sm-instagram">
+			<a href="https://www.instagram.com/rockcitybrewing/" target="_blank" rel="noopener noreferrer" aria-labelledby="instagram_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+				<p class="d-none m-0" id="instagram_title">Instagram</p>
+			</a>
+		</li>
+	
+
+	
+		<li class="sm-youtube">
+			<a href="https://www.youtube.com/channel/UCftxiEU8uyE_JyCUBcvwfyg/videos" target="_blank" rel="noopener noreferrer" aria-labelledby="youtube_title">
+				<svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>YouTube icon</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+				<p class="d-none m-0" id="youtube_title">YouTube</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+		<li class="sm-tiktok">
+			<a href="https://www.tiktok.com/@rock.city.brewing" target="_blank" rel="noopener noreferrer" aria-labelledby="tiktok_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok icon</title><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+				<p class="d-none m-0" id="tiktok_title">TikTok</p>
+			</a>
+		</li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		<li class="sm-linkedin">
+			<a href="https://www.linkedin.com/company/rock-city-brewing/" target="_blank" rel="noopener noreferrer" aria-labelledby="linkedin_title">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+				<p class="d-none m-0" id="linkedin_title">LinkedIn</p>
+			</a>
+		</li>
+	
+
+</ul>
+
+
+
+              </div>
+            </div>
+          
+
+          
+      
+    </div>
+  </div>
+</footer>
+
+</div><div id="shopify-section-sections--20246111519069__footer-bottom" class="shopify-section shopify-section-group-footer-group"><div class="footer-bottom">
+
+
+<!-- Zenchef Widget SDK -->
+<script>;(function (d, s, id) {const el = d.getElementsByTagName(s)[0]; if (d.getElementById(id) || el.parentNode == null) {return;} var js = d.createElement(s);  js.id = id; js.async = true; js.src = 'https://sdk.zenchef.com/v1/sdk.min.js';  el.parentNode.insertBefore(js, el); })(document, 'script', 'zenchef-sdk')</script>
+<div
+   class="zc-widget-config"
+   data-restaurant="386064"
+   data-open="2000"></div>
+   <!-- End Zenchef Widget SDK -->
+
+
+   
+<div class="ft-widget-b2" data-restaurant="ef255180" data-open="1500" data-open-mobile="false" data-color="hsl(210, 100%, 2%)" data-language="auto" data-tag="Website" data-toolbar="true" data-toolbar-mobile="true"></div>
+  <div class="container">
+    <div class="footer-bottom__row">
+      <div>
+        <div class="footer-bottom__localization-forms  payment-methods-disabled">
+          <script src="//rockcitybrewing.nl/cdn/shop/t/3/assets/component-localization-form.js?v=57780020042596164541700726478" defer="defer" type="module"></script>
+
+        </div>
+
+        
+      </div>
+
+      <div class="footer-bottom__copyright">
+        <p>
+          <a href="/">&copy; 2026 Rock City</a>
+          | <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore"> </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- END sections: footer-group -->
+		</div>
+
+	</div>
+
+	
+		
+
+<div class="verification-popup-container" style="display: none" data-age-test-mode="false" tabindex="-1">
+  <div id="prompt__background">
+    <div id="verification__prompt" class="modal__prompt" role="dialog">
+
+      <div class="verification-popup-logo__container" itemscope itemtype="http://schema.org/Organization">
+        
+
+        
+          <div class="verification-popup-logo__image">
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<noscript aria-hidden="true">
+    <img
+        class=""
+        src="//rockcitybrewing.nl/cdn/shop/files/RCB-header-Logo-Rock_City_2021-diap_1000x1000.png?v=1701120077"
+        loading="lazy"
+        data-sizes="auto"
+        
+            alt="Rock City"
+        
+        itemprop="logo"
+        
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    />
+</noscript>
+
+<img
+    class="lazyload  "
+    src="//rockcitybrewing.nl/cdn/shop/files/RCB-header-Logo-Rock_City_2021-diap_150x.png?v=1701120077"
+    loading="lazy"
+    data-src="//rockcitybrewing.nl/cdn/shop/files/RCB-header-Logo-Rock_City_2021-diap_{width}x.png?v=1701120077"
+    data-sizes="auto"
+    data-aspectratio="1.5"
+    
+    
+        alt="Rock City"
+    
+    itemprop="logo"
+    
+    style="object-fit:cover;object-position:50.0% 50.0%!important;"
+  
+    width="900"
+    height="620"
+/>
+
+
+
+          </div>
+        
+      </div>
+
+      <div class="modal-initial-content">
+        <div class="modal-content__wrapper">
+          
+            <h3>
+              Confirm your age
+            </h3>
+          
+          
+            <p>You must be at least 18 years old to enter this website.</p><p>Are you over 18 years of age?</p>
+          
+        </div>
+
+        <div class="modal-button-container">
+          
+            <button role="button" id="button__exit" class="btn__exit btn secondary-button styled-submit" tabindex="1">No I'm not</button>
+          
+           
+            <button role="button" class="btn__enter btn" id="button__enter" tabindex="1">Yes I am</button>
+          
+        </div>
+      </div>
+
+      <div class="modal-deny-content hidden">
+        <button
+          role="button"
+          class="verification-popup__close-button alt-focus"
+          aria-label="Close"
+          tabindex="-1"
+        >
+          <span>
+            <i data-feather="x"></i>
+          </span>
+        </button>
+        <div class="modal-content__wrapper">
+          
+            <h3>
+              Come back when you're older
+            </h3>
+          
+          
+            <p>It looks like you're not old enough to shop with us, come back when you're 18 or older.</p>
+          
+        </div>
+
+        <div class="modal-button-container">
+          
+            <button
+              role="button"
+              id="button__return"
+              class="btn__return btn"
+              tabindex="-1"
+            >
+              Oops, I entered incorrectly
+            </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+
+.verification-popup-logo__image img {
+  max-width: 100px;
+}
+
+ @media screen and (min-width: 992px) {
+  .verification-popup-logo__image img {
+    width: 100px;
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#prompt__background {
+  background-image: url('//rockcitybrewing.nl/cdn/shop/files/agecheck_600x.jpg?v=1701173838');
+  
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+}
+
+
+  
+@media (min-width: 601px) and (max-width: 1200px) {
+  #prompt__background {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/agecheck_1200x.jpg?v=1701173838');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+  
+@media (min-width: 1201px) {
+  #prompt__background {
+    background-image: url('//rockcitybrewing.nl/cdn/shop/files/agecheck_2000x.jpg?v=1701173838');
+    
+    background-size: cover;
+    background-position: 50.0% 50.0% !important;
+  
+  }
+}
+  
+
+
+#prompt__background {
+  background-size: cover;
+  background-color: #ec1946;
+  background-position: center;
+  background-attachment: fixed
+}
+
+body {
+    height: 100vh; /* set viewport constraint */
+    min-height: 100%; /* enforce height */
+}
+
+
+#prompt__background {
+  background-color: #ec1946;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+	
+
+	
+
+	<script type="application/json" id="wetheme-global">
+		{
+			
+			"translations": {
+				"addToCart": "Add to cart",
+				"added": "Added",
+				"soldOut": "Sold out",
+				"unavailable": "Unavailable",
+				"makeASelection": "Make a selection",
+				"showMore": "Show more",
+				"showLess": "Show less",
+				"saving": "Saving",
+				"products": "Products",
+				"pages": "Pages",
+				"collections": "Collections",
+				"articles": "Articles",
+				"suggestions": "Suggestions",
+				"loading": "Loading...",
+				"applyFilterLabel": "Apply filter",
+				"removeFilterLabel": "Remove filter",
+				"no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
+				"view_all": "View all results",
+				"clear": "Clear",
+				"cart_title": "Your Cart",
+				"cart_subtotal": "Subtotal",
+				"added_to_cart": "Added to",
+				"removed_from_cart": "Removed from",
+				"cart_item": "Item",
+				"slide": "Slide",
+				"pause": "Pause",
+				"search_found": "found",
+				"none_found": "No",
+				"search_result": "Result",
+				"search_result_plural": "Results"
+			},
+			"moneyFormat": "€{{amount_with_comma_separator}}"
+		}
+	</script>
+	<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Rock City",
+    "url": "https://rockcitybrewing.nl"
+  }
+  </script>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Organization",
+    "name": "Rock City",
+    "brand": {
+      "@type": "Brand",
+      "name": "Rock City"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://rockcitybrewing.nl/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "url": "https://rockcitybrewing.nl"
+  }
+</script>
+
+
+	<script defer type="module" src="//rockcitybrewing.nl/cdn/shop/t/3/assets/theme.js?v=64135307729123903621700726479"></script>
+	<script defer nomodule src="//rockcitybrewing.nl/cdn/shop/t/3/assets/theme.legacy.js?v=890"></script>
+	
+<script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
+</body>
+
+</html>

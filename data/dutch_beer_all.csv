@@ -1,0 +1,11 @@
+name,slug,city,province,beers_listed,website,kvk,status,notes
+Brouwerij De Molen,brouwerij-de-molen,Bodegraven,Zuid-Holland,370,https://brouwerijdemolen.nl/,28086569,closed 2025,"Owned by Royal Swinkels; closed Oct 2025. Folder has homepage, about, contact, beers, shop, over-ons HTML + extract."
+Kompaan,kompaan,Den Haag,Zuid-Holland,188,https://kompaanbier.nl/,78198208,active,Kompaan Dutch Craft Beer Company B.V. Folder has multiple HTML pages.
+Two Chefs Brewing,two-chefs-brewing,Amsterdam,Noord-Holland,124,https://twochefsbrewing.com/,65022831,active,Two Chefs Brewery B.V. Folder has HTML pages.
+Jopen,jopen,Haarlem,Noord-Holland,118,https://www.jopenbier.nl/,34098342,active,Jopen B.V. Historic Haarlem brewery. Folder has HTML.
+Baxbier,baxbier,Groningen,Groningen,108,https://www.baxbier.com/,,unknown,Folder created with scraped pages.
+rockcitybrewing.nl,rockcitybrewing,Amersfoort,Utrecht,93,https://rockcitybrewing.nl/,,unknown,Folder created.
+Brouwerij Bliksem,brouwerij-bliksem,Breda,Noord-Brabant,33,https://www.brouwerijbliksem.nl/,,unknown,Folder created.
+muifelbrouwerij.nl,muifelbrouwerij,Oss,Noord-Brabant,32,https://www.muifelbrouwerij.nl/,,unknown,Folder created.
+Stanislaus Brewskovitch,stanislaus-brewskovitch,Enschede,Overijssel,27,https://www.stanislausbrewskovitch.nl/,,unknown,Folder created.
+Butcher's Tears,butchers-tears,Amsterdam,Noord-Holland,26,http://www.butchers-tears.com/,,unknown,Folder created.

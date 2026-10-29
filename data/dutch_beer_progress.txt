@@ -1,0 +1,4 @@
+last_processed_index=10
+total_processed=10
+status=in_progress
+last_batch=1-10
