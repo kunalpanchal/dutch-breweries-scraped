@@ -1,0 +1,6 @@
+Stadsbrouwerij De Pelgrim
+Rotterdam historic brewery-restaurant in Delfshaven.
+KVK: 24250744
+Status: Active
+Website: https://www.pelgrimbier.nl/
+Notes: Working brewery, events, Pelgrim Fest. Homepage extracted.
