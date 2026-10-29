@@ -1,0 +1,7 @@
+Budelse Brouwerij
+City: Budel, Noord-Brabant
+Website: https://www.budels.nl/
+KVK: 17011764
+Status: Active family brewery since 1870. Independent.
+Beers listed: 24 on dutch.beer.
+Notes: Folder contains homepage.html, dutchbeer.html. Family Arts.

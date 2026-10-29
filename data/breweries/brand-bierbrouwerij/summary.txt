@@ -1,0 +1,7 @@
+Brand Bierbrouwerij
+City: Wijlre, Limburg
+Website: https://www.brand.nl/
+KVK: 14601316
+Status: Heineken-owned. Main production moved from Wijlre in 2024; microbrewery/specials remain. Historic claim as possibly oldest NL brewery (since 1340/1755).
+Beers (from dutch.beer): Alcoholvrij Weizen 0%, Dubbelbock 7.5%, Gose 4.8%, Herfstbier 6.2%, Imperator 6.5%, IPA 7%, IPA 0.0, Krachtig Blond 7.8%, Lentebock 6.5%, Limited Vieftiën 8%, NEIPA 5%, Ongefilterd Pilsener 5.2%, Oud Bruin 3.5%, Paaspop Blond 6.5%, Pilsener 5%, Porter 6%, Sjoes 4.5%, UP 5.5%, Weizen 5%, Winterbock 7.5%, etc.
+Notes: Folder contains homepage.html, dutchbeer.html.
