@@ -1,0 +1,2129 @@
+<!doctype html>
+<html class="no-js" lang="nl" fontify-lang="nl">
+<head><script data-source-attribution="shopify.exit_interstitial">(()=>{var s=Function.prototype.bind.bind(Function.prototype.call),yt=(c,r)=>{for(let d=c;d;d=Object.getPrototypeOf(d)){let g=Object.getOwnPropertyDescriptor(d,r);if(g)return g}throw new TypeError(`${r} is not defined`)},u=(c,r)=>s(yt(c,r).get),B=(c,r)=>s(yt(c,r).set);var Et=s(String.prototype.endsWith),xe=s(String.prototype.slice),v=s(RegExp.prototype.exec),Pe=/^_(self|top|parent)$/i,Le=/(^|\s)noreferrer(\s|$)/i,mt=/^(no-referrer(-when-downgrade)?|same-origin|(strict-)?origin(-when-cross-origin)?|unsafe-url)$/i,Oe=/^(never|default|always|origin-when-crossorigin)$/i,wt=/^(no-referrer|same-origin|never)$/i,ht=c=>Et(c,".")?xe(c,0,-1):c,bt=c=>{let r=ht(c),d=`.${r}`;return g=>{let m=ht(g);return m===r||Et(m,d)}},_t=(c,r,d)=>c!==void 0&&(c.protocol==="https:"||c.protocol==="http:")&&c.origin!==r&&!d(c.hostname),kt=(c,r,d)=>c!==null&&v(Le,c)!==null?!0:r!==null&&v(mt,r)!==null?v(wt,r)!==null:d,vt=(c,r)=>v(mt,c)!==null||v(Oe,c)!==null?v(wt,c)!==null:r,A=(c,{metaKey:r,ctrlKey:d,shiftKey:g,button:m})=>c&&v(Pe,c)===null?c:r||d||g||m===1?"_blank":"";var Ae="http://www.w3.org/2000/svg",Te="http://www.w3.org/1999/xlink",G=["rel","referrerpolicy","download","ping","hreflang","type"];function Nt(c){let r=window;if(r.top!==r)return;let d=document,g=r.navigation,m=location.origin,N=URL,q=u(N.prototype,"href"),St=u(N.prototype,"origin"),Rt=u(N.prototype,"protocol"),xt=u(N.prototype,"hostname"),Y=s(Event.prototype.preventDefault),Pt=s(Event.prototype.stopPropagation),j=s(Event.prototype.stopImmediatePropagation),V=s(Event.prototype.composedPath),Lt=u(Event.prototype,"type"),Ot=u(Event.prototype,"cancelable"),X=u(Event.prototype,"defaultPrevented"),At=u(Event.prototype,"bubbles"),Tt=u(Event.prototype,"currentTarget"),It=u(Event.prototype,"eventPhase"),{CAPTURING_PHASE:Wt}=Event,z=u(Event.prototype,"cancelBubble"),Mt=B(Event.prototype,"cancelBubble"),Ct=u(MouseEvent.prototype,"button"),Dt=u(MouseEvent.prototype,"metaKey"),Ft=u(MouseEvent.prototype,"ctrlKey"),Ht=u(MouseEvent.prototype,"shiftKey"),$t=g&&u(NavigateEvent.prototype,"destination"),Kt=g&&u(NavigationDestination.prototype,"url"),J=g&&u(NavigateEvent.prototype,"navigationType"),Ut=g&&u(NavigateEvent.prototype,"formData"),Q=g&&"sourceElement"in NavigateEvent.prototype?u(NavigateEvent.prototype,"sourceElement"):void 0,w=s(Element.prototype.getAttribute),Bt=s(Element.prototype.getAttributeNS),T=s(Element.prototype.setAttribute),Gt=u(Element.prototype,"localName"),qt=u(Element.prototype,"namespaceURI"),Yt=s(Document.prototype.querySelector),jt=s(Document.prototype.querySelectorAll),Vt=u(NodeList.prototype,"length"),Xt=s(NodeList.prototype.item),I=u(Node.prototype,"baseURI"),zt=s(Document.prototype.createElement),Jt=s(HTMLElement.prototype.click),Qt=s(r.open),Zt=s(location.assign),te=s(location.replace),ee=encodeURIComponent,ne=s(String.prototype.startsWith),Z=s(r.setTimeout),oe=s(r.addEventListener),re=s(r.removeEventListener),tt=s(EventTarget.prototype.addEventListener),et=s(EventTarget.prototype.removeEventListener),nt=Object.defineProperties,ot=t=>{let e=[],n=[HTMLElement.prototype,SVGElement.prototype,Document.prototype,r];for(let o=0;o<n.length;o+=1)try{e[e.length]={get:u(n[o],t),set:B(n[o],t)}}catch{}return e},se={click:ot("onclick"),auxclick:ot("onauxclick")},rt=WeakMap,ce=WeakSet,st=s(WeakMap.prototype.get),ie=s(WeakMap.prototype.set),ae=s(WeakMap.prototype.delete),le=s(WeakSet.prototype.add),ue=s(WeakSet.prototype.has),pe=bt(c.site),ct=q(new N(c.exitPath,m)),fe=`${ct}?`,P=(t,e)=>{try{let n=new N(t,e);return{href:q(n),origin:St(n),protocol:Rt(n),hostname:xt(n)}}catch{return}},de=(t,e,n)=>{let o=n?"&noreferrer=1":"";return`${ct}?q=${ee(t.href)}&trigger=${e}${o}`},it=()=>{let t=jt(d,'meta[name="referrer" i][content]'),e=!1;for(let n=0;n<Vt(t);n+=1)e=vt(w(Xt(t,n),"content"),e);return e},at=(t,e,{target:n,noReferrer:o,replaces:a})=>{let f=de(t,e,o);if(n){Qt(r,f,n,"noopener");return}(a?te:Zt)(location,f)},W=t=>_t(t,m,pe),L=0,M,C=!1,ge=t=>{if(L>0){M=t;return}t()},ye=t=>{if(L-=1,t&&(C=!0),L>0)return;let e=C?void 0:M;M=void 0,C=!1,e&&e()},he=t=>t!==void 0&&ne(t.href,fe),lt=t=>{try{return Gt(t)}catch{return}},ut=t=>kt(w(t,"rel"),w(t,"referrerpolicy"),it()),Ee=t=>{let e=Q?Q(t):null,n=e===null?void 0:lt(e);return n==="a"||n==="area"?ut(e):it()},me=t=>{let e=P(Kt($t(t)));if(he(e)){j(t);return}if(!Ot(t)||J(t)==="traverse"||!W(e)||Ut(t)!==null)return;Y(t);let n={target:"",noReferrer:Ee(t),replaces:J(t)==="replace"};ge(()=>at(e,"navigate",n))},R=t=>{let e=w(t,"href");return e===null&&qt(t)===Ae?Bt(t,Te,"href"):e},we=t=>{let e=V(t);for(let n=0;n<e.length;n+=1){let o=e[n],a=lt(o);if(a==="a"||a==="area"){let f=R(o);if(f!==null)return{node:o,href:f}}}},D=t=>{let e=w(t,"target");if(e!==null)return e;let n=Yt(d,"base[target]");return n?w(n,"target"):""},be=t=>{try{return{metaKey:Dt(t),ctrlKey:Ft(t),shiftKey:Ht(t),button:Ct(t)}}catch{return}},pt=new ce,_e=t=>{let e=!1,n=()=>{e=!0},o=()=>e||ue(pt,t);return nt(t,{__proto__:null,preventDefault:{__proto__:null,configurable:!0,value:n},defaultPrevented:{__proto__:null,configurable:!0,get:o},returnValue:{__proto__:null,configurable:!0,get:()=>!o(),set:a=>{a||n()}}}),o},ke={click:new rt,auxclick:new rt},ve=(t,e)=>{let n=se[t],o=ke[t],a=[],f=p=>{for(let l=0;l<a.length;l+=1)if(a[l]===p)return!0;return!1},b=(p,l,E)=>{let y=s(E);function O(k){let x=y(this,k);return x===!1&&typeof k=="object"&&k!==null&&le(pt,k),x}return{target:p,accessor:l,handler:E,wrapper:O,inFlight:0}},_=()=>{for(let p=0;p<e.length;p+=1)for(let l=0;l<n.length;l+=1){let E;try{E=n[l].get(e[p])}catch{continue}if(typeof E=="function"){let y=st(o,e[p]);(!y||y.wrapper!==E)&&(y=b(e[p],n[l],E),n[l].set(e[p],y.wrapper),ie(o,e[p],y)),f(y)||(y.inFlight+=1,a[a.length]=y)}break}};return _(),{wrap:_,unwrap:()=>{for(let p=0;p<a.length;p+=1){let l=a[p];l.inFlight-=1,!(l.inFlight>0)&&(st(o,l.target)===l&&ae(o,l.target),l.accessor.get(l.target)===l.wrapper&&l.accessor.set(l.target,l.handler))}}}},ft=(t,e,n)=>{let o=R(t),a=o===null?void 0:P(o,I(d));if(!W(a))return;let f={target:A(D(t),n),noReferrer:ut(t),replaces:!1};return{inWindow:f.target==="",go:()=>at(a,e,f)}},dt=t=>{let e=R(t);if(e===null||w(t,"download")===null)return!1;let n=P(e,I(d));return n!==void 0&&(n.origin===m||n.protocol==="blob:"||n.protocol==="data:")},Ne=(t,e)=>R(t)!==null&&!dt(t)&&A(D(t),e)==="",Se=(t,e)=>{let n=R(t);if(n===null)return!1;let o=zt(d,"a"),a=A(D(t),e);T(o,"href",n),T(o,"target",a||"_self");for(let f=0;f<G.length;f+=1){let b=w(t,G[f]);b!==null&&T(o,G[f],b)}return Jt(o),a===""&&!dt(t)},Re=(t,e,n,o)=>{L+=1;let a=V(t),f=a.length-1,b=0,_=!1,F=!1,p=i=>{F||(F=!0,ye(i))},l=i=>{if(_)return;_=!0;let S=X(t),h=S?void 0:ft(n,e,o),U;!S&&(h||i)&&(Y(t),U=_e(t)),Z(r,()=>{if(!U){p(!X(t)&&Ne(n,o));return}if(U()){p(!1);return}if(i&&(h=ft(n,e,o),!h)){p(Se(n,o));return}h.go(),p(h.inWindow)},0)},E=(i,S)=>{for(let h=0;h<a.length;h+=1)if(a[h]===i)return S===Wt?f-h:a.length+h;return-1},y=()=>{E(Tt(t),It(t))<=b&&l(!0)},O=i=>{i===t&&l(!1)},k=ve(e,a),x=i=>S=>{if(S===t){if(b=i,z(t)){l(!1);return}k.wrap()}},H=[],$=[],K=At(t);if(K){for(let i=0;i<f;i+=1)H[i]=x(f-i),$[i]=x(a.length+i),tt(a[i],e,H[i],!0),tt(a[i],e,$[i],!1);oe(r,e,O,!1)}if(Z(r,()=>{if(_||p(!1),_=!0,k.unwrap(),!!K){for(let i=0;i<f;i+=1)et(a[i],e,H[i],!0),et(a[i],e,$[i],!1);re(r,e,O,!1)}},0),!K){l(!0);return}nt(t,{__proto__:null,stopPropagation:{__proto__:null,configurable:!0,value:()=>{y(),Pt(t)}},stopImmediatePropagation:{__proto__:null,configurable:!0,value:()=>{l(!0),j(t)}},cancelBubble:{__proto__:null,configurable:!0,get:()=>z(t),set:i=>{i&&y(),Mt(t,i)}}})},gt=t=>{let e=Lt(t),n=be(t);if(!n||e==="auxclick"&&n.button!==1)return;let o=we(t);!o||!W(P(o.href,I(d)))||Re(t,e,o.node,n)};g?.addEventListener("navigate",me,!0),r.addEventListener("click",gt,!0),r.addEventListener("auxclick",gt,!0)}Nt({"site":"breugembier.nl","exitPath":"\/url"});})();
+//# sourceURL=exit-interstitial.js
+</script>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta name="theme-color" content="#1099d6">
+
+  
+    <link rel="shortcut icon" href="//www.breugembier.nl/cdn/shop/files/BREUGEM_LOGO_KLEUR_BLAUW_fb57952e-c47d-40cc-86a4-a7958b3ea7d5_32x32.png?v=1632684654" type="image/png" />
+  
+
+  <link rel="canonical" href="https://www.breugembier.nl/">
+
+  <title>
+  Online Speciaalbier Kopen - Breugem Bier - Bonding Beer
+  </title>
+
+  
+    <meta name="description" content="Speciaalbier, dat mensen dichter bij elkaar brengt ✔ IPA ✔ Blond ✔ Dubbel ✔ Quadrupel ✔ Tripel ✔ Witbier ✔ Herfstbock ✔ Lentebock. Kies en bestel uit een mooie selectie prijswinnende bieren!">
+  
+
+  <!-- /snippets/social-meta-tags.liquid -->
+
+
+
+
+<meta property="og:site_name" content="Breugem Bier">
+<meta property="og:url" content="https://www.breugembier.nl/">
+<meta property="og:title" content="Online Speciaalbier Kopen - Breugem Bier - Bonding Beer">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Speciaalbier, dat mensen dichter bij elkaar brengt ✔ IPA ✔ Blond ✔ Dubbel ✔ Quadrupel ✔ Tripel ✔ Witbier ✔ Herfstbock ✔ Lentebock. Kies en bestel uit een mooie selectie prijswinnende bieren!">
+
+<meta property="og:image" content="http://www.breugembier.nl/cdn/shop/files/Breugem_Email_image_2_1200x1200.jpg?v=1633255714">
+<meta property="og:image:secure_url" content="https://www.breugembier.nl/cdn/shop/files/Breugem_Email_image_2_1200x1200.jpg?v=1633255714">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Online Speciaalbier Kopen - Breugem Bier - Bonding Beer">
+<meta name="twitter:description" content="Speciaalbier, dat mensen dichter bij elkaar brengt ✔ IPA ✔ Blond ✔ Dubbel ✔ Quadrupel ✔ Tripel ✔ Witbier ✔ Herfstbock ✔ Lentebock. Kies en bestel uit een mooie selectie prijswinnende bieren!">
+
+  <style data-shopify>
+  :root {
+    --color-body-text: #666666;
+    --color-body: #ffffff;
+  }
+</style>
+
+
+  <link href="//www.breugembier.nl/cdn/shop/t/11/assets/theme.scss.css?v=167983059692374096171789912939" rel="stylesheet" type="text/css" media="all" />
+
+  <script>
+    window.theme = window.theme || {};
+    theme.strings = {
+      cartEmpty: "Je winkelwagen is leeg.",
+      savingHtml: "Je bespaart [savings]",
+      addToCart: "Aan winkelwagen toevoegen",
+      soldOut: "Uitverkocht",
+      unavailable: "Niet beschikbaar",
+      addressError: "Fout bij het opzoeken van dat adres",
+      addressNoResults: "Geen resultaten voor dat adres",
+      addressQueryLimit: "Je hebt de gebruikslimiet van de Google API overschreden. Overweeg een upgrade naar een \u003ca href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"\u003ePremium-pakket\u003c\/a\u003e.",
+      authError: "Er is een probleem opgetreden bij het verifiëren van je Google Maps API-sleutel."
+    };
+    theme.settings = {
+      cartType: "page",
+      moneyFormat: "€{{amount_with_comma_separator}}"
+    };
+  </script>
+
+  <script src="//www.breugembier.nl/cdn/shop/t/11/assets/lazysizes.min.js?v=155223123402716617051632513560" async="async"></script>
+
+  
+
+  <script src="//www.breugembier.nl/cdn/shop/t/11/assets/vendor.js?v=141188699437036237251632513562" defer="defer"></script>
+
+  <script src="//www.breugembier.nl/cdn/shopifycloud/storefront/assets/themes_support/option_selection-b017cd28.js" defer="defer"></script>
+
+  <script src="//www.breugembier.nl/cdn/shop/t/11/assets/theme.js?v=129662135846663698751632690895" defer="defer"></script>
+
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="HdAARdTL_-YiLtVhwdVaO9Uu2BzQK0-7SpUoXo2O41o">
+<meta name="google-site-verification" content="cWrE4SCEcOAiptgMj_jUajGOm6vHzfOufWqHAhHE2Ho">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/48621682850/digital_wallets/dialog">
+<meta id="in-context-paypal-metadata" data-shop-id="48621682850" data-venmo-supported="false" data-environment="production" data-locale="nl_NL" data-paypal-v4="true" data-currency="EUR">
+<link rel="ucp" href="/.well-known/ucp" version="2026-08-25"><link rel="alternate" hreflang="x-default" href="https://www.breugembier.nl/">
+<link rel="alternate" hreflang="nl" href="https://www.breugembier.nl/">
+<link rel="alternate" hreflang="en" href="https://www.breugembier.nl/en">
+<script async="async" src="/checkouts/internal/preloads.js?locale=nl-NL"></script>
+<link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
+<script async="async" src="https://shop.app/checkouts/internal/preloads.js?locale=nl-NL&shop_id=48621682850" crossorigin="anonymous"></script>
+<script id="shopify-features" type="application/json">{"accessToken":"5c68e44b696e576d8198f759b1bff0b4","betas":["rich-media-storefront-analytics"],"domain":"www.breugembier.nl","predictiveSearch":true,"shopId":48621682850,"locale":"nl"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "brewerij-breugem.myshopify.com";
+Shopify.locale = "nl";
+Shopify.currency = {"active":"EUR","rate":"1.0"};
+Shopify.country = "NL";
+Shopify.theme = {"name":"Boundless","id":127025709218,"schema_name":"Boundless","schema_version":"10.6.0","theme_store_id":766,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "www.breugembier.nl/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
+Shopify.SignInWithShop = Shopify.SignInWithShop || {};
+Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
+Shopify.SignInWithShop.User.recognized = false;</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.ShopifyPay = window.ShopifyPay || {};
+  window.ShopifyPay.apiHost = "shop.app\/pay";
+  window.ShopifyPay.redirectState = null;
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  window.Shopify.SignInWithShop = window.Shopify.SignInWithShop || {};
+  window.Shopify.SignInWithShop.assetMetrics = { sampleRate: 0.25 };
+  window.Shopify.SignInWithShop.eligible = true;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
+<script defer="defer" async type="module" src="https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.nl.esm.js"></script>
+<script type="module">
+  await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.nl.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true,"backendHost":"d3d3LmJyZXVnZW1iaWVyLm5s"});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.nl.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.nl.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.nl.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.nl.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.nl.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.nl.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.nl.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.nl.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.nl.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.nl.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.nl.esm.js"],"listener":["modules/v2/loader.listener.nl.esm.js"],"pay-button":["modules/v2/loader.pay-button.nl.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.nl.esm.js"],"shop-button":["modules/v2/loader.shop-button.nl.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.nl.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.nl.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.nl.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.nl.esm.js"],"shop-login":["modules/v2/loader.shop-login.nl.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.nl.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.nl.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/4d5ec0101bdfd23f12f6ed6db\/e33e4c08177c38785e4ee5f77.js?shop=brewerij-breugem.myshopify.com","https:\/\/ecommplugins-scripts.trustpilot.com\/v2.1\/js\/header.min.js?settings=eyJrZXkiOiJMZkh2V3R2TlRsQk5FWFp5IiwicyI6InNrdSJ9\u0026shop=brewerij-breugem.myshopify.com","https:\/\/ecommplugins-trustboxsettings.trustpilot.com\/brewerij-breugem.myshopify.com.js?settings=1617044665543\u0026shop=brewerij-breugem.myshopify.com","https:\/\/widget.trustpilot.com\/bootstrap\/v5\/tp.widget.sync.bootstrap.min.js?shop=brewerij-breugem.myshopify.com","https:\/\/design-packs.herokuapp.com\/design_packs_file.js?shop=brewerij-breugem.myshopify.com","https:\/\/cdn.shopify.com\/s\/files\/1\/0486\/2168\/2850\/t\/11\/assets\/globo.formbuilder.init.js?v=1641937386\u0026shop=brewerij-breugem.myshopify.com","https:\/\/static.klaviyo.com\/onsite\/js\/klaviyo.js?company_id=YuuLtJ\u0026shop=brewerij-breugem.myshopify.com","https:\/\/static.klaviyo.com\/onsite\/js\/klaviyo.js?company_id=YuuLtJ\u0026shop=brewerij-breugem.myshopify.com","\/\/cdn.shopify.com\/proxy\/e557a11f829b48e848e2a7e137b8fafe5ec2adbabfe819c91137c86fefe295fc\/s.pandect.es\/v2.2\/gdpr-cookie-consent.min.js?shop=brewerij-breugem.myshopify.com\u0026sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":48621682850,"offset":3600,"reqid":"b48e19e9-f58d-4eab-afe3-3a1924ba6bae-1793337318","pageurl":"www.breugembier.nl\/","u":"ea0aea1d8e70","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Beschermd door hCaptcha',privacyText:'Privacy',termsText:'Voorwaarden'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-FYHzja/5XSmzkjz6zHj7s4rACJGFuVoYZdumgoO2Ecs=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//www.breugembier.nl/cdn/shopifycloud/storefront/assets/storefront/load_feature-ed94c51f.js" crossorigin="anonymous"></script>
+<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//www.breugembier.nl/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script crossorigin="anonymous" defer="defer" src="//www.breugembier.nl/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-f0e26bdf.js?v=20250812"></script>
+<script id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="//cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab40a.js" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
+<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/www.breugembier.nl\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-23c12384.js","sha256-r8Pww6V2udgtSdaVbcRtdZ4Kg+gXP7aLPZOtQSJPrbM=");})();
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://www.breugembier.nl/cdn/shopifycloud/portable-wallets/latest/portable-wallets.nl.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="https://www.breugembier.nl/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
+<style id="shopify-accelerated-checkout-cart">
+        #shopify-buyer-consent {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+#shopify-buyer-consent.hidden {
+  display: none;
+}
+
+#shopify-subscription-policy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#shopify-subscription-policy-button::before {
+  box-shadow: none;
+}
+
+      </style>
+
+<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script><style type="text/css" id="nitro-fontify" >
+	/** {"overwrite":true,"mobile":false,"desktop":false,"stylesheet":null,"languages":[]}**/
+				 
+		 
+					@font-face {
+				font-family: 'Indy Pimp Bold';
+				src: url(https://cdn.shopify.com/s/files/1/2800/8456/t/7/assets/brewerij-breugem-indy-pimp-bold.ttf?v=1632511586);
+			}
+			h1,h2,h3,h4,h5,h6 {
+				font-family: 'Indy Pimp Bold' !important;
+				
+				/** 3 **/
+			}
+		 
+		
+		/** {"overwrite":true,"mobile":false,"desktop":false,"stylesheet":"letter-spacing: 0.1em;","languages":[]}**/
+				 
+		 
+					@font-face {
+				font-family: 'Headline Indy Pimp';
+				src: url(https://cdn.shopify.com/s/files/1/2800/8456/t/7/assets/brewerij-breugem-headline-indy-pimp.ttf?v=1633252865);
+			}
+			h1,h2,h3,h4,h5,h6 {
+				font-family: 'Headline Indy Pimp' !important;
+				letter-spacing: 0.1em;
+				/** 3 **/
+			}
+		 
+		
+		/** {"overwrite":true,"mobile":false,"desktop":false,"stylesheet":"letter-spacing: 0.1em;","languages":[]}**/
+				 
+		 
+					@font-face {
+				font-family: 'Indy Pimp Bold';
+				src: url(https://cdn.shopify.com/s/files/1/2800/8456/t/7/assets/brewerij-breugem-indy-pimp-bold.ttf?v=1632511586);
+			}
+			h1,h2,h3,h4,h5,h6,a {
+				font-family: 'Indy Pimp Bold' !important;
+				letter-spacing: 0.1em;
+				/** 3 **/
+			}
+		 
+		
+	</style>
+
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	var Globo = Globo || {};
+    var globoFormbuilderRecaptchaInit = function(){};
+    Globo.FormBuilder = Globo.FormBuilder || {};
+    Globo.FormBuilder.url = "https://form.globosoftware.net";
+    Globo.FormBuilder.shop = {
+        settings : {
+            reCaptcha : {
+                siteKey : ''
+            },
+            hideWaterMark : false,
+            encryptionFormId : false,
+            copyright: 'Powered by Globo <a href="https://apps.shopify.com/form-builder-contact-form" target="_blank">Form</a>',
+            scrollTop: true
+        },
+        pricing:{
+            features:{
+                fileUpload : 2,
+                removeCopyright : false,
+                bulkOrderForm: false,
+                cartForm: false,
+            }
+        },
+        configuration: {
+            money_format:  "€{{amount_with_comma_separator}}"
+        },
+        encryption_form_id : false
+    };
+    Globo.FormBuilder.forms = [];
+
+    
+    Globo.FormBuilder.page = {
+        title : document.title,
+        href : window.location.href,
+        type: "index"
+    };
+    Globo.FormBuilder.assetFormUrls = [];
+            Globo.FormBuilder.assetFormUrls[29799] = "//www.breugembier.nl/cdn/shop/t/11/assets/globo.formbuilder.data.29799.js?v=158539301843526792211644956717";
+            
+</script>
+
+<link rel="preload" href="//www.breugembier.nl/cdn/shop/t/11/assets/globo.formbuilder.css?v=41083919034925090011644940933" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="//www.breugembier.nl/cdn/shop/t/11/assets/globo.formbuilder.css?v=41083919034925090011644940933"></noscript>
+<link rel="stylesheet" href="//www.breugembier.nl/cdn/shop/t/11/assets/globo.formbuilder.css?v=41083919034925090011644940933">
+
+
+<script>
+    Globo.FormBuilder.__webpack_public_path__ = "//www.breugembier.nl/cdn/shop/t/11/assets/"
+</script>
+<script src="//www.breugembier.nl/cdn/shop/t/11/assets/globo.formbuilder.index.js?v=104759081911158387851642047812" defer></script>
+
+<!-- BEGIN app block: shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b --><link rel='modulepreload' href='https://cdn.shopify.com/storefront/web-components/chat.js' crossorigin fetchpriority='low'>
+
+<script id='shopify-chat-app-embed-data' type='application/json'>
+  {
+    "settings": {
+      "invertActivatorColors": true,
+      "greetingMessage": "👋 Hallo, stuur ons een bericht als je vragen hebt. We helpen je graag verder.",
+      "showFeaturedProducts": true,
+      "featuredProducts": [],
+      "horizontalPosition": "bottom_right",
+      "icon": "chat_bubble",
+      "buttonLabel": ""
+    }
+  }
+</script>
+
+<style data-shopify>
+  
+
+  /* Shadow DOM content does not prevent theme-wide :empty rules from matching the host. */
+  shopify-chat:defined:empty {
+    display: grid;
+  }
+
+  :root {
+    --shopify-chat-bg-color: #FFFFFF;
+    --shopify-chat-text-color: #000000;
+    --shopify-chat-accent-bg-color: #000000;
+    --shopify-chat-accent-text-color: #FFFFFF;
+    --shopify-chat-activator-offset: 20px;
+
+    
+
+    --shopify-chat-activator-font-size: 16px;
+    --shopify-chat-border-radius: 16px;
+  }
+
+  
+</style>
+
+<script src='https://cdn.shopify.com/storefront/web-components/chat.js' type='module' crossorigin fetchpriority='low' async></script>
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/hulk-age-verification/blocks/app-embed/f8382756-4f8b-4e6c-be6f-029abf22871c --><!-- BEGIN app snippet: hulk_age_verification_proxy --><script>
+	window.av_url = "https://www.breugembier.nl"
+	window.popup_data = {"popup_setting":{"header_text":"Hoi!","header_text_size":18,"header_text_color":"#FFECC0","header_text_weight":"Bold","sub_header_text":"Voordat je verder gaat, willen we graag van je weten of je 18 jaar of ouder bent. ","sub_header_text_color":"#FFECC0","sub_header_text_size":16,"sub_header_text_weight":"Regular","btn1_text":"Ik ben 18+","btn1_text_color":"#009ADA","btn1_bg_color":"#FFECC0","btn1_border_radius":5,"btn2_text":"Ik ben nog geen 18","btn2_text_color":"#FFECC0","btn2_bg_color":"#009ADA","btn2_border_radius":5,"popup_bg_color":"#009ADA","popup_border_radius":5,"popup_top_bottom_padding":20,"popup_left_right_padding":20,"popup_logo_img":{"large":{"url":"https:\/\/dr8h81twidjpw.cloudfront.net\/uploads\/popup_setting\/popup_logo_img\/large_BREUGEM_LOGO_KLEUR_2110030941.png"},"url":"https:\/\/dr8h81twidjpw.cloudfront.net\/uploads\/popup_setting\/popup_logo_img\/BREUGEM_LOGO_KLEUR_2110030941.png"},"background_cover_img":{"url":null},"background_bg_color":"#FFECC0","background_color_opacity":0.2,"btn1_border_width":"2","btn1_border_color":"#FFECC0","btn2_border_width":"2","btn2_border_color":"#FFECC0","popup_width":"400","popup_border_width":0,"popup_border_color":"#ffffff","is_enabled":true,"is_enabled_birthday":true,"is_enabled_facebook":true,"min_age":18,"exit_url":"https:\/\/www.google.com","age_validation_message":"You are too young to view this website.","cookie_lifetime":1,"popup_display":"all","template":1,"verification_option":"birthdate","facebook_authentication":true,"google_authentication":true,"buttons_background":"#5C6AC4","pages_urls":"","mobile_heading_text":18,"mobile_sub_heading_text":16,"is_monthly_email":false,"header_text_font_family":null,"sub_header_text_font_family":null,"date_format":"default","background_card_opacity":1,"selected_country_popup":false,"has_selected_tag_feature":false,"selected_tags":null,"btn1_text_font_family":null,"btn2_text_font_family":null,"btn1_height":null,"btn1_width":null,"btn2_height":null,"btn2_width":null,"popup_height":null,"popup_has_full_width":false,"twitter_authentication":false,"instagram_authentication":false,"allow_social_media_login":false,"is_enable_geo_coding":false,"no_peek_mode":false},"have_any_plan":true,"plan_features":["fully_customizable_popup","verification_by_birthday_input","verified_and_unverified_status","restrict_under_age_with_message","age_validation_setting","mobile_responsive"],"regionals":[],"min_age":18,"verification_option":"birthdate","is_enabled":true,"v2":true}
+	window.language_settings = {"en":{"primary_language":true,"header_text":"Hoi!","sub_header_text":"Voordat je verder gaat, willen we graag van je weten of je 18 jaar of ouder bent. ","btn1_text":"Ik ben 18+","btn2_text":"Ik ben nog geen 18","age_validation_message":"You are too young to view this website."}}
+	window.av_market_country = "NL"; window.av_page = {"template":"index","product":null,"collection":null,"cart":null}
+
+	window.hulk_avt_tags = []
+	
+</script>
+<!-- END app snippet --><script src="https://cdn.shopify.com/extensions/01a17802-e278-7e85-a0e7-69958f979d68/hulk-age-verification-148/assets/av_client.js" async></script>
+<!-- END app block --><link href="https://cdn.shopify.com/extensions/01a17802-e278-7e85-a0e7-69958f979d68/hulk-age-verification-148/assets/hulk_age_popup.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>
+  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
+</script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 48621682850,storefrontBaseUrl: "https://www.breugembier.nl",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://www.breugembier.nl/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["7b21cf0b","4c64608a"],webPixelsConfigList: [{"id":"3877634395","configuration":"{\"mailchimp_store_id\":\"store_75tb2el2fbcnb1xvx12z\", \"mailchimp_user_id\":\"150558898\",\"mailchimp_list_id\":\"8f198ec9bb\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"427ad19e526d84637a6599f7a930552e","type":"APP","apiClientId":2585307,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"1155170651","configuration":"{\"config\":\"{\\\"pixel_id\\\":\\\"AW-564494202\\\",\\\"target_country\\\":\\\"NL\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":\\\"AW-564494202\\\/Be9qCMu8jY0CEPr-lY0C\\\"},{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":\\\"AW-564494202\\\/E0GWCMi8jY0CEPr-lY0C\\\"},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"AW-564494202\\\/rTBjCMK8jY0CEPr-lY0C\\\",\\\"MC-WWSK8YNE5C\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"AW-564494202\\\/Vq-VCIu7jY0CEPr-lY0C\\\",\\\"MC-WWSK8YNE5C\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"AW-564494202\\\/dLqUCIi7jY0CEPr-lY0C\\\",\\\"MC-WWSK8YNE5C\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":\\\"AW-564494202\\\/6mJoCM68jY0CEPr-lY0C\\\"},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":\\\"AW-564494202\\\/qCYnCMW8jY0CEPr-lY0C\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a3321ca85cf5aaf6b57585fcd8d67b3a","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Breugem Bier","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"brewerij-breugem.myshopify.com","countryCode":"NL","storefrontUrl":"https:\/\/www.breugembier.nl"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[{"id":"7118020935842","handle":"knipoog","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40948170227874","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7118019952802","handle":"zoentje","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41694579654818","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7118024474786","handle":"man-hug","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40948178518178","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7118023622818","handle":"high-five","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"40948174848162","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7118025261218","handle":"boks","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"41694601478306","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"7118022508706","handle":"handdruk","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"46826182869339","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]}],"purchasingCompany":null},},"https://www.breugembier.nl/cdn","610a19cewf693d529pf324840bm6169d9b4",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"127025709218","themeStoreId":"766","themePublished":"true","eventMetadataId":"e54ddfcb-48a3-44b4-9b64-461f3026a354","pageType":"home","shopId":"48621682850","storefrontBaseUrl":"https:\/\/www.breugembier.nl","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"7b21cf0b\", \"4c64608a\"]","isMerchantRequest":"false","hashVersion":"610a19cewf693d529pf324840bm6169d9b4","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'EUR';
+  var meta = {"page":{"pageType":"home","requestId":"b48e19e9-f58d-4eab-afe3-3a1924ba6bae-1793337318"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        if (method == 'track' || method == 'page') {
+          var pageUrl;
+          try {
+            pageUrl = window.location.href;
+          } catch (e) {}
+          var pageReferrer;
+          try {
+            pageReferrer = document.referrer;
+          } catch (e) {}
+          try {
+            if (window.__TREKKIE_SHIM_QUEUE == null) {
+              window.__TREKKIE_SHIM_QUEUE = [];
+            }
+            window.__TREKKIE_SHIM_QUEUE.push({
+              from: 'trekkie-stub',
+              method: method,
+              args: args.slice(1),
+              pageContext: {
+                url: pageUrl,
+                referrer: pageReferrer
+              }
+            });
+          } catch (e) {
+            // no-op
+          }
+        }
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.onerror = function(e) {
+  var scriptFallback = document.createElement('script');
+  scriptFallback.type = 'text/javascript';
+  scriptFallback.onerror = function(error) {
+          var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 48621682850,
+      theme_id: 127025709218,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//www.breugembier.nl/cdn/s/trekkie.storefront.188d9897a23fc8c6cfb5e02821b2b8baec7b147d.min.js"});
+
+  };
+  scriptFallback.async = true;
+  scriptFallback.src = '//www.breugembier.nl/cdn/s/trekkie.storefront.188d9897a23fc8c6cfb5e02821b2b8baec7b147d.min.js';
+  first.parentNode.insertBefore(scriptFallback, first);
+};
+script.async = true;
+script.src = '//www.breugembier.nl/cdn/s/trekkie.storefront.188d9897a23fc8c6cfb5e02821b2b8baec7b147d.min.js';
+first.parentNode.insertBefore(script, first);
+
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":48621682850,"isMerchantRequest":null,"themeId":127025709218,"themeCityHash":"10123245680076113880","contentLanguage":"nl","currency":"EUR","eventMetadataId":"e54ddfcb-48a3-44b4-9b64-461f3026a354"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["7b21cf0b","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"b48e19e9-f58d-4eab-afe3-3a1924ba6bae-1793337318","shopifyEmitted":true});
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "//www.breugembier.nl/cdn/shopifycloud/storefront/assets/shop_events_listener-819172a8.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+})();</script>
+  <script>
+  if (!window.ga || (window.ga && typeof window.ga !== 'function')) {
+    window.ga = function ga() {
+      (window.ga.q = window.ga.q || []).push(arguments);
+      if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+        window.Shopify.analytics.publish("ga_stub_called", {}, {sendTo: "google_osp_migration"});
+      }
+      console.error("Shopify's Google Analytics stub called with:", Array.from(arguments), "\nSee https://help.shopify.com/manual/promoting-marketing/pixels/pixel-migration#google for more information.");
+    };
+    if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+      window.Shopify.analytics.publish("ga_stub_initialized", {}, {sendTo: "google_osp_migration"});
+    }
+  }
+</script>
+<script
+  defer
+  src="https://www.breugembier.nl/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.14.0.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="48621682850"
+  data-render-region="gcp-us-east1"
+  data-page-type="index"
+  data-theme-instance-id="127025709218"
+  data-theme-name="Boundless"
+  data-theme-version="10.6.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://www.breugembier.nl/api/collect"
+></script>
+<script id="shopify-chat-page-data" type="application/json">{"greetingMessage":"Welkom bij Breugem Bier. Hoe kan ik je helpen?","customerServiceEmail":"hannes@breugembier.nl","onlineStorePasswordProtected":false,"continueAsChip":true,"exportCommand":false,"shopName":"Breugem Bier","translations":[{"key":"agent_chat.panel.open_chat","value":"Chat openen"},{"key":"agent_chat.panel.ask_anything","value":"Stel een vraag"},{"key":"agent_chat.panel.title","value":"Storekick"},{"key":"agent_chat.panel.unread_replies","value":"Ongelezen antwoorden"},{"key":"agent_chat.panel.back_to_chat","value":"Terug naar chat"},{"key":"agent_chat.panel.see_history","value":"Chatgeschiedenis bekijken"},{"key":"agent_chat.panel.new_chat","value":"Nieuwe chat aanmaken"},{"key":"agent_chat.panel.close","value":"Chat sluiten"},{"key":"agent_chat.panel.undock","value":"Chat losmaken"},{"key":"agent_chat.panel.dock","value":"Chat vastzetten"},{"key":"agent_chat.panel.expand","value":"Chat uitklappen"},{"key":"agent_chat.panel.contract","value":"Chat inklappen"},{"key":"agent_chat.panel.jump_to_latest","value":"Naar nieuwste gaan"},{"key":"agent_chat.panel.loading_chat","value":"Chat laden"},{"key":"agent_chat.input.label","value":"Typ je bericht"},{"key":"agent_chat.input.placeholder","value":"Stel een vraag..."},{"key":"agent_chat.input.send","value":"Verzenden"},{"key":"agent_chat.input.stop","value":"Genereren stoppen"},{"key":"agent_chat.thinking","value":"Denken..."},{"key":"agent_chat.first_response_delayed","value":"Agent doet er langer over om te reageren…"},{"key":"agent_chat.searching","value":"Zoeken..."},{"key":"agent_chat.message.sent_timestamp","value":"Verzonden · {{time}}"},{"key":"agent_chat.message.automated_label","value":"Geautomatiseerd"},{"key":"agent_chat.message.automated_timestamp","value":"Geautomatiseerd · {{time}}"},{"key":"agent_chat.liveAgentHandoff","value":"Iemand van ons team is zo bij je"},{"key":"agent_chat.human_handoff.action","value":"Chatten met ons team"},{"key":"agent_chat.human_handoff.request","value":"Ik wil graag iemand van jullie team spreken"},{"key":"agent_chat.human_handoff.ai_assistant","value":"AI-assistent"},{"key":"agent_chat.greeting.default","value":"Hallo!"},{"key":"agent_chat.greeting.with_name","value":"Hallo {{name}}!"},{"key":"agent_chat.greeting.welcome","value":"Je kunt vragen stellen over winkelen, maten\/afmetingen, verzending, retouren of je bestelstatus."},{"key":"agent_chat.greeting.welcome_back","value":"Welkom terug bij %{shop_name}! Hoe kan ik je helpen?"},{"key":"agent_chat.greeting.welcome_back_no_shop","value":"Welkom terug! Hoe kan ik je helpen?"},{"key":"agent_chat.greeting.welcome_to_shop","value":"Welkom bij %{shop_name}. Hoe kan ik je helpen?"},{"key":"agent_chat.greeting.generic","value":"Hoe kan ik je helpen?"},{"key":"agent_chat.disclaimer.text","value":"Deze chat wordt mogelijk gemaakt door kunstmatige intelligentie van Shopify en kan fouten maken. Je berichten zijn zichtbaar voor {{shop_name}}. Zie het"},{"key":"agent_chat.disclaimer.text_human","value":"Je berichten zijn zichtbaar voor {{shop_name}} en Shopify voor het leveren en verbeteren van de diensten. Zie"},{"key":"agent_chat.disclaimer.link_text","value":"privacybeleid"},{"key":"agent_chat.error.response_unavailable","value":"Reactie niet beschikbaar"},{"key":"agent_chat.error.generic","value":"Er is iets misgegaan."},{"key":"agent_chat.error.response_failed","value":"Kon dit bericht niet laden"},{"key":"agent_chat.error.message_send_failed","value":"Je bericht kon niet worden verzonden"},{"key":"agent_chat.error.attachment_upload_failed","value":"Je bijlage is niet geüpload"},{"key":"agent_chat.error.first_response_stalled","value":"Agent kon niet reageren"},{"key":"agent_chat.error.try_again","value":"Opnieuw proberen"},{"key":"agent_chat.error.unavailable","value":"De chat is momenteel niet beschikbaar. Probeer het later opnieuw."},{"key":"agent_chat.error.usage_limit","value":"Berichtenlimiet bereikt. Probeer het later opnieuw of stuur een e-mail naar {{email}}"},{"key":"agent_chat.error.usage_limit_no_email","value":"Berichtenlimiet bereikt. Probeer het later opnieuw"},{"key":"agent_chat.error.cost_quota_unhandled","value":"Chat is momenteel niet beschikbaar: stuur een e-mail naar {{email}}"},{"key":"agent_chat.error.cost_quota_unhandled_no_email","value":"Chat is momenteel niet beschikbaar"},{"key":"agent_chat.error.cost_quota_handover","value":"De AI-assistent is momenteel niet beschikbaar, maar ons team reageert snel"},{"key":"agent_chat.unavailable.title","value":"Chat is momenteel niet beschikbaar"},{"key":"agent_chat.unavailable.description","value":"Er is iets misgegaan bij het laden van de chat."},{"key":"agent_chat.history.heading","value":"Chatgeschiedenis"},{"key":"agent_chat.history.loading","value":"Gespreksgeschiedenis laden"},{"key":"agent_chat.history.aria_label","value":"Gespreksgeschiedenis"},{"key":"agent_chat.history.no_conversations","value":"Geen gesprekken"},{"key":"agent_chat.history.conversation.one","value":"gesprek"},{"key":"agent_chat.history.conversation.other","value":"gesprekken"},{"key":"agent_chat.history.error_message","value":"Er is iets misgegaan."},{"key":"agent_chat.history.try_again","value":"Opnieuw proberen"},{"key":"agent_chat.history.no_past","value":"Geen eerdere gesprekken"},{"key":"agent_chat.history.start_new","value":"Nieuwe chat starten"},{"key":"agent_chat.history.untitled","value":"Naamloos gesprek"},{"key":"agent_chat.history.resume","value":"Hervatten: {{title}}"},{"key":"agent_chat.history.resume_with_time","value":"Hervatten: {{title}}, {{time}}"},{"key":"agent_chat.history.delete","value":"Gesprek verwijderen: {{title}}"},{"key":"agent_chat.history.delete_failed","value":"Kan gesprek niet verwijderen"},{"key":"agent_chat.feedback.group_label","value":"Berichtfeedback"},{"key":"agent_chat.feedback.thumbs_up","value":"Duim omhoog"},{"key":"agent_chat.feedback.thumbs_down","value":"Duim omlaag"},{"key":"agent_chat.feedback.add_comment","value":"Opmerking toevoegen"},{"key":"agent_chat.feedback.thanks","value":"Bedankt voor je feedback"},{"key":"agent_chat.feedback.placeholder_up","value":"Vertel ons wat er goed ging"},{"key":"agent_chat.feedback.placeholder_down","value":"Vertel ons wat er beter kan"},{"key":"agent_chat.feedback.comment_label","value":"Feedbackopmerking"},{"key":"agent_chat.feedback.cancel","value":"Annuleren"},{"key":"agent_chat.feedback.submit","value":"Indienen"},{"key":"agent_chat.feedback.character_count","value":"{{current}}\/{{max}}"},{"key":"agent_chat.feedback.character_limit_reached","value":"Maximumlengte bereikt. Feedback is beperkt tot {{max}} tekens."},{"key":"agent_chat.buyer_profile.button.open","value":"Kopersprofiel"},{"key":"agent_chat.buyer_profile.title","value":"Kopersprofiel"},{"key":"agent_chat.buyer_profile.empty","value":"Geen kopersprofiel beschikbaar."},{"key":"agent_chat.buyer_profile.close","value":"Sluiten"},{"key":"agent_chat.suggestions.empty_state_label","value":"Voorgestelde vragen"},{"key":"agent_chat.suggestions.quick_reply_label","value":"Voorgestelde antwoorden"},{"key":"agent_chat.auth.sign_in_to_continue","value":"Inloggen om door te gaan"},{"key":"agent_chat.auth.sign_in","value":"Inloggen"},{"key":"agent_chat.auth.skip_and_chat","value":"Overslaan en beginnen met chatten"},{"key":"agent_chat.auth.pre_chat_title","value":"Inloggen om je chats te personaliseren en op te slaan"},{"key":"agent_chat.auth.pre_chat_subtitle","value":"Inloggen of een account aanmaken"},{"key":"agent_chat.auth.staff_chat_required_title","value":"Mis geen antwoord"},{"key":"agent_chat.auth.staff_chat_required_subtitle","value":"Log in om met ons team te chatten. We sturen je een e-mail als je de chat verlaat."},{"key":"agent_chat.auth.share_disclaimer","value":"Als je doorgaat, deelt Shop je naam en e-mailadres met deze winkel. Bekijk hun {{terms_link}} en {{privacy_link}}"},{"key":"agent_chat.auth.terms_link","value":"algemene voorwaarden"},{"key":"agent_chat.auth.privacy_link","value":"privacybeleid"},{"key":"agent_chat.auth.declined_pre_chat","value":"Ik kan je pas met de winkel doorverbinden als je inlogt."},{"key":"agent_chat.reply_by_email.continuation_prompt","value":"Als je de chat verlaat, sturen we je een e-mail wanneer er een antwoord is."},{"key":"agent_chat.reply_by_email.sign_in_prompt","value":"Log in om een e-mail te ontvangen zodra er een reactie is."},{"key":"agent_chat.order_lookup.track_order","value":"Mijn bestelling volgen"},{"key":"agent_chat.order_lookup.track_another_order","value":"Andere bestelling volgen"},{"key":"agent_chat.order_lookup.new_conversation","value":"Nieuw gesprek"},{"key":"agent_chat.order_lookup.follow_up_label","value":"Acties voor bestelling-lookup"},{"key":"agent_chat.order_lookup.enter_order_information","value":"Bestelgegevens invoeren"},{"key":"agent_chat.order_lookup.prompt","value":"Vul je bestelgegevens in om je bestelstatus te bekijken."},{"key":"agent_chat.order_lookup.form_title","value":"Mijn bestelling volgen"},{"key":"agent_chat.order_lookup.form_subtitle","value":"Vul je gegevens in."},{"key":"agent_chat.order_lookup.order_number_label","value":"Bestelnummer"},{"key":"agent_chat.order_lookup.email_label","value":"E-mailadres"},{"key":"agent_chat.order_lookup.submit","value":"Mijn bestelling volgen"},{"key":"agent_chat.order_lookup.cancel","value":"Annuleren"},{"key":"agent_chat.order_lookup.invalid_order_number","value":"Voer een geldig bestelnummer in met alleen cijfers en letters, zonder spaties (bijv. 1006)."},{"key":"agent_chat.order_lookup.invalid_order_number_whitespace","value":"Voer een geldig bestelnummer in met alleen cijfers en letters, zonder spaties (bijv. 1006)."},{"key":"agent_chat.order_lookup.invalid_email","value":"Voer een geldig e-mailadres in"},{"key":"agent_chat.order_lookup.generic_error","value":"Er is een probleem opgetreden bij het opzoeken van je bestelling. Probeer het opnieuw."},{"key":"agent_chat.order_lookup.rate_limited_error","value":"Te veel pogingen. Probeer het later opnieuw."},{"key":"agent_chat.order_lookup.locked_composer_status","value":"Bestelling-lookup wordt uitgevoerd. Start een nieuw gesprek om iets anders te vragen."},{"key":"agent_chat.legacy_contact.form_title","value":"Voordat we beginnen"},{"key":"agent_chat.legacy_contact.form_subtitle","value":"Vul je gegevens in, zodat we kunnen reageren als je de chat verlaat."},{"key":"agent_chat.legacy_contact.first_name_label","value":"Voornaam"},{"key":"agent_chat.legacy_contact.last_name_label","value":"Achternaam"},{"key":"agent_chat.legacy_contact.email_label","value":"E-mail"},{"key":"agent_chat.legacy_contact.marketing_opt_in","value":"E-mail me met nieuws en aanbiedingen"},{"key":"agent_chat.legacy_contact.submit","value":"Chat starten"},{"key":"agent_chat.legacy_contact.cancel","value":"Annuleren"},{"key":"agent_chat.legacy_contact.invalid_first_name","value":"Voer een geldige voornaam in."},{"key":"agent_chat.legacy_contact.invalid_last_name","value":"Voer een geldige achternaam in."},{"key":"agent_chat.legacy_contact.invalid_email","value":"Voer een geldig e-mailadres in."},{"key":"agent_chat.legacy_contact.invalid_email_length","value":"E-mailadres is te lang."},{"key":"agent_chat.legacy_contact.generic_error","value":"Er is iets misgegaan."},{"key":"agent_chat.legacy_contact.rate_limited_error","value":"Te veel pogingen. Probeer het later opnieuw."},{"key":"agent_chat.discountCard.useDiscount","value":"Korting gebruiken"},{"key":"agent_chat.discountCard.discountApplicationContext","value":"Wordt automatisch toegepast bij de checkout"},{"key":"agent_chat.cart.checkout","value":"Checkout"},{"key":"agent_chat.product.add_to_cart","value":"Aan winkelwagen toevoegen"},{"key":"agent_chat.product.view_details","value":"Gegevens bekijken"},{"key":"agent_chat.product.out_of_stock","value":"Niet op voorraad"},{"key":"agent_chat.product.compare_suggestions","value":"Suggesties vergelijken"},{"key":"agent_chat.product.hide_suggestions","value":"Suggesties verbergen"},{"key":"agent_chat.product.sold_out","value":"Uitverkocht"},{"key":"agent_chat.order.item.one","value":"artikel"},{"key":"agent_chat.order.item.other","value":"artikelen"},{"key":"agent_chat.order.less_items.one","value":"- {{count}} artikel verbergen"},{"key":"agent_chat.order.less_items.other","value":"- {{count}} artikelen verbergen"},{"key":"agent_chat.order.more_items.one","value":"+ {{count}} extra artikel"},{"key":"agent_chat.order.more_items.other","value":"+ {{count}} extra artikelen"},{"key":"agent_chat.order.view_order","value":"Bestelling {{orderId}} bekijken"},{"key":"agent_chat.order.track_shipment","value":"Zending volgen"},{"key":"agent_chat.order.of_total","value":"{{index}} van {{total}}"},{"key":"agent_chat.order.label","value":"Bestelling {{number}}"},{"key":"agent_chat.order.count.one","value":"{{count}} bestelling"},{"key":"agent_chat.order.count.other","value":"{{count}} bestellingen"},{"key":"agent_chat.order.ordered_on","value":"Besteld op {{date}}"},{"key":"agent_chat.order.select","value":"Bestelling {{number}} selecteren"},{"key":"agent_chat.return.heading","value":"Artikelen selecteren om te retourneren"},{"key":"agent_chat.return.toggle_item","value":"{{name}} selecteren"},{"key":"agent_chat.return.select_item_non_returnable","value":"{{name}}, niet te retourneren"},{"key":"agent_chat.return.quantity_label","value":"Retouraantal"},{"key":"agent_chat.return.reason_label","value":"Retourreden"},{"key":"agent_chat.return.reason_placeholder","value":"Reden selecteren"},{"key":"agent_chat.return.confirm","value":"Retour aanvragen"},{"key":"agent_chat.return.confirmed","value":"Retour aangevraagd"},{"key":"agent_chat.return.reason.size_too_small","value":"Maat te klein"},{"key":"agent_chat.return.reason.size_too_large","value":"Maat te groot"},{"key":"agent_chat.return.reason.unwanted","value":"Ongewenst"},{"key":"agent_chat.return.reason.not_as_described","value":"Niet zoals beschreven"},{"key":"agent_chat.return.reason.wrong_item","value":"Verkeerd artikel"},{"key":"agent_chat.return.reason.defective","value":"Defect"},{"key":"agent_chat.return.reason.style","value":"Stijl"},{"key":"agent_chat.return.reason.color","value":"Kleur"},{"key":"agent_chat.return.reason.other_reason","value":"Overig"},{"key":"agent_chat.scroll.previous","value":"Vorige"},{"key":"agent_chat.scroll.next","value":"Volgende"}]}</script>
+<script id="shopify-customer-account-data" type="application/json">{"customer":null,"shop":{"id":"48621682850","customerAccountTranslations":[{"key":"account_menu.signed_out_state.sheet_title","value":"Inloggen of account aanmaken"},{"key":"account_menu.signed_out_state.section_divider","value":"Meer manieren om in te loggen"},{"key":"account_menu.signed_out_state.alternate_divider","value":"OF"},{"key":"account_menu.signed_out_state.email_field_label","value":"E-mail"},{"key":"account_menu.signed_out_state.orders_button","value":"Bestellingen"},{"key":"account_menu.signed_out_state.profile_button","value":"Profiel"},{"key":"account_menu.signed_out_state.shop_login_button","value":"Inloggen met Shop"},{"key":"account_menu.signed_out_state.continue_with_google","value":"Doorgaan met Google"},{"key":"account_menu.signed_out_state.continue_with_facebook","value":"Doorgaan met Facebook"},{"key":"account_menu.signed_out_state.marketing_consent_label","value":"Stuur mij e-mails met nieuws en aanbiedingen"},{"key":"account_menu.signed_in_state.greeting_with_name","value":"Hoi {{first_name}},"},{"key":"account_menu.signed_in_state.greeting_without_name","value":"Account"},{"key":"account_menu.signed_in_state.orders_button","value":"Bestellingen"},{"key":"account_menu.signed_in_state.profile_button","value":"Profiel"},{"key":"account_menu.location_picker.sheet_title","value":"Locaties"},{"key":"account_menu.location_picker.search_field_placeholder","value":"Zoeken"},{"key":"account_menu.aria_labels.close_menu","value":"Menu sluiten"},{"key":"account_menu.aria_labels.back_to_main_menu","value":"Terug naar hoofdmenu vanuit {{title}}"},{"key":"account_menu.aria_labels.open_submenu","value":"{{title}}, opent submenu"},{"key":"account_menu.aria_labels.loading_menu","value":"Menu laden"},{"key":"account_menu.aria_labels.loading","value":"Laden"},{"key":"account_menu.aria_labels.account","value":"Account"},{"key":"account_menu.aria_labels.sign_in_with_email","value":"Inloggen met e-mail"},{"key":"account_menu.aria_labels.sign_in","value":"Inloggen"}],"socialLoginProviders":[{"handle":"Shop"}],"legacyCustomerAccounts":false,"signInLinksVisible":true,"b2bEnabled":false,"marketingConsentSigninEnabled":true,"marketingConsentPreselected":true},"visitor":{"country":"NL","language":"nl"}}</script>
+<meta name="shopify-y" content="299f2c6c-4911-4124-939c-5846e4332576" data-expiration="1824894918000"><meta name="shopify-s" content="e84e6ccc-56ad-437f-bd82-89f98052a3d2" data-expiration="1793339118000"><meta name="request-id" content="b48e19e9-f58d-4eab-afe3-3a1924ba6bae-1793337318"        >
+</head>
+
+<body id="online-speciaalbier-kopen-breugem-bier-bonding-beer" class="template-index">
+  <div id="SearchDrawer" class="search-bar drawer drawer--top">
+    <div class="search-bar__table">
+      <form action="/search" method="get" class="search-bar__table-cell search-bar__form" role="search">
+        <div class="search-bar__table">
+          <div class="search-bar__table-cell search-bar__icon-cell">
+            <button type="submit" class="search-bar__icon-button search-bar__submit">
+              <span class="icon icon-search" aria-hidden="true"></span>
+              <span class="icon__fallback-text">Zoeken</span>
+            </button>
+          </div>
+          <div class="search-bar__table-cell">
+            <input type="search" id="SearchInput" name="q" value="" placeholder="Zoek in onze winkel" aria-label="Zoek in onze winkel" class="search-bar__input">
+          </div>
+        </div>
+      </form>
+      <div class="search-bar__table-cell text-right">
+        <button type="button" class="search-bar__icon-button search-bar__close js-drawer-close">
+          <span class="icon icon-x" aria-hidden="true"></span>
+          <span class="icon__fallback-text">sluiten (esc)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="NavDrawer" class="drawer drawer--left">
+  <div id="shopify-section-sidebar-menu" class="shopify-section sidebar-menu-section"><div class="drawer__header" data-section-id="sidebar-menu" data-section-type="sidebar-menu-section">
+  <div class="drawer__close">
+    <button type="button" class="drawer__close-button js-drawer-close">
+      <span class="icon icon-x" aria-hidden="true"></span>
+      <span class="icon__fallback-text">Menu sluiten</span>
+    </button>
+  </div>
+</div>
+<div class="drawer__inner">
+  <ul class="drawer-nav">
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/" class="drawer-nav__link h2" aria-current="page">Core Range</a>
+        </li>
+      
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/collections/webshop-vaste-bieren" class="drawer-nav__link h2">Specials</a>
+        </li>
+      
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/collections/webshop-biercadeauboxen" class="drawer-nav__link h2">Giftpacks</a>
+        </li>
+      
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/collections/merchandise-1" class="drawer-nav__link h2">Merchandise</a>
+        </li>
+      
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/pages/breugem-meeting-point" class="drawer-nav__link h2">Proeflokaal</a>
+        </li>
+      
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/pages/social-enterprise-sroi" class="drawer-nav__link h2">Social Enterprise (SROI)</a>
+        </li>
+      
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/pages/brouwerij-breugem-wie-zijn-wij" class="drawer-nav__link h2">Over Ons</a>
+        </li>
+      
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/pages/beer-awards" class="drawer-nav__link h2">Awards</a>
+        </li>
+      
+    
+      
+      
+        <li class="drawer-nav__item">
+          <a href="/pages/contact" class="drawer-nav__link h2">Contact</a>
+        </li>
+      
+    
+
+    <li class="drawer-nav__spacer"></li>
+
+    
+      
+        <li class="drawer-nav__item drawer-nav__item--secondary">
+          <a href="https://www.breugembier.nl/customer_authentication/redirect?locale=nl&amp;region_country=NL" id="customer_login_link">Inloggen</a>
+        </li>
+        <li class="drawer-nav__item drawer-nav__item--secondary">
+          <a href="https://shopify.com/48621682850/account?locale=nl&region_country=NL&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicmV3ZXJpai1icmV1Z2VtLm15c2hvcGlmeS5jb20iLCJmbGFncyI6W10sImV4cCI6MTc5Mzk0MjExOSwibmJmIjoxNzkzMzM3MzE5fQ.d5VNLEYkkjv18EuLpe0UHr_ElwCi9nU3OerY7AMmIEI" id="customer_register_link">Account aanmaken</a>
+        </li>
+      
+    
+    
+  </ul>
+      
+
+<link href="//www.breugembier.nl/cdn/shop/t/11/assets/translation-lab-language-dropdown.css?v=147877534885198690811634806774" rel="stylesheet" type="text/css" media="all" /><div class="translation-lab-language-switcher mobile">
+  <div class="translation-lab-dropdown">
+    
+    <img class="language-flag" src="//www.breugembier.nl/cdn/shop/t/11/assets/tlab-flags-nl.png?v=77762491679793455761634806539">
+    
+    
+    <span class="language-label language-name">Nederlands</span>
+    
+  </div>
+  <ul class="translation-lab-language-options"><li class="language-option active" data-language-code="nl">
+      
+      <img class="language-flag" src="//www.breugembier.nl/cdn/shop/t/11/assets/tlab-flags-nl.png?v=77762491679793455761634806539">
+      
+      
+      <span class="language-label language-name">Nederlands</span>
+      
+    </li><li class="language-option " data-language-code="en">
+      
+      <img class="language-flag" src="//www.breugembier.nl/cdn/shop/t/11/assets/tlab-flags-en.png?v=89440205063567145151634806538">
+      
+      
+      <span class="language-label language-name">English</span>
+      
+    </li>
+  </ul>
+</div>
+
+<script>
+  if (!Array.prototype.find) {
+    Object.defineProperty(Array.prototype, 'find', {
+      value: function(predicate) {
+        if (this == null) {
+          throw TypeError('"this" is null or not defined');
+        }
+
+        var o = Object(this);
+
+        var len = o.length >>> 0;
+
+        if (typeof predicate !== 'function') {
+          throw TypeError('predicate must be a function');
+        }
+
+        var thisArg = arguments[1];
+
+        var k = 0;
+
+        while (k < len) {
+          var kValue = o[k];
+          if (predicate.call(thisArg, kValue, k, o)) {
+            return kValue;
+          }
+          k++;
+        }
+
+        return undefined;
+      },
+      configurable: true,
+      writable: true
+    });
+  }
+</script>
+
+
+
+<style>
+
+  
+
+  @media screen and (max-width: 768px) {}
+
+</style>
+
+<script>
+
+    (function () {
+
+        var useInternationalDomains = false;
+
+    function buildLanguageList() {
+        var languageListJson = '[{\
+"name": "Nederlands",\
+"endonym_name": "Nederlands",\
+"iso_code": "nl",\
+"primary": true,\
+"flag": "//www.breugembier.nl/cdn/shop/t/11/assets/nl.png?v=1411",\
+"domain": null\
+},{\
+"name": "Engels",\
+"endonym_name": "English",\
+"iso_code": "en",\
+"primary": false,\
+"flag": "//www.breugembier.nl/cdn/shop/t/11/assets/en.png?v=1411",\
+"domain": null\
+}]';
+        return JSON.parse(languageListJson);
+    }
+
+    function createDropdown(container, languageChangeHandler) {
+
+        var dropdown = container.children[0];
+        var span = dropdown.children[0];
+        var selectedImg = dropdown.children[1];
+        var ul = container.children[1];
+
+        for (var i = 0; i < ul.children.length; i++) {
+            var el = ul.children[i];
+            el.onclick = languageChangeHandler(el.dataset.languageCode, el.children[0].innerText, languageChangeCallback);
+        }
+
+        var isOpen = false;
+
+        dropdown.addEventListener('click', function (event) {
+            event.preventDefault();
+            isOpen = !isOpen;
+            if (isOpen) {
+                openDropdown();
+            } else {
+                closeDropdown();
+            }
+        });
+
+        container.addEventListener('mouseleave', function () {
+            closeDropdown();
+        });
+
+        function languageChangeCallback(lang, elementText) {
+            closeDropdown();
+            span.textContent = elementText;
+            if (selectedImg) {
+                selectedImg.src = lang.flag;
+            }
+        }
+
+        function openDropdown() {
+            isOpen = true;
+            dropdown.classList.add('open');
+            ul.classList.add('open');
+        }
+
+        function closeDropdown() {
+            isOpen = false;
+            dropdown.classList.remove('open');
+            ul.classList.remove('open');
+        }
+    }
+
+    function removeLocaleFromPath(pathname, languageList) {
+	    var pathParts = pathname.split('/');
+	    var idx = -1;
+	    for (var i = 0; i < languageList.length; i++) {
+		    var localeIdx = pathParts.indexOf(languageList[i].iso_code);
+            if (localeIdx === 1) {
+			    idx = localeIdx;
+			    break;
+		    }
+	    }
+	    if (idx === 1) {
+		    pathParts.splice(idx, 1);
+		    return pathParts.join('/');
+	    }
+	    return pathname;
+    }
+
+    function redirectUrlBuilderFunction(primaryLocale) {
+        var shopDomain = 'https://www.breugembier.nl';
+        if (window.Shopify && window.Shopify.designMode) {
+            shopDomain = 'https://brewerij-breugem.myshopify.com';
+        }
+        var currentLocale = 'nl'.toLowerCase();
+        var currentLocaleRegEx = new RegExp('^\/' + currentLocale, "ig");
+        var primaryLocaleLower = primaryLocale.toLowerCase();
+        var pathname = window.location.pathname;
+        var queryString = window.location.search || '';
+        return function build(redirectLocale) {
+            if (!redirectLocale) {
+                return null;
+            }
+            var redirectLocaleLower = redirectLocale.toLowerCase();
+            if (currentLocale !== redirectLocaleLower) {
+                if (useInternationalDomains) {
+                    var languageList = buildLanguageList();
+                    var internationalDomain = languageList.find(function (x) { return x.iso_code.toLowerCase() === redirectLocaleLower; });
+                    if (internationalDomain) {
+	                    var path = removeLocaleFromPath(pathname, languageList);
+	                    return 'https://' + internationalDomain.domain + path + queryString;
+                    }
+                }
+                else {
+                    if (redirectLocaleLower === primaryLocaleLower) {
+                        return shopDomain + pathname.replace(currentLocaleRegEx, '') + queryString;
+                    } else if (primaryLocaleLower === currentLocale) {
+                        return shopDomain + '/' + redirectLocaleLower + pathname + queryString;
+                    } else {
+                        return shopDomain + '/' + pathname.replace(currentLocaleRegEx, redirectLocaleLower) + queryString;
+                    }
+                }
+            }
+            return null;
+        }
+    }
+
+    function configure() {
+
+        var languageList = buildLanguageList();
+        var primaryLanguage = languageList.find(function (x) { return x.primary; });
+        if (!primaryLanguage || !primaryLanguage.iso_code) {
+            return;
+        }
+
+        var redirectUrlBuilder = redirectUrlBuilderFunction(primaryLanguage.iso_code);
+
+        var containers = document.querySelectorAll('.translation-lab-language-switcher');
+        if (containers && containers.length) {
+            for (var i = 0; i < containers.length; i++) {
+                createDropdown(containers[i], languageChangeHandler);
+            }
+        }
+
+        function languageChangeHandler(languageCode, elementText, callback) {
+            var selectedLanguage = languageList.find(function (language) { return language.iso_code.toLowerCase() === languageCode.toLowerCase() });
+            return function () {
+                callback(selectedLanguage, elementText);
+                localStorage.setItem('translation-lab-lang', selectedLanguage.iso_code);
+                var redirectUrl = redirectUrlBuilder(selectedLanguage.iso_code);
+                redirectUrl && window.location.assign(redirectUrl);
+            }
+        }
+    }
+
+    configure();
+
+    })();
+
+</script>
+
+  <ul class="list--inline social-icons social-icons--drawer">
+    
+    
+      <li>
+        <a href="https://www.facebook.com/breugembier" title="Breugem Bier op Facebook">
+          <span class="icon icon-facebook" aria-hidden="true"></span>
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://www.instagram.com/breugembier/" title="Breugem Bier op Instagram">
+          <span class="icon icon-instagram" aria-hidden="true"></span>
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+
+
+
+</div>
+  </div>
+  <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-footer">
+    <div class="drawer__header">
+      <div class="drawer__close">
+        <button type="button" class="drawer__close-button js-drawer-close">
+          <span class="icon icon-x" aria-hidden="true"></span>
+          <span class="icon__fallback-text">Winkelwagen sluiten</span>
+        </button>
+      </div>
+    </div>
+    <div class="drawer__inner">
+      <div id="CartContainer">
+      </div>
+    </div>
+  </div>
+
+  <div id="PageContainer">
+    <div id="shopify-section-announcement-bar" class="shopify-section">
+  
+    <style>
+      .announcement-bar {
+        background-color: #8e10d6;
+      }
+
+      .announcement-bar--link:hover {
+        
+
+        
+          
+          background-color: #aa30f0;
+        
+      }
+
+      .announcement-bar__message {
+        color: #ffffff;
+      }
+    </style>
+
+    
+      <a href="https://www.breugembier.nl/products/knuffel-alcoholvrije-neipa-breugem-bier" class="announcement-bar announcement-bar--link">
+    
+
+      <p class="announcement-bar__message">NIEUW BIER: Knuffel (NEIPA 0,5%) - Bestel hem hier! &gt;</p>
+
+    
+      </a>
+    
+
+  
+
+
+
+
+
+</div>
+
+    <div class="site-header-wrapper">
+      <div class="site-header-container">
+        <div id="shopify-section-header" class="shopify-section header-section"><style>
+  .site-header__logo img {
+    max-width: 200px;
+  }
+  @media screen and (max-width: 749px) {
+    .site-header__logo img {
+      max-width: 100%;
+    }
+  }
+</style>
+
+<header class="site-header" role="banner" data-section-id="header" data-section-type="header-section">
+  <div class="grid grid--no-gutters grid--table site-header__inner">
+    <div class="grid__item one-third medium-up--one-sixth">
+      <button type="button" class="site-header__link text-link site-header__toggle-nav js-drawer-open-left">
+        <span class="icon icon-hamburger" aria-hidden="true"></span>
+        <span class="icon__fallback-text">Menu</span>
+      </button>
+    </div>
+    <div class="grid__item one-third medium-up--two-thirds">
+      <div class="site-header__logo h1" itemscope itemtype="http://schema.org/Organization"><a href="/" itemprop="url" class="site-header__logo-link">
+              
+              <img class="site-header__logo-image" src="//www.breugembier.nl/cdn/shop/files/Logo_Website_boven_200x.png?v=1632942040"
+              srcset="//www.breugembier.nl/cdn/shop/files/Logo_Website_boven_200x.png?v=1632942040 1x, //www.breugembier.nl/cdn/shop/files/Logo_Website_boven_200x@2x.png?v=1632942040 2x" alt="Breugem Bier" itemprop="logo">
+            </a></div>
+    </div>
+
+    <div class="grid__item one-third medium-up--one-sixth text-right">
+      
+      
+
+<link href="//www.breugembier.nl/cdn/shop/t/11/assets/translation-lab-language-dropdown.css?v=147877534885198690811634806774" rel="stylesheet" type="text/css" media="all" /><div class="translation-lab-language-switcher desktop">
+  <div class="translation-lab-dropdown">
+    
+    <img class="language-flag" src="//www.breugembier.nl/cdn/shop/t/11/assets/tlab-flags-nl.png?v=77762491679793455761634806539">
+    
+    
+    <span class="language-label language-name">Nederlands</span>
+    
+  </div>
+  <ul class="translation-lab-language-options"><li class="language-option active" data-language-code="nl">
+      
+      <img class="language-flag" src="//www.breugembier.nl/cdn/shop/t/11/assets/tlab-flags-nl.png?v=77762491679793455761634806539">
+      
+      
+      <span class="language-label language-name">Nederlands</span>
+      
+    </li><li class="language-option " data-language-code="en">
+      
+      <img class="language-flag" src="//www.breugembier.nl/cdn/shop/t/11/assets/tlab-flags-en.png?v=89440205063567145151634806538">
+      
+      
+      <span class="language-label language-name">English</span>
+      
+    </li>
+  </ul>
+</div>
+
+<script>
+  if (!Array.prototype.find) {
+    Object.defineProperty(Array.prototype, 'find', {
+      value: function(predicate) {
+        if (this == null) {
+          throw TypeError('"this" is null or not defined');
+        }
+
+        var o = Object(this);
+
+        var len = o.length >>> 0;
+
+        if (typeof predicate !== 'function') {
+          throw TypeError('predicate must be a function');
+        }
+
+        var thisArg = arguments[1];
+
+        var k = 0;
+
+        while (k < len) {
+          var kValue = o[k];
+          if (predicate.call(thisArg, kValue, k, o)) {
+            return kValue;
+          }
+          k++;
+        }
+
+        return undefined;
+      },
+      configurable: true,
+      writable: true
+    });
+  }
+</script>
+
+
+
+<style>
+
+  
+
+  @media screen and (max-width: 768px) {}
+
+</style>
+
+<script>
+
+    (function () {
+
+        var useInternationalDomains = false;
+
+    function buildLanguageList() {
+        var languageListJson = '[{\
+"name": "Nederlands",\
+"endonym_name": "Nederlands",\
+"iso_code": "nl",\
+"primary": true,\
+"flag": "//www.breugembier.nl/cdn/shop/t/11/assets/nl.png?v=1411",\
+"domain": null\
+},{\
+"name": "Engels",\
+"endonym_name": "English",\
+"iso_code": "en",\
+"primary": false,\
+"flag": "//www.breugembier.nl/cdn/shop/t/11/assets/en.png?v=1411",\
+"domain": null\
+}]';
+        return JSON.parse(languageListJson);
+    }
+
+    function createDropdown(container, languageChangeHandler) {
+
+        var dropdown = container.children[0];
+        var span = dropdown.children[0];
+        var selectedImg = dropdown.children[1];
+        var ul = container.children[1];
+
+        for (var i = 0; i < ul.children.length; i++) {
+            var el = ul.children[i];
+            el.onclick = languageChangeHandler(el.dataset.languageCode, el.children[0].innerText, languageChangeCallback);
+        }
+
+        var isOpen = false;
+
+        dropdown.addEventListener('click', function (event) {
+            event.preventDefault();
+            isOpen = !isOpen;
+            if (isOpen) {
+                openDropdown();
+            } else {
+                closeDropdown();
+            }
+        });
+
+        container.addEventListener('mouseleave', function () {
+            closeDropdown();
+        });
+
+        function languageChangeCallback(lang, elementText) {
+            closeDropdown();
+            span.textContent = elementText;
+            if (selectedImg) {
+                selectedImg.src = lang.flag;
+            }
+        }
+
+        function openDropdown() {
+            isOpen = true;
+            dropdown.classList.add('open');
+            ul.classList.add('open');
+        }
+
+        function closeDropdown() {
+            isOpen = false;
+            dropdown.classList.remove('open');
+            ul.classList.remove('open');
+        }
+    }
+
+    function removeLocaleFromPath(pathname, languageList) {
+	    var pathParts = pathname.split('/');
+	    var idx = -1;
+	    for (var i = 0; i < languageList.length; i++) {
+		    var localeIdx = pathParts.indexOf(languageList[i].iso_code);
+            if (localeIdx === 1) {
+			    idx = localeIdx;
+			    break;
+		    }
+	    }
+	    if (idx === 1) {
+		    pathParts.splice(idx, 1);
+		    return pathParts.join('/');
+	    }
+	    return pathname;
+    }
+
+    function redirectUrlBuilderFunction(primaryLocale) {
+        var shopDomain = 'https://www.breugembier.nl';
+        if (window.Shopify && window.Shopify.designMode) {
+            shopDomain = 'https://brewerij-breugem.myshopify.com';
+        }
+        var currentLocale = 'nl'.toLowerCase();
+        var currentLocaleRegEx = new RegExp('^\/' + currentLocale, "ig");
+        var primaryLocaleLower = primaryLocale.toLowerCase();
+        var pathname = window.location.pathname;
+        var queryString = window.location.search || '';
+        return function build(redirectLocale) {
+            if (!redirectLocale) {
+                return null;
+            }
+            var redirectLocaleLower = redirectLocale.toLowerCase();
+            if (currentLocale !== redirectLocaleLower) {
+                if (useInternationalDomains) {
+                    var languageList = buildLanguageList();
+                    var internationalDomain = languageList.find(function (x) { return x.iso_code.toLowerCase() === redirectLocaleLower; });
+                    if (internationalDomain) {
+	                    var path = removeLocaleFromPath(pathname, languageList);
+	                    return 'https://' + internationalDomain.domain + path + queryString;
+                    }
+                }
+                else {
+                    if (redirectLocaleLower === primaryLocaleLower) {
+                        return shopDomain + pathname.replace(currentLocaleRegEx, '') + queryString;
+                    } else if (primaryLocaleLower === currentLocale) {
+                        return shopDomain + '/' + redirectLocaleLower + pathname + queryString;
+                    } else {
+                        return shopDomain + '/' + pathname.replace(currentLocaleRegEx, redirectLocaleLower) + queryString;
+                    }
+                }
+            }
+            return null;
+        }
+    }
+
+    function configure() {
+
+        var languageList = buildLanguageList();
+        var primaryLanguage = languageList.find(function (x) { return x.primary; });
+        if (!primaryLanguage || !primaryLanguage.iso_code) {
+            return;
+        }
+
+        var redirectUrlBuilder = redirectUrlBuilderFunction(primaryLanguage.iso_code);
+
+        var containers = document.querySelectorAll('.translation-lab-language-switcher');
+        if (containers && containers.length) {
+            for (var i = 0; i < containers.length; i++) {
+                createDropdown(containers[i], languageChangeHandler);
+            }
+        }
+
+        function languageChangeHandler(languageCode, elementText, callback) {
+            var selectedLanguage = languageList.find(function (language) { return language.iso_code.toLowerCase() === languageCode.toLowerCase() });
+            return function () {
+                callback(selectedLanguage, elementText);
+                localStorage.setItem('translation-lab-lang', selectedLanguage.iso_code);
+                var redirectUrl = redirectUrlBuilder(selectedLanguage.iso_code);
+                redirectUrl && window.location.assign(redirectUrl);
+            }
+        }
+    }
+
+    configure();
+
+    })();
+
+</script>
+      <a href="/search" class="site-header__link site-header__search js-drawer-open-top">
+        <span class="icon icon-search" aria-hidden="true"></span>
+        <span class="icon__fallback-text">Zoeken</span>
+      </a>
+      
+      <a href="/cart" class="site-header__link site-header__cart cart-link">
+        <span class="icon icon-cart" aria-hidden="true"></span>
+        <span class="icon__fallback-text">Winkelwagen</span>
+      </a>
+    </div>
+  </div>
+   <meta name="facebook-domain-verification" content="cslbte32vigy8e95g9nxcuqeueje8r" />
+</header>
+
+
+
+</div>
+
+        <div class="action-area"></div>
+      </div>
+    </div>
+
+    <main class="main-content" role="main">
+      <!-- /templates/index.liquid -->
+
+
+
+
+  <div id="shopify-section-slideshow" class="shopify-section"><style data-shopify>.site-header__link,
+  .site-header__logo-link {
+    color: #ffffff !important;
+  }
+
+  .hero__text-title {
+    color: #ffffff;
+  }
+
+  .hero__slide:after {
+    background-color: #000000;
+    opacity: 0.0;
+  }
+
+  .hero__button-circle {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .slick-prev .icon:before,
+  .slick-next .icon:before,
+  .hero__pause .icon:before {
+    color: #ffffff;
+  }
+
+  .slick-dots {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .hero__dots:before {
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .slick-active .hero__dots:before {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+  }</style><div data-section-id="slideshow" data-section-type="slideshow-section">
+  <div class="hero slideshow-slideshow"
+        id="Hero"
+        role="region"
+        aria-label="slideshow"
+        aria-describedby="slideshow-info"
+        tabindex="-1"
+        data-autoplay="true"
+        data-autoplayspeed="5000"
+        data-adapt="false"
+        data-slide-nav-a11y="Laad dia [slide_number]"
+        data-slide-nav-active-a11y="Dia [slide_number], huidige"><div id="SlickSlide1" aria-hidden="true" class="hero__slide hero__slide--cd5aab51-06ac-46c9-9d28-3ec3a0b64456" >
+            <img class="hero__image hero__image--cd5aab51-06ac-46c9-9d28-3ec3a0b64456 lazyload"src="//www.breugembier.nl/cdn/shop/files/manhug_UPDATED_300x.jpg?v=1633702947"data-src="//www.breugembier.nl/cdn/shop/files/manhug_UPDATED_{width}x.jpg?v=1633702947"
+              data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.7777777777777777"
+              data-sizes="auto"
+              data-parent-fit="cover"
+              alt=""
+              style="object-position: center center"><noscript>
+                <div class="hero__image-no-js hero__image--cd5aab51-06ac-46c9-9d28-3ec3a0b64456" data-image="cd5aab51-06ac-46c9-9d28-3ec3a0b64456" style="background-image: url('//www.breugembier.nl/cdn/shop/files/manhug_UPDATED_2048x2048.jpg?v=1633702947');"></div>
+              </noscript><div class="hero__content-wrapper">
+            <div class="hero__content">
+              <div class="hero__content-centered"></div>
+            </div>
+          </div>
+        </div><div id="SlickSlide2" aria-hidden="true" class="hero__slide hero__slide--89a051d3-bc64-4d4d-a672-7131c00823a0" >
+            <img class="hero__image hero__image--89a051d3-bc64-4d4d-a672-7131c00823a0 lazyload lazypreload"data-src="//www.breugembier.nl/cdn/shop/files/BOKS-OUWE-Website-header_nieuw_a50f10d7-4e9a-4c75-8cff-0083d099bde3_{width}x.jpg?v=1633548379"
+              data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.7777777777777777"
+              data-sizes="auto"
+              data-parent-fit="cover"
+              alt=""
+              style="object-position: center center"><div class="hero__content-wrapper">
+            <div class="hero__content">
+              <div class="hero__content-centered"></div>
+            </div>
+          </div>
+        </div><div id="SlickSlide3" aria-hidden="true" class="hero__slide hero__slide--slider-0" >
+            <img class="hero__image hero__image--slider-0 lazyload lazypreload"data-src="//www.breugembier.nl/cdn/shop/files/Zoentje-UPDATED_{width}x.jpg?v=1633702948"
+              data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.7777777777777777"
+              data-sizes="auto"
+              data-parent-fit="cover"
+              alt=""
+              style="object-position: center center"><div class="hero__content-wrapper">
+            <div class="hero__content">
+              <div class="hero__content-centered"></div>
+            </div>
+          </div>
+        </div><div class="hero__controls">
+        <div class="hero__dots-wrapper hero__dots-wrapper-desktop"><button class="hero__pause hero__controls-icon" aria-live="polite" aria-label="Diavoorstelling pauzeren" data-label-pause="Diavoorstelling pauzeren" data-label-play="Diavoorstelling afspelen">
+              <span class="hero__button-circle"></span>
+              <span class="icon icon-pause" aria-hidden="true"></span>
+              <span class="icon icon-play" aria-hidden="true"></span>
+            </button></div>
+        <ul>
+          <li>
+            <button class="hero__controls-icon slick-prev" aria-label="Vorige dia">
+              <span class="hero__button-circle"></span>
+              <span class="icon icon-arrow" aria-hidden="true"></span>
+            </button>
+          </li>
+          <li>
+            <button class="hero__controls-icon slick-next" aria-label="Volgende dia">
+              <span class="hero__button-circle"></span>
+              <span class="icon icon-arrow" aria-hidden="true"></span>
+            </button>
+          </li>
+        </ul>
+      </div></div></div>
+<p id="slideshow-info" class="visually-hidden" aria-hidden="true">Gebruik de pijlen links/rechts om door de diavoorstelling te navigeren, of veeg links/rechts op een mobiel apparaat</p>
+
+
+</div>
+
+  <div class="hero__header">
+   <div class="action-area">
+     <!-- action bar section -->
+<div id="shopify-section-action-bar" class="shopify-section action-bar-section"><!-- snippets/action-bar.liquid -->
+
+
+
+
+
+
+  
+  <div class="action-bar-wrapper  action-bar--hero " data-section-id="action-bar" data-section-type="action-bar-section">
+
+
+    <nav class="action-bar action-bar--has-menu" role="presentation">
+      <ul class="action-bar__menu--main action-bar__menu list--inline  action-bar--show" id="SiteNav" role="navigation">
+        
+        
+          
+          
+            <li class="action-bar__menu-item action-bar--active">
+              <a href="/" class="action-bar__link">Core Range</a>
+            </li>
+          
+        
+          
+          
+            <li class="action-bar__menu-item ">
+              <a href="/collections/webshop-vaste-bieren" class="action-bar__link">Specials</a>
+            </li>
+          
+        
+          
+          
+            <li class="action-bar__menu-item ">
+              <a href="/collections/webshop-biercadeauboxen" class="action-bar__link">Giftpacks</a>
+            </li>
+          
+        
+          
+          
+            <li class="action-bar__menu-item ">
+              <a href="/collections/merchandise-1" class="action-bar__link">Merchandise</a>
+            </li>
+          
+        
+          
+          
+            <li class="action-bar__menu-item ">
+              <a href="/pages/breugem-meeting-point" class="action-bar__link">Proeflokaal</a>
+            </li>
+          
+        
+          
+          
+            <li class="action-bar__menu-item ">
+              <a href="/pages/social-enterprise-sroi" class="action-bar__link">Social Enterprise (SROI)</a>
+            </li>
+          
+        
+          
+          
+            <li class="action-bar__menu-item ">
+              <a href="/pages/brouwerij-breugem-wie-zijn-wij" class="action-bar__link">Over Ons</a>
+            </li>
+          
+        
+          
+          
+            <li class="action-bar__menu-item ">
+              <a href="/pages/beer-awards" class="action-bar__link">Awards</a>
+            </li>
+          
+        
+          
+          
+            <li class="action-bar__menu-item ">
+              <a href="/pages/contact" class="action-bar__link">Contact</a>
+            </li>
+          
+        
+      </ul>
+
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </nav>
+  </div>
+
+
+
+
+</div>
+   </div>
+ </div>
+</div>
+<!-- BEGIN content_for_index --><div id="shopify-section-rich-text" class="shopify-section index-section rich-text-section"><div class="rich-text page-width" data-section-id="rich-text" data-section-type="rich-text-section">
+  <div class="grid">
+    <div class="grid__item rte text-center">
+      
+        <h2 class="rich-text__heading h1">Breugem&#39;s Core Range</h2>
+      
+      
+        <div class="rich-text__text--large">
+          <p>Dit zijn de paradepaardjes van Breugem. Heerlijke en kwalitatief goede bieren, waar voor iedereen wel iets tussen zit! Bier dat je bij voorkeur  samen drinkt. </p>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+</div><div id="shopify-section-featured-collection" class="shopify-section index-section featured-collection-section"><div class="featured-collection" data-section-id="featured-collection" data-section-type="featured-collection-section">
+  
+  
+
+  
+  <h2 class="visually-hidden">core-breugem-bier</h2>
+
+  <div class="grid grid--no-gutters grid--uniform collection-grid">
+    
+    
+
+
+
+    
+      
+        
+        <div class="product-item grid__item medium-up--one-third">
+  <div class="product-item__link-wrapper">
+    <a class="product-item__link product-item__image--margins" href="/products/knipoog">
+      <span class="image-wrapper">
+        
+        <noscript>
+          <img class="product-item__image-no-js" src="//www.breugembier.nl/cdn/shop/products/KNIPOOG-33cl_1024x.jpg?v=1641845491" alt="Knipoog (Non-Alc.)">
+        </noscript>
+        <div class="product-item__image-container product-item__image-container--loading" style="max-width: 600px;" data-image-with-placeholder-wrapper>
+          <div class="product-item__image-wrapper" style="padding-top:100.0%">
+            
+            <img class="product-item__image lazyload"
+              alt="Knipoog (Non-Alc.)"
+              data-src="//www.breugembier.nl/cdn/shop/products/KNIPOOG-33cl_{width}x.jpg?v=1641845491"
+              data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.0"
+              data-sizes="auto"
+              data-image>
+          </div>
+          <div class="placeholder-background placeholder-background--animation" data-image-placeholder></div>
+        </div>
+      
+
+        
+        <span class="product-item__meta">
+          <span class="product-item__meta__inner">
+
+            
+            <p class="product-item__title">Knipoog (Non-Alc.)</p>
+            <p class="product-item__price-wrapper">
+              
+              
+                
+                  
+                    <span class="visually-hidden">Normale prijs</span>
+                  
+                  €2,69
+
+              
+            </p>
+
+            
+            
+          </span>
+        </span>
+
+        
+        
+      </span>
+    </a>
+  </div>
+</div>
+
+      
+        
+        <div class="product-item grid__item medium-up--one-third">
+  <div class="product-item__link-wrapper">
+    <a class="product-item__link product-item__image--margins" href="/products/zoentje">
+      <span class="image-wrapper">
+        
+        <noscript>
+          <img class="product-item__image-no-js" src="//www.breugembier.nl/cdn/shop/products/ZOENTJE-33cl_1024x.jpg?v=1641845465" alt="Zoentje (Blond)">
+        </noscript>
+        <div class="product-item__image-container product-item__image-container--loading" style="max-width: 600px;" data-image-with-placeholder-wrapper>
+          <div class="product-item__image-wrapper" style="padding-top:100.0%">
+            
+            <img class="product-item__image lazyload"
+              alt="Zoentje (Blond)"
+              data-src="//www.breugembier.nl/cdn/shop/products/ZOENTJE-33cl_{width}x.jpg?v=1641845465"
+              data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.0"
+              data-sizes="auto"
+              data-image>
+          </div>
+          <div class="placeholder-background placeholder-background--animation" data-image-placeholder></div>
+        </div>
+      
+
+        
+        <span class="product-item__meta">
+          <span class="product-item__meta__inner">
+
+            
+            <p class="product-item__title">Zoentje (Blond)</p>
+            <p class="product-item__price-wrapper">
+              
+              
+                
+                  
+                    <span class="visually-hidden">Normale prijs</span>
+                  
+                  €2,89
+
+              
+            </p>
+
+            
+            
+          </span>
+        </span>
+
+        
+        
+      </span>
+    </a>
+  </div>
+</div>
+
+      
+        
+        <div class="product-item grid__item medium-up--one-third">
+  <div class="product-item__link-wrapper">
+    <a class="product-item__link product-item__image--margins" href="/products/man-hug">
+      <span class="image-wrapper">
+        
+        <noscript>
+          <img class="product-item__image-no-js" src="//www.breugembier.nl/cdn/shop/products/MAN-HUG-33cl_1024x.jpg?v=1641845516" alt="Man Hug (IPA)">
+        </noscript>
+        <div class="product-item__image-container product-item__image-container--loading" style="max-width: 600px;" data-image-with-placeholder-wrapper>
+          <div class="product-item__image-wrapper" style="padding-top:100.0%">
+            
+            <img class="product-item__image lazyload"
+              alt="Man Hug (IPA)"
+              data-src="//www.breugembier.nl/cdn/shop/products/MAN-HUG-33cl_{width}x.jpg?v=1641845516"
+              data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.0"
+              data-sizes="auto"
+              data-image>
+          </div>
+          <div class="placeholder-background placeholder-background--animation" data-image-placeholder></div>
+        </div>
+      
+
+        
+        <span class="product-item__meta">
+          <span class="product-item__meta__inner">
+
+            
+            <p class="product-item__title">Man Hug (IPA)</p>
+            <p class="product-item__price-wrapper">
+              
+              
+                
+                  
+                    <span class="visually-hidden">Normale prijs</span>
+                  
+                  €3,09
+
+              
+            </p>
+
+            
+            
+          </span>
+        </span>
+
+        
+        
+      </span>
+    </a>
+  </div>
+</div>
+
+      
+        
+        <div class="product-item grid__item medium-up--one-third">
+  <div class="product-item__link-wrapper">
+    <a class="product-item__link product-item__image--margins" href="/products/high-five">
+      <span class="image-wrapper">
+        
+        <noscript>
+          <img class="product-item__image-no-js" src="//www.breugembier.nl/cdn/shop/products/HIGH-FIVE-33cl_1024x.jpg?v=1641845433" alt="High Five (Tripel)">
+        </noscript>
+        <div class="product-item__image-container product-item__image-container--loading" style="max-width: 600px;" data-image-with-placeholder-wrapper>
+          <div class="product-item__image-wrapper" style="padding-top:100.0%">
+            
+            <img class="product-item__image lazyload"
+              alt="High Five (Tripel)"
+              data-src="//www.breugembier.nl/cdn/shop/products/HIGH-FIVE-33cl_{width}x.jpg?v=1641845433"
+              data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.0"
+              data-sizes="auto"
+              data-image>
+          </div>
+          <div class="placeholder-background placeholder-background--animation" data-image-placeholder></div>
+        </div>
+      
+
+        
+        <span class="product-item__meta">
+          <span class="product-item__meta__inner">
+
+            
+            <p class="product-item__title">High Five (Tripel)</p>
+            <p class="product-item__price-wrapper">
+              
+              
+                
+                  
+                    <span class="visually-hidden">Normale prijs</span>
+                  
+                  €3,09
+
+              
+            </p>
+
+            
+            
+          </span>
+        </span>
+
+        
+        
+      </span>
+    </a>
+  </div>
+</div>
+
+      
+        
+        <div class="product-item grid__item medium-up--one-third">
+  <div class="product-item__link-wrapper">
+    <a class="product-item__link product-item__image--margins" href="/products/boks">
+      <span class="image-wrapper">
+        
+        <noscript>
+          <img class="product-item__image-no-js" src="//www.breugembier.nl/cdn/shop/products/BOKS-33cl_1024x.jpg?v=1641845373" alt="Boks (DIPA)">
+        </noscript>
+        <div class="product-item__image-container product-item__image-container--loading" style="max-width: 600px;" data-image-with-placeholder-wrapper>
+          <div class="product-item__image-wrapper" style="padding-top:100.0%">
+            
+            <img class="product-item__image lazyload"
+              alt="Boks (DIPA)"
+              data-src="//www.breugembier.nl/cdn/shop/products/BOKS-33cl_{width}x.jpg?v=1641845373"
+              data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.0"
+              data-sizes="auto"
+              data-image>
+          </div>
+          <div class="placeholder-background placeholder-background--animation" data-image-placeholder></div>
+        </div>
+      
+
+        
+        <span class="product-item__meta">
+          <span class="product-item__meta__inner">
+
+            
+            <p class="product-item__title">Boks (DIPA)</p>
+            <p class="product-item__price-wrapper">
+              
+              
+                
+                  
+                    <span class="visually-hidden">Normale prijs</span>
+                  
+                  €3,19
+
+              
+            </p>
+
+            
+            
+          </span>
+        </span>
+
+        
+        
+      </span>
+    </a>
+  </div>
+</div>
+
+      
+        
+        <div class="product-item grid__item medium-up--one-third">
+  <div class="product-item__link-wrapper">
+    <a class="product-item__link product-item__image--margins" href="/products/handdruk">
+      <span class="image-wrapper">
+        
+        <noscript>
+          <img class="product-item__image-no-js" src="//www.breugembier.nl/cdn/shop/products/HANDDRUK-33cl_1024x.jpg?v=1641845407" alt="Handdruk (Quadrupel)">
+        </noscript>
+        <div class="product-item__image-container product-item__image-container--loading" style="max-width: 600px;" data-image-with-placeholder-wrapper>
+          <div class="product-item__image-wrapper" style="padding-top:100.0%">
+            
+            <img class="product-item__image lazyload"
+              alt="Handdruk (Quadrupel)"
+              data-src="//www.breugembier.nl/cdn/shop/products/HANDDRUK-33cl_{width}x.jpg?v=1641845407"
+              data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+              data-aspectratio="1.0"
+              data-sizes="auto"
+              data-image>
+          </div>
+          <div class="placeholder-background placeholder-background--animation" data-image-placeholder></div>
+        </div>
+      
+
+        
+        <span class="product-item__meta">
+          <span class="product-item__meta__inner">
+
+            
+            <p class="product-item__title">Handdruk (Quadrupel)</p>
+            <p class="product-item__price-wrapper">
+              
+              
+                
+                  <span class="txt--emphasis">vanaf</span> €3,29
+                
+              
+            </p>
+
+            
+            
+          </span>
+        </span>
+
+        
+        
+      </span>
+    </a>
+  </div>
+</div>
+
+      
+    
+  </div>
+</div>
+
+
+
+
+</div><div id="shopify-section-newsletter-signup" class="shopify-section index-section newsletter-signup"><div class="newsletter text-center" data-section-id="newsletter-signup" data-section-type="newsletter-signup-section">
+  
+    <h2 >Schrijf je in voor onze nieuwsbrief</h2>
+  
+  
+    <div class="rte"><p>En ontvang als eerste de beste aanbiedingen</p></div>
+  
+  <div class="wrapper">
+    <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+      
+      
+        <div class="input-group">
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <label for="Email" class="newsletter__label label--hidden">E-mailadres</label>
+          <input type="email" value="" placeholder="E-mailadres" name="contact[email]" id="Email" class="input-group__field newsletter__input" autocorrect="off" autocapitalize="off">
+          <span class="input-group__btn">
+            <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+              <span class="newsletter__submit-text--large">Abonneren</span>
+            </button>
+          </span>
+        </div>
+      
+    </form>
+  </div>
+</div>
+
+
+
+
+</div><div id="shopify-section-16326920292da6ec24" class="shopify-section index-section rich-text-section"><div class="rich-text page-width" data-section-id="16326920292da6ec24" data-section-type="rich-text-section">
+  <div class="grid">
+    <div class="grid__item rte text-center">
+      
+        <h2 class="rich-text__heading">Contact</h2>
+      
+      
+        <div class="rich-text__text--medium">
+          <p>+31 (0)88 130 88 90  | hello@breugembier.nl</p>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+</div><!-- END content_for_index -->
+
+    </main>
+
+    <div id="shopify-section-footer" class="shopify-section footer-section"><footer class="site-footer" role="contentinfo">
+  
+  
+    <ul class="list--inline site-footer__linklist">
+      
+        <li class="h4"><a href="/policies/terms-of-service">Algemene voorwaarden</a></li>
+      
+        <li class="h4"><a href="https://www.breugembier.nl/pages/geborgde-werkwijze">Geborgde Werkwijze</a></li>
+      
+    </ul>
+  
+
+  <div class="grid text-center large-up--grid--table">
+    <div class="grid__item large-up--one-quarter text-center">
+      <ul class="list--inline social-icons social-icons--footer">
+        
+        
+          <li>
+            <a href="https://www.facebook.com/breugembier" title="Breugem Bier op Facebook">
+              <span class="icon icon-facebook" aria-hidden="true"></span>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+        
+        
+        
+        
+          <li>
+            <a href="https://www.instagram.com/breugembier/" title="Breugem Bier op Instagram">
+              <span class="icon icon-instagram" aria-hidden="true"></span>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+    <div class="grid__item large-up--one-half">
+      <span class="site-footer__copyright">&copy; 2026, <a href="/">Breugem Bier</a>. Powered by Shopify</span>
+    </div>
+    <div class="grid__item large-up--one-quarter text-center"><span class="visually-hidden">Betaalmethoden</span>
+          <ul class="list--inline payment-icons payment-icons--footer"><li>
+                <svg class="payment-icons__icon" xmlns="http://www.w3.org/2000/svg" aria-labelledby="pi-bancontact" role="img" viewBox="0 0 38 24" width="38" height="24"><title id="pi-bancontact">Bancontact</title><path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M4.703 3.077h28.594c.139 0 .276.023.405.068.128.045.244.11.343.194a.9.9 0 0 1 .229.29c.053.107.08.223.08.34V20.03a.829.829 0 0 1-.31.631 1.164 1.164 0 0 1-.747.262H4.703a1.23 1.23 0 0 1-.405-.068 1.09 1.09 0 0 1-.343-.194.9.9 0 0 1-.229-.29.773.773 0 0 1-.08-.34V3.97c0-.118.027-.234.08-.342a.899.899 0 0 1 .23-.29c.098-.082.214-.148.342-.193a1.23 1.23 0 0 1 .405-.068Z" fill="#fff"/><path d="M6.38 18.562v-3.077h1.125c.818 0 1.344.259 1.344.795 0 .304-.167.515-.401.638.338.132.536.387.536.734 0 .62-.536.91-1.37.91H6.38Zm.724-1.798h.537c.328 0 .468-.136.468-.387 0-.268-.255-.356-.599-.356h-.406v.743Zm0 1.262h.448c.438 0 .693-.093.693-.383 0-.286-.219-.404-.63-.404h-.51v.787Zm3.284.589c-.713 0-1.073-.295-1.073-.69 0-.436.422-.69 1.047-.695.156.002.31.014.464.035v-.105c0-.269-.183-.396-.531-.396a2.128 2.128 0 0 0-.688.105l-.13-.474a3.01 3.01 0 0 1 .9-.132c.767 0 1.147.343 1.147.936v1.222c-.214.093-.615.194-1.136.194Zm.438-.497v-.47a2.06 2.06 0 0 0-.37-.036c-.24 0-.427.08-.427.286 0 .185.156.281.432.281a.947.947 0 0 0 .365-.061Zm1.204.444v-2.106a3.699 3.699 0 0 1 1.177-.193c.76 0 1.198.316 1.198.9v1.399h-.719v-1.354c0-.303-.167-.444-.484-.444a1.267 1.267 0 0 0-.459.079v1.719h-.713Zm4.886-2.167-.135.479a1.834 1.834 0 0 0-.588-.11c-.422 0-.652.25-.652.664 0 .453.24.685.688.685.2-.004.397-.043.578-.114l.115.488a2.035 2.035 0 0 1-.75.128c-.865 0-1.365-.453-1.365-1.17 0-.712.495-1.182 1.323-1.182.27-.001.538.043.787.132Zm1.553 2.22c-.802 0-1.302-.47-1.302-1.178 0-.704.5-1.174 1.302-1.174.807 0 1.297.47 1.297 1.173 0 .708-.49 1.179-1.297 1.179Zm0-.502c.37 0 .563-.259.563-.677 0-.413-.193-.672-.563-.672-.364 0-.568.26-.568.672 0 .418.204.677.568.677Zm1.713.449v-2.106a3.699 3.699 0 0 1 1.177-.193c.76 0 1.198.316 1.198.9v1.399h-.719v-1.354c0-.303-.166-.444-.484-.444a1.268 1.268 0 0 0-.459.079v1.719h-.713Zm3.996.053c-.62 0-.938-.286-.938-.866v-.95h-.354v-.484h.355v-.488l.718-.03v.518h.578v.484h-.578v.94c0 .256.125.374.36.374.093 0 .185-.008.276-.026l.036.488c-.149.028-.3.041-.453.04Zm1.814 0c-.713 0-1.073-.295-1.073-.69 0-.436.422-.69 1.047-.695.155.002.31.014.464.035v-.105c0-.269-.183-.396-.532-.396a2.128 2.128 0 0 0-.687.105l-.13-.474a3.01 3.01 0 0 1 .9-.132c.766 0 1.146.343 1.146.936v1.222c-.213.093-.614.194-1.135.194Zm.438-.497v-.47a2.06 2.06 0 0 0-.37-.036c-.24 0-.427.08-.427.286 0 .185.156.281.432.281a.946.946 0 0 0 .365-.061Zm3.157-1.723-.136.479a1.834 1.834 0 0 0-.588-.11c-.422 0-.651.25-.651.664 0 .453.24.685.687.685.2-.004.397-.043.578-.114l.115.488a2.035 2.035 0 0 1-.75.128c-.865 0-1.365-.453-1.365-1.17 0-.712.495-1.182 1.323-1.182.27-.001.538.043.787.132Zm1.58 2.22c-.62 0-.938-.286-.938-.866v-.95h-.354v-.484h.354v-.488l.72-.03v.518h.577v.484h-.578v.94c0 .256.125.374.36.374.092 0 .185-.008.276-.026l.036.488c-.149.028-.3.041-.453.04Z" fill="#1E3764"/><path d="M11.394 13.946c3.803 0 5.705-2.14 7.606-4.28H6.38v4.28h5.014Z" fill="url(#pi-bancontact-a)"/><path d="M26.607 5.385c-3.804 0-5.705 2.14-7.607 4.28h12.62v-4.28h-5.013Z" fill="url(#pi-bancontact-b)"/><defs><linearGradient id="pi-bancontact-a" x1="8.933" y1="12.003" x2="17.734" y2="8.13" gradientUnits="userSpaceOnUse"><stop stop-color="#005AB9"/><stop offset="1" stop-color="#1E3764"/></linearGradient><linearGradient id="pi-bancontact-b" x1="19.764" y1="10.037" x2="29.171" y2="6.235" gradientUnits="userSpaceOnUse"><stop stop-color="#FBA900"/><stop offset="1" stop-color="#FFD800"/></linearGradient></defs></svg>
+              </li><li>
+                <svg class="payment-icons__icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-blik"><title id="pi-blik">BLIK</title><path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="url(#pi-blik-paint0_linear)"/><path d="M30.343 17.155l-2.785-3.639 2.563-3.236h-2.185l-2.456 3.138V6.78h-1.848v10.375h1.848v-3.532l2.456 3.532h2.407zM18.613 6.78h-1.848v10.366h1.848V6.78zm3.433 3.508h-1.848v6.867h1.848v-6.867z" fill="#fff"/><path d="M13.849 9.573a1.651 1.651 0 100-3.302 1.651 1.651 0 000 3.302z" fill="url(#pi-blik-paint1_radial)"/><path d="M12.041 10.206c-.574 0-1.138.144-1.642.419V6.82H8.534v6.9a3.516 3.516 0 103.507-3.515zm0 5.175a1.643 1.643 0 110-3.286 1.643 1.643 0 010 3.286z" fill="#fff"/><defs><radialGradient id="pi-blik-paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.51 6.18) scale(5.41297)"><stop stop-color="red"/><stop offset=".49" stop-color="#E83E49"/><stop offset="1" stop-color="#F0F"/></radialGradient><linearGradient id="pi-blik-paint0_linear" x1="19" y1="4.977" x2="19" y2="55.605" gradientUnits="userSpaceOnUse"><stop/><stop offset=".732" stop-color="#fff"/><stop offset="1" stop-color="#fff"/></linearGradient></defs></svg>
+              </li><li>
+                <svg class="payment-icons__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 24" width="38" height="24" role="img" aria-labelledby="pi-spidealwero"><title id="pi-spidealwero">iDEAL Wero</title><path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black"/><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#FFF48D"/><path d="M3.45001 7.43572V17.0022C3.45001 17.4602 3.82664 17.8347 4.28673 17.8347H10.0301C14.3722 17.8347 16.2539 15.4157 16.2539 12.2063C16.2539 8.99693 14.3715 6.60321 10.0294 6.60321H4.28603C3.82594 6.60321 3.44931 6.97773 3.44931 7.43572H3.45001Z" fill="white"/><path d="M7.29413 8.95133V16.0203H10.385C13.1918 16.0203 14.4087 14.4422 14.4087 12.2112C14.4087 9.98022 13.1911 8.41901 10.385 8.41901H7.82926C7.53259 8.41901 7.29413 8.66027 7.29413 8.95204V8.95133Z" fill="#CC0066"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5.03507 17.073H10.0294C13.539 17.073 15.4754 15.3456 15.4754 12.2105C15.4754 10.4038 14.7685 7.36908 10.0294 7.36908H5.03507C4.59182 7.36908 4.23203 7.72677 4.23203 8.16862V16.2742C4.23203 16.7153 4.59182 17.0737 5.03507 17.0737V17.073ZM4.49924 8.16862C4.49924 7.87335 4.7377 7.63559 5.03437 7.63559H10.0287C11.9609 7.63559 15.2068 8.23104 15.2068 12.2105C15.2068 15.1744 13.3665 16.8065 10.0287 16.8065H5.03507C4.7384 16.8065 4.49994 16.5694 4.49994 16.2735V8.16862H4.49924Z" fill="#232323"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8.81464 11.1831C8.72066 11.1494 8.62247 11.1326 8.51586 11.1326V11.1284H7.8082V12.8355H8.52428C8.65122 12.8355 8.76134 12.8102 8.85602 12.7681C8.95 12.7218 9.02785 12.6629 9.08957 12.5872C9.15129 12.5114 9.19618 12.4188 9.22844 12.3136C9.25719 12.2084 9.27332 12.0948 9.27332 11.9686C9.27332 11.8255 9.25299 11.7035 9.21581 11.5983C9.17514 11.4973 9.12183 11.4089 9.05661 11.3374C8.98717 11.27 8.90932 11.2153 8.81534 11.1817L8.81464 11.1831ZM8.64702 12.4995C8.59371 12.5163 8.54462 12.5248 8.49132 12.5248V12.529H8.16799V11.4524H8.4296C8.51937 11.4524 8.59301 11.465 8.65473 11.4903C8.71645 11.5155 8.76554 11.5576 8.80201 11.6039C8.83849 11.6502 8.86724 11.7133 8.88407 11.7806C8.9002 11.8479 8.90862 11.9279 8.90862 12.0121C8.90862 12.1088 8.896 12.1846 8.87215 12.2519C8.85108 12.3106 8.81921 12.3649 8.77817 12.4118C8.74305 12.4524 8.69779 12.4829 8.64702 12.5002V12.4995Z" fill="white"/><path d="M10.7504 11.1333V11.4489H9.87441V11.815H10.6803V12.1053H9.87441V12.5219H10.7707V12.8376H9.51041V11.1305H10.7504V11.1347V11.1333Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.6244 12.8404L12.0023 11.1333H11.6222L10.9958 12.8404H11.3641L11.4952 12.4616H12.1173L12.2443 12.8404H12.6251H12.6244ZM11.8136 11.5534L12.0226 12.1797H11.5934L11.8101 11.5534H11.8143H11.8136Z" fill="white"/><path d="M13.2178 11.1325V12.5247H14.0278V12.8403H12.8538V11.1332H13.2178V11.1325Z" fill="white"/><path d="M5.85774 12.8656C6.30099 12.8656 6.66009 12.5065 6.66009 12.0625C6.66009 11.6186 6.30099 11.2595 5.85774 11.2595C5.41448 11.2595 5.05539 11.6186 5.05539 12.0625C5.05539 12.5065 5.41448 12.8656 5.85774 12.8656ZM6.33536 16.0771C5.71396 16.0771 5.216 15.5406 5.216 14.8813V13.9478C5.216 13.6181 5.46498 13.3474 5.77778 13.3474C6.09059 13.3474 6.33957 13.6139 6.33957 13.9478V16.0771H6.33536Z" fill="#232323"/><path d="M31.45 12.2209C31.45 11.1773 32.1926 10.2264 33.4749 10.2264C34.7572 10.2264 35.5053 11.178 35.5053 12.2209C35.5053 13.2638 34.7627 14.2154 33.4749 14.2154C32.1926 14.2154 31.45 13.2638 31.45 12.2209ZM34.3782 12.2209C34.3782 11.7178 34.0467 11.2537 33.4749 11.2537C32.9032 11.2537 32.5717 11.7186 32.5717 12.2209C32.5717 12.7232 32.9086 13.1889 33.4749 13.1889C34.0412 13.1889 34.3782 12.724 34.3782 12.2209ZM30.6615 12.9619C31.0889 12.7185 31.3455 12.2537 31.3455 11.7404C31.3455 10.9784 30.7948 10.3294 29.94 10.3294H28.1452V14.1132H29.2567V13.146H29.4649L30.1006 14.1132H31.4095L30.6615 12.9619ZM29.7161 12.2747H29.2567V11.2046H29.7216C30.0211 11.2046 30.213 11.4479 30.213 11.7396C30.213 12.0314 30.0148 12.2747 29.7161 12.2747ZM23.0713 10.3247L22.4044 12.5797L21.7539 10.3247H20.8686L20.2126 12.5797L19.5511 10.3247H18.378L19.722 14.1015H20.6868L21.3108 12.0454L21.9294 14.1015H22.8997L24.2436 10.3247H23.0705H23.0713ZM25.9261 13.1795H25.9237C25.508 13.1795 25.2163 12.9284 25.0915 12.5961H27.9159C27.9385 12.4713 27.9502 12.3434 27.9502 12.2139C27.9502 11.1734 27.21 10.2241 25.9261 10.2233V11.2482C26.3442 11.249 26.6328 11.5002 26.7568 11.8317H23.9363C23.9137 11.9565 23.902 12.0844 23.902 12.2139C23.902 13.2552 24.643 14.2052 25.923 14.2052H25.9253V13.1795H25.9261Z" fill="#1D1C1C"/><path d="M25.9237 14.2044C25.9674 14.2044 26.0103 14.2029 26.0524 14.2013C26.3122 14.188 26.5485 14.135 26.7591 14.05C26.9697 13.965 27.1546 13.8472 27.3114 13.7052C27.4673 13.5644 27.5983 13.3982 27.699 13.2138C27.7903 13.0469 27.8574 12.8667 27.8995 12.6787H26.7225C26.6983 12.7287 26.6702 12.777 26.6382 12.8215C26.5945 12.8831 26.5431 12.9385 26.4846 12.9861C26.4261 13.0344 26.3605 13.075 26.2888 13.1062C26.217 13.1374 26.1382 13.1592 26.0532 13.1709C26.0119 13.1764 25.969 13.1795 25.9245 13.1795C25.6601 13.1795 25.4456 13.0773 25.2919 12.9174L24.5268 13.6912C24.8668 14.0055 25.3387 14.2036 25.9237 14.2036V14.2044Z" fill="#1D1C1C"/><path d="M25.9237 10.2225C24.838 10.2225 24.1399 10.9058 23.9535 11.7482H25.1266C25.267 11.4581 25.5431 11.2475 25.9237 11.2475C26.2272 11.2475 26.4627 11.3785 26.6164 11.5766L27.3886 10.7958C27.0438 10.4464 26.5477 10.2225 25.9245 10.2225H25.9237Z" fill="#1D1C1C"/><path d="M17.3927 16.431C17.3069 16.431 17.2367 16.3608 17.2367 16.275V8.16296C17.2367 8.07716 17.3069 8.00696 17.3927 8.00696C17.4785 8.00696 17.5487 8.07716 17.5487 8.16296V16.275C17.5487 16.3608 17.4785 16.431 17.3927 16.431Z" fill="#1D1C1C"/></svg>
+              </li><li>
+                <svg class="payment-icons__icon" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" viewBox="0 0 38 24" aria-labelledby="pi-klarna" fill="none"><title id="pi-klarna">Klarna</title><rect width="38" height="24" rx="2" fill="#FFA8CD"/><rect x=".5" y=".5" width="37" height="23" rx="1.5" stroke="#000" stroke-opacity=".07"/><path d="M30.62 14.755c-.662 0-1.179-.554-1.179-1.226 0-.673.517-1.226 1.18-1.226.663 0 1.18.553 1.18 1.226 0 .672-.517 1.226-1.18 1.226zm-.33 1.295c.565 0 1.286-.217 1.686-1.068l.04.02c-.176.465-.176.742-.176.81v.11h1.423v-4.786H31.84v.109c0 .069 0 .346.175.81l-.039.02c-.4-.85-1.121-1.068-1.687-1.068-1.355 0-2.31 1.088-2.31 2.522 0 1.433.955 2.521 2.31 2.521zm-4.788-5.043c-.643 0-1.15.228-1.56 1.068l-.039-.02c.175-.464.175-.741.175-.81v-.11h-1.423v4.787h1.462V13.4c0-.662.38-1.078.995-1.078.614 0 .917.356.917 1.068v2.532h1.462v-3.046c0-1.088-.838-1.869-1.989-1.869zm-4.963 1.068l-.039-.02c.176-.464.176-.741.176-.81v-.11h-1.424v4.787h1.463l.01-2.304c0-.673.35-1.078.926-1.078.156 0 .282.02.429.06v-1.464c-.644-.139-1.22.109-1.54.94zm-4.65 2.68c-.664 0-1.18-.554-1.18-1.226 0-.673.516-1.226 1.18-1.226.662 0 1.179.553 1.179 1.226 0 .672-.517 1.226-1.18 1.226zm-.332 1.295c.565 0 1.287-.217 1.687-1.068l.038.02c-.175.465-.175.742-.175.81v.11h1.424v-4.786h-1.424v.109c0 .069 0 .346.175.81l-.038.02c-.4-.85-1.122-1.068-1.687-1.068-1.356 0-2.311 1.088-2.311 2.522 0 1.433.955 2.521 2.31 2.521zm-4.349-.128h1.463V9h-1.463v6.922zM10.136 9H8.644c0 1.236-.751 2.343-1.892 3.134l-.448.317V9h-1.55v6.922h1.55V12.49l2.564 3.43h1.892L8.293 12.64c1.121-.82 1.852-2.096 1.843-3.639z" fill="#0B051D"/></svg>
+              </li><li>
+                <svg class="payment-icons__icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-maestro"><title id="pi-maestro">Maestro</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><circle fill="#EB001B" cx="15" cy="12" r="7"/><circle fill="#00A2E5" cx="23" cy="12" r="7"/><path fill="#7375CF" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"/></svg>
+              </li><li>
+                <svg class="payment-icons__icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"/><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#1C1C1C" style="fill:#1C1C1C;fill:color(display-p3 0.1098 0.1098 0.1098);fill-opacity:1;"/><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#232323" style="fill:#232323;fill:color(display-p3 0.1373 0.1373 0.1373);fill-opacity:1;"/><path d="M14.6364 19.2727C18.8538 19.2727 22.2727 15.8538 22.2727 11.6364C22.2727 7.41892 18.8538 4 14.6364 4C10.4189 4 7 7.41892 7 11.6364C7 15.8538 10.4189 19.2727 14.6364 19.2727Z" fill="#EB001B" style="fill:#EB001B;fill:color(display-p3 0.9216 0.0000 0.1059);fill-opacity:1;"/><path d="M23.3637 19.2727C27.5811 19.2727 31 15.8538 31 11.6364C31 7.41892 27.5811 4 23.3637 4C19.1462 4 15.7273 7.41892 15.7273 11.6364C15.7273 15.8538 19.1462 19.2727 23.3637 19.2727Z" fill="#F79E1B" style="fill:#F79E1B;fill:color(display-p3 0.9686 0.6196 0.1059);fill-opacity:1;"/><path d="M22.2727 11.6362C22.2727 9.01797 20.9637 6.72706 19 5.41797C17.0364 6.83615 15.7273 9.12706 15.7273 11.6362C15.7273 14.1452 17.0364 16.5452 19 17.8543C20.9637 16.5452 22.2727 14.2543 22.2727 11.6362Z" fill="#FF5F00" style="fill:#FF5F00;fill:color(display-p3 1.0000 0.3725 0.0000);fill-opacity:1;"/></svg>
+
+              </li><li>
+                <svg class="payment-icons__icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-mobilepay"><title id="pi-mobilepay">MobilePay</title><path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.05 15.296s2.53-.771 4.282-.776c2.896-.007 4.857 1.15 4.857 1.15V10.06s-1.97-1.02-4.453-1.09c-2.481-.068-4.687 1.012-4.687 1.012v5.313z" fill="#5A78FF"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.308 9.19l2.082 4.957V9.396s1.646-.882 3.485-1.13c1.84-.249 4.181.08 4.181.08l-1.133-2.707s-2.461-.159-4.69.794c-2.228.952-3.925 2.756-3.925 2.756z" fill="#5A78FF"/><path d="M21.428 5.676l-.82-1.99a1.818 1.818 0 00-2.37-.996l-5.663 2.334a1.818 1.818 0 00-.98 2.376l5.46 13.247a1.818 1.818 0 002.37.995l5.662-2.334a1.817 1.817 0 00.98-2.376l-.677-1.642s-.462-.027-.676-.033c-.226-.006-.644-.001-.644-.001l.88 2.136a.606.606 0 01-.326.793l-5.663 2.333a.606.606 0 01-.79-.331L12.711 6.94a.606.606 0 01.327-.792L18.7 3.814a.606.606 0 01.79.332l.83 2.011s.383-.187.59-.27c.206-.082.518-.211.518-.211z" fill="#5A78FF"/></svg>
+              </li><li>
+                <svg class="payment-icons__icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"/><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"/><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"/></svg>
+              </li><li>
+                <svg class="payment-icons__icon" width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" aria-labelledby="pi-satispay"><title id="pi-satispay">Satispay</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3Z" style="fill-opacity:.07;fill-rule:nonzero"/><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" style="fill:#ef4323;fill-rule:nonzero"/><path d="M673.066 283.461h640.814l1012.66 924.379c50.64 46.22 79.68 112.06 79.68 180.62 0 68.57-29.04 134.4-79.68 180.63l-1012.66 924.37H673.066c-24.632 0-39.66-16.09-45.492-31.15-5.847-15.06-5.605-37.06 12.582-53.68L1724.9 1418.47a40.74 40.74 0 0 0 13.24-30.01c0-11.39-4.83-22.32-13.24-30L640.156 368.289c-18.187-16.609-18.429-38.617-12.582-53.668 5.832-15.062 20.86-31.16 45.492-31.16" style="fill:#fffcf0;fill-rule:nonzero" transform="matrix(.00765 0 0 -.00765 8.716 22.617)"/><path d="m868.125 2030.03-504.973-460.94c-50.636-46.23-79.683-112.06-79.683-180.63 0-68.56 29.047-134.4 79.683-180.62l504.973-460.949L1251.45 1096.8l-286.657 261.66a40.723 40.723 0 0 0-13.242 30 40.723 40.723 0 0 0 13.242 30.01l286.657 261.66-383.325 349.9Zm1148.515 463.43h-515.95l320.89-292.91 227.95 208.08c18.19 16.62 18.44 38.62 12.6 53.68-5.85 15.06-20.86 31.15-45.49 31.15M1821.58 576.379l-320.89-292.918h515.95c24.63 0 39.64 16.098 45.49 31.16 5.84 15.051 5.59 37.059-12.6 53.668l-227.95 208.09Z" style="fill:#fffcf0;fill-rule:nonzero" transform="matrix(.00765 0 0 -.00765 8.716 22.617)"/></svg>
+              </li><li>
+                <svg class="payment-icons__icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-shopify_pay"><title id="pi-shopify_pay">Shop Pay</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000"/><path d="M35.889 0C37.05 0 38 .982 38 2.182v19.636c0 1.2-.95 2.182-2.111 2.182H2.11C.95 24 0 23.018 0 21.818V2.182C0 .982.95 0 2.111 0H35.89z" fill="#5A31F4"/><path d="M9.35 11.368c-1.017-.223-1.47-.31-1.47-.705 0-.372.306-.558.92-.558.54 0 .934.238 1.225.704a.079.079 0 00.104.03l1.146-.584a.082.082 0 00.032-.114c-.475-.831-1.353-1.286-2.51-1.286-1.52 0-2.464.755-2.464 1.956 0 1.275 1.15 1.597 2.17 1.82 1.02.222 1.474.31 1.474.705 0 .396-.332.582-.993.582-.612 0-1.065-.282-1.34-.83a.08.08 0 00-.107-.035l-1.143.57a.083.083 0 00-.036.111c.454.92 1.384 1.437 2.627 1.437 1.583 0 2.539-.742 2.539-1.98s-1.155-1.598-2.173-1.82v-.003zM15.49 8.855c-.65 0-1.224.232-1.636.646a.04.04 0 01-.069-.03v-2.64a.08.08 0 00-.08-.081H12.27a.08.08 0 00-.08.082v8.194a.08.08 0 00.08.082h1.433a.08.08 0 00.081-.082v-3.594c0-.695.528-1.227 1.239-1.227.71 0 1.226.521 1.226 1.227v3.594a.08.08 0 00.081.082h1.433a.08.08 0 00.081-.082v-3.594c0-1.51-.981-2.577-2.355-2.577zM20.753 8.62c-.778 0-1.507.24-2.03.588a.082.082 0 00-.027.109l.632 1.088a.08.08 0 00.11.03 2.5 2.5 0 011.318-.366c1.25 0 2.17.891 2.17 2.068 0 1.003-.736 1.745-1.669 1.745-.76 0-1.288-.446-1.288-1.077 0-.361.152-.657.548-.866a.08.08 0 00.032-.113l-.596-1.018a.08.08 0 00-.098-.035c-.799.299-1.359 1.018-1.359 1.984 0 1.46 1.152 2.55 2.76 2.55 1.877 0 3.227-1.313 3.227-3.195 0-2.018-1.57-3.492-3.73-3.492zM28.675 8.843c-.724 0-1.373.27-1.845.746-.026.027-.069.007-.069-.029v-.572a.08.08 0 00-.08-.082h-1.397a.08.08 0 00-.08.082v8.182a.08.08 0 00.08.081h1.433a.08.08 0 00.081-.081v-2.683c0-.036.043-.054.069-.03a2.6 2.6 0 001.808.7c1.682 0 2.993-1.373 2.993-3.157s-1.313-3.157-2.993-3.157zm-.271 4.929c-.956 0-1.681-.768-1.681-1.783s.723-1.783 1.681-1.783c.958 0 1.68.755 1.68 1.783 0 1.027-.713 1.783-1.681 1.783h.001z" fill="#fff"/></svg>
+
+              </li><li>
+                <svg class="payment-icons__icon" viewBox="-36 25 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-unionpay"><title id="pi-unionpay">Union Pay</title><path fill="#005B9A" d="M-36 46.8v.7-.7zM-18.3 25v24h-7.2c-1.3 0-2.1-1-1.8-2.3l4.4-19.4c.3-1.3 1.9-2.3 3.2-2.3h1.4zm12.6 0c-1.3 0-2.9 1-3.2 2.3l-4.5 19.4c-.3 1.3.5 2.3 1.8 2.3h-4.9V25h10.8z"/><path fill="#E9292D" d="M-19.7 25c-1.3 0-2.9 1.1-3.2 2.3l-4.4 19.4c-.3 1.3.5 2.3 1.8 2.3h-8.9c-.8 0-1.5-.6-1.5-1.4v-21c0-.8.7-1.6 1.5-1.6h14.7z"/><path fill="#0E73B9" d="M-5.7 25c-1.3 0-2.9 1.1-3.2 2.3l-4.4 19.4c-.3 1.3.5 2.3 1.8 2.3H-26h.5c-1.3 0-2.1-1-1.8-2.3l4.4-19.4c.3-1.3 1.9-2.3 3.2-2.3h14z"/><path fill="#059DA4" d="M2 26.6v21c0 .8-.6 1.4-1.5 1.4h-12.1c-1.3 0-2.1-1.1-1.8-2.3l4.5-19.4C-8.6 26-7 25-5.7 25H.5c.9 0 1.5.7 1.5 1.6z"/><path fill="#fff" d="M-21.122 38.645h.14c.14 0 .28-.07.28-.14l.42-.63h1.19l-.21.35h1.4l-.21.63h-1.68c-.21.28-.42.42-.7.42h-.84l.21-.63m-.21.91h3.01l-.21.7h-1.19l-.21.7h1.19l-.21.7h-1.19l-.28 1.05c-.07.14 0 .28.28.21h.98l-.21.7h-1.89c-.35 0-.49-.21-.35-.63l.35-1.33h-.77l.21-.7h.77l.21-.7h-.7l.21-.7zm4.83-1.75v.42s.56-.42 1.12-.42h1.96l-.77 2.66c-.07.28-.35.49-.77.49h-2.24l-.49 1.89c0 .07 0 .14.14.14h.42l-.14.56h-1.12c-.42 0-.56-.14-.49-.35l1.47-5.39h.91zm1.68.77h-1.75l-.21.7s.28-.21.77-.21h1.05l.14-.49zm-.63 1.68c.14 0 .21 0 .21-.14l.14-.35h-1.75l-.14.56 1.54-.07zm-1.19.84h.98v.42h.28c.14 0 .21-.07.21-.14l.07-.28h.84l-.14.49c-.07.35-.35.49-.77.56h-.56v.77c0 .14.07.21.35.21h.49l-.14.56h-1.19c-.35 0-.49-.14-.49-.49l.07-2.1zm4.2-2.45l.21-.84h1.19l-.07.28s.56-.28 1.05-.28h1.47l-.21.84h-.21l-1.12 3.85h.21l-.21.77h-.21l-.07.35h-1.19l.07-.35h-2.17l.21-.77h.21l1.12-3.85h-.28m1.26 0l-.28 1.05s.49-.21.91-.28c.07-.35.21-.77.21-.77h-.84zm-.49 1.54l-.28 1.12s.56-.28.98-.28c.14-.42.21-.77.21-.77l-.91-.07zm.21 2.31l.21-.77h-.84l-.21.77h.84zm2.87-4.69h1.12l.07.42c0 .07.07.14.21.14h.21l-.21.7h-.77c-.28 0-.49-.07-.49-.35l-.14-.91zm-.35 1.47h3.57l-.21.77h-1.19l-.21.7h1.12l-.21.77h-1.26l-.28.42h.63l.14.84c0 .07.07.14.21.14h.21l-.21.7h-.7c-.35 0-.56-.07-.56-.35l-.14-.77-.56.84c-.14.21-.35.35-.63.35h-1.05l.21-.7h.35c.14 0 .21-.07.35-.21l.84-1.26h-1.05l.21-.77h1.19l.21-.7h-1.19l.21-.77zm-19.74-5.04c-.14.7-.42 1.19-.91 1.54-.49.35-1.12.56-1.89.56-.7 0-1.26-.21-1.54-.56-.21-.28-.35-.56-.35-.98 0-.14 0-.35.07-.56l.84-3.92h1.19l-.77 3.92v.28c0 .21.07.35.14.49.14.21.35.28.7.28s.7-.07.91-.28c.21-.21.42-.42.49-.77l.77-3.92h1.19l-.84 3.92m1.12-1.54h.84l-.07.49.14-.14c.28-.28.63-.42 1.05-.42.35 0 .63.14.77.35.14.21.21.49.14.91l-.49 2.38h-.91l.42-2.17c.07-.28.07-.49 0-.56-.07-.14-.21-.14-.35-.14-.21 0-.42.07-.56.21-.14.14-.28.35-.28.63l-.42 2.03h-.91l.63-3.57m9.8 0h.84l-.07.49.14-.14c.28-.28.63-.42 1.05-.42.35 0 .63.14.77.35s.21.49.14.91l-.49 2.38h-.91l.42-2.24c.07-.21 0-.42-.07-.49-.07-.14-.21-.14-.35-.14-.21 0-.42.07-.56.21-.14.14-.28.35-.28.63l-.42 2.03h-.91l.7-3.57m-5.81 0h.98l-.77 3.5h-.98l.77-3.5m.35-1.33h.98l-.21.84h-.98l.21-.84zm1.4 4.55c-.21-.21-.35-.56-.35-.98v-.21c0-.07 0-.21.07-.28.14-.56.35-1.05.7-1.33.35-.35.84-.49 1.33-.49.42 0 .77.14 1.05.35.21.21.35.56.35.98v.21c0 .07 0 .21-.07.28-.14.56-.35.98-.7 1.33-.35.35-.84.49-1.33.49-.35 0-.7-.14-1.05-.35m1.89-.7c.14-.21.28-.49.35-.84v-.35c0-.21-.07-.35-.14-.49a.635.635 0 0 0-.49-.21c-.28 0-.49.07-.63.28-.14.21-.28.49-.35.84v.28c0 .21.07.35.14.49.14.14.28.21.49.21.28.07.42 0 .63-.21m6.51-4.69h2.52c.49 0 .84.14 1.12.35.28.21.35.56.35.91v.28c0 .07 0 .21-.07.28-.07.49-.35.98-.7 1.26-.42.35-.84.49-1.4.49h-1.4l-.42 2.03h-1.19l1.19-5.6m.56 2.59h1.12c.28 0 .49-.07.7-.21.14-.14.28-.35.35-.63v-.28c0-.21-.07-.35-.21-.42-.14-.07-.35-.14-.7-.14h-.91l-.35 1.68zm8.68 3.71c-.35.77-.7 1.26-.91 1.47-.21.21-.63.7-1.61.7l.07-.63c.84-.28 1.26-1.4 1.54-1.96l-.28-3.78h1.19l.07 2.38.91-2.31h1.05l-2.03 4.13m-2.94-3.85l-.42.28c-.42-.35-.84-.56-1.54-.21-.98.49-1.89 4.13.91 2.94l.14.21h1.12l.7-3.29-.91.07m-.56 1.82c-.21.56-.56.84-.91.77-.28-.14-.35-.63-.21-1.19.21-.56.56-.84.91-.77.28.14.35.63.21 1.19"/></svg>
+              </li><li>
+                <svg class="payment-icons__icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"/><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#142FBD" style="fill:#142FBD;fill:color(display-p3 0.0784 0.1843 0.7412);fill-opacity:1;"/><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#1532CB" style="fill:#1532CB;fill:color(display-p3 0.0824 0.1961 0.7961);fill-opacity:1;"/><path d="M29.5944 10.2167H29.2778C28.8556 11.2722 28.5389 11.8 28.2222 13.3833H30.2278C29.9111 11.8 29.9111 11.0611 29.5944 10.2167V10.2167ZM32.6556 16.4444H30.8611C30.7556 16.4444 30.7556 16.4444 30.65 16.3389L30.4389 15.3889L30.3333 15.1778H27.8C27.6944 15.1778 27.5889 15.1778 27.5889 15.3889L27.2722 16.3389C27.2722 16.4444 27.1667 16.4444 27.1667 16.4444H24.95L25.1611 15.9167L28.2222 8.73889C28.2222 8.21111 28.5389 8 29.0667 8H30.65C30.7556 8 30.8611 8 30.8611 8.21111L32.3389 15.0722C32.4444 15.4944 32.55 15.8111 32.55 16.2333C32.6556 16.3389 32.6556 16.3389 32.6556 16.4444V16.4444ZM18.5111 16.1278L18.9333 14.2278C19.0389 14.2278 19.1444 14.3333 19.1444 14.3333C19.8833 14.65 20.6222 14.8611 21.3611 14.7556C21.5722 14.7556 21.8889 14.65 22.1 14.5444C22.6278 14.3333 22.6278 13.8056 22.2056 13.3833C21.9944 13.1722 21.6778 13.0667 21.3611 12.8556C20.9389 12.6444 20.5167 12.4333 20.2 12.1167C18.9333 11.0611 19.3556 9.58333 20.0944 8.84444C20.7278 8.42222 21.0444 8 21.8889 8C23.1556 8 24.5278 8 25.1611 8.21111H25.2667C25.1611 8.84444 25.0556 9.37222 24.8444 10.0056C24.3167 9.79444 23.7889 9.58333 23.2611 9.58333C22.9444 9.58333 22.6278 9.58333 22.3111 9.68889C22.1 9.68889 21.9944 9.79444 21.8889 9.9C21.6778 10.1111 21.6778 10.4278 21.8889 10.6389L22.4167 11.0611C22.8389 11.2722 23.2611 11.4833 23.5778 11.6944C24.1056 12.0111 24.6333 12.5389 24.7389 13.1722C24.95 14.1222 24.6333 14.9667 23.7889 15.6C23.2611 16.0222 23.05 16.2333 22.3111 16.2333C20.8333 16.2333 19.6722 16.3389 18.7222 16.0222C18.6167 16.2333 18.6167 16.2333 18.5111 16.1278V16.1278ZM14.8167 16.4444C14.9222 15.7056 14.9222 15.7056 15.0278 15.3889C15.5556 13.0667 16.0833 10.6389 16.5056 8.31667C16.6111 8.10556 16.6111 8 16.8222 8H18.7222C18.5111 9.26667 18.3 10.2167 17.9833 11.3778C17.6667 12.9611 17.35 14.5444 16.9278 16.1278C16.9278 16.3389 16.8222 16.3389 16.6111 16.3389L14.8167 16.4444ZM5 8.21111C5 8.10556 5.21111 8 5.31667 8H8.90556C9.43333 8 9.85556 8.31667 9.96111 8.84444L10.9111 13.4889C10.9111 13.5944 10.9111 13.5944 11.0167 13.7C11.0167 13.5944 11.1222 13.5944 11.1222 13.5944L13.3389 8.21111C13.2333 8.10556 13.3389 8 13.4444 8H15.6611C15.6611 8.10556 15.6611 8.10556 15.5556 8.21111L12.2833 15.9167C12.1778 16.1278 12.1778 16.2333 12.0722 16.3389C11.9667 16.4444 11.7556 16.3389 11.5444 16.3389H9.96111C9.85556 16.3389 9.75 16.3389 9.75 16.1278L8.06111 9.58333C7.85 9.37222 7.53333 9.05556 7.11111 8.95C6.47778 8.63333 5.31667 8.42222 5.10556 8.42222L5 8.21111Z" fill="white" style="fill:white;fill-opacity:1;"/></svg>
+
+              </li></ul></div>
+  </div>
+</footer>
+
+
+
+
+</div>
+
+  </div>
+
+  
+  
+  <ul hidden>
+    <li id="a11y-refresh-page-message">Een selectie kiezen resulteert in het geheel verversen van de pagina.</li>
+    <li id="a11y-selection-message">Druk op de spatiebalk en vervolgens op de pijltoetsen om een selectie te maken.</li>
+  </ul>
+
+<!-- **BEGIN** Hextom TMS Translator // Main Include - DO NOT MODIFY -->
+    <script src="//www.breugembier.nl/cdn/shop/t/11/assets/tms-translator.js?v=118226042761107722251663040554" defer="defer"></script>
+    <!-- **END** Hextom TMS Translator // Main Include - DO NOT MODIFY -->
+        
+<div id="shopify-block-AcVlsV1U0QlhCdXVQN__qikify-contactform-1693295862" class="shopify-block shopify-app-block"><script id="qikify-contact-form-config" type="text/javascript">
+  
+
+  window.qcfData = {
+    entries: null,
+    subscription: null,
+    config: null,
+    translation: null,
+    instanceStatus: undefined,
+    customAppDiscounts: null,
+  };
+
+  
+    qcfData.entries = [];
+  
+
+  
+    qcfData.subscription = {"name":"contactform-free","kind":"subscription"};
+  
+
+  
+    qcfData.config = [];
+  
+
+  
+
+  
+
+  
+</script>
+
+<script src="https://cdn.shopify.com/extensions/01a12f4a-b985-7f62-ba6b-32e0daf048e5/free-contact-form-1-145/assets/contactform-v2.js" defer="defer"></script>
+
+
+
+
+  <style id="qikify-contactform-custom-style"></style>
+
+
+
+  <script id="qikify-contactform-custom-script"></script>
+
+
+
+</div><script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
+<shopify-store store-domain="https://www.breugembier.nl" country="NL" language="nl"></shopify-store>
+<shopify-chat></shopify-chat>
+</body>
+</html>
