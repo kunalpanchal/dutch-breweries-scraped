@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>X brewing</title>
+    <meta name="description" content="X-brewing">
+    <link rel="stylesheet" href="/build/app.css?d=2025101400015">
+
+    <link rel="canonical" href="https://disjfa.github.io/">
+    <link rel="alternate" type="application/rss+xml" title="X-brewing" href="https://disjfa.github.io/feed.xml">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="X-Brewing">
+    <link rel="icon" type="image/png" sizes="228x228" href="/icon/coast-228x228.png">
+    <link rel="yandex-tableau-widget" href="/icon/yandex-browser-manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/icon/favicon.ico">
+    <link rel="manifest" href="/icon/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#020307">
+    <meta name="application-name" content="X-Brewing">
+    <meta name="msapplication-TileColor" content="#020307">
+    <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/icon/browserconfig.xml">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icon/apple-touch-startup-image-320x460.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icon/apple-touch-startup-image-640x920.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icon/apple-touch-startup-image-640x1096.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icon/apple-touch-startup-image-750x1294.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icon/apple-touch-startup-image-1182x2208.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icon/apple-touch-startup-image-1242x2148.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icon/apple-touch-startup-image-748x1024.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icon/apple-touch-startup-image-768x1004.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icon/apple-touch-startup-image-1496x2048.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icon/apple-touch-startup-image-1536x2008.png">
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" 
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
+</script>
+<div id="app">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="/img/logo-white.png" alt="X brewing logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <div class="navbar-nav mr-auto">
+                <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#beers" class="nav-link">Beers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#feed" class="nav-link">FB-feed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#map" class="nav-link">Availability</a>
+                        </li>
+                </ul>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                
+                    <a href="https://www.facebook.com/this.is.x.brewing/" class="btn text-white">
+                        <i class="fab fa-fw fa-facebook"></i>
+                    </a>
+                
+                    <a href="https://www.instagram.com/this.is.x.brewing/" class="btn text-white">
+                        <i class="fab fa-fw fa-instagram"></i>
+                    </a>
+                
+                    <a href="https://untappd.com/Xbrewing" class="btn text-white">
+                        <i class="fab fa-fw fa-untappd"></i>
+                    </a>
+                
+                    <a href="mailto:info@x-brewing.com" class="btn text-white">
+                        <i class="fab fa-fw fa-mail-bulk"></i>
+                    </a>
+               
+                
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-3 bounce">
+    <img src="/img/brewhouse+tanks.jpg" alt="X-brewing brewhouse" class="img-fluid pulse">
+</div>
+
+<a name="about"></a>
+
+<div class="mission-statement container py-2 text-center">
+    <div class="scene">
+        <div class="flip-card" id="flipCard">
+            <div class="container py-2 text-center card-face front">                
+                <div class="card-content" style="position: relative;">
+                    <button type="button" id="flipBtn" class="btn btn-sm btn-secondary flipBtn" style="position: absolute; top: 10px; right: 10px;">Dutch</button>
+                    <h1>About X-brewing</h1>
+                    <p>
+                        X-brewing stands for beers with flavor that search for borders and regularly cross them.
+                    </p>
+                    <p>
+                        Not often you will hear that our beers are nicely balanced or everyone's friends.
+                    </p>
+                    <p>
+                        Unobstructed by the commandments about beers and styles, we brew over the top and out of balance.
+                    </p>
+                    <p>
+                        This is done with honest products and without adding flavors or colors.
+                    </p>
+                    <p>
+                        X-brewing: More flavor. Beers with an X.
+                    </p>
+                </div>
+            </div>
+                
+            <div class="container py-2 text-center card-face back">
+                <div class="card-content" style="position: relative;">
+                    <button type="button" id="flipBtnBack" class="btn btn-sm btn-secondary flipBtn" style="position: absolute; top: 10px; right: 10px;">Engels</button>
+                    <h1>Over X-brewing</h1>
+                    <p>
+                        X-brewing staat voor bieren met smaak die de grens opzoeken en er regelmatig overheen gaan.
+                    </p>
+                    <p>
+                        Niet snel zul je horen dat onze bieren mooi uitgebalanceerd of allemansvriendjes zijn.
+                    </p>
+                    <p>
+                        Ongehinderd door geboden over bieren en stijlen brouwen wij over de top en uit balans.
+                    </p>
+                    <p>
+                        Dit wel met eerlijke produkten en zonder toevoeging van smaak- of kleurstoffen.
+                    </p>
+                    <p>
+                        X-brewing: Meer smaak. Beers with an X.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-2 text-center">
+    <hr>
+    <blockquote class="blockquote">
+        <p>Awesome beers</p>
+        <footer class="blockquote-footer">Disjfa <cite title="disjfa.nl">disjfa.nl</cite></footer>
+    </blockquote>
+</div>
+
+
+
+
+<a name="beers"></a>
+<div class="container py-3 text-center" id="current-beers">
+    <h2>Current beers</h2>    
+    <div class="row">
+         
+                        <a href="/beer/a-hazy-shade-of-summer" class="col-4 picture my-3 rounded">
+                <img src="/img/can-a-hazy-shade-of-summer.jpg" alt="A Hazy Shade of Summer" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">A Hazy Shade of Summer</h3>
+                        <p class="picture-body">Imperial Session NEIPA</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+                        <a href="/beer/all-the-leaves-are-brown" class="col-4 picture my-3 rounded">
+                <img src="/img/can-all-the-leaves-are-brown.jpg" alt="All the leaves are brown" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">All the leaves are brown</h3>
+                        <p class="picture-body">Tarragon Bock</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+             
+                        <a href="/beer/cherry-love" class="col-4 picture my-3 rounded">
+                <img src="/img/can-cherry-love.jpg" alt="Cherry Love" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Cherry Love</h3>
+                        <p class="picture-body">Cherry and Almond Pastry Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/coco-chaos" class="col-4 picture my-3 rounded">
+                <img src="/img/can-coco-chaos.jpg" alt="Coco Chaos" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Coco Chaos</h3>
+                        <p class="picture-body">Coconut and Vanilla Pastry Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/duskforge" class="col-4 picture my-3 rounded">
+                <img src="/img/can-duskforge.jpg" alt="Duskforge" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Duskforge</h3>
+                        <p class="picture-body">Imperial Bakery Spice Pastry Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+                        <a href="/beer/fruity-madness" class="col-4 picture my-3 rounded">
+                <img src="/img/can-fruity-madness.jpg" alt="Fruity Madness" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Fruity Madness</h3>
+                        <p class="picture-body">West Coast IPA</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+             
+                        <a href="/beer/indo-gone-wild" class="col-4 picture my-3 rounded">
+                <img src="/img/can-indo-gone-wild.jpg" alt="Indo Gone Wild" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Indo Gone Wild</h3>
+                        <p class="picture-body">Spicy Saison</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/indo-gone-wild-fe" class="col-4 picture my-3 rounded">
+                <img src="/img/can-indo-gone-wild-fe.jpg" alt="Indo Gone Wild Firebreather edition" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title picture-title-small">Indo Gone Wild Firebreather edition</h3>
+                        <p class="picture-body">Very Spicy Saison</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/intergalactic-apple-pie" class="col-4 picture my-3 rounded">
+                <img src="/img/can-intergalactic-apple-pie.jpg" alt="Intergalactic Apple Pie" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Intergalactic Apple Pie</h3>
+                        <p class="picture-body">Apple Pie Pastry Sour Ale</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/intergalactic-fruitbowl" class="col-4 picture my-3 rounded">
+                <img src="/img/can-intergalactic-fruitbowl.jpg" alt="Intergalactic Fruitbowl" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Intergalactic Fruitbowl</h3>
+                        <p class="picture-body">Kiwi, Lime &amp; Coconut Pastry Sour Ale</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/intergalactic-gumball" class="col-4 picture my-3 rounded">
+                <img src="/img/can-intergalactic-gumball.jpg" alt="Intergalactic Gumball" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Intergalactic Gumball</h3>
+                        <p class="picture-body">Almond, Cherry &amp; Raspberry Pastry Sour Ale</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/malto-maple-madness" class="col-4 picture my-3 rounded">
+                <img src="/img/can-malto-maple-madness.jpg" alt="Malto Maple Madness" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Malto Maple Madness</h3>
+                        <p class="picture-body">Imperial Maple Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+             
+                        <a href="/beer/shadow-fuel" class="col-4 picture my-3 rounded">
+                <img src="/img/can-shadow-fuel.jpg" alt="Shadow Fuel" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Shadow Fuel</h3>
+                        <p class="picture-body">Imperial Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/soulfly" class="col-4 picture my-3 rounded">
+                <img src="/img/can-soulfly.jpg" alt="Soulfly" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Soulfly</h3>
+                        <p class="picture-body">American IPA</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+             
+                        <a href="/beer/whoop-the-orange-scoop" class="col-4 picture my-3 rounded">
+                <img src="/img/can-whoop-the-orange-scoop.jpg" alt="Whoop The Orange Scoop" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Whoop The Orange Scoop</h3>
+                        <p class="picture-body">New England IPA</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+</div>
+
+<a name="beers"></a>
+<div class="container py-3 text-center" id="previous-beers">
+    <h2>Previous beers</h2>   
+    <div class="row">
+         
+             
+                        <a href="/beer/a-wacked-up-nut-job" class="col-4 picture my-3 rounded">
+                <img src="/img/can-a-wacked-up-nut-job.jpg" alt="A Wacked Up Nut Job" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">A Wacked Up Nut Job</h3>
+                        <p class="picture-body">Imperial Peanutbutter Banana Pastry Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+                        <a href="/beer/black-and-blue" class="col-4 picture my-3 rounded">
+                <img src="/img/can-black-and-blue.jpg" alt="Black and Blue" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Black and Blue</h3>
+                        <p class="picture-body">Stout-Imperial / Double Pastry</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/canadian-bbq" class="col-4 picture my-3 rounded">
+                <img src="/img/can-canadian-bbq.jpg" alt="Canadian BBQ" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Canadian BBQ</h3>
+                        <p class="picture-body">Smoked Maple Pancake Ale</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+             
+             
+                        <a href="/beer/freaky-frosty" class="col-4 picture my-3 rounded">
+                <img src="/img/can-freaky-frosty.jpg" alt="Freaky Frosty" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Freaky Frosty</h3>
+                        <p class="picture-body">Ice Distilled Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+                        <a href="/beer/hot-chocolate" class="col-4 picture my-3 rounded">
+                <img src="/img/can-hot-chocolate.jpg" alt="Hot Chocolate" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Hot Chocolate</h3>
+                        <p class="picture-body">Spicy Choco Oatmeal Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/i-love-the-smell-of-coffee-in-the-morning" class="col-4 picture my-3 rounded">
+                <img src="/img/can-i-love-the-smell-of-coffee-in-the-morning.jpg" alt="I Love the Smell of Coffee In The Morning" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title picture-title-small">I Love the Smell of Coffee In The Morning</h3>
+                        <p class="picture-body">Imperial Coffee Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+             
+             
+             
+             
+             
+                        <a href="/beer/pogue-mahone" class="col-4 picture my-3 rounded">
+                <img src="/img/can-pogue-mahone.jpg" alt="Pogue Mahone" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Pogue Mahone</h3>
+                        <p class="picture-body">Irish Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/razzle-frazzle" class="col-4 picture my-3 rounded">
+                <img src="/img/can-razzle-frazzle.jpg" alt="Razzle Frazzle" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Razzle Frazzle</h3>
+                        <p class="picture-body">Raspberry Porter</p>
+                    </div>
+                </div>
+            </a>
+         
+             
+             
+                        <a href="/beer/the-sky-is-grey" class="col-4 picture my-3 rounded">
+                <img src="/img/can-the-sky-is-grey.jpg" alt="The Sky is Grey" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">The Sky is Grey</h3>
+                        <p class="picture-body">Imperial Vanilla Pastry Stout</p>
+                    </div>
+                </div>
+            </a>
+         
+                        <a href="/beer/two-big-friends" class="col-4 picture my-3 rounded">
+                <img src="/img/can-two-big-friends.jpg" alt="Two big friends" class="img-fluid rounded">
+                <div class="picture-inner">
+                    <div class="picture-text">
+                                                <h3 class="picture-title ">Two big friends</h3>
+                        <p class="picture-body">Weizen with cucumber</p>
+                    </div>
+                </div>
+            </a>
+         
+                </div>
+</div>
+
+<a name="feed"></a>
+<div class="container py-3 text-center">
+    <div class="fb-page" data-href="https://www.facebook.com/X-brewing-169771763610772" 
+    data-tabs="timeline" 
+    data-width="475" 
+    data-height="800" 
+    data-small-header="false" 
+    data-adapt-container-width="true" 
+    data-hide-cover="false" 
+    data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/X-brewing-169771763610772" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/X-brewing-169771763610772/posts" class="btn btn-outline-primary">
+                <i class="fab fa-facebook"></i> Check out X-brewing on facebook
+            </a>
+        </blockquote>
+    </div>
+</div>
+
+<a name="map"></a>
+<div class="container py-3">
+    <h3>Available here</h3>
+</div>
+<div class="map" id="map"></div>
+<div class="d-none">
+<div class='map-item' data-lat='52.22918' data-lng='4.46688'><h6>tuineXtra</h6><div>Van Berkelweg 51, 2203LA Noordwijk</div><a href='https://www.tctuinextra.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.18830' data-lng='4.44317'><h6>'t Vaatje</h6><div>Oegstgeesterweg 44, 2231AZ Rijnsburg</div><a href='https://tvaatje.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.16189' data-lng='4.48368'><h6>Lemmy's</h6><div>Morsstraat 24, 2312BM Leiden</div><a href='https://biercafe.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.19154' data-lng='4.44257'><h6>in de Hoftuin</h6><div>Anjelierenstraat 13, 2231GT Rijnsburg</div><a href='https://www.topslijterindehoftuin.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.16000' data-lng='4.48858'><h6>Craft & Cans</h6><div>Vrouwensteeg 14, 2311EB Leiden</div><a href='https://www.craftcans.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.19498' data-lng='4.42461'><h6>Coop katwijk aan den rijn</h6><div>Rijnstraat  , 2223EC Katwijk</div><a href='https://www.coop.nl/supermarkten/katwijk/3634' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.14992' data-lng='4.49626'><h6>Drankenhandel Leiden</h6><div>Zeemanlaan 22B, 2313SZ Leiden</div><a href='https://www.drankenhandelleiden.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.16000' data-lng='4.48880'><h6>Stadsbrouwhuis</h6><div>Aalmarkt 1, 2311EC Leiden</div><a href='https://www.stadsbrouwhuis.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.07336' data-lng='4.31003'><h6>Dorst Craftbeer Shop</h6><div>Boekhorststraat 99, 2512DE Den haag </div><a href='http://www.dorstcraftbeer.com/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.38011' data-lng='4.63325'><h6>Lokaal Dutch Beer Bar</h6><div>Koningstraat 46zw, 2011TD Haarlem</div><a href='http://lokaalhaarlem.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.26223' data-lng='4.49314'><h6>Santhe Dranken </h6><div>Havenstraat 12, 2211EH Noordwijkerhout </div><a href='https://www.santhe.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.25947' data-lng='4.55889'><h6>Smaakhuis </h6><div>Kanaalstraat 80, 2161 JN Lisse</div><a href='https://www.smaakhuis.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.20868' data-lng='4.39905'><h6>Cafe Jam</h6><div>E.A. Borgerstraat 50, 2225 AS Katwijk</div><a href='' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.14505' data-lng='4.48104'><h6>Boulderhal kunststof </h6><div>Rooseveltstraat 49e, 2321 Bl Leiden</div><a href='https://www.boulderhalkunststof.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.08446' data-lng='4.74487'><h6>Jan Kraan</h6><div>Overtocht 6, 2411 BV Bodegraven </div><a href='https://www.speciaalbierwinkel.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.05524' data-lng='4.49932'><h6>Drankenspeciaalzaak Peet</h6><div>Dorpsstraat 130, 2712 AN Zoetermeer</div><a href='' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.01016' data-lng='4.71086'><h6>Den gouwen aar</h6><div>Oosthaven 6, 2801 PB Gouda</div><a href='http://slijterijdengouwenaar.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.01321' data-lng='4.71232'><h6>De goudse eend </h6><div>Wilhelminastraat 66, 2801 XK Gouda</div><a href='https://www.cafedegoudseeend.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.37673' data-lng='4.88936'><h6>Arendsnest </h6><div>Herengracht 90, 1015 BS Amsterdam </div><a href='http://www.arendsnest.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.37228' data-lng='4.88983'><h6>De bierkoning </h6><div>Paleisstraat 125, 1012 ZL Amsterdam </div><a href='https://www.bierkoning.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.36562' data-lng='4.88208'><h6>Cause Beer Loves Food</h6><div>Lange Leidsedwarsstraat 4, 1017 NL Amsterdam</div><a href='http://www.causebeerlovesfood.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.06857' data-lng='4.36517'><h6>Voorburgse bierwinkel </h6><div>Wielemakersslop 8-10, 2271 CZ Voorburg</div><a href='http://voorburgsebierwinkel.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.24293' data-lng='4.42967'><h6>Het koffiehuis </h6><div>De grent 32, 2202 EL Noordwijk</div><a href='http://hetkoffiehuis.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.20632' data-lng='4.41831'><h6>De Hoorn Hoornesplein</h6><div>Hoornesplein 53 , 2221 BC Katwijk</div><a href='https://Www.slijterijdehoorn.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.24536' data-lng='4.43066'><h6>The harbourlights </h6><div>Wilhelmina boulevard 9,  Noordwijk</div><a href='https://www.harbourlights.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.19942' data-lng='4.40598'><h6>De Hoorn Meeuwenlaan</h6><div>Meeuwenlaan 45, 2225 PE Katwijk</div><a href='https://Www.slijterijdehoorn.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.26264' data-lng='4.49130'><h6>Cafe van der Geest</h6><div>Zeestraat 7a, 2211 GD Noordwijkerhout </div><a href='http://www.cafevandergeest.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.29684' data-lng='5.63129'><h6>Burg bieren </h6><div>Putterweg 45 , 3851 GB  Ermelo </div><a href='https://www.burgbieren.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.90214' data-lng='4.48444'><h6> Kaapse Brouwers</h6><div>Veerlaan 19-D, 3072 AN Rotterdam </div><a href='https://www.kaapsebrouwers.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.45755' data-lng='4.61142'><h6>De Drankenier</h6><div>Lange nieuwstraat 183, 1972 GH Ijmuiden </div><a href='https://www.dedrankenier.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.07899' data-lng='4.30800'><h6>Cafe hoppzak</h6><div>Papestraat 26a, 2513 AW Den haag </div><a href='https://www.facebook.com/bierspeciaalcafehoppzak/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.09162' data-lng='5.08883'><h6>Buurtbier.nl, Gert-Jan Jansen</h6><div>van Diemenstraat 21, 3531 GG Utrecht </div><a href='https://buurtbier.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.93198' data-lng='4.48553'><h6>Hop in</h6><div>Zwaanshals 484, 3035 KS Rotterdam </div><a href='https://www.hop-in.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.99084' data-lng='4.38192'><h6>Bar 't Coepeltje</h6><div>Mekelweg 15 , 2629 JB Delft</div><a href='https://untappd.com/v/cafe-het-koepeltje/5287699' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.82260' data-lng='5.85124'><h6>Cafe piet huisman</h6><div>Sint Jacobslaan 30 , 6533 BT Nijmegen </div><a href='http://www.piethuisman.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.16199' data-lng='4.48342'><h6>BFF</h6><div>Morsstraat 25, 2312 BK Leiden</div><a href='https://ww.bffleiden.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.49647' data-lng='4.77461'><h6>De groote Weiver</h6><div>Industrieweg 1a , 1521 NA Wormerveer</div><a href='https://degrooteweiver.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.95991' data-lng='4.47241'><h6>Slijterij wijnhandel Marko Poot</h6><div>Rodondendronplein 2a, 3053 ES Rotterdam </div><a href='https://www.slijterijpoot.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.08705' data-lng='4.88474'><h6>Bierloods 22</h6><div>Voorstraat 22 , 3441 CL Woerden</div><a href='https://www.bierloods22.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.19415' data-lng='5.43082'><h6>Hoptimaal</h6><div>Leeghwater 14, 3825 MR Amersfoort </div><a href='https://www.hoptimaal.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.05923' data-lng='4.54104'><h6>De liter slijter</h6><div>Oostheemplein 549, 2721 NJ Zoetermeer</div><a href='https://www.deliterslijter.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.53087' data-lng='5.97817'><h6>Mr. Hop</h6><div>Keizersveld 25 B , 5803 AM Venray</div><a href='https://www.misterhop.com/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.43962' data-lng='4.82987'><h6>Slijterij Vonk</h6><div>Tuinierstraat 8, 1501 NK Zaandam</div><a href='https://www.slijterijvonk.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.45289' data-lng='5.60988'><h6>Het Biermoment - Hans Walravens</h6><div>Schorfhoeve 4, 5708 TZ Helmond</div><a href='https://www.hetbiermoment.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.07069' data-lng='4.28318'><h6>J.P. Alsem</h6><div>Loosduinseweg 693, 2571 AM den Haag</div><a href='https://www.alsem.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.22121' data-lng='6.89671'><h6>Stanislaus Brewscovitch </h6><div>Stadsgravenstraat 59, 7511 ER Enschede </div><a href='https://stanislausbrewskovitch.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.24985' data-lng='6.16142'><h6>DAVO</h6><div>,  Deventer</div><a href='https://www.davobieren.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.50031' data-lng='4.76729'><h6>Slijterij drinks & gifts</h6><div>Heiligeweg 15A, 1561 DD Krommenie</div><a href='https://www.drinks-gifts.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.37998' data-lng='4.63073'><h6>Melger's wijn en dranken</h6><div>Barrevoetestraat 15, 2011 WN Haarlem</div><a href='https://melgers.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.15380' data-lng='4.48944'><h6>Restaurant/Grand cafe de vriend</h6><div>Doezastraat 43, 2311 HA Leiden</div><a href='https://www.grandcafedevriend.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.43636' data-lng='5.42938'><h6>Het borreluur</h6><div>Hurksestraat 44, 5652 AL Eindhoven </div><a href='https://www.hetborreluur.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.20511' data-lng='4.39652'><h6>Cafe the Pocket</h6><div>Badstraat 38 , 2225 BM Katwijk </div><a href='https://www.thepocket.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.84540' data-lng='5.86120'><h6>De Bierhoeder</h6><div>Bloemerstraat 86, 6511 EM Nijmegen</div><a href='https://www.debierhoeder.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.38206' data-lng='4.63896'><h6>Bierlokaal de Uiver</h6><div>Lange begijnstraat 10, 2011 HH Haarlem</div><a href='https://bierlokaaldeuiver.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.54644' data-lng='4.65941'><h6>Drinkhut Castricum</h6><div>Burgemeester Mooijstraat 35, 1901 ER Castricum </div><a href='https://www.drinkhut.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.17548' data-lng='4.48118'><h6>Theehuis-eethuis de Leidse hout</h6><div>Houtlaan 100, 2334 CL Leiden</div><a href='https://www.deleidsehout.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.55567' data-lng='5.09023'><h6>Slagroom eten &drinken</h6><div>Piusplein 6a, 5038 WL Tilburg </div><a href='https://www.cafeslagroom.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.07587' data-lng='4.30995'><h6>Cafe-restaurant Rootz</h6><div>Grote marktstraat 14, 2511 BJ Den Haag</div><a href='https://www.rootz.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.63945' data-lng='5.06081'><h6>Lokaal OostWest bier</h6><div>Grote oost 23, 1621 BR Hoorn</div><a href='https://www.lokaaloostwest.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.22224' data-lng='4.48334'><h6>Slijterij de Dwarsdrijver</h6><div>Herenstraat 124, 2215 KL Voorhout </div><a href='https://www.bierhoek.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.69241' data-lng='5.86707'><h6>Drank van de Meisjes</h6><div>Oeffeltseweg 2, 5443 PJ Haps</div><a href='https://www.drankvandemeisjes.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.65179' data-lng='5.08627'><h6>Mitra Niels Plant</h6><div>A. Dekenplein 5, 1628 NX Hoorn</div><a href='https://www.mitra.nl/winkels/mitra-hoorn-eli-bos-a.-dekenplein' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.24238' data-lng='5.89166'><h6>Slijterij Haas</h6><div>De haven 4, 9062 DL Giekerk</div><a href='http://www.deleuksteslijterij.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.98236' data-lng='5.90567'><h6>Wijnhandel Barrique</h6><div>Pauwstraat 9 , 6811 GK Arnhem</div><a href='https://www.barriquewijnhandel.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='50.91544' data-lng='6.04994'><h6>Beer by Candlelight</h6><div>Burgemeester Beckersstraat 2c, 6374 SN Landgraaf</div><a href='https://beerbycandlelight.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='50.88429' data-lng='5.75541'><h6>Speciaalbieren Cafe de Keizer</h6><div>Markt 14, 6231 LS Meerssen</div><a href='https://www.cafedekeizermeerssen.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.83353' data-lng='4.13083'><h6>Breur uw Topslijter</h6><div>Evertsenplein 74, 3221 BL Hellevoetsluis </div><a href='https://www.breur-slijterij.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.92333' data-lng='6.79139'><h6>De slijterij </h6><div>Hoofdstraat 46, 9531 AH Borger</div><a href='https://www.deslijterijborger.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.85005' data-lng='6.60943'><h6>Dranken speciaalzaak Vinke</h6><div>Hoofdstraat 19A, 9431 AB Westerbork </div><a href='http://www.drankenspeciaalzaakvinke.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.22477' data-lng='6.89138'><h6>Drankenhandel Slijterij Berendsen</h6><div>Deurningerstraat 27, 7514 BC Enschede </div><a href='https://www.slijterijberendsen.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.02897' data-lng='5.55546'><h6>Pollekebier</h6><div>Zandstraat 25, 3901 CJ Veenendaal </div><a href='http://www.pollekebier.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.25674' data-lng='6.78758'><h6>Ter Braak Dranken</h6><div>Industriestraat 35, 7553 CK Hengelo </div><a href='https://www.terbraakdranken.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.57476' data-lng='4.99469'><h6>Bierwinkel Reeshof</h6><div>Ketelhavenstraat 163, 5045 NG Tilburg </div><a href='https://www.bierwinkelreeshof.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.467194' data-lng='5.63356'><h6>Slijterij 't Pijpke Mierlo-Hout</h6><div>Slegersstraat 4, 5706 AX Helmond</div><a href='https://slijterij-tpijpke.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.22784' data-lng='4.52438'><h6>Cafe de 2 Wezen</h6><div>Oude haven 2, 2171 GG Sassenheim </div><a href='https://www.cafede2wezen.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.62030' data-lng='4.93897'><h6>Drankenhandel Albert Schuermans BV</h6><div>Wilhelminastraat 79a, 5104 GB Dongen</div><a href='https://rovin.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.61529' data-lng='5.52893'><h6>Uw bierspecialist</h6><div>Verlengde Noordkade 14, 5462 EH Veghel</div><a href='https://hellobier.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.49553' data-lng='4.28655'><h6>De bierwinkel man</h6><div>Kortemeestraat 26, 4611 TM Bergen op Zoom</div><a href='https://debierwinkelman.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.47220' data-lng='4.74460'><h6>Bierwinkel de verwachting </h6><div>Dorpsstraat 524, 1566 BX Assendelft </div><a href='https://www.tapperijdeverwachting.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.21800' data-lng='6.56233'><h6>Van Erp Groningen</h6><div>Grote Kromme Elleboog 16, 9712 BK Groningen </div><a href='https://vanerpdranken.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.91791' data-lng='5.74690'><h6>Lekkerbier</h6><div>Tsjukemarwei 20, 8521 NA  Sint Nicolaasga</div><a href='https://www.bier-winkel.com/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.41219' data-lng='5.39725'><h6>Slijterij van Genechten</h6><div>Mira 23, 5505 AR Veldhoven </div><a href='https://www.slijterijvangenechten.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.84800' data-lng='5.85949'><h6>Onze Bierwinkel</h6><div>Lange hezelstraat 51, 6511 CC Nijmegen </div><a href='' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.84854' data-lng='5.85733'><h6>Bierhuys d'n Vlegel </h6><div>Nieuwe markt 8, 6511 XK Nijmegen </div><a href='https://www.bierhuysdnvlegel.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.43906' data-lng='5.44762'><h6>Speciaalbierkoning</h6><div>Zeelsterstaat 32, 5652 EK Eindhoven </div><a href='https://www.speciaalbierkoning.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.37165' data-lng='4.87397'><h6>Sterk Amsterdam </h6><div>de Clerqstraat 7, 1053 AA Amsterdam </div><a href='https://www.sterk.amsterdam/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.19304' data-lng='5.98569'><h6>Danny's Drankshop</h6><div>Meerstraat 54 B, 6041 KD Roermond </div><a href='http://www.dannysdrankshop.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.99363' data-lng='4.20826'><h6>D.E. bierbar B.V. </h6><div>Verspycklaan 1, 2671 CR Naaldwijk</div><a href='http://www.de-bierwinkel.eu/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.09895' data-lng='4.76249'><h6>Burgers Beers & Blues</h6><div>Dorpsstraat 49, 1796 BA De Koog</div><a href='https://www.burgersbeersbluestexel.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.13775' data-lng='6.43333'><h6>Van Erp Roden</h6><div>Raadhuisstraat 11, 9301 AA Roden</div><a href='https://vanerpdranken.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.85036' data-lng='4.32858'><h6>Brother beer</h6><div>Nieuwstraat 147, 3201 EE Spijkenisse </div><a href='https://brother-beer.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='50.86306' data-lng='5.83048'><h6>De Zythotheek</h6><div>Sint Pieter straat 15, 6301 DP Valkenburg </div><a href='https://www.zythotheek.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.20253' data-lng='4.63058'><h6>Slijterij van der Poel</h6><div>Westeinde 13, 2371 AS Roelofarendsveen </div><a href='https://www.poelvers.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.51046' data-lng='5.44794'><h6>Mitra slijterij Berends</h6><div>Jol 35-23, 8243 HG Lelystad </div><a href='https://www.mitra.nl/winkels/mitra-lelystad-slijter-berends-jol' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.45315' data-lng='6.05086'><h6>Slijterij Weijs </h6><div>Herstraat 58, 5961 GK Horst</div><a href='https://www.slijterijweijs.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='50.96402' data-lng='5.82178'><h6>Drankenhandel & Slijterij Vos</h6><div>Hegstraat 3 , 6161 BC Geleen</div><a href='https://www.vosdranken.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.05411' data-lng='4.79943'><h6>Cafe De Slock</h6><div>Parkstraat 36, 1791 CB Den Burg</div><a href='https://www.deslock.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.08639' data-lng='4.88234'><h6>Bierhuys winkel</h6><div>Meulmansweg 6, 3441 AT Woerden</div><a href='www.bierhuyswinkel.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.46235' data-lng='3.55234'><h6>Ace drinks</h6><div>Van hogendorpweg 93, 4384 HD Vlissingen </div><a href='https://www.acedrinks.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.50170' data-lng='3.89065'><h6>Bie de Bolle</h6><div>Dam 1a, 4461 DZ Goes</div><a href='https://www.biedebolle.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.16099' data-lng='4.48976'><h6>Cafe 't Praethuys </h6><div>Vrouwenkerkkoorstraat 9, 2312 WP Leiden</div><a href='https://www.praethuysleiden.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.37202' data-lng='4.85955'><h6>Cafe Kontakt </h6><div>Admiraal de ruiterweg 92,  Amsterdam </div><a href='https://www.facebook.com/AmsterdamKontakt/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.67069' data-lng='6.73541'><h6>Mitra Aagje </h6><div>Ing. Arjen vonkweg 6, 7741 KA Coevorden </div><a href='https://www.mitra.nl/winkels' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.58178' data-lng='5.19758'><h6>Bierbaronnen</h6><div>Lindeplein 11, 5061 HN Oisterwijk</div><a href='https://www.facebook.com/bier.baronnen/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.16715' data-lng='4.70910'><h6>Bruyntje Beer ter Aar</h6><div>Westkanaalweg 113, 2461 EK Ter Aar</div><a href='https://www.bruyntjebeer.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.12588' data-lng='4.65061'><h6>Bruyntje Beer Alphen ad Rijn</h6><div>Europalaan 2, 2408 BG Alphen aan den Rijn</div><a href='https://www.bruyntjebeer.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.55718' data-lng='5.09224'><h6>Bar Leonardo </h6><div>Heuvel 46, 5038 CS Tilburg </div><a href='https://www.barleonardo.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.91255' data-lng='4.34434'><h6>Antonius</h6><div>Hoogstraat 21, 3131 BL Vlaardingen </div><a href='http://www.bierlokaalantonius.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.72002' data-lng='6.47741'><h6>Slijterij bij Marcel</h6><div>Alteveerstraat 6, 7907 AA Hoogeveen</div><a href='https://www.slijterijbijmarcel.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.65702' data-lng='5.61855'><h6>House of Beers</h6><div>Prior van Milstraat 2, 5402 GH Uden</div><a href='https://houseofbeers.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.15544' data-lng='4.50201'><h6>Café Plantage</h6><div>Hogewoerd 168, 2311 HW Leiden</div><a href='https://www.facebook.com/cafeplantageleiden' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.12739' data-lng='4.66159'><h6>Biercafe de Natte</h6><div>Julianastraat 19, 2405 CG Alphen aan den rijn </div><a href='https://biercafedenatte.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.05648' data-lng='4.79761'><h6>De Texelse Slijterij </h6><div>Waalderstraat 27-29, 1791 EB Den Burg</div><a href='https://www.detexelseslijterij.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.87646' data-lng='6.002261'><h6>De baron van Wolvega</h6><div>Hoofdstraat oost 4, 8471 JL Wolvega</div><a href='https://www.debaronvanwolvega.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.65717' data-lng='5.61711'><h6>CRAVT Brouwlokaal</h6><div>Markt 28, 5401 GP Uden</div><a href='http://cravtbrouwlokaal.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.15835' data-lng='4.48746'><h6>Estaminet Schommelen </h6><div>Lokhorststraat 19, 2311 TA Leiden</div><a href='https://www.facebook.com/Estaminet-schommelen-105518959551888/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.2038684724916' data-lng='5.80067'><h6>Speciaalzaak Jelle</h6><div>Voorstreek 63, 8911 JK Leeuwarden </div><a href='https://www.drankenspeciaalzaakjelle.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.14973' data-lng='4.65974'><h6>Mout & stout</h6><div>Ouvertureweg 135, 2402 DX Alphen aan den rijn </div><a href='' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.41946' data-lng='5.40529'><h6>Het Biermeisje</h6><div>Meent 34, 5501 JK Veldhoven </div><a href='https://www.hetbiermeisje.com' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.05918' data-lng='6.08071'><h6>Biergek</h6><div>Hoofdstraat 104, 9244 CR Beetsterzwaag </div><a href='https://biergek.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.77602' data-lng='6.89476'><h6>Slijterij wijnhuis van den bos</h6><div>Noorbargerstraat 11B, 7811 KE Emmen</div><a href='https://www.slijterijvandenbos.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.22098' data-lng='4.48135'><h6>Plus van Dijk Voorhout</h6><div>Herenstraat 45, 2215 KD Voorhout</div><a href='https://www.plus.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.26695' data-lng='6.14198'><h6>Marcels Drankenspeciaalzaak Deventer</h6><div>Constanten huygensstraat 1, 7412 MD Deventer</div><a href='http://www.marcelsdranken.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.22548' data-lng='5.95670'><h6>Hopdonders</h6><div>Koniginnenlaan 69b, 7315 BN Apeldoorn </div><a href='https://www.hopdonders.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.15787' data-lng='6.01889'><h6>De biersalon</h6><div>Dorpsstraat 81, 6074 GB Melick</div><a href='https://www.debiersalon.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.22549' data-lng='5.95669'><h6>Hopdonders </h6><div>Koninginnenlaan 69b, 7315 BN Apeldoorn </div><a href='https://www.hopdonders.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.69121' data-lng='5.30123'><h6>2 Many Beers</h6><div>Orthenstraat 27, 5211 SV Den Bosch</div><a href='https://2manybeers.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.26478' data-lng='4.63178'><h6>Drinkhut Nieuw-Vennep</h6><div>Venneperhof 38, 2151 AZ Nieuw-Vennep</div><a href='https://www.drinkhut.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.50896' data-lng='3.89042'><h6>Kijk op drank</h6><div>J.A. van der Goeskade 1, 4461 BH Goes</div><a href='https://www.kijkopdrank.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.26569' data-lng='6.79647'><h6>De Bierstudio </h6><div>Wetstraat 31, 7551 GA Hengelo </div><a href='https://www.debierstudio.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.24538' data-lng='4.82165'><h6>Drinkhut Uithoorn</h6><div>Joost van den Vondellaan 33A, 1422 HK Uithoorn</div><a href='https://www.drinkhut.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.10755' data-lng='6.10016'><h6>Apen en Bieren</h6><div>Oosterstraat 22, 9203 BB Drachten </div><a href='https://www.apenenbieren.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.582100' data-lng='4.77805'><h6>Winkel Het Bierhuis</h6><div>Van Goorstraat 5, 4811 HH Breda</div><a href='https://www.hetbierhuis.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.15560' data-lng='6.74126'><h6>Twents Genot</h6><div>Spoorstraat 43, 7481 HZ Haaksbergen </div><a href='https://www.twentsgenot.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.35165' data-lng='6.66522'><h6>Het Speciaalbier Huis</h6><div>Bornsestraat 2 , 7607 KN Almelo</div><a href='https://www.hetspeciaalbierhuis.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.25257' data-lng='6.15725'><h6>Miss Bettie</h6><div>Kleine Overstraat 13, 7411 JH Deventer</div><a href='http://www.missbettie.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.16350' data-lng='4.48464'><h6>Bierlokaal de Veste</h6><div>2e binnenvestgracht 15, 2312 BZ Leiden</div><a href='https://www.bierlokaaldeveste.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.07905' data-lng='4.30736'><h6>Cafe Momfer De Mol</h6><div>Oude Molstraat 19, 2513 BA Den Haag</div><a href='https://cafemomfer.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.91827' data-lng='4.261100'><h6>Zonneveld uw Topslijter</h6><div>Mesdaglaan 231, 3141 HE Maassluis </div><a href='https://zonneveld.uwtopslijter.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.01737' data-lng='5.54238'><h6>Slijterij Het Plein</h6><div>Dr. Slotemaker de Bruineplein 1, 3904 CX Veenendaal </div><a href='https://slijterij-hetplein.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.49677' data-lng='3.60684'><h6>Bear Craft Beers</h6><div>Achter de Houttuinen 44, 4331 NJ Middelburg </div><a href='https://bearcraftbeers-middelburg.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.15808' data-lng='4.48907'><h6>Dranklokaal 1650</h6><div>Pieterskerk-Choorsteeg 13, 2311 TR Leiden </div><a href='https://www.dranklokaal1650.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='53.28042' data-lng='6.15281'><h6>Proost Kollum</h6><div>Voorstraat 85, 9291 CE Kollum</div><a href='https://www.proostkollum.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.35908' data-lng='4.72935'><h6>Brouwmaatje </h6><div>IJweg 463, 2143 CJ Boesingheliede</div><a href='https://www.brouwmaatje.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.18953' data-lng='4.54680'><h6>Brasserie Vennemeer </h6><div>Vennemeer 1, 2374 AE Oud ade</div><a href='https://vennemeer.nl/brasserie' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.30916' data-lng='6.52334'><h6>Horsthuis</h6><div>Grotestraat 39, 7461 KE Rijssen</div><a href='https://www.drankenspeciaalzaak-horsthuis.nl' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.67289' data-lng='5.28867'><h6>Martha Cafe & Beershop</h6><div>Reutsedijk 10, 5264 PN Vucht</div><a href='https://martha-vught.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.98201' data-lng='5.90414'><h6>Cafe De Beugel</h6><div>Duizelsteeg 20, 6811 GS Arnhem </div><a href='https://debeugel-arnhem.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.14151' data-lng='6.19935'><h6>Hoppiness</h6><div>Paardenwal 5, 7201 BV Zutphen </div><a href='https://www.hoppiness.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.20405' data-lng='4.39046'><h6>Beachclub Zomers</h6><div>Boulevard Zeezijde 21, 2225 BB Katwijk aan Zee </div><a href='https://zomersbeachclub.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.12384' data-lng='4.66252'><h6>Alphens Bierhuis</h6><div>Prins Hendrikstraat 99, 2405 AH Alphen aan den rijn</div><a href='https://www.alphensbierhuis.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.30071' data-lng='4.69758'><h6>Cafe van C.</h6><div>Raadhuisplein 5, 2132 TZ Hoofddorp </div><a href='https://www.cpunt.nl/ook-bij-c./cafe' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.58774' data-lng='5.32680'><h6>Beer & Beyond</h6><div>Rechterstraat 32, 5281 BW Boxtel</div><a href='https://beer-and-beyond.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.55623' data-lng='5.08528'><h6>De Bierbrigadier Tilburg </h6><div>Telefoonstraat 39, 5038 DN Tilburg </div><a href='https://www.debierbrigadier.nl/vestigingen/tilburg/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.20386' data-lng='4.39610'><h6>Goud</h6><div>Voorstraat 36c, 2225 ER Katwijk </div><a href='https://www.koffie-goud.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.37365' data-lng='6.76171'><h6>Pakhuis Twente </h6><div>Ootmarsumseweg 157, 7665 RX Albergen</div><a href='https://www.pakhuistwente.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.16033' data-lng='4.48901'><h6>Grenare Urban Bistro Bar</h6><div>Stille rijn, 2312 DE Leiden </div><a href='https://www.grenare.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='52.25206' data-lng='6.15371'><h6>Cafe het Glas in Lood</h6><div>Nieuwe markt 4, 7411 PA Deventer</div><a href='https://cafehetglasinlood.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.65356' data-lng='3.90934'><h6>Proost Drinks</h6><div>Haringvlietplein 11, 4301 XG Zierikzee</div><a href='https://www.proostzierikzee.nl/' target='_blank'>Website openen</a></div><br><div class='map-item' data-lat='51.91735' data-lng='4.47298'><h6>Verdins Bierwinkel</h6><div>Mauritsweg 60, 3012 JX Rotterdam </div><a href='https://rotterdambrewing.nl/' target='_blank'>Website openen</a></div><br></div>
+</div>
+<div align="center"><br>En bij onze online winkels / distributeurs:<table>
+<tr><td><a href="https://buurtbier.nl/nl_NL/c/X-Brewing-Katwijk/86" target="_blank"><img src="img\bb128.png" height="48" width="48"> Buurtbier</a></td></tr>
+<tr><td><a href="https://www.beernami.nl/" target="_blank"><img src="img\beernami.png" height="48" width="48"> Beernami</a></td></tr>
+<tr><td><a href="https://www.speciaalbierpakket.nl/nl/search/x-brewing/" target="_blank"><img src="img\speciaalbierpakket.png" height="48" width="48"> Speciaalbierpakket</a></td></tr>
+<tr><td><a href="https://www.misterhop.com/bieren/filter/brewery/X-Brewing" target="_blank"><img src="img\mh.png" height="48" width="48"> Mr. Hop</a></td></tr>
+<tr><td><a href="https://bierwinkelblondenstout.nl/" target="_blank"><img src="img\bs128.png" height="48" width="48"> Blond & Stout</a></td></tr>
+<tr><td><a href="https://www.speciaalbierwebshop.nl/" target="_blank"><img src="img\sbw.png" height="48" width="48"> Speciaalbier webshop</a></td></tr>
+<tr><td><a href="https://www.bierloods22.nl/search/?search=x-brewing" target="_blank"><img src="img\bl22.png" height="48" width="48"> Bierloods22</a></td></tr>
+<tr><td><a href="https://www.hetbiermoment.nl/c-5115402/x-brewing/" target="_blank"><img src="img\bm.jpg" height="48" width="48"> Het Biermoment</a></td></tr>
+</table></div>
+<hr>
+<footer class="container py-3 text-light">
+    <div class="row">
+        <div class="col-md-5 py-3">
+            <h3>X-brewing</h3>
+            <p>
+                KVK 72298138 <br>
+                BTW NL001622217B75 <br>
+                IBAN NL38KNAB0257721819
+            </p>
+        </div>
+        <div class="col-md-4 py-3">
+            <h3>Contact / Social</h3>
+            <div>
+                <a href="https://www.facebook.com/this.is.x.brewing/" class="text-light btn">
+                    <i class="fab fa-fw fa-facebook"></i> facebook
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/this.is.x.brewing/" class="text-light btn">
+                    <i class="fab fa-fw fa-instagram"></i> instagram
+                </a>
+            </div>
+            <div>
+                <a href="https://untappd.com/Xbrewing" class="text-light btn">
+                    <i class="fab fa-fw fa-untappd"></i> untapped
+                </a>
+            </div>
+            <div>
+                <a href="mailto:info@x-brewing.com" class="text-light btn">
+                    <i class="fab fa-fw fa-mail-bulk"></i> email
+                </a>
+            </div>
+<!--            <div>
+                <a href="mailto:info@x-brewing.com" class="text-light btn">
+                    <i class="fab fa-fw fa-mail-bulk"></i> etiketten-verzamelaars:<br>Ap vd Meeren<br>Bloemstraat 82<br>1975 ES IJmuiden
+                </a>
+            </div>-->
+            <hr>
+            <p>
+                Graphics by <a href="http://b71.nl/" target="_blank">b71</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-83598448-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script src="/build/runtime.js" async></script>
+<script src="/build/app.js" async></script>
+<script>
+  document.querySelectorAll('.flipBtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('flipCard').classList.toggle('flipped');
+    });
+  });
+</script>
+</body>
+</html>
