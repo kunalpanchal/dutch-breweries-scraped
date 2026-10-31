@@ -1,4 +1,4 @@
-last_processed_index=72
-total_processed=72
+last_processed_index=87
+total_processed=87
 status=in_progress
-last_batch=63-72
+last_batch=73-87

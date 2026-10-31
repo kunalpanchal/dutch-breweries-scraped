@@ -1,0 +1,1570 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><script data-source-attribution="shopify.exit_interstitial">(()=>{var s=Function.prototype.bind.bind(Function.prototype.call),yt=(c,r)=>{for(let d=c;d;d=Object.getPrototypeOf(d)){let g=Object.getOwnPropertyDescriptor(d,r);if(g)return g}throw new TypeError(`${r} is not defined`)},u=(c,r)=>s(yt(c,r).get),B=(c,r)=>s(yt(c,r).set);var Et=s(String.prototype.endsWith),Pe=s(String.prototype.slice),_=s(RegExp.prototype.exec),Ae=/^_(self|top|parent)$/i,Le=/(^|\s)noreferrer(\s|$)/i,mt=/^(no-referrer(-when-downgrade)?|same-origin|(strict-)?origin(-when-cross-origin)?|unsafe-url)$/i,We=/^(never|default|always|origin-when-crossorigin)$/i,wt=/^(no-referrer|same-origin|never)$/i,Ie=/\s(musical_ly|trill)_|\sBytedanceWebview\//,ht=c=>Et(c,".")?Pe(c,0,-1):c,_t=c=>{let r=ht(c),d=`.${r}`;return g=>{let m=ht(g);return m===r||Et(m,d)}},bt=(c,r,d)=>c!==void 0&&(c.protocol==="https:"||c.protocol==="http:")&&c.origin!==r&&!d(c.hostname),kt=(c,r,d)=>c!==null&&_(Le,c)!==null?!0:r!==null&&_(mt,r)!==null?_(wt,r)!==null:d,vt=(c,r)=>_(mt,c)!==null||_(We,c)!==null?_(wt,c)!==null:r,L=(c,{metaKey:r,ctrlKey:d,shiftKey:g,button:m})=>c&&_(Ae,c)===null?c:r||d||g||m===1?"_blank":"",Nt=c=>_(Ie,c)!==null;var Te="http://www.w3.org/2000/svg",Me="http://www.w3.org/1999/xlink",G=["rel","referrerpolicy","download","ping","hreflang","type"];function St(c){let r=window;if(r.top!==r)return;let d=document,g=r.navigation,m=location.origin,N=URL,q=u(N.prototype,"href"),Rt=u(N.prototype,"origin"),xt=u(N.prototype,"protocol"),Ot=u(N.prototype,"hostname"),Y=s(Event.prototype.preventDefault),Pt=s(Event.prototype.stopPropagation),j=s(Event.prototype.stopImmediatePropagation),V=s(Event.prototype.composedPath),At=u(Event.prototype,"type"),Lt=u(Event.prototype,"cancelable"),X=u(Event.prototype,"defaultPrevented"),Wt=u(Event.prototype,"bubbles"),It=u(Event.prototype,"currentTarget"),Tt=u(Event.prototype,"eventPhase"),{CAPTURING_PHASE:Mt}=Event,z=u(Event.prototype,"cancelBubble"),Ct=B(Event.prototype,"cancelBubble"),Dt=u(MouseEvent.prototype,"button"),Ft=u(MouseEvent.prototype,"metaKey"),Ht=u(MouseEvent.prototype,"ctrlKey"),$t=u(MouseEvent.prototype,"shiftKey"),Kt=g&&u(NavigateEvent.prototype,"destination"),Ut=g&&u(NavigationDestination.prototype,"url"),J=g&&u(NavigateEvent.prototype,"navigationType"),Bt=g&&u(NavigateEvent.prototype,"formData"),Q=g&&"sourceElement"in NavigateEvent.prototype?u(NavigateEvent.prototype,"sourceElement"):void 0,w=s(Element.prototype.getAttribute),Gt=s(Element.prototype.getAttributeNS),W=s(Element.prototype.setAttribute),qt=u(Element.prototype,"localName"),Yt=u(Element.prototype,"namespaceURI"),jt=s(Document.prototype.querySelector),Vt=s(Document.prototype.querySelectorAll),Xt=u(NodeList.prototype,"length"),zt=s(NodeList.prototype.item),I=u(Node.prototype,"baseURI"),Jt=s(Document.prototype.createElement),Qt=s(HTMLElement.prototype.click),Zt=s(r.open),te=s(location.assign),ee=s(location.replace),ne=encodeURIComponent,oe=s(String.prototype.startsWith),Z=s(r.setTimeout),re=s(r.addEventListener),se=s(r.removeEventListener),tt=s(EventTarget.prototype.addEventListener),et=s(EventTarget.prototype.removeEventListener),nt=Object.defineProperties,ot=t=>{let e=[],n=[HTMLElement.prototype,SVGElement.prototype,Document.prototype,r];for(let o=0;o<n.length;o+=1)try{e[e.length]={get:u(n[o],t),set:B(n[o],t)}}catch{}return e},ce={click:ot("onclick"),auxclick:ot("onauxclick")},rt=WeakMap,ie=WeakSet,st=s(WeakMap.prototype.get),ae=s(WeakMap.prototype.set),le=s(WeakMap.prototype.delete),ue=s(WeakSet.prototype.add),pe=s(WeakSet.prototype.has),fe=_t(c.site),de=Nt(navigator.userAgent),ct=q(new N(c.exitPath,m)),ge=`${ct}?`,O=(t,e)=>{try{let n=new N(t,e);return{href:q(n),origin:Rt(n),protocol:xt(n),hostname:Ot(n)}}catch{return}},ye=(t,e,n)=>{let o=n?"&noreferrer=1":"";return`${ct}?q=${ne(t.href)}&trigger=${e}${o}`},it=()=>{let t=Vt(d,'meta[name="referrer" i][content]'),e=!1;for(let n=0;n<Xt(t);n+=1)e=vt(w(zt(t,n),"content"),e);return e},at=(t,e,{target:n,noReferrer:o,replaces:a})=>{let f=ye(t,e,o);if(n){Zt(r,f,n,"noopener");return}(a?ee:te)(location,f)},T=t=>bt(t,m,fe),P=0,M,C=!1,he=t=>{if(P>0){M=t;return}t()},Ee=t=>{if(P-=1,t&&(C=!0),P>0)return;let e=C?void 0:M;M=void 0,C=!1,e&&e()},me=t=>t!==void 0&&oe(t.href,ge),lt=t=>{try{return qt(t)}catch{return}},ut=t=>kt(w(t,"rel"),w(t,"referrerpolicy"),it()),we=t=>{let e=Q?Q(t):null,n=e===null?void 0:lt(e);return n==="a"||n==="area"?ut(e):it()},_e=t=>{let e=O(Ut(Kt(t)));if(me(e)){j(t);return}if(!Lt(t)||J(t)==="traverse"||!T(e)||Bt(t)!==null)return;Y(t);let n={target:"",noReferrer:we(t),replaces:J(t)==="replace"};he(()=>at(e,"navigate",n))},R=t=>{let e=w(t,"href");return e===null&&Yt(t)===Te?Gt(t,Me,"href"):e},be=t=>{let e=V(t);for(let n=0;n<e.length;n+=1){let o=e[n],a=lt(o);if(a==="a"||a==="area"){let f=R(o);if(f!==null)return{node:o,href:f}}}},D=t=>{let e=w(t,"target");if(e!==null)return e;let n=jt(d,"base[target]");return n?w(n,"target"):""},ke=t=>{try{return{metaKey:Ft(t),ctrlKey:Ht(t),shiftKey:$t(t),button:Dt(t)}}catch{return}},pt=new ie,ve=t=>{let e=!1,n=()=>{e=!0},o=()=>e||pe(pt,t);return nt(t,{__proto__:null,preventDefault:{__proto__:null,configurable:!0,value:n},defaultPrevented:{__proto__:null,configurable:!0,get:o},returnValue:{__proto__:null,configurable:!0,get:()=>!o(),set:a=>{a||n()}}}),o},Ne={click:new rt,auxclick:new rt},Se=(t,e)=>{let n=ce[t],o=Ne[t],a=[],f=p=>{for(let l=0;l<a.length;l+=1)if(a[l]===p)return!0;return!1},b=(p,l,E)=>{let y=s(E);function A(v){let x=y(this,v);return x===!1&&typeof v=="object"&&v!==null&&ue(pt,v),x}return{target:p,accessor:l,handler:E,wrapper:A,inFlight:0}},k=()=>{for(let p=0;p<e.length;p+=1)for(let l=0;l<n.length;l+=1){let E;try{E=n[l].get(e[p])}catch{continue}if(typeof E=="function"){let y=st(o,e[p]);(!y||y.wrapper!==E)&&(y=b(e[p],n[l],E),n[l].set(e[p],y.wrapper),ae(o,e[p],y)),f(y)||(y.inFlight+=1,a[a.length]=y)}break}};return k(),{wrap:k,unwrap:()=>{for(let p=0;p<a.length;p+=1){let l=a[p];l.inFlight-=1,!(l.inFlight>0)&&(st(o,l.target)===l&&le(o,l.target),l.accessor.get(l.target)===l.wrapper&&l.accessor.set(l.target,l.handler))}}}},ft=(t,e,n)=>{let o=R(t),a=o===null?void 0:O(o,I(d));if(!T(a))return;let f={target:de?"":L(D(t),n),noReferrer:ut(t),replaces:!1};return{inWindow:f.target==="",go:()=>at(a,e,f)}},dt=t=>{let e=R(t);if(e===null||w(t,"download")===null)return!1;let n=O(e,I(d));return n!==void 0&&(n.origin===m||n.protocol==="blob:"||n.protocol==="data:")},Re=(t,e)=>R(t)!==null&&!dt(t)&&L(D(t),e)==="",xe=(t,e)=>{let n=R(t);if(n===null)return!1;let o=Jt(d,"a"),a=L(D(t),e);W(o,"href",n),W(o,"target",a||"_self");for(let f=0;f<G.length;f+=1){let b=w(t,G[f]);b!==null&&W(o,G[f],b)}return Qt(o),a===""&&!dt(t)},Oe=(t,e,n,o)=>{P+=1;let a=V(t),f=a.length-1,b=0,k=!1,F=!1,p=i=>{F||(F=!0,Ee(i))},l=i=>{if(k)return;k=!0;let S=X(t),h=S?void 0:ft(n,e,o),U;!S&&(h||i)&&(Y(t),U=ve(t)),Z(r,()=>{if(!U){p(!X(t)&&Re(n,o));return}if(U()){p(!1);return}if(i&&(h=ft(n,e,o),!h)){p(xe(n,o));return}h.go(),p(h.inWindow)},0)},E=(i,S)=>{for(let h=0;h<a.length;h+=1)if(a[h]===i)return S===Mt?f-h:a.length+h;return-1},y=()=>{E(It(t),Tt(t))<=b&&l(!0)},A=i=>{i===t&&l(!1)},v=Se(e,a),x=i=>S=>{if(S===t){if(b=i,z(t)){l(!1);return}v.wrap()}},H=[],$=[],K=Wt(t);if(K){for(let i=0;i<f;i+=1)H[i]=x(f-i),$[i]=x(a.length+i),tt(a[i],e,H[i],!0),tt(a[i],e,$[i],!1);re(r,e,A,!1)}if(Z(r,()=>{if(k||p(!1),k=!0,v.unwrap(),!!K){for(let i=0;i<f;i+=1)et(a[i],e,H[i],!0),et(a[i],e,$[i],!1);se(r,e,A,!1)}},0),!K){l(!0);return}nt(t,{__proto__:null,stopPropagation:{__proto__:null,configurable:!0,value:()=>{y(),Pt(t)}},stopImmediatePropagation:{__proto__:null,configurable:!0,value:()=>{l(!0),j(t)}},cancelBubble:{__proto__:null,configurable:!0,get:()=>z(t),set:i=>{i&&y(),Ct(t,i)}}})},gt=t=>{let e=At(t),n=ke(t);if(!n||e==="auxclick"&&n.button!==1)return;let o=be(t);!o||!T(O(o.href,I(d)))||Oe(t,e,o.node,n)};g?.addEventListener("navigate",_e,!0),r.addEventListener("click",gt,!0),r.addEventListener("auxclick",gt,!0)}St({"site":"brouwerijleeghwater.nl","exitPath":"\/url"});})();
+//# sourceURL=exit-interstitial.js
+</script>
+
+	<script id="pandectes-rules">   /* PANDECTES-GDPR: DO NOT MODIFY AUTO GENERATED CODE OF THIS SCRIPT */      window.PandectesSettings = {"store":{"plan":"basic","theme":"Dawn","primaryLocale":"en","adminMode":false},"tsPublished":1695907391,"declaration":{"showPurpose":false,"showProvider":false,"showDateGenerated":false},"language":{"languageMode":"Single","fallbackLanguage":"nl","languageDetection":"browser","languagesSupported":[]},"texts":{"managed":{"headerText":{"nl":"Wij respecteren uw privacy"},"consentText":{"nl":"Deze website maakt gebruik van cookies om u de beste ervaring te bieden."},"dismissButtonText":{"nl":"OK"},"linkText":{"nl":"Kom meer te weten"},"imprintText":{"nl":"Afdruk"},"preferencesButtonText":{"nl":"Voorkeuren"},"allowButtonText":{"nl":"Aanvaarden"},"denyButtonText":{"nl":"Afwijzen"},"leaveSiteButtonText":{"nl":"Verlaat deze site"},"cookiePolicyText":{"nl":"Cookie beleid"},"preferencesPopupTitleText":{"nl":"Toestemmingsvoorkeuren beheren"},"preferencesPopupIntroText":{"nl":"We gebruiken cookies om de functionaliteit van de website te optimaliseren, de prestaties te analyseren en u een gepersonaliseerde ervaring te bieden. Sommige cookies zijn essentieel om de website correct te laten werken en functioneren. Die cookies kunnen niet worden uitgeschakeld. In dit venster kunt u uw voorkeur voor cookies beheren."},"preferencesPopupCloseButtonText":{"nl":"Sluiten"},"preferencesPopupAcceptAllButtonText":{"nl":"Accepteer alles"},"preferencesPopupRejectAllButtonText":{"nl":"Alles afwijzen"},"preferencesPopupSaveButtonText":{"nl":"Voorkeuren opslaan"},"accessSectionTitleText":{"nl":"Gegevensportabiliteit"},"accessSectionParagraphText":{"nl":"U heeft te allen tijde het recht om uw gegevens in te zien."},"rectificationSectionTitleText":{"nl":"Gegevens rectificatie"},"rectificationSectionParagraphText":{"nl":"U hebt het recht om te vragen dat uw gegevens worden bijgewerkt wanneer u dat nodig acht."},"erasureSectionTitleText":{"nl":"Recht om vergeten te worden"},"erasureSectionParagraphText":{"nl":"U heeft het recht om al uw gegevens te laten wissen. Daarna heeft u geen toegang meer tot uw account."},"declIntroText":{"nl":"We gebruiken cookies om de functionaliteit van de website te optimaliseren, de prestaties te analyseren en u een gepersonaliseerde ervaring te bieden. Sommige cookies zijn essentieel om de website goed te laten werken en correct te laten functioneren. Die cookies kunnen niet worden uitgeschakeld. In dit venster kunt u uw voorkeur voor cookies beheren."}},"categories":{"strictlyNecessaryCookiesTitleText":{"nl":"Strikt noodzakelijke cookies"},"functionalityCookiesTitleText":{"nl":"Functionele cookies"},"performanceCookiesTitleText":{"nl":"Prestatiecookies"},"targetingCookiesTitleText":{"nl":"Targeting-cookies"},"unclassifiedCookiesTitleText":{"nl":"Niet-geclassificeerde cookies"},"strictlyNecessaryCookiesDescriptionText":{"nl":"Deze cookies zijn essentieel om u in staat te stellen door de website te navigeren en de functies ervan te gebruiken, zoals toegang tot beveiligde delen van de website. Zonder deze cookies kan de website niet goed functioneren."},"functionalityCookiesDescriptionText":{"nl":"Deze cookies stellen de site in staat om verbeterde functionaliteit en personalisatie te bieden. Ze kunnen worden ingesteld door ons of door externe providers wiens diensten we aan onze pagina's hebben toegevoegd. Als u deze cookies niet toestaat, werken sommige of al deze diensten mogelijk niet correct."},"performanceCookiesDescriptionText":{"nl":"Deze cookies stellen ons in staat om de prestaties van onze website te monitoren en te verbeteren. Ze stellen ons bijvoorbeeld in staat om bezoeken te tellen, verkeersbronnen te identificeren en te zien welke delen van de site het populairst zijn."},"targetingCookiesDescriptionText":{"nl":"Deze cookies kunnen via onze site worden geplaatst door onze advertentiepartners. Ze kunnen door die bedrijven worden gebruikt om een profiel van uw interesses op te bouwen en u relevante advertenties op andere sites te tonen. Ze slaan geen directe persoonlijke informatie op, maar zijn gebaseerd op de unieke identificatie van uw browser en internetapparaat. Als je deze cookies niet toestaat, krijg je minder gerichte advertenties te zien."},"unclassifiedCookiesDescriptionText":{"nl":"Niet-geclassificeerde cookies zijn cookies die we aan het classificeren zijn, samen met de aanbieders van individuele cookies."}},"auto":{"declName":{"nl":"Naam"},"declPath":{"nl":"Pad"},"declType":{"nl":"Type"},"declDomain":{"nl":"Domein"},"declPurpose":{"nl":"Doel"},"declProvider":{"nl":"Aanbieder"},"declRetention":{"nl":"Behoud"},"declFirstParty":{"nl":"First-party"},"declThirdParty":{"nl":"Derde partij"},"declSeconds":{"nl":"seconden"},"declMinutes":{"nl":"minuten"},"declHours":{"nl":"uur"},"declDays":{"nl":"dagen"},"declMonths":{"nl":"maanden"},"declYears":{"nl":"jaren"},"declSession":{"nl":"Sessie"},"cookiesDetailsText":{"nl":"Cookiegegevens"},"preferencesPopupAlwaysAllowedText":{"nl":"altijd toegestaan"},"submitButton":{"nl":"Indienen"},"submittingButton":{"nl":"Verzenden..."},"cancelButton":{"nl":"Annuleren"},"guestsSupportInfoText":{"nl":"Log in met uw klantaccount om verder te gaan."},"guestsSupportEmailPlaceholder":{"nl":"E-mailadres"},"guestsSupportEmailValidationError":{"nl":"E-mail is niet geldig"},"guestsSupportEmailSuccessTitle":{"nl":"dankjewel voor je aanvraag"},"guestsSupportEmailFailureTitle":{"nl":"Er is een probleem opgetreden"},"guestsSupportEmailSuccessMessage":{"nl":"Als je bent geregistreerd als klant van deze winkel, ontvang je binnenkort een e-mail met instructies over hoe je verder kunt gaan."},"guestsSupportEmailFailureMessage":{"nl":"Uw verzoek is niet ingediend. Probeer het opnieuw en als het probleem aanhoudt, neem dan contact op met de winkeleigenaar voor hulp."},"confirmationSuccessTitle":{"nl":"Uw verzoek is geverifieerd"},"confirmationFailureTitle":{"nl":"Er is een probleem opgetreden"},"confirmationSuccessMessage":{"nl":"We zullen spoedig contact met u opnemen over uw verzoek."},"confirmationFailureMessage":{"nl":"Uw verzoek is niet geverifieerd. Probeer het opnieuw en als het probleem aanhoudt, neem dan contact op met de winkeleigenaar voor hulp"},"consentSectionTitleText":{"nl":"Uw toestemming voor cookies"},"consentSectionNoConsentText":{"nl":"U heeft niet ingestemd met het cookiebeleid van deze website."},"consentSectionConsentedText":{"nl":"U heeft ingestemd met het cookiebeleid van deze website op:"},"consentStatus":{"nl":"Toestemmingsvoorkeur"},"consentDate":{"nl":"Toestemmingsdatum"},"consentId":{"nl":"Toestemmings-ID"},"consentSectionChangeConsentActionText":{"nl":"Wijzig de toestemmingsvoorkeur"},"accessSectionGDPRRequestsActionText":{"nl":"Verzoeken van betrokkenen"},"accessSectionAccountInfoActionText":{"nl":"Persoonlijke gegevens"},"accessSectionOrdersRecordsActionText":{"nl":"Bestellingen"},"accessSectionDownloadReportActionText":{"nl":"Download alles"},"rectificationCommentPlaceholder":{"nl":"Beschrijf wat u wilt bijwerken"},"rectificationCommentValidationError":{"nl":"Commentaar is verplicht"},"rectificationSectionEditAccountActionText":{"nl":"Vraag een update aan"},"erasureSectionRequestDeletionActionText":{"nl":"Verzoek om verwijdering van persoonlijke gegevens"}}},"library":{"previewMode":false,"fadeInTimeout":0,"defaultBlocked":7,"showLink":true,"showImprintLink":false,"enabled":true,"cookie":{"name":"_pandectes_gdpr","expiryDays":365,"secure":true},"dismissOnScroll":false,"dismissOnWindowClick":false,"dismissOnTimeout":false,"palette":{"popup":{"background":"#FFFFFF","backgroundForCalculations":{"a":1,"b":255,"g":255,"r":255},"text":"#000000"},"button":{"background":"transparent","backgroundForCalculations":{"a":1,"b":255,"g":255,"r":255},"text":"#000000","textForCalculation":{"a":1,"b":0,"g":0,"r":0},"border":"#000000"}},"content":{"href":"https://brouwerijleeghwater.myshopify.com/policies/privacy-policy","imprintHref":"/","close":"&#10005;","target":"","logo":"<img class=\"cc-banner-logo\" height=\"40\" width=\"40\" src=\"https://cdn.shopify.com/s/files/1/0566/7962/8987/t/5/assets/pandectes-logo.png?v=1695907391\" alt=\"Brouwerij Leeghwater\" />"},"window":"<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-top-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--></div></div>","compliance":{"opt-both":"<div class=\"cc-compliance cc-highlight\">{{deny}}{{allow}}</div>"},"type":"opt-both","layouts":{"basic":"{{logo}}{{messagelink}}{{compliance}}{{close}}"},"position":"top","theme":"wired","revokable":true,"animateRevokable":false,"revokableReset":false,"revokableLogoUrl":"","revokablePlacement":"bottom-left","revokableMarginHorizontal":15,"revokableMarginVertical":15,"static":false,"autoAttach":true,"hasTransition":true,"blacklistPage":[""]},"geolocation":{"brOnly":false,"caOnly":false,"euOnly":false,"canadaOnly":false},"dsr":{"guestsSupport":false,"accessSectionDownloadReportAuto":false},"banner":{"resetTs":1668696935,"extraCss":"        .cc-banner-logo {max-width: 24em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 24em!important;width: 24em!important;}}    .cc-message, .cc-header, .cc-logo {text-align: left}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-family: inherit;}    .cc-header{font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #FFFFFF;color:#000000;}    .pd-cp-btn{}    input + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(0, 0, 0, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 1)}    .pd-cp-ui-close{color:#000000;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #000000!important}    .pd-cp-preferences-slider{background-color:#000000}    .pd-cp-toggle{color:#000000!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #000000}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#000000!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 / 20%);}  ","customJavascript":null,"showPoweredBy":false,"isActive":true,"implicitSavePreferences":false,"cookieIcon":false,"blockBots":false,"showCookiesDetails":true,"cookiesBlockedByDefault":"7","hasTransition":true,"blockingPage":false,"showOnlyLandingPage":false,"leaveSiteUrl":"https://www.google.com","linkRespectStoreLang":false},"cookies":{"0":[{"name":"secure_customer_sig","domain":"brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"nl":"Used in connection with customer login."}},{"name":"localization","domain":"brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"nl":"Shopify store localization"}},{"name":"cart_currency","domain":"brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"14 day(s)","expires":14,"unit":"declSession","purpose":{"nl":"The cookie is necessary for the secure checkout and payment function on the website. This function is provided by shopify.com."}},{"name":"keep_alive","domain":"brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"30 minute(s)","expires":30,"unit":"declMinutes","purpose":{"nl":"Used in connection with buyer localization."}},{"name":"_secure_session_id","domain":"brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"24 hour(s)","expires":24,"unit":"declHours","purpose":{"nl":"Used in connection with navigation through a storefront."}}],"1":[{"name":"_orig_referrer","domain":".brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"14 day(s)","expires":14,"unit":"declSession","purpose":{"nl":"Tracks landing pages."}},{"name":"_landing_page","domain":".brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"14 day(s)","expires":14,"unit":"declSession","purpose":{"nl":"Tracks landing pages."}},{"name":"_y","domain":".brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"nl":"Shopify analytics."}},{"name":"_s","domain":".brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"30 minute(s)","expires":30,"unit":"declMinutes","purpose":{"nl":"Shopify analytics."}},{"name":"_shopify_s","domain":".brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"30 minute(s)","expires":30,"unit":"declMinutes","purpose":{"nl":"Shopify analytics."}},{"name":"_shopify_sa_p","domain":".brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"30 minute(s)","expires":30,"unit":"declMinutes","purpose":{"nl":"Shopify analytics relating to marketing & referrals."}},{"name":"_shopify_sa_t","domain":".brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"30 minute(s)","expires":30,"unit":"declMinutes","purpose":{"nl":"Shopify analytics relating to marketing & referrals."}},{"name":"VISITOR_INFO1_LIVE","domain":".youtube.com","path":"/","provider":"Google","firstParty":false,"retention":"180 day(s)","expires":180,"unit":"declSession","purpose":{"nl":"A cookie that YouTube sets that measures your bandwidth to determine whether you get the new player interface or the old."}},{"name":"_shopify_y","domain":".brouwerijleeghwater.nl","path":"/","provider":"Shopify","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"nl":"Shopify analytics."}}],"2":[{"name":"_ga","domain":".brouwerijleeghwater.nl","path":"/","provider":"Google","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"nl":"Cookie is set by Google Analytics with unknown functionality"}},{"name":"_gid","domain":".brouwerijleeghwater.nl","path":"/","provider":"Google","firstParty":true,"retention":"24 hour(s)","expires":24,"unit":"declHours","purpose":{"nl":"Cookie is placed by Google Analytics to count and track pageviews."}},{"name":"_gat","domain":".brouwerijleeghwater.nl","path":"/","provider":"Google","firstParty":true,"retention":"36 second(s)","expires":36,"unit":"declSeconds","purpose":{"nl":"Cookie is placed by Google Analytics to filter requests from bots."}}],"4":[{"name":"YSC","domain":".youtube.com","path":"/","provider":"Google","firstParty":false,"retention":"Session","expires":0,"unit":"declSeconds","purpose":{"nl":"Registers a unique ID to keep statistics of what videos from YouTube the user has seen."}}],"8":[]},"blocker":{"isActive":false,"googleConsentMode":{"id":"","analyticsId":"","isActive":false,"adStorageCategory":4,"analyticsStorageCategory":2,"personalizationStorageCategory":1,"functionalityStorageCategory":1,"customEvent":true,"securityStorageCategory":0,"redactData":true,"urlPassthrough":false},"facebookPixel":{"id":"","isActive":false,"ldu":false},"rakuten":{"isActive":false,"cmp":false,"ccpa":false},"defaultBlocked":7,"patterns":{"whiteList":[],"blackList":{"1":[],"2":[],"4":[],"8":[]},"iframesWhiteList":[],"iframesBlackList":{"1":[],"2":[],"4":[],"8":[]},"beaconsWhiteList":[],"beaconsBlackList":{"1":[],"2":[],"4":[],"8":[]}}}}      !function(){"use strict";window.PandectesRules=window.PandectesRules||{},window.PandectesRules.manualBlacklist={1:[],2:[],4:[]},window.PandectesRules.blacklistedIFrames={1:[],2:[],4:[]},window.PandectesRules.blacklistedCss={1:[],2:[],4:[]},window.PandectesRules.blacklistedBeacons={1:[],2:[],4:[]};var e="javascript/blocked",t="_pandectes_gdpr";function n(e){return new RegExp(e.replace(/[/\\.+?$()]/g,"\\$&").replace("*","(.*)"))}var r=function(e){try{return JSON.parse(e)}catch(e){return!1}},a=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"log",n=new URLSearchParams(window.location.search);n.get("log")&&console[t]("PandectesRules: ".concat(e))};function i(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function s(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?i(Object(n),!0).forEach((function(t){o(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):i(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}function o(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function c(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null==n)return;var r,a,i=[],s=!0,o=!1;try{for(n=n.call(e);!(s=(r=n.next()).done)&&(i.push(r.value),!t||i.length!==t);s=!0);}catch(e){o=!0,a=e}finally{try{s||null==n.return||n.return()}finally{if(o)throw a}}return i}(e,t)||u(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function l(e){return function(e){if(Array.isArray(e))return d(e)}(e)||function(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}(e)||u(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function u(e,t){if(e){if("string"==typeof e)return d(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(e):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?d(e,t):void 0}}function d(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var f="Pandectes"===window.navigator.userAgent;a("userAgent -> ".concat(window.navigator.userAgent.substring(0,50)));var p=function(){var e,n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:t,a="; "+document.cookie,i=a.split("; "+n+"=");if(i.length<2)e={};else{var s=i.pop(),o=s.split(";");e=window.atob(o.shift())}var c=r(e);return!1!==c?c:e}(),g=window.PandectesSettings,y=g.banner.isActive,h=g.blocker.defaultBlocked,m=p&&null!==p.preferences&&void 0!==p.preferences?p.preferences:null,b=y?null===m?h:m:0,v={1:0==(1&b),2:0==(2&b),4:0==(4&b)},w=window.PandectesSettings.blocker.patterns,k=w.blackList,L=w.whiteList,P=w.iframesBlackList,S=w.iframesWhiteList,A=w.beaconsBlackList,C=w.beaconsWhiteList,_={blackList:[],whiteList:[],iframesBlackList:{1:[],2:[],4:[],8:[]},iframesWhiteList:[],beaconsBlackList:{1:[],2:[],4:[],8:[]},beaconsWhiteList:[]};[1,2,4].map((function(e){var t;v[e]||((t=_.blackList).push.apply(t,l(k[e].length?k[e].map(n):[])),_.iframesBlackList[e]=P[e].length?P[e].map(n):[],_.beaconsBlackList[e]=A[e].length?A[e].map(n):[])})),_.whiteList=L.length?L.map(n):[],_.iframesWhiteList=S.length?S.map(n):[],_.beaconsWhiteList=C.length?C.map(n):[];var B={scripts:[],iframes:{1:[],2:[],4:[]},beacons:{1:[],2:[],4:[]},css:{1:[],2:[],4:[]}},O=function(t,n){return t&&(!n||n!==e)&&(!_.blackList||_.blackList.some((function(e){return e.test(t)})))&&(!_.whiteList||_.whiteList.every((function(e){return!e.test(t)})))},I=function(e,t){var n=_.iframesBlackList[t],r=_.iframesWhiteList;return e&&(!n||n.some((function(t){return t.test(e)})))&&(!r||r.every((function(t){return!t.test(e)})))},E=function(e,t){var n=_.beaconsBlackList[t],r=_.beaconsWhiteList;return e&&(!n||n.some((function(t){return t.test(e)})))&&(!r||r.every((function(t){return!t.test(e)})))},j=new MutationObserver((function(e){for(var t=0;t<e.length;t++)for(var n=e[t].addedNodes,r=0;r<n.length;r++){var a=n[r],i=a.dataset&&a.dataset.cookiecategory;if(1===a.nodeType&&"LINK"===a.tagName){var s=a.dataset&&a.dataset.href;if(s&&i)switch(i){case"functionality":case"C0001":B.css[1].push(s);break;case"performance":case"C0002":B.css[2].push(s);break;case"targeting":case"C0003":B.css[4].push(s)}}}})),R=new MutationObserver((function(t){for(var n=0;n<t.length;n++)for(var r=t[n].addedNodes,a=function(t){var n=r[t],a=n.src||n.dataset&&n.dataset.src,i=n.dataset&&n.dataset.cookiecategory;if(1===n.nodeType&&"IFRAME"===n.tagName){if(a){var s=!1;I(a,1)||"functionality"===i||"C0001"===i?(s=!0,B.iframes[1].push(a)):I(a,2)||"performance"===i||"C0002"===i?(s=!0,B.iframes[2].push(a)):(I(a,4)||"targeting"===i||"C0003"===i)&&(s=!0,B.iframes[4].push(a)),s&&(n.removeAttribute("src"),n.setAttribute("data-src",a))}}else if(1===n.nodeType&&"IMG"===n.tagName){if(a){var o=!1;E(a,1)?(o=!0,B.beacons[1].push(a)):E(a,2)?(o=!0,B.beacons[2].push(a)):E(a,4)&&(o=!0,B.beacons[4].push(a)),o&&(n.removeAttribute("src"),n.setAttribute("data-src",a))}}else if(1===n.nodeType&&"LINK"===n.tagName){var c=n.dataset&&n.dataset.href;if(c&&i)switch(i){case"functionality":case"C0001":B.css[1].push(c);break;case"performance":case"C0002":B.css[2].push(c);break;case"targeting":case"C0003":B.css[4].push(c)}}else if(1===n.nodeType&&"SCRIPT"===n.tagName){var l=n.type,u=!1;if(O(a,l))u=!0;else if(a&&i)switch(i){case"functionality":case"C0001":u=!0,window.PandectesRules.manualBlacklist[1].push(a);break;case"performance":case"C0002":u=!0,window.PandectesRules.manualBlacklist[2].push(a);break;case"targeting":case"C0003":u=!0,window.PandectesRules.manualBlacklist[4].push(a)}if(u){B.scripts.push([n,l]),n.type=e;n.addEventListener("beforescriptexecute",(function t(r){n.getAttribute("type")===e&&r.preventDefault(),n.removeEventListener("beforescriptexecute",t)})),n.parentElement&&n.parentElement.removeChild(n)}}},i=0;i<r.length;i++)a(i)})),T=document.createElement,x={src:Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src"),type:Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"type")};window.PandectesRules.unblockCss=function(e){var t=B.css[e]||[];t.length&&a("Unblocking CSS for ".concat(e)),t.forEach((function(e){var t=document.querySelector('link[data-href^="'.concat(e,'"]'));t.removeAttribute("data-href"),t.href=e})),B.css[e]=[]},window.PandectesRules.unblockIFrames=function(e){var t=B.iframes[e]||[];t.length&&a("Unblocking IFrames for ".concat(e)),_.iframesBlackList[e]=[],t.forEach((function(e){var t=document.querySelector('iframe[data-src^="'.concat(e,'"]'));t.removeAttribute("data-src"),t.src=e})),B.iframes[e]=[]},window.PandectesRules.unblockBeacons=function(e){var t=B.beacons[e]||[];t.length&&a("Unblocking Beacons for ".concat(e)),_.beaconsBlackList[e]=[],t.forEach((function(e){var t=document.querySelector('img[data-src^="'.concat(e,'"]'));t.removeAttribute("data-src"),t.src=e})),B.beacons[e]=[]},window.PandectesRules.unblockInlineScripts=function(e){var t=1===e?"functionality":2===e?"performance":"targeting";document.querySelectorAll('script[type="javascript/blocked"][data-cookiecategory="'.concat(t,'"]')).forEach((function(e){var t=e.textContent;e.parentNode.removeChild(e);var n=document.createElement("script");n.type="text/javascript",n.textContent=t,document.body.appendChild(n)}))},window.PandectesRules.unblock=function(e){e.length<1?(_.blackList=[],_.whiteList=[],_.iframesBlackList=[],_.iframesWhiteList=[]):(_.blackList&&(_.blackList=_.blackList.filter((function(t){return e.every((function(e){return"string"==typeof e?!t.test(e):e instanceof RegExp?t.toString()!==e.toString():void 0}))}))),_.whiteList&&(_.whiteList=[].concat(l(_.whiteList),l(e.map((function(e){if("string"==typeof e){var t=".*"+n(e)+".*";if(_.whiteList.every((function(e){return e.toString()!==t.toString()})))return new RegExp(t)}else if(e instanceof RegExp&&_.whiteList.every((function(t){return t.toString()!==e.toString()})))return e;return null})).filter(Boolean)))));var t=0;l(B.scripts).forEach((function(e,n){var r=c(e,2),a=r[0],i=r[1];if(function(e){var t=e.getAttribute("src");return _.blackList&&_.blackList.every((function(e){return!e.test(t)}))||_.whiteList&&_.whiteList.some((function(e){return e.test(t)}))}(a)){for(var s=document.createElement("script"),o=0;o<a.attributes.length;o++){var l=a.attributes[o];"src"!==l.name&&"type"!==l.name&&s.setAttribute(l.name,a.attributes[o].value)}s.setAttribute("src",a.src),s.setAttribute("type",i||"application/javascript"),document.head.appendChild(s),B.scripts.splice(n-t,1),t++}})),0==_.blackList.length&&0===_.iframesBlackList[1].length&&0===_.iframesBlackList[2].length&&0===_.iframesBlackList[4].length&&0===_.beaconsBlackList[1].length&&0===_.beaconsBlackList[2].length&&0===_.beaconsBlackList[4].length&&(a("Disconnecting observers"),R.disconnect(),j.disconnect())};var N,M,D=window.PandectesSettings.store.adminMode,W=window.PandectesSettings.blocker;N=function(){!function(){var e=window.Shopify.trackingConsent;try{var t=D&&!window.Shopify.AdminBarInjector,n={preferences:0==(1&b)||f||t,analytics:0==(2&b)||f||t,marketing:0==(4&b)||f||t};e.firstPartyMarketingAllowed()===n.marketing&&e.analyticsProcessingAllowed()===n.analytics&&e.preferencesProcessingAllowed()===n.preferences||e.setTrackingConsent(n,(function(e){e&&e.error?a("Shopify.customerPrivacy API - failed to setTrackingConsent"):a("Shopify.customerPrivacy API - setTrackingConsent(".concat(JSON.stringify(n),")"))}))}catch(e){a("Shopify.customerPrivacy API - exception")}}(),function(){var e=window.Shopify.trackingConsent,t=e.currentVisitorConsent();if(W.gpcIsActive&&"CCPA"===e.getRegulation()&&navigator.globalPrivacyControl&&"yes"!==t.sale_of_data){var n={sale_of_data:!1};a("Shopify.customerPrivacy API - globalPrivacyControl is honored."),e.setTrackingConsent(n,(function(e){e&&e.error?a("Shopify.customerPrivacy API - failed to setTrackingConsent({".concat(JSON.stringify(n),")")):a("Shopify.customerPrivacy API - setTrackingConsent(".concat(JSON.stringify(n),")"))}))}}()},M=null,window.Shopify&&window.Shopify.loadFeatures&&window.Shopify.trackingConsent?N():M=setInterval((function(){window.Shopify&&window.Shopify.loadFeatures&&(clearInterval(M),window.Shopify.loadFeatures([{name:"consent-tracking-api",version:"0.1"}],(function(e){e?a("Shopify.customerPrivacy API - failed to load"):(a("Shopify.customerPrivacy API - loaded"),N())})))}),10);var F=window.PandectesSettings,z=F.banner.isActive,U=F.blocker.googleConsentMode,q=U.isActive,J=U.customEvent,H=U.redactData,$=U.urlPassthrough,G=U.adStorageCategory,K=U.analyticsStorageCategory,V=U.functionalityStorageCategory,Y=U.personalizationStorageCategory,Q=U.securityStorageCategory;function X(){window.dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[];var Z,ee,te={hasInitialized:!1,ads_data_redaction:!1,url_passthrough:!1,storage:{ad_storage:"granted",analytics_storage:"granted",functionality_storage:"granted",personalization_storage:"granted",security_storage:"granted",wait_for_update:500}};if(z&&q){var ne=0==(b&G)?"granted":"denied",re=0==(b&K)?"granted":"denied",ae=0==(b&V)?"granted":"denied",ie=0==(b&Y)?"granted":"denied",se=0==(b&Q)?"granted":"denied";te.hasInitialized=!0,te.ads_data_redaction="denied"===ne&&H,te.url_passthrough=$,te.storage.ad_storage=ne,te.storage.analytics_storage=re,te.storage.functionality_storage=ae,te.storage.personalization_storage=ie,te.storage.security_storage=se,te.ads_data_redaction&&X("set","ads_data_redaction",te.ads_data_redaction),te.url_passthrough&&X("set","url_passthrough",te.url_passthrough),X("consent","default",te.storage),J&&(ee=7===(Z=b)?"deny":0===Z?"allow":"mixed",window.dataLayer.push({event:"Pandectes_Consent_Update",pandectes_status:ee,pandectes_categories:{C0000:"allow",C0001:v[1]?"allow":"deny",C0002:v[2]?"allow":"deny",C0003:v[4]?"allow":"deny"}})),a("Google consent mode initialized")}window.PandectesRules.gcm=te;var oe=window.PandectesSettings,ce=oe.banner.isActive,le=oe.blocker.isActive;a("Blocker -> "+(le?"Active":"Inactive")),a("Banner -> "+(ce?"Active":"Inactive")),a("ActualPrefs -> "+b);var ue=null===m&&/\/checkouts\//.test(window.location.pathname);0!==b&&!1===f&&le&&!ue?(a("Blocker will execute"),document.createElement=function(){for(var t=arguments.length,n=new Array(t),r=0;r<t;r++)n[r]=arguments[r];if("script"!==n[0].toLowerCase())return T.bind?T.bind(document).apply(void 0,n):T;var a=T.bind(document).apply(void 0,n);try{Object.defineProperties(a,{src:s(s({},x.src),{},{set:function(t){O(t,a.type)&&x.type.set.call(this,e),x.src.set.call(this,t)}}),type:s(s({},x.type),{},{get:function(){var t=x.type.get.call(this);return t===e||O(this.src,t)?null:t},set:function(t){var n=O(a.src,a.type)?e:t;x.type.set.call(this,n)}})}),a.setAttribute=function(t,n){if("type"===t){var r=O(a.src,a.type)?e:n;x.type.set.call(a,r)}else"src"===t?(O(n,a.type)&&x.type.set.call(a,e),x.src.set.call(a,n)):HTMLScriptElement.prototype.setAttribute.call(a,t,n)}}catch(e){console.warn("Yett: unable to prevent script execution for script src ",a.src,".\n",'A likely cause would be because you are using a third-party browser extension that monkey patches the "document.createElement" function.')}return a},R.observe(document.documentElement,{childList:!0,subtree:!0}),j.observe(document.documentElement,{childList:!0,subtree:!0})):a("Blocker will not execute")}();
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <meta name="msvalidate.01" content="170C89188BA204CDABC8A731B5EF1415">
+    <link rel="canonical" href="https://brouwerijleeghwater.nl/">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin><link rel="icon" type="image/png" href="//brouwerijleeghwater.nl/cdn/shop/files/BrouwerijLeeghwaterCorporate_logo_Favicon_32x32.png?v=1697053344"><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><title>
+      Brouwerij Leeghwater | Noord-Hollandse speciaalbieren
+</title>
+
+    
+      <meta name="description" content="Speciaalbieren uit Noord-Holland, geïnspireerd op molenbouwer Jan Adriaenszoon Leeghwater uit De Rijp. Blond, tripel, witbier en bock. Bestel online.">
+    
+
+    
+
+<meta property="og:site_name" content="Brouwerij Leeghwater">
+<meta property="og:url" content="https://brouwerijleeghwater.nl/">
+<meta property="og:title" content="Brouwerij Leeghwater | Noord-Hollandse speciaalbieren">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Speciaalbieren uit Noord-Holland, geïnspireerd op molenbouwer Jan Adriaenszoon Leeghwater uit De Rijp. Blond, tripel, witbier en bock. Bestel online."><meta property="og:image" content="http://brouwerijleeghwater.nl/cdn/shop/files/BrouwerijLeeghwaterCorporate_logo_RGB_ffebff57-be3e-4682-87e0-2e2db5f2c126.png?v=1782896912">
+  <meta property="og:image:secure_url" content="https://brouwerijleeghwater.nl/cdn/shop/files/BrouwerijLeeghwaterCorporate_logo_RGB_ffebff57-be3e-4682-87e0-2e2db5f2c126.png?v=1782896912">
+  <meta property="og:image:width" content="2000">
+  <meta property="og:image:height" content="2000"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brouwerij Leeghwater | Noord-Hollandse speciaalbieren">
+<meta name="twitter:description" content="Speciaalbieren uit Noord-Holland, geïnspireerd op molenbouwer Jan Adriaenszoon Leeghwater uit De Rijp. Blond, tripel, witbier en bock. Bestel online.">
+
+
+    <script src="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/global.js?v=130189267061969566591631692410" defer="defer"></script>
+    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="OAxQJsr9pZMDMHsDktikNDPzZ52-k3wg2DuyNC10i0Q">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/56679628987/digital_wallets/dialog">
+<link rel="ucp" href="/.well-known/ucp" version="2026-08-25"><link rel="alternate" hreflang="x-default" href="https://brouwerijleeghwater.nl/">
+<link rel="alternate" hreflang="en" href="https://brouwerijleeghwater.nl/">
+<link rel="alternate" hreflang="nl" href="https://brouwerijleeghwater.nl/nl">
+<script async="async" src="/checkouts/internal/preloads.js?locale=en-NL"></script>
+<link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
+<script async="async" src="https://shop.app/checkouts/internal/preloads.js?locale=en-NL&shop_id=56679628987" crossorigin="anonymous"></script>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":56679628987,"countryCode":"NL","currencyCode":"EUR","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/56679628987","merchantName":"Brouwerij Leeghwater","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","maestro","masterCard"],"total":{"type":"pending","label":"Brouwerij Leeghwater","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"f92f6172ee199bedf49cd32ee0be8e86","betas":["rich-media-storefront-analytics"],"domain":"brouwerijleeghwater.nl","predictiveSearch":true,"shopId":56679628987,"locale":"en"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "brouwerijleeghwater.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"EUR","rate":"1.0"};
+Shopify.country = "NL";
+Shopify.theme = {"name":"Dawn","id":127163007163,"schema_name":"Dawn","schema_version":"2.1.0","theme_store_id":887,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "brouwerijleeghwater.nl/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
+Shopify.SignInWithShop = Shopify.SignInWithShop || {};
+Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
+Shopify.SignInWithShop.User.recognized = false;</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.ShopifyPay = window.ShopifyPay || {};
+  window.ShopifyPay.apiHost = "shop.app\/pay";
+  window.ShopifyPay.redirectState = null;
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  window.Shopify.SignInWithShop = window.Shopify.SignInWithShop || {};
+  window.Shopify.SignInWithShop.assetMetrics = { sampleRate: 0.25 };
+  window.Shopify.SignInWithShop.eligible = true;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
+<script defer="defer" async type="module" src="https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js"></script>
+<script type="module">
+  await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true,"backendHost":"YnJvdXdlcmlqbGVlZ2h3YXRlci5ubA=="});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["\/\/cdn.shopify.com\/proxy\/2f49fa39e1c41fd2696c121098b1a123c20f3ba642d699b089e5223381489d8a\/s.pandect.es\/scripts\/pandectes-core.js?shop=brouwerijleeghwater.myshopify.com\u0026sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA","https:\/\/static.klaviyo.com\/onsite\/js\/Yy4D3a\/klaviyo.js?company_id=Yy4D3a\u0026shop=brouwerijleeghwater.myshopify.com","https:\/\/cdn5.hextom.com\/js\/vimotia.js?shop=brouwerijleeghwater.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":56679628987,"offset":3600,"reqid":"30dbf925-1316-4c90-a8ac-da325a0cb3c0-1793409542","pageurl":"brouwerijleeghwater.nl\/","u":"05f82acdeed2","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-FYHzja/5XSmzkjz6zHj7s4rACJGFuVoYZdumgoO2Ecs=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//brouwerijleeghwater.nl/cdn/shopifycloud/storefront/assets/storefront/load_feature-ed94c51f.js" crossorigin="anonymous"></script>
+<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//brouwerijleeghwater.nl/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script crossorigin="anonymous" defer="defer" src="//brouwerijleeghwater.nl/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-f0e26bdf.js?v=20250812"></script>
+<script id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="//cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab40a.js" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
+<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/brouwerijleeghwater.nl\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-23c12384.js","sha256-r8Pww6V2udgtSdaVbcRtdZ4Kg+gXP7aLPZOtQSJPrbM=");})();
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://brouwerijleeghwater.nl/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="https://brouwerijleeghwater.nl/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
+<style id="shopify-accelerated-checkout-cart">
+        #shopify-buyer-consent {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+#shopify-buyer-consent.hidden {
+  display: none;
+}
+
+#shopify-subscription-policy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#shopify-subscription-policy-button::before {
+  box-shadow: none;
+}
+
+      </style>
+<script id="sections-script" data-sections="header,footer" defer="defer" src="//brouwerijleeghwater.nl/cdn/shop/t/5/compiled_assets/scripts.js?v=135044045343186242631631692447"></script>
+<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+
+    <style data-shopify>
+      @font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_n4.83e02f6420db1e9af259d3d7856d73a9dc4fb7ab.woff2") format("woff2"),
+       url("//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_n4.031cf9b26e734268d68c385b0ff08ff26d8b4b6b.woff") format("woff");
+}
+
+      @font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_n7.304287b69b0b43b7d5b0f947011857fe41849126.woff2") format("woff2"),
+       url("//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_n7.6044f7e686f0b0c443754a8289995e64f1aba322.woff") format("woff");
+}
+
+      @font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_i4.13d0fa4d8e97d77e57a7b87d374df76447561c38.woff2") format("woff2"),
+       url("//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_i4.1ffe088c0458ba08706c5025ac59c175cc6ceb8d.woff") format("woff");
+}
+
+      @font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_i7.525de7532113d6a475ae29f6a88f8539c3238ecb.woff2") format("woff2"),
+       url("//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_i7.128ef16b0a49f64f8629b93373d2c7806f936889.woff") format("woff");
+}
+
+      @font-face {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//brouwerijleeghwater.nl/cdn/fonts/roboto_slab/robotoslab_n4.d3a9266696fe77645ad2b6579a2b30c11742dc68.woff2") format("woff2"),
+       url("//brouwerijleeghwater.nl/cdn/fonts/roboto_slab/robotoslab_n4.ac73924d0e45cb28b8adb30cbb4ff26dbe125c23.woff") format("woff");
+}
+
+
+      :root {
+        --font-body-family: "PT Sans", sans-serif;
+        --font-body-style: normal;
+        --font-body-weight: 400;
+
+        --font-heading-family: "Roboto Slab", serif;
+        --font-heading-style: normal;
+        --font-heading-weight: 400;
+
+        --color-base-text: 255, 255, 255;
+        --color-base-background-1: 41, 44, 48;
+        --color-base-background-2: 245, 226, 161;
+        --color-base-solid-button-labels: 255, 255, 255;
+        --color-base-outline-button-labels: 255, 255, 255;
+        --color-base-accent-1: 245, 226, 161;
+        --color-base-accent-2: 245, 226, 161;
+        --payment-terms-background-color: #292c30;
+
+        --gradient-base-background-1: #292c30;
+        --gradient-base-background-2: #f5e2a1;
+        --gradient-base-accent-1: #F5E2A1;
+        --gradient-base-accent-2: #f5e2a1;
+
+        --page-width: 120rem;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 100%;
+        min-height: 100%;
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.06rem;
+        line-height: 1.8;
+        font-family: var(--font-body-family);
+        font-style: var(--font-body-style);
+        font-weight: var(--font-body-weight);
+      }
+
+      @media screen and (min-width: 750px) {
+        body {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+
+    <link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/base.css?v=173734716658519881781631692422" rel="stylesheet" type="text/css" media="all" />
+<link rel="preload" as="font" href="//brouwerijleeghwater.nl/cdn/fonts/pt_sans/ptsans_n4.83e02f6420db1e9af259d3d7856d73a9dc4fb7ab.woff2" type="font/woff2" crossorigin><link rel="preload" as="font" href="//brouwerijleeghwater.nl/cdn/fonts/roboto_slab/robotoslab_n4.d3a9266696fe77645ad2b6579a2b30c11742dc68.woff2" type="font/woff2" crossorigin><link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-predictive-search.css?v=171342419786403665911631692407" media="print" onload="this.media='all'"><script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>
+  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
+</script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 56679628987,storefrontBaseUrl: "https://brouwerijleeghwater.nl",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://brouwerijleeghwater.nl/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["7b21cf0b","b13923a8","4c64608a"],webPixelsConfigList: [{"id":"891060559","configuration":"{\"config\":\"{\\\"pixel_id\\\":\\\"G-B11E64KZDS\\\",\\\"target_country\\\":\\\"NL\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":\\\"G-B11E64KZDS\\\"},{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":\\\"G-B11E64KZDS\\\"},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-B11E64KZDS\\\",\\\"MC-1ZDMD02840\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-B11E64KZDS\\\",\\\"MC-1ZDMD02840\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-B11E64KZDS\\\",\\\"MC-1ZDMD02840\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":\\\"G-B11E64KZDS\\\"},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":\\\"G-B11E64KZDS\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a3321ca85cf5aaf6b57585fcd8d67b3a","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"194806095","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS"],"name":"Google Analytics tag (migrated)"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Brouwerij Leeghwater","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"brouwerijleeghwater.myshopify.com","countryCode":"NL","storefrontUrl":"https:\/\/brouwerijleeghwater.nl"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[{"id":"6923875778747","handle":"beemster-boezem","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"58149735661903","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"6921403531451","handle":"meizoentje-lentebier","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"58149741920591","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"6923878727867","handle":"witte-wolff-witbier","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"58149745721679","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"6923877089467","handle":"waaghals-tripel","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"58149750440271","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"6941105815739","handle":"opperbock","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"58149759582543","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"15395614490959","handle":"anno-1575","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"58149755453775","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]},{"id":"16370902040911","handle":"opperbock-bockbier-vintage","isCollective":null,"title":null,"type":null,"untranslatedTitle":null,"url":null,"vendor":null,"remoteShopId":null,"variants":[{"id":"59033404408143","image":null,"price":null,"sku":null,"title":null,"untranslatedTitle":null}]}],"purchasingCompany":null},},"https://brouwerijleeghwater.nl/cdn","610a19cewf693d529pf324840bm6169d9b4",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"true","themeId":"127163007163","themeStoreId":"887","themePublished":"true","eventMetadataId":"419886b0-6d4d-4f8b-ab44-d8cd926ba5cf","pageType":"home","shopId":"56679628987","storefrontBaseUrl":"https:\/\/brouwerijleeghwater.nl","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"7b21cf0b\", \"b13923a8\", \"4c64608a\"]","isMerchantRequest":"false","hashVersion":"610a19cewf693d529pf324840bm6169d9b4","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'EUR';
+  var meta = {"page":{"pageType":"home","requestId":"30dbf925-1316-4c90-a8ac-da325a0cb3c0-1793409542"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        if (method == 'track' || method == 'page') {
+          var pageUrl;
+          try {
+            pageUrl = window.location.href;
+          } catch (e) {}
+          var pageReferrer;
+          try {
+            pageReferrer = document.referrer;
+          } catch (e) {}
+          try {
+            if (window.__TREKKIE_SHIM_QUEUE == null) {
+              window.__TREKKIE_SHIM_QUEUE = [];
+            }
+            window.__TREKKIE_SHIM_QUEUE.push({
+              from: 'trekkie-stub',
+              method: method,
+              args: args.slice(1),
+              pageContext: {
+                url: pageUrl,
+                referrer: pageReferrer
+              }
+            });
+          } catch (e) {
+            // no-op
+          }
+        }
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":56679628987,"isMerchantRequest":null,"themeId":127163007163,"themeCityHash":"5088736046821049898","contentLanguage":"en","currency":"EUR","eventMetadataId":"419886b0-6d4d-4f8b-ab44-d8cd926ba5cf"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["7b21cf0b","b13923a8","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"30dbf925-1316-4c90-a8ac-da325a0cb3c0-1793409542","shopifyEmitted":true});
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "//brouwerijleeghwater.nl/cdn/shopifycloud/storefront/assets/shop_events_listener-819172a8.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+})();</script>
+  <script>
+  if (!window.ga || (window.ga && typeof window.ga !== 'function')) {
+    window.ga = function ga() {
+      (window.ga.q = window.ga.q || []).push(arguments);
+      if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+        window.Shopify.analytics.publish("ga_stub_called", {}, {sendTo: "google_osp_migration"});
+      }
+      console.error("Shopify's Google Analytics stub called with:", Array.from(arguments), "\nSee https://help.shopify.com/manual/promoting-marketing/pixels/pixel-migration#google for more information.");
+    };
+    if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+      window.Shopify.analytics.publish("ga_stub_initialized", {}, {sendTo: "google_osp_migration"});
+    }
+  }
+</script>
+<script
+  defer
+  src="https://brouwerijleeghwater.nl/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.14.0.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="56679628987"
+  data-render-region="gcp-us-east1"
+  data-page-type="index"
+  data-theme-instance-id="127163007163"
+  data-theme-name="Dawn"
+  data-theme-version="2.1.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://brouwerijleeghwater.nl/api/collect"
+></script>
+<meta name="shopify-y" content="2a2019b2-385c-4f63-be0c-11f0191bdbdd" data-expiration="1824967142000"><meta name="shopify-s" content="1a1c50bf-965d-4abf-90b8-107e4b8da762" data-expiration="1793411342000"><meta name="request-id" content="30dbf925-1316-4c90-a8ac-da325a0cb3c0-1793409542"        >
+</head>
+
+  <body class="gradient">
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+      Skip to content
+    </a>
+
+    <div id="shopify-section-announcement-bar" class="shopify-section"><div class="announcement-bar color-accent-2 gradient" role="region" aria-label="Announcement" ><p class="announcement-bar__message h5">
+                Welkom in het land van Leeghwater
+</p></div>
+</div>
+    <div id="shopify-section-header" class="shopify-section"><link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-list-menu.css?v=161614383810958508431631692413" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-search.css?v=128662198121899399791631692403" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-menu-drawer.css?v=97914993794422201501631692405" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-cart-notification.css?v=87135131402575196631631692401" media="print" onload="this.media='all'"><link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-price.css?v=183556404328749792281631692405" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-loading-overlay.css?v=85072440006417852071631692425" media="print" onload="this.media='all'"><noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-list-menu.css?v=161614383810958508431631692413" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-search.css?v=128662198121899399791631692403" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-menu-drawer.css?v=97914993794422201501631692405" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-cart-notification.css?v=87135131402575196631631692401" rel="stylesheet" type="text/css" media="all" /></noscript>
+
+<style>
+  header-drawer {
+    justify-self: start;
+    margin-left: -1.2rem;
+  }
+
+  @media screen and (min-width: 990px) {
+    header-drawer {
+      display: none;
+    }
+  }
+
+  .menu-drawer-container {
+    display: flex;
+  }
+
+  .list-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-menu--inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  summary.list-menu__item {
+    padding-right: 2.7rem;
+  }
+
+  .list-menu__item {
+    display: flex;
+    align-items: center;
+    line-height: 1.3;
+  }
+
+  .list-menu__item--link {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: 1.8;
+  }
+
+  @media screen and (min-width: 750px) {
+    .list-menu__item--link {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+</style>
+
+<script src="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/details-disclosure.js?v=130383321174778955031631692420" defer="defer"></script>
+<script src="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/details-modal.js?v=28236984606388830511631692419" defer="defer"></script>
+<script src="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/cart-notification.js?v=18770815536247936311631692404" defer="defer"></script>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+  </symbol>
+</svg>
+<sticky-header class="header-wrapper color-background-1 gradient header-wrapper--border-bottom">
+  <header class="header header--top-center page-width header--has-menu"><header-drawer data-breakpoint="tablet">
+        <details class="menu-drawer-container">
+          <summary class="header__icon header__icon--menu header__icon--summary link link--text focus-inset" aria-label="Menu">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
+  <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor">
+</svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+  <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+</svg>
+
+            </span>
+          </summary>
+          <div id="menu-drawer" class="menu-drawer motion-reduce" tabindex="-1">
+            <div class="menu-drawer__inner-container">
+              <div class="menu-drawer__navigation-container">
+                <nav class="menu-drawer__navigation">
+                  <ul class="menu-drawer__menu list-menu" role="list"><li><a href="/" class="menu-drawer__menu-item list-menu__item link link--text focus-inset menu-drawer__menu-item--active" aria-current="page">
+                            Home
+                          </a></li><li><a href="/collections" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">
+                            Shop
+                          </a></li><li><a href="/pages/brouwerij" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">
+                            Over Ons
+                          </a></li><li><a href="/pages/leeghwater" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">
+                            Geschiedenis
+                          </a></li><li><a href="/pages/zakelijk" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">
+                            Zakelijk
+                          </a></li><li><a href="/pages/contact" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">
+                            Contact
+                          </a></li></ul>
+                </nav>
+                <div class="menu-drawer__utility-links"><a href="https://brouwerijleeghwater.nl/customer_authentication/redirect?locale=en&region_country=NL" class="menu-drawer__account link link--text focus-inset h5">
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-account" fill="none" viewBox="0 0 18 19">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
+</svg>
+
+Log in</a><ul class="list list-social list-unstyled" role="list"><li class="list-social__item">
+                        <a href="https://www.facebook.com/brouwerijleeghwater/" class="link link--text list-social__link" aria-describedby="a11y-external-message"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 18 18">
+  <path fill="currentColor" d="M16.42.61c.27 0 .5.1.69.28.19.2.28.42.28.7v15.44c0 .27-.1.5-.28.69a.94.94 0 01-.7.28h-4.39v-6.7h2.25l.31-2.65h-2.56v-1.7c0-.4.1-.72.28-.93.18-.2.5-.32 1-.32h1.37V3.35c-.6-.06-1.27-.1-2.01-.1-1.01 0-1.83.3-2.45.9-.62.6-.93 1.44-.93 2.53v1.97H7.04v2.65h2.24V18H.98c-.28 0-.5-.1-.7-.28a.94.94 0 01-.28-.7V1.59c0-.27.1-.5.28-.69a.94.94 0 01.7-.28h15.44z">
+</svg>
+<span class="visually-hidden">Facebook</span>
+                        </a>
+                      </li><li class="list-social__item">
+                        <a href="https://www.instagram.com/brouwerijleeghwater/" class="link link--text list-social__link" aria-describedby="a11y-external-message"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 18 18">
+  <path fill="currentColor" d="M8.77 1.58c2.34 0 2.62.01 3.54.05.86.04 1.32.18 1.63.3.41.17.7.35 1.01.66.3.3.5.6.65 1 .12.32.27.78.3 1.64.05.92.06 1.2.06 3.54s-.01 2.62-.05 3.54a4.79 4.79 0 01-.3 1.63c-.17.41-.35.7-.66 1.01-.3.3-.6.5-1.01.66-.31.12-.77.26-1.63.3-.92.04-1.2.05-3.54.05s-2.62 0-3.55-.05a4.79 4.79 0 01-1.62-.3c-.42-.16-.7-.35-1.01-.66-.31-.3-.5-.6-.66-1a4.87 4.87 0 01-.3-1.64c-.04-.92-.05-1.2-.05-3.54s0-2.62.05-3.54c.04-.86.18-1.32.3-1.63.16-.41.35-.7.66-1.01.3-.3.6-.5 1-.65.32-.12.78-.27 1.63-.3.93-.05 1.2-.06 3.55-.06zm0-1.58C6.39 0 6.09.01 5.15.05c-.93.04-1.57.2-2.13.4-.57.23-1.06.54-1.55 1.02C1 1.96.7 2.45.46 3.02c-.22.56-.37 1.2-.4 2.13C0 6.1 0 6.4 0 8.77s.01 2.68.05 3.61c.04.94.2 1.57.4 2.13.23.58.54 1.07 1.02 1.56.49.48.98.78 1.55 1.01.56.22 1.2.37 2.13.4.94.05 1.24.06 3.62.06 2.39 0 2.68-.01 3.62-.05.93-.04 1.57-.2 2.13-.41a4.27 4.27 0 001.55-1.01c.49-.49.79-.98 1.01-1.56.22-.55.37-1.19.41-2.13.04-.93.05-1.23.05-3.61 0-2.39 0-2.68-.05-3.62a6.47 6.47 0 00-.4-2.13 4.27 4.27 0 00-1.02-1.55A4.35 4.35 0 0014.52.46a6.43 6.43 0 00-2.13-.41A69 69 0 008.77 0z"/>
+  <path fill="currentColor" d="M8.8 4a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 7.43a2.92 2.92 0 110-5.85 2.92 2.92 0 010 5.85zM13.43 5a1.05 1.05 0 100-2.1 1.05 1.05 0 000 2.1z">
+</svg>
+<span class="visually-hidden">Instagram</span>
+                        </a>
+                      </li><li class="list-social__item">
+                        <a href="https://www.youtube.com/@brouwerijleeghwater4429/featured" class="link link--text list-social__link" aria-describedby="a11y-external-message"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 100 70">
+  <path d="M98 11c2 7.7 2 24 2 24s0 16.3-2 24a12.5 12.5 0 01-9 9c-7.7 2-39 2-39 2s-31.3 0-39-2a12.5 12.5 0 01-9-9c-2-7.7-2-24-2-24s0-16.3 2-24c1.2-4.4 4.6-7.8 9-9 7.7-2 39-2 39-2s31.3 0 39 2c4.4 1.2 7.8 4.6 9 9zM40 50l26-15-26-15v30z" fill="currentColor">
+</svg>
+<span class="visually-hidden">YouTube</span>
+                        </a>
+                      </li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </header-drawer><details-modal class="header__search">
+        <details>
+          <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="Search">
+            <span>
+              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-search">
+              </svg>
+              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-close">
+              </svg>
+            </span>
+          </summary>
+          <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="Search">
+            <div class="modal-overlay"></div>
+            <div class="search-modal__content" tabindex="-1"><predictive-search class="search-modal__form" data-loading-text="Loading..."><form action="/search" method="get" role="search" class="search search-modal__form">
+                  <div class="field">
+                    <input class="search__input field__input" 
+                      id="Search-In-Modal-1"
+                      type="search"
+                      name="q"
+                      value=""
+                      placeholder="Search"role="combobox"
+                        aria-expanded="false"
+                        aria-owns="predictive-search-results-list"
+                        aria-controls="predictive-search-results-list"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocorrect="off"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        spellcheck="false">
+                    <label class="field__label" for="Search-In-Modal-1">Search</label>
+                    <input type="hidden" name="options[prefix]" value="last">
+                    <button class="search__button field__button" aria-label="Search">
+                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                        <use href="#icon-search">
+                      </svg>
+                    </button> 
+                  </div><div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+                      <div class="predictive-search__loading-state">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span></form></predictive-search><button type="button" class="modal__close-button link link--text focus-inset" aria-label="Close">
+                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                  <use href="#icon-close">
+                </svg>
+              </button>
+            </div>
+          </div>
+        </details>
+      </details-modal><h1 class="header__heading"><a href="/" class="header__heading-link link link--text focus-inset"><img srcset="//brouwerijleeghwater.nl/cdn/shop/files/LogoHeaderkopie_63a15ab9-172e-475c-a4bd-6707ac6631b3_250x.png?v=1624432230 1x, //brouwerijleeghwater.nl/cdn/shop/files/LogoHeaderkopie_63a15ab9-172e-475c-a4bd-6707ac6631b3_250x@2x.png?v=1624432230 2x"
+              src="//brouwerijleeghwater.nl/cdn/shop/files/LogoHeaderkopie_63a15ab9-172e-475c-a4bd-6707ac6631b3_250x.png?v=1624432230"
+              loading="lazy"
+              class="header__heading-logo"
+              width="694"
+              height="224"
+              alt="Brouwerij Leeghwater"
+            ></a></h1><nav class="header__inline-menu">
+        <ul class="list-menu list-menu--inline" role="list"><li><a href="/" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset" aria-current="page">
+                  <span class="header__active-menu-item">Home</span>
+                </a></li><li><a href="/collections" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
+                  <span>Shop</span>
+                </a></li><li><a href="/pages/brouwerij" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
+                  <span>Over Ons</span>
+                </a></li><li><a href="/pages/leeghwater" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
+                  <span>Geschiedenis</span>
+                </a></li><li><a href="/pages/zakelijk" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
+                  <span>Zakelijk</span>
+                </a></li><li><a href="/pages/contact" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
+                  <span>Contact</span>
+                </a></li></ul>
+      </nav><div class="header__icons">
+      <details-modal class="header__search">
+        <details>
+          <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="Search">
+            <span>
+              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-search">
+              </svg>
+              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-close">
+              </svg>
+            </span>
+          </summary>
+          <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="Search">
+            <div class="modal-overlay"></div>
+            <div class="search-modal__content" tabindex="-1"><predictive-search class="search-modal__form" data-loading-text="Loading..."><form action="/search" method="get" role="search" class="search search-modal__form">
+                  <div class="field">
+                    <input class="search__input field__input" 
+                      id="Search-In-Modal"
+                      type="search"
+                      name="q"
+                      value=""
+                      placeholder="Search"role="combobox"
+                        aria-expanded="false"
+                        aria-owns="predictive-search-results-list"
+                        aria-controls="predictive-search-results-list"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocorrect="off"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        spellcheck="false">
+                    <label class="field__label" for="Search-In-Modal">Search</label>
+                    <input type="hidden" name="options[prefix]" value="last">
+                    <button class="search__button field__button" aria-label="Search">
+                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                        <use href="#icon-search">
+                      </svg>
+                    </button> 
+                  </div><div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+                      <div class="predictive-search__loading-state">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span></form></predictive-search><button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="Close">
+                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                  <use href="#icon-close">
+                </svg>
+              </button>
+            </div>
+          </div>
+        </details>
+      </details-modal><a href="https://brouwerijleeghwater.nl/customer_authentication/redirect?locale=en&region_country=NL" class="header__icon header__icon--account link link--text focus-inset small-hide">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-account" fill="none" viewBox="0 0 18 19">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
+</svg>
+
+          <span class="visually-hidden">Log in</span>
+        </a><a href="/cart" class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble"><svg class="icon icon-cart-empty" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <path d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z" fill="currentColor" fill-rule="evenodd"/>
+</svg>
+<span class="visually-hidden">Cart</span></a>
+    </div>
+  </header>
+</sticky-header>
+
+<cart-notification>
+  <div class="cart-notification-wrapper page-width color-background-1">
+    <div id="cart-notification" class="cart-notification focus-inset" aria-modal="true" aria-label="Item added to your cart" role="dialog" tabindex="-1">
+      <div class="cart-notification__header">
+        <h2 class="cart-notification__heading caption-large"><svg class="icon icon-checkmark color-foreground-text" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.35.643a.5.5 0 01.006.707l-6.77 6.886a.5.5 0 01-.719-.006L.638 4.845a.5.5 0 11.724-.69l2.872 3.011 6.41-6.517a.5.5 0 01.707-.006h-.001z" fill="currentColor"/>
+</svg>
+Item added to your cart</h2>
+        <button type="button" class="cart-notification__close modal__close-button link link--text focus-inset" aria-label="Close">
+          <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="#icon-close"></svg>
+        </button>
+      </div>
+      <div id="cart-notification-product" class="cart-notification-product"></div>
+      <div class="cart-notification__links">
+        <a href="/cart" id="cart-notification-button" class="button button--secondary button--full-width"></a>
+        <form action="/cart" method="post" id="cart">
+          <button class="button button--primary button--full-width" name="checkout" form="cart">Check out</button>
+        </form>
+        <button type="button" class="link button-label">Continue shopping</button>
+      </div>
+    </div>
+  </div>
+</cart-notification>
+<style data-shopify>
+  .cart-notification {
+     display: none;
+  }
+</style>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Brouwerij Leeghwater",
+    
+      
+      "logo": "https:\/\/brouwerijleeghwater.nl\/cdn\/shop\/files\/LogoHeaderkopie_63a15ab9-172e-475c-a4bd-6707ac6631b3_694x.png?v=1624432230",
+    
+    "sameAs": [
+      "",
+      "https:\/\/www.facebook.com\/brouwerijleeghwater\/",
+      "",
+      "https:\/\/www.instagram.com\/brouwerijleeghwater\/",
+      "",
+      "",
+      "https:\/\/www.youtube.com\/@brouwerijleeghwater4429\/featured",
+      ""
+    ],
+    "url": "https:\/\/brouwerijleeghwater.nl"
+  }
+</script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Brouwerij Leeghwater",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https:\/\/brouwerijleeghwater.nl\/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "https:\/\/brouwerijleeghwater.nl"
+    }
+  </script>
+</div>
+
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <section id="shopify-section-template--15089376526523__image_banner_xkPrLn" class="shopify-section spaced-section spaced-section--full-width"><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/section-image-banner.css?v=94917250436369128371631692406" rel="stylesheet" type="text/css" media="all" />
+<style data-shopify>@media screen and (max-width: 749px) {
+    #Banner-template--15089376526523__image_banner_xkPrLn::before,
+    #Banner-template--15089376526523__image_banner_xkPrLn .banner__media::before,
+    #Banner-template--15089376526523__image_banner_xkPrLn:not(.banner--mobile-bottom) .banner__content::before {
+      padding-bottom: 56.2799043062201%;
+      content: '';
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    #Banner-template--15089376526523__image_banner_xkPrLn::before,
+    #Banner-template--15089376526523__image_banner_xkPrLn .banner__media::before {
+      padding-bottom: 56.2799043062201%;
+      content: '';
+      display: block;
+    }
+  }</style><style data-shopify>#Banner-template--15089376526523__image_banner_xkPrLn::after {
+    opacity: 0.0;
+  }</style><div id="Banner-template--15089376526523__image_banner_xkPrLn" class="banner banner--adapt banner--mobile-bottom"><div class="banner__media media">
+      <img
+        srcset="//brouwerijleeghwater.nl/cdn/shop/files/Opperbock_banner_2_375x.png?v=1790165178 375w,//brouwerijleeghwater.nl/cdn/shop/files/Opperbock_banner_2_750x.png?v=1790165178 750w,//brouwerijleeghwater.nl/cdn/shop/files/Opperbock_banner_2_1100x.png?v=1790165178 1100w,//brouwerijleeghwater.nl/cdn/shop/files/Opperbock_banner_2_1500x.png?v=1790165178 1500w,"
+        sizes="100vw"
+        src="//brouwerijleeghwater.nl/cdn/shop/files/Opperbock_banner_2_1500x.png?v=1790165178"
+        loading="lazy"
+        alt=""
+        width="1672"
+        height="941.0"
+        
+      >
+    </div><div class="banner__content banner__content--center page-width">
+    <div class="banner__box color-background-1"></div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--15089376526523__rich_text_MCdAfp" class="shopify-section spaced-section spaced-section--full-width"><link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-rte.css?v=84043763465619332371631692421" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/section-rich-text.css?v=99794085138537283611631692415" media="print" onload="this.media='all'">
+
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-rte.css?v=84043763465619332371631692421" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/section-rich-text.css?v=99794085138537283611631692415" rel="stylesheet" type="text/css" media="all" /></noscript>
+
+<div class="">
+  <div class="rich-text color-background-1 gradient rich-text--full-width">
+    <div class="rich-text__blocks"><h2 class="h0" >Eigenzinnig Bier</h2><div class="rich-text__text rte" ><p><strong>Brouwerij Leeghwater brouwt sinds 2012 speciaalbier met een eigenwijs karakter, midden in het Noord-Hollandse Land van Leeghwater. Wat begon als een klein experiment met een pan en een roerspaan, groeide uit tot een hechte brouwerij die bier maakt met aandacht, karakter en een flinke dosis eigenzinnigheid. Onze bieren zijn uitgesproken, gebalanceerd en toegankelijk voor iedereen die van goed bier houdt. Bier uit het Land van Leeghwater, en dat water is nog lang niet op.</strong></p></div><a href="/pages/brouwerij" class="button button--secondary" >
+              Over Ons
+            </a></div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--15089376526523__featured_products" class="shopify-section spaced-section"><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-card.css?v=52436640680714102981631692419" rel="stylesheet" type="text/css" media="all" />
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-price.css?v=183556404328749792281631692405" rel="stylesheet" type="text/css" media="all" />
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-product-grid.css?v=53548821728466346451631692413" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-slider.css?v=82006835487707820721631692406" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/template-collection.css?v=65957380381783926331631692420" media="print" onload="this.media='all'">
+
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-slider.css?v=82006835487707820721631692406" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/template-collection.css?v=65957380381783926331631692420" rel="stylesheet" type="text/css" media="all" /></noscript><div class="collection page-width">
+  <div class="title-wrapper-with-link">
+    <h2 class="title">Leeghwater Bieren</h2></div>
+
+  <slider-component class="slider-mobile-gutter">
+    <ul class="grid grid--2-col product-grid grid--2-col-tablet grid--4-col-desktop negative-margin--small" role="list"><li class="grid__item">
+          
+
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-rating.css?v=24573085263941240431631692418" rel="stylesheet" type="text/css" media="all" />
+
+<div class="card-wrapper">
+  <a href="/products/beemster-boezem" class="full-unstyled-link">
+    <span class="visually-hidden">Beemster Boezem Blond</span>
+
+    <div class="card card--product card--outline" tabindex="-1">
+      <div class="card__inner"><div>
+            <div class="media media--transparent media--square media--hover-effect"
+              
+            >
+              <img
+                srcset="//brouwerijleeghwater.nl/cdn/shop/files/BeemsterBoezemUitgelicht_064bdb63-cb24-473e-856b-125107c0fd77_165x.jpg?v=1624433036 165w,//brouwerijleeghwater.nl/cdn/shop/files/BeemsterBoezemUitgelicht_064bdb63-cb24-473e-856b-125107c0fd77_360x.jpg?v=1624433036 360w,//brouwerijleeghwater.nl/cdn/shop/files/BeemsterBoezemUitgelicht_064bdb63-cb24-473e-856b-125107c0fd77_533x.jpg?v=1624433036 533w,//brouwerijleeghwater.nl/cdn/shop/files/BeemsterBoezemUitgelicht_064bdb63-cb24-473e-856b-125107c0fd77_720x.jpg?v=1624433036 720w,//brouwerijleeghwater.nl/cdn/shop/files/BeemsterBoezemUitgelicht_064bdb63-cb24-473e-856b-125107c0fd77_940x.jpg?v=1624433036 940w,//brouwerijleeghwater.nl/cdn/shop/files/BeemsterBoezemUitgelicht_064bdb63-cb24-473e-856b-125107c0fd77_1066x.jpg?v=1624433036 1066w"
+                src="//brouwerijleeghwater.nl/cdn/shop/files/BeemsterBoezemUitgelicht_064bdb63-cb24-473e-856b-125107c0fd77_533x.jpg?v=1624433036"
+                sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                alt="Beemster Boezem Blond"
+                loading="lazy"
+                class="motion-reduce"
+                width="2500"
+                height="2500"
+              ><img
+                  srcset="//brouwerijleeghwater.nl/cdn/shop/files/4_688155f3-e8a4-4c92-9664-13edb3c2a3ef_165x.jpg?v=1787225779 165w,//brouwerijleeghwater.nl/cdn/shop/files/4_688155f3-e8a4-4c92-9664-13edb3c2a3ef_360x.jpg?v=1787225779 360w,//brouwerijleeghwater.nl/cdn/shop/files/4_688155f3-e8a4-4c92-9664-13edb3c2a3ef_533x.jpg?v=1787225779 533w,//brouwerijleeghwater.nl/cdn/shop/files/4_688155f3-e8a4-4c92-9664-13edb3c2a3ef_720x.jpg?v=1787225779 720w,//brouwerijleeghwater.nl/cdn/shop/files/4_688155f3-e8a4-4c92-9664-13edb3c2a3ef_940x.jpg?v=1787225779 940w,//brouwerijleeghwater.nl/cdn/shop/files/4_688155f3-e8a4-4c92-9664-13edb3c2a3ef_1066x.jpg?v=1787225779 1066w"
+                  src="//brouwerijleeghwater.nl/cdn/shop/files/4_688155f3-e8a4-4c92-9664-13edb3c2a3ef_533x.jpg?v=1787225779"
+                  sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                  alt="Beemster Boezem Blond"
+                  loading="lazy"
+                  class="motion-reduce"
+                width="2500"
+                height="2500"
+                ></div>
+          </div><div class="card__badge"></div>
+      </div>
+    </div>
+
+    <div class="card-information">
+      <div class="card-information__wrapper"><span class="card-information__text h5">
+            Beemster Boezem Blond
+          </span>
+        <span class="caption-large light"></span>
+<div class="price ">
+  <dl><div class="price__regular">
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      </dt>
+      <dd >
+        <span class="price-item price-item--regular">
+          From €2,95 EUR
+        </span>
+      </dd>
+    </div>
+    <div class="price__sale">
+      <dt class="price__compare">
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      </dt>
+      <dd class="price__compare">
+        <s class="price-item price-item--regular">
+          
+            
+          
+        </s>
+      </dd>
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">Sale price</span>
+      </dt>
+      <dd >
+        <span class="price-item price-item--sale">
+          From €2,95 EUR
+        </span>
+      </dd>
+    </div>
+    <small class="unit-price caption hidden">
+      <dt class="visually-hidden">Unit price</dt>
+      <dd >
+        <span></span>
+        <span aria-hidden="true">/</span>
+        <span class="visually-hidden">&nbsp;per&nbsp;</span>
+        <span>
+        </span>
+      </dd>
+    </small>
+  </dl></div>
+
+      </div>
+    </div>
+  </a>
+</div>
+
+        </li><li class="grid__item">
+          
+
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-rating.css?v=24573085263941240431631692418" rel="stylesheet" type="text/css" media="all" />
+
+<div class="card-wrapper">
+  <a href="/products/meizoentje-lentebier" class="full-unstyled-link">
+    <span class="visually-hidden">Meizoentje Lentebier</span>
+
+    <div class="card card--product card--outline" tabindex="-1">
+      <div class="card__inner"><div>
+            <div class="media media--transparent media--square media--hover-effect"
+              
+            >
+              <img
+                srcset="//brouwerijleeghwater.nl/cdn/shop/files/MeizoentjeUitgelicht_165x.jpg?v=1749711482 165w,//brouwerijleeghwater.nl/cdn/shop/files/MeizoentjeUitgelicht_360x.jpg?v=1749711482 360w,//brouwerijleeghwater.nl/cdn/shop/files/MeizoentjeUitgelicht_533x.jpg?v=1749711482 533w,//brouwerijleeghwater.nl/cdn/shop/files/MeizoentjeUitgelicht_720x.jpg?v=1749711482 720w,//brouwerijleeghwater.nl/cdn/shop/files/MeizoentjeUitgelicht_940x.jpg?v=1749711482 940w,//brouwerijleeghwater.nl/cdn/shop/files/MeizoentjeUitgelicht_1066x.jpg?v=1749711482 1066w"
+                src="//brouwerijleeghwater.nl/cdn/shop/files/MeizoentjeUitgelicht_533x.jpg?v=1749711482"
+                sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                alt="Meizoentje Lentebier"
+                loading="lazy"
+                class="motion-reduce"
+                width="2500"
+                height="2500"
+              ><img
+                  srcset="//brouwerijleeghwater.nl/cdn/shop/files/10_165x.jpg?v=1787225779 165w,//brouwerijleeghwater.nl/cdn/shop/files/10_360x.jpg?v=1787225779 360w,//brouwerijleeghwater.nl/cdn/shop/files/10_533x.jpg?v=1787225779 533w,//brouwerijleeghwater.nl/cdn/shop/files/10_720x.jpg?v=1787225779 720w,//brouwerijleeghwater.nl/cdn/shop/files/10_940x.jpg?v=1787225779 940w,//brouwerijleeghwater.nl/cdn/shop/files/10_1066x.jpg?v=1787225779 1066w"
+                  src="//brouwerijleeghwater.nl/cdn/shop/files/10_533x.jpg?v=1787225779"
+                  sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                  alt="Meizoentje Lentebier"
+                  loading="lazy"
+                  class="motion-reduce"
+                width="2500"
+                height="2500"
+                ></div>
+          </div><div class="card__badge"></div>
+      </div>
+    </div>
+
+    <div class="card-information">
+      <div class="card-information__wrapper"><span class="card-information__text h5">
+            Meizoentje Lentebier
+          </span>
+        <span class="caption-large light"></span>
+<div class="price ">
+  <dl><div class="price__regular">
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      </dt>
+      <dd >
+        <span class="price-item price-item--regular">
+          From €3,75 EUR
+        </span>
+      </dd>
+    </div>
+    <div class="price__sale">
+      <dt class="price__compare">
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      </dt>
+      <dd class="price__compare">
+        <s class="price-item price-item--regular">
+          
+            
+          
+        </s>
+      </dd>
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">Sale price</span>
+      </dt>
+      <dd >
+        <span class="price-item price-item--sale">
+          From €3,75 EUR
+        </span>
+      </dd>
+    </div>
+    <small class="unit-price caption hidden">
+      <dt class="visually-hidden">Unit price</dt>
+      <dd >
+        <span></span>
+        <span aria-hidden="true">/</span>
+        <span class="visually-hidden">&nbsp;per&nbsp;</span>
+        <span>
+        </span>
+      </dd>
+    </small>
+  </dl></div>
+
+      </div>
+    </div>
+  </a>
+</div>
+
+        </li><li class="grid__item">
+          
+
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-rating.css?v=24573085263941240431631692418" rel="stylesheet" type="text/css" media="all" />
+
+<div class="card-wrapper">
+  <a href="/products/witte-wolff-witbier" class="full-unstyled-link">
+    <span class="visually-hidden">Witte Wolff Witbier</span>
+
+    <div class="card card--product card--outline" tabindex="-1">
+      <div class="card__inner"><div>
+            <div class="media media--transparent media--square media--hover-effect"
+              
+            >
+              <img
+                srcset="//brouwerijleeghwater.nl/cdn/shop/files/WitteWolffUitgelicht_f822d0ef-1c5b-4009-ae66-0a77ed0d3daa_165x.jpg?v=1624433973 165w,//brouwerijleeghwater.nl/cdn/shop/files/WitteWolffUitgelicht_f822d0ef-1c5b-4009-ae66-0a77ed0d3daa_360x.jpg?v=1624433973 360w,//brouwerijleeghwater.nl/cdn/shop/files/WitteWolffUitgelicht_f822d0ef-1c5b-4009-ae66-0a77ed0d3daa_533x.jpg?v=1624433973 533w,//brouwerijleeghwater.nl/cdn/shop/files/WitteWolffUitgelicht_f822d0ef-1c5b-4009-ae66-0a77ed0d3daa_720x.jpg?v=1624433973 720w,//brouwerijleeghwater.nl/cdn/shop/files/WitteWolffUitgelicht_f822d0ef-1c5b-4009-ae66-0a77ed0d3daa_940x.jpg?v=1624433973 940w,//brouwerijleeghwater.nl/cdn/shop/files/WitteWolffUitgelicht_f822d0ef-1c5b-4009-ae66-0a77ed0d3daa_1066x.jpg?v=1624433973 1066w"
+                src="//brouwerijleeghwater.nl/cdn/shop/files/WitteWolffUitgelicht_f822d0ef-1c5b-4009-ae66-0a77ed0d3daa_533x.jpg?v=1624433973"
+                sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                alt="Witte Wolff Witbier"
+                loading="lazy"
+                class="motion-reduce"
+                width="2500"
+                height="2500"
+              ><img
+                  srcset="//brouwerijleeghwater.nl/cdn/shop/files/2_165x.jpg?v=1787225779 165w,//brouwerijleeghwater.nl/cdn/shop/files/2_360x.jpg?v=1787225779 360w,//brouwerijleeghwater.nl/cdn/shop/files/2_533x.jpg?v=1787225779 533w,//brouwerijleeghwater.nl/cdn/shop/files/2_720x.jpg?v=1787225779 720w,//brouwerijleeghwater.nl/cdn/shop/files/2_940x.jpg?v=1787225779 940w,//brouwerijleeghwater.nl/cdn/shop/files/2_1066x.jpg?v=1787225779 1066w"
+                  src="//brouwerijleeghwater.nl/cdn/shop/files/2_533x.jpg?v=1787225779"
+                  sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                  alt="Witte Wolff Witbier"
+                  loading="lazy"
+                  class="motion-reduce"
+                width="2500"
+                height="2500"
+                ></div>
+          </div><div class="card__badge"></div>
+      </div>
+    </div>
+
+    <div class="card-information">
+      <div class="card-information__wrapper"><span class="card-information__text h5">
+            Witte Wolff Witbier
+          </span>
+        <span class="caption-large light"></span>
+<div class="price ">
+  <dl><div class="price__regular">
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      </dt>
+      <dd >
+        <span class="price-item price-item--regular">
+          From €3,55 EUR
+        </span>
+      </dd>
+    </div>
+    <div class="price__sale">
+      <dt class="price__compare">
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      </dt>
+      <dd class="price__compare">
+        <s class="price-item price-item--regular">
+          
+            
+          
+        </s>
+      </dd>
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">Sale price</span>
+      </dt>
+      <dd >
+        <span class="price-item price-item--sale">
+          From €3,55 EUR
+        </span>
+      </dd>
+    </div>
+    <small class="unit-price caption hidden">
+      <dt class="visually-hidden">Unit price</dt>
+      <dd >
+        <span></span>
+        <span aria-hidden="true">/</span>
+        <span class="visually-hidden">&nbsp;per&nbsp;</span>
+        <span>
+        </span>
+      </dd>
+    </small>
+  </dl></div>
+
+      </div>
+    </div>
+  </a>
+</div>
+
+        </li><li class="grid__item">
+          
+
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-rating.css?v=24573085263941240431631692418" rel="stylesheet" type="text/css" media="all" />
+
+<div class="card-wrapper">
+  <a href="/products/waaghals-tripel" class="full-unstyled-link">
+    <span class="visually-hidden">Waaghals Tripel</span>
+
+    <div class="card card--product card--outline" tabindex="-1">
+      <div class="card__inner"><div>
+            <div class="media media--transparent media--square media--hover-effect"
+              
+            >
+              <img
+                srcset="//brouwerijleeghwater.nl/cdn/shop/files/Shopify_BierenUitgelicht6_165x.png?v=1625580102 165w,//brouwerijleeghwater.nl/cdn/shop/files/Shopify_BierenUitgelicht6_360x.png?v=1625580102 360w,//brouwerijleeghwater.nl/cdn/shop/files/Shopify_BierenUitgelicht6_533x.png?v=1625580102 533w,//brouwerijleeghwater.nl/cdn/shop/files/Shopify_BierenUitgelicht6_720x.png?v=1625580102 720w,//brouwerijleeghwater.nl/cdn/shop/files/Shopify_BierenUitgelicht6_940x.png?v=1625580102 940w,//brouwerijleeghwater.nl/cdn/shop/files/Shopify_BierenUitgelicht6_1066x.png?v=1625580102 1066w"
+                src="//brouwerijleeghwater.nl/cdn/shop/files/Shopify_BierenUitgelicht6_533x.png?v=1625580102"
+                sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                alt="Waaghals Tripel"
+                loading="lazy"
+                class="motion-reduce"
+                width="2500"
+                height="2500"
+              ><img
+                  srcset="//brouwerijleeghwater.nl/cdn/shop/files/8_165x.jpg?v=1787225779 165w,//brouwerijleeghwater.nl/cdn/shop/files/8_360x.jpg?v=1787225779 360w,//brouwerijleeghwater.nl/cdn/shop/files/8_533x.jpg?v=1787225779 533w,//brouwerijleeghwater.nl/cdn/shop/files/8_720x.jpg?v=1787225779 720w,//brouwerijleeghwater.nl/cdn/shop/files/8_940x.jpg?v=1787225779 940w,//brouwerijleeghwater.nl/cdn/shop/files/8_1066x.jpg?v=1787225779 1066w"
+                  src="//brouwerijleeghwater.nl/cdn/shop/files/8_533x.jpg?v=1787225779"
+                  sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                  alt="Waaghals Tripel"
+                  loading="lazy"
+                  class="motion-reduce"
+                width="2500"
+                height="2500"
+                ></div>
+          </div><div class="card__badge"></div>
+      </div>
+    </div>
+
+    <div class="card-information">
+      <div class="card-information__wrapper"><span class="card-information__text h5">
+            Waaghals Tripel
+          </span>
+        <span class="caption-large light"></span>
+<div class="price ">
+  <dl><div class="price__regular">
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      </dt>
+      <dd >
+        <span class="price-item price-item--regular">
+          From €3,65 EUR
+        </span>
+      </dd>
+    </div>
+    <div class="price__sale">
+      <dt class="price__compare">
+        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+      </dt>
+      <dd class="price__compare">
+        <s class="price-item price-item--regular">
+          
+            
+          
+        </s>
+      </dd>
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">Sale price</span>
+      </dt>
+      <dd >
+        <span class="price-item price-item--sale">
+          From €3,65 EUR
+        </span>
+      </dd>
+    </div>
+    <small class="unit-price caption hidden">
+      <dt class="visually-hidden">Unit price</dt>
+      <dd >
+        <span></span>
+        <span aria-hidden="true">/</span>
+        <span class="visually-hidden">&nbsp;per&nbsp;</span>
+        <span>
+        </span>
+      </dd>
+    </small>
+  </dl></div>
+
+      </div>
+    </div>
+  </a>
+</div>
+
+        </li></ul></slider-component><div class="center">
+      <a href="/collections/collectie-2024"
+        class="button"
+        aria-label="View all products in the LEEGHWATER BIEREN collection"
+      >
+        View all
+      </a>
+    </div></div>
+
+
+</section><section id="shopify-section-template--15089376526523__collection_list_4FYKgL" class="shopify-section spaced-section collection-list-section"><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/section-collection-list.css?v=118133273854072490731631692412" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-slider.css?v=82006835487707820721631692406" media="print" onload="this.media='all'">
+
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-slider.css?v=82006835487707820721631692406" rel="stylesheet" type="text/css" media="all" /></noscript>
+
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-card.css?v=52436640680714102981631692419" rel="stylesheet" type="text/css" media="all" />
+
+<div class="collection-list-wrapper page-width page-width-desktop">
+  <div class="title-wrapper-with-link title-wrapper--self-padded-tablet-down">
+    <h2 class="collection-list-title">Collections</h2><a href="/collections" class="link underlined-link large-up-hide">View all</a></div>
+
+  <slider-component class="slider-mobile-gutter">
+    <ul class="collection-list grid grid--1-col grid--4-col-tablet slider slider--tablet grid--peek collection-list--4-items"
+      id="Slider-template--15089376526523__collection_list_4FYKgL"
+      role="list"
+    ><li class="collection-list__item grid__item slider__slide" >
+          <a href="/collections/collectie-2024"
+            class="card animate-arrow link card--media"
+          >
+            <div class="card--stretch card-colored color-background-1"><div class="card__media-spacer">
+                  <div class="overlay-card"></div>
+                  <div class="media media--adapt media--hover-effect overflow-hidden"
+                    style="padding-bottom: 100.0%;">
+
+                    <img
+                      srcset="//brouwerijleeghwater.nl/cdn/shop/collections/2_165x.png?v=1782905738 165w,//brouwerijleeghwater.nl/cdn/shop/collections/2_330x.png?v=1782905738 330w,//brouwerijleeghwater.nl/cdn/shop/collections/2_535x.png?v=1782905738 535w,//brouwerijleeghwater.nl/cdn/shop/collections/2_750x.png?v=1782905738 750w,//brouwerijleeghwater.nl/cdn/shop/collections/2_1000x.png?v=1782905738 1000w,//brouwerijleeghwater.nl/cdn/shop/collections/2_1500x.png?v=1782905738 1500w,"
+                      src="//brouwerijleeghwater.nl/cdn/shop/collections/2_1500x.png?v=1782905738"
+                      sizes="
+                      (min-width: 1200px) 366px,
+                      (min-width: 750px) calc((100vw - 10rem) / 2),
+                      calc(100vw - 3rem)"
+                      alt="LEEGHWATER BIEREN"
+                      height="2500"
+                      width="2500"
+                      loading="lazy"
+                      class="motion-reduce"
+                    >
+                  </div>
+                </div>
+
+                <div class="card__text card__text-spacing card-colored card__text-hover">
+                  
+                  <h3>LEEGHWATER BIEREN<span class="icon-wrap">&nbsp;<svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</svg>
+</span></h3>
+                </div></div>
+          </a>
+        </li><li class="collection-list__item grid__item slider__slide" >
+          <a href="/collections/bierboxen"
+            class="card animate-arrow link card--media"
+          >
+            <div class="card--stretch card-colored color-background-1"><div class="card__media-spacer">
+                  <div class="overlay-card"></div>
+                  <div class="media media--adapt media--hover-effect overflow-hidden"
+                    style="padding-bottom: 100.0%;">
+
+                    <img
+                      srcset="//brouwerijleeghwater.nl/cdn/shop/collections/5_165x.png?v=1782905754 165w,//brouwerijleeghwater.nl/cdn/shop/collections/5_330x.png?v=1782905754 330w,//brouwerijleeghwater.nl/cdn/shop/collections/5_535x.png?v=1782905754 535w,//brouwerijleeghwater.nl/cdn/shop/collections/5_750x.png?v=1782905754 750w,//brouwerijleeghwater.nl/cdn/shop/collections/5_1000x.png?v=1782905754 1000w,//brouwerijleeghwater.nl/cdn/shop/collections/5_1500x.png?v=1782905754 1500w,"
+                      src="//brouwerijleeghwater.nl/cdn/shop/collections/5_1500x.png?v=1782905754"
+                      sizes="
+                      (min-width: 1200px) 366px,
+                      (min-width: 750px) calc((100vw - 10rem) / 2),
+                      calc(100vw - 3rem)"
+                      alt="BIERBOXEN"
+                      height="2500"
+                      width="2500"
+                      loading="lazy"
+                      class="motion-reduce"
+                    >
+                  </div>
+                </div>
+
+                <div class="card__text card__text-spacing card-colored card__text-hover">
+                  
+                  <h3>BIERBOXEN<span class="icon-wrap">&nbsp;<svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</svg>
+</span></h3>
+                </div></div>
+          </a>
+        </li><li class="collection-list__item grid__item slider__slide" >
+          <a href="/collections/merchandise"
+            class="card animate-arrow link card--media"
+          >
+            <div class="card--stretch card-colored color-background-1"><div class="card__media-spacer">
+                  <div class="overlay-card"></div>
+                  <div class="media media--adapt media--hover-effect overflow-hidden"
+                    style="padding-bottom: 100.0%;">
+
+                    <img
+                      srcset="//brouwerijleeghwater.nl/cdn/shop/collections/BrouwerijLeeghwaterCorporate_logo_RGB_165x.png?v=1782905720 165w,//brouwerijleeghwater.nl/cdn/shop/collections/BrouwerijLeeghwaterCorporate_logo_RGB_330x.png?v=1782905720 330w,//brouwerijleeghwater.nl/cdn/shop/collections/BrouwerijLeeghwaterCorporate_logo_RGB_535x.png?v=1782905720 535w,//brouwerijleeghwater.nl/cdn/shop/collections/BrouwerijLeeghwaterCorporate_logo_RGB_750x.png?v=1782905720 750w,//brouwerijleeghwater.nl/cdn/shop/collections/BrouwerijLeeghwaterCorporate_logo_RGB_1000x.png?v=1782905720 1000w,//brouwerijleeghwater.nl/cdn/shop/collections/BrouwerijLeeghwaterCorporate_logo_RGB_1500x.png?v=1782905720 1500w,"
+                      src="//brouwerijleeghwater.nl/cdn/shop/collections/BrouwerijLeeghwaterCorporate_logo_RGB_1500x.png?v=1782905720"
+                      sizes="
+                      (min-width: 1200px) 366px,
+                      (min-width: 750px) calc((100vw - 10rem) / 2),
+                      calc(100vw - 3rem)"
+                      alt="MERCHANDISE"
+                      height="2500"
+                      width="2500"
+                      loading="lazy"
+                      class="motion-reduce"
+                    >
+                  </div>
+                </div>
+
+                <div class="card__text card__text-spacing card-colored card__text-hover">
+                  
+                  <h3>MERCHANDISE<span class="icon-wrap">&nbsp;<svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</svg>
+</span></h3>
+                </div></div>
+          </a>
+        </li><li class="collection-list__item grid__item slider__slide" >
+          <a href="/collections/hoop-bieren"
+            class="card animate-arrow link card--media"
+          >
+            <div class="card--stretch card-colored color-background-1"><div class="card__media-spacer">
+                  <div class="overlay-card"></div>
+                  <div class="media media--adapt media--hover-effect overflow-hidden"
+                    style="padding-bottom: 100.0%;">
+
+                    <img
+                      srcset="//brouwerijleeghwater.nl/cdn/shop/collections/1BrouwerijHoop_GEEL_logo_vector_18543112_165x.png?v=1782905769 165w,//brouwerijleeghwater.nl/cdn/shop/collections/1BrouwerijHoop_GEEL_logo_vector_18543112_330x.png?v=1782905769 330w,//brouwerijleeghwater.nl/cdn/shop/collections/1BrouwerijHoop_GEEL_logo_vector_18543112_535x.png?v=1782905769 535w,//brouwerijleeghwater.nl/cdn/shop/collections/1BrouwerijHoop_GEEL_logo_vector_18543112_750x.png?v=1782905769 750w,//brouwerijleeghwater.nl/cdn/shop/collections/1BrouwerijHoop_GEEL_logo_vector_18543112_1000x.png?v=1782905769 1000w,//brouwerijleeghwater.nl/cdn/shop/collections/1BrouwerijHoop_GEEL_logo_vector_18543112_1500x.png?v=1782905769 1500w,"
+                      src="//brouwerijleeghwater.nl/cdn/shop/collections/1BrouwerijHoop_GEEL_logo_vector_18543112_1500x.png?v=1782905769"
+                      sizes="
+                      (min-width: 1200px) 366px,
+                      (min-width: 750px) calc((100vw - 10rem) / 2),
+                      calc(100vw - 3rem)"
+                      alt="HOOP BIEREN"
+                      height="2500"
+                      width="2500"
+                      loading="lazy"
+                      class="motion-reduce"
+                    >
+                  </div>
+                </div>
+
+                <div class="card__text card__text-spacing card-colored card__text-hover">
+                  
+                  <h3>HOOP BIEREN<span class="icon-wrap">&nbsp;<svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</svg>
+</span></h3>
+                </div></div>
+          </a>
+        </li></ul><div class="slider-buttons no-js-hidden medium-hide">
+        <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="Slide left"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+</svg>
+</button>
+        <div class="slider-counter caption">
+          <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">of</span>
+          <span class="slider-counter--total">4</span>
+        </div>
+        <button type="button" class="slider-button slider-button--next" name="next" aria-label="Slide right"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+</svg>
+</button>
+      </div></slider-component></div>
+
+
+</section><section id="shopify-section-template--15089376526523__1da7a4f1-44d2-49ad-b5e9-895f49b400c0" class="shopify-section spaced-section spaced-section--full-width"><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-newsletter.css?v=71305430942358774071631692421" rel="stylesheet" type="text/css" media="all" />
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/newsletter-section.css?v=108706658066172581311631692414" rel="stylesheet" type="text/css" media="all" />
+
+<div class="newsletter center">
+  <div class="newsletter__wrapper color-background-1 gradient"><h2 class="h1" >Schrijf je in voor onze Email post</h2><div class="newsletter__subheading rte" ><p>Ontvang maandelijks nieuws en aanbiedingen vanuit de brouwerij.</p><p></p></div><div >
+            <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="newsletter-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <div class="newsletter-form__field-wrapper">
+                <div class="field">
+                  <input
+                    id="NewsletterForm--template--15089376526523__1da7a4f1-44d2-49ad-b5e9-895f49b400c0"
+                    type="email"
+                    name="contact[email]"
+                    class="field__input"
+                    value=""
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                    
+                    placeholder="Email"
+                    required
+                  >
+                  <label class="field__label" for="NewsletterForm--template--15089376526523__1da7a4f1-44d2-49ad-b5e9-895f49b400c0">
+                    Email
+                  </label>
+                  <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="Subscribe">
+                    <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+</svg>
+
+                  </button>
+                </div></div></form>
+          </div></div>
+</div>
+
+
+</section><section id="shopify-section-template--15089376526523__collage" class="shopify-section spaced-section collage-section"><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/collage.css?v=65661226007651450801631692423" rel="stylesheet" type="text/css" media="all" />
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-card.css?v=52436640680714102981631692419" rel="stylesheet" type="text/css" media="all" />
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-price.css?v=183556404328749792281631692405" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-deferred-media.css?v=171180198959671422251631692417" media="print" onload="this.media='all'">
+
+<div class="collage-wrapper page-width no-heading">
+  <h2 class="collage-wrapper-title"></h2>
+
+  <div class="collage collage--left collage--mobile"></div>
+</div>
+
+
+</section>
+    </main>
+
+    <div id="shopify-section-footer" class="shopify-section">
+<link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/section-footer.css?v=85575473129565311221631692424" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-newsletter.css?v=71305430942358774071631692421" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-list-menu.css?v=161614383810958508431631692413" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-list-payment.css?v=69253961410771838501631692409" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-list-social.css?v=73682845342698328441631692403" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-rte.css?v=84043763465619332371631692421" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/disclosure.css?v=60749307208738363111631692408" media="print" onload="this.media='all'">
+
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-newsletter.css?v=71305430942358774071631692421" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-list-menu.css?v=161614383810958508431631692413" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-list-payment.css?v=69253961410771838501631692409" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-list-social.css?v=73682845342698328441631692403" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/component-rte.css?v=84043763465619332371631692421" rel="stylesheet" type="text/css" media="all" /></noscript>
+<noscript><link href="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/disclosure.css?v=60749307208738363111631692408" rel="stylesheet" type="text/css" media="all" /></noscript>
+
+<footer class="footer color-background-1 gradient"><div class="footer__content-top page-width"><div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet "><div class="footer-block grid__item" ><div class="footer-block__details-content footer-block-image "><img
+                        srcset= "//brouwerijleeghwater.nl/cdn/shop/files/BLeeghwater_logo2x_200x.png?v=1625553661, //brouwerijleeghwater.nl/cdn/shop/files/BLeeghwater_logo2x_200x@2x.png?v=1625553661 2x"
+                        src="//brouwerijleeghwater.nl/cdn/shop/files/BLeeghwater_logo2x_400x.png?v=1625553661"
+                        alt=""
+                        loading="lazy"
+                        width="218"
+                        height="218"
+                        style="max-width: min(100%, 200px);"
+                      ></div></div><div class="footer-block grid__item" ><div class="footer-block__details-content footer-block-image "><img
+                        srcset= "//brouwerijleeghwater.nl/cdn/shop/files/nix-18-logo-png-transparent_100x.png?v=1632221048, //brouwerijleeghwater.nl/cdn/shop/files/nix-18-logo-png-transparent_100x@2x.png?v=1632221048 2x"
+                        src="//brouwerijleeghwater.nl/cdn/shop/files/nix-18-logo-png-transparent_400x.png?v=1632221048"
+                        alt=""
+                        loading="lazy"
+                        width="2400"
+                        height="648"
+                        style="max-width: min(100%, 100px);"
+                      ></div></div><div class="footer-block grid__item footer-block--menu" ><h2 class="footer-block__heading">Menu</h2><ul class="footer-block__details-content list-unstyled"><li>
+                          <a href="/pages/brouwerij" class="link link--text list-menu__item list-menu__item--link">
+                            Brouwerij
+                          </a>
+                        </li><li>
+                          <a href="/pages/leeghwater" class="link link--text list-menu__item list-menu__item--link">
+                            Leeghwater
+                          </a>
+                        </li><li>
+                          <a href="/policies/terms-of-service" class="link link--text list-menu__item list-menu__item--link">
+                            Servicevoorwaarden
+                          </a>
+                        </li><li>
+                          <a href="/policies/refund-policy" class="link link--text list-menu__item list-menu__item--link">
+                            Terugbetalingsbeleid
+                          </a>
+                        </li></ul></div><div class="footer-block grid__item footer-block--menu" ><h2 class="footer-block__heading">Voorwaarden</h2><ul class="footer-block__details-content list-unstyled"><li>
+                          <a href="/policies/terms-of-service" class="link link--text list-menu__item list-menu__item--link">
+                            Algemene voorwaarden
+                          </a>
+                        </li><li>
+                          <a href="/policies/privacy-policy" class="link link--text list-menu__item list-menu__item--link">
+                            Privacy beleid
+                          </a>
+                        </li><li>
+                          <a href="/policies/refund-policy" class="link link--text list-menu__item list-menu__item--link">
+                            Retourbeleid
+                          </a>
+                        </li><li>
+                          <a href="/policies/shipping-policy" class="link link--text list-menu__item list-menu__item--link">
+                            Verzendbeleid
+                          </a>
+                        </li></ul></div></div><div class="footer-block--newsletter"><ul class="footer__list-social list-unstyled list-social" role="list"><li class="list-social__item">
+                <a href="https://www.facebook.com/brouwerijleeghwater/" class="link link--text list-social__link" ><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 18 18">
+  <path fill="currentColor" d="M16.42.61c.27 0 .5.1.69.28.19.2.28.42.28.7v15.44c0 .27-.1.5-.28.69a.94.94 0 01-.7.28h-4.39v-6.7h2.25l.31-2.65h-2.56v-1.7c0-.4.1-.72.28-.93.18-.2.5-.32 1-.32h1.37V3.35c-.6-.06-1.27-.1-2.01-.1-1.01 0-1.83.3-2.45.9-.62.6-.93 1.44-.93 2.53v1.97H7.04v2.65h2.24V18H.98c-.28 0-.5-.1-.7-.28a.94.94 0 01-.28-.7V1.59c0-.27.1-.5.28-.69a.94.94 0 01.7-.28h15.44z">
+</svg>
+<span class="visually-hidden">Facebook</span>
+                </a>
+              </li><li class="list-social__item">
+                <a href="https://www.instagram.com/brouwerijleeghwater/" class="link link--text list-social__link" ><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 18 18">
+  <path fill="currentColor" d="M8.77 1.58c2.34 0 2.62.01 3.54.05.86.04 1.32.18 1.63.3.41.17.7.35 1.01.66.3.3.5.6.65 1 .12.32.27.78.3 1.64.05.92.06 1.2.06 3.54s-.01 2.62-.05 3.54a4.79 4.79 0 01-.3 1.63c-.17.41-.35.7-.66 1.01-.3.3-.6.5-1.01.66-.31.12-.77.26-1.63.3-.92.04-1.2.05-3.54.05s-2.62 0-3.55-.05a4.79 4.79 0 01-1.62-.3c-.42-.16-.7-.35-1.01-.66-.31-.3-.5-.6-.66-1a4.87 4.87 0 01-.3-1.64c-.04-.92-.05-1.2-.05-3.54s0-2.62.05-3.54c.04-.86.18-1.32.3-1.63.16-.41.35-.7.66-1.01.3-.3.6-.5 1-.65.32-.12.78-.27 1.63-.3.93-.05 1.2-.06 3.55-.06zm0-1.58C6.39 0 6.09.01 5.15.05c-.93.04-1.57.2-2.13.4-.57.23-1.06.54-1.55 1.02C1 1.96.7 2.45.46 3.02c-.22.56-.37 1.2-.4 2.13C0 6.1 0 6.4 0 8.77s.01 2.68.05 3.61c.04.94.2 1.57.4 2.13.23.58.54 1.07 1.02 1.56.49.48.98.78 1.55 1.01.56.22 1.2.37 2.13.4.94.05 1.24.06 3.62.06 2.39 0 2.68-.01 3.62-.05.93-.04 1.57-.2 2.13-.41a4.27 4.27 0 001.55-1.01c.49-.49.79-.98 1.01-1.56.22-.55.37-1.19.41-2.13.04-.93.05-1.23.05-3.61 0-2.39 0-2.68-.05-3.62a6.47 6.47 0 00-.4-2.13 4.27 4.27 0 00-1.02-1.55A4.35 4.35 0 0014.52.46a6.43 6.43 0 00-2.13-.41A69 69 0 008.77 0z"/>
+  <path fill="currentColor" d="M8.8 4a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 7.43a2.92 2.92 0 110-5.85 2.92 2.92 0 010 5.85zM13.43 5a1.05 1.05 0 100-2.1 1.05 1.05 0 000 2.1z">
+</svg>
+<span class="visually-hidden">Instagram</span>
+                </a>
+              </li><li class="list-social__item">
+                <a href="https://www.youtube.com/@brouwerijleeghwater4429/featured" class="link link--text list-social__link" ><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 100 70">
+  <path d="M98 11c2 7.7 2 24 2 24s0 16.3-2 24a12.5 12.5 0 01-9 9c-7.7 2-39 2-39 2s-31.3 0-39-2a12.5 12.5 0 01-9-9c-2-7.7-2-24-2-24s0-16.3 2-24c1.2-4.4 4.6-7.8 9-9 7.7-2 39-2 39-2s31.3 0 39 2c4.4 1.2 7.8 4.6 9 9zM40 50l26-15-26-15v30z" fill="currentColor">
+</svg>
+<span class="visually-hidden">YouTube</span>
+                </a>
+              </li></ul></div>
+    </div><div class="footer__content-bottom">
+    <div class="footer__content-bottom-wrapper page-width">
+      <div class="footer__column footer__localization"></div>
+      <div class="footer__column footer__column--info"><div class="footer__copyright caption">
+          <small class="copyright__content">&copy; 2026, <a href="/" title="">Brouwerij Leeghwater</a></small>
+          <small class="copyright__content"><a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</div>
+
+    <ul hidden>
+      <li id="a11y-refresh-page-message">Choosing a selection results in a full page refresh.</li>
+    </ul>
+
+    <script>
+      window.routes = {
+        cart_add_url: '/cart/add',
+        cart_change_url: '/cart/change',
+        cart_update_url: '/cart/update',
+        predictive_search_url: '/search/suggest'
+      };
+
+      window.cartStrings = {
+        error: `There was an error while updating your cart. Please try again.`,
+        quantityError: `You can only add [quantity] of this item to your cart.`
+      }
+
+      window.variantStrings = {
+        addToCart: `Voeg toe aan winkelwagen`,
+        soldOut: `Uitverkocht`,
+        unavailable: `Unavailable`,
+      }
+
+      window.accessibilityStrings = {
+        shareSuccess: `Link copied to clipboard`,
+      }
+    </script><script src="//brouwerijleeghwater.nl/cdn/shop/t/5/assets/predictive-search.js?v=123393712146888685351631692412" defer="defer"></script><script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
+</body>
+</html>
