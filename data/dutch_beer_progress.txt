@@ -1,5 +1,5 @@
-last_processed_index=105
-total_processed=105
+last_processed_index=120
+total_processed=120
 status=in_progress
-last_batch=96-105
-notes=Processed next batch after 95. Added LOC Brewery (KVK 62959417), Oproer Brouwerij (KVK 84203412) and others with summaries and partial HTML.
+last_batch=106-120
+notes=Processed batch 106-120 from dutch.beer directory. KVK lookups: Brouwerij De Leckere 30199251 (restarted post-2023 bankruptcy), Brouwerij Dampegheest 37136313 (active VOF), Ambachtelijke Vechtdal Brouwerij 60012455 (Stichting, social), Axes Castellum 68408374 (Stichting). Multiple homepage HTML and extracts saved in data/breweries/. Some site fetches failed.

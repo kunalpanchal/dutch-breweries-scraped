@@ -1,0 +1,7 @@
+Brouwerij De Leckere
+Location: Utrecht
+Beers: 24
+Website: https://deleckere.nl
+KVK: 30199251 (De Leckere B.V. bankrupt 2023, doorstart)
+Status: Restarted after bankruptcy
+Notes: Organic Utrecht brewery founded 1997. Homepage fetch failed this session.
