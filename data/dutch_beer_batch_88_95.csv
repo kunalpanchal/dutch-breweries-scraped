@@ -1,0 +1,9 @@
+name,slug,city,province,beers_listed,website,kvk,status,notes
+Walhalla,walhalla,Amsterdam,Noord-Holland,4,https://www.walhallacraftbeer.nl/,69397856,active,"Moved to Asterweg. Homepage HTML + text."
+Brouwerij Hoop,brouwerij-hoop,Zaandijk,Noord-Holland,3,https://www.hoopbier.nl/,64689697,active,"Merging with Leeghwater. Homepage HTML + text."
+De Hollandse Pilsener Fabriek,de-hollandse-pilsener-fabriek,Halfweg,Noord-Holland,3,https://dehollandsepilsenerfabriek.nl/,,active,"Homepage HTML."
+Stadsbrouwerij De Hemel,stadsbrouwerij-de-hemel,Nijmegen,Gelderland,3,https://www.brouwerijdehemel.nl/,77792157,active,"Historic. Homepage HTML + text."
+Berne Abdijbier,berne-abdijbier,Heeswijk-Dinther,Noord-Brabant,2,https://www.berneabdijbier.nl/,,active,"Homepage HTML."
+Brouwerij De Kromme Haring,brouwerij-de-kromme-haring,Utrecht,Utrecht,2,https://www.dekrommeharing.nl/,,active,"Homepage HTML + text."
+Brouwerij De Werf,brouwerij-de-werf,Enkhuizen,Noord-Holland,2,https://www.dewerfenkhuizen.nl/,,active,"Homepage HTML."
+Brouwerij Noordt,brouwerij-noordt,Rotterdam,Zuid-Holland,2,https://www.brouwerijnoordt.nl/,,active,"Homepage HTML + text."
