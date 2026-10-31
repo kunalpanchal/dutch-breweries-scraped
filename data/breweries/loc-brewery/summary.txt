@@ -1,0 +1,7 @@
+KVK: 62959417 (LOC Brewery B.V.)
+Status: Active
+Website: https://locbrewery.nl/
+City: Tilburg, Noord-Brabant
+Beers: 1 (listed)
+Address: Burgemeester Brokxlaan 18, 5041 SB Tilburg
+Notes: Brewpub in Spoorzone. Founded ~2014/2015. Own brewery. HTML homepage scraped.

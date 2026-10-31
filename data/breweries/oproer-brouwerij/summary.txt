@@ -1,0 +1,7 @@
+KVK: 84203412 (Oproer Brouwerij B.V.)
+Status: Active
+Website: https://oproerbrouwerij.nl/
+City: Utrecht
+Beers: 1 (listed)
+Address: Westkanaaldijk 5-10, 3542 DA Utrecht
+Notes: Fusion of RUIG and Rooie Dop 2016. Brewery + vegan restaurant history. HTML homepage scraped.
