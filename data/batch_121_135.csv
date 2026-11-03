@@ -1,0 +1,16 @@
+index,name,slug,city,province,website,kvk,kvk_status,notes,folder
+121,Het Uiltje,het-uiltje,Haarlem,Noord-Holland,https://uiltjebrewing.com/,65259831,active,Uiltje Brewing Company B.V.; taproom; homepage scraped,data/breweries/het-uiltje/
+122,Hilldevils Brewery,hilldevils-brewery,Wouwse Plantage,Noord-Brabant,https://hilldevils.nl/,57991138,active,VOF; own brewery since 2022; homepage scraped,data/breweries/hilldevils-brewery/
+123,Hoöten Brewing,hooten-brewing,Lieshout,Noord-Brabant,https://nl.bavaria.com/,,pending,Part of Bavaria; site limited,data/breweries/hooten-brewing/
+124,Koninklijke Grolsch,koninklijke-grolsch,Enschede,Overijssel,https://grolsch.nl/,06023267,active,Major brand Asahi-owned; previously scraped,data/breweries/koninklijke-grolsch/
+125,Oranjeboom,oranjeboom,Breda,Noord-Brabant,https://uniteddutchbreweries.com/,,pending,Brand under United Dutch Breweries,data/breweries/oranjeboom/
+126,Rooie Dop,rooie-dop,Utrecht,Utrecht,https://rooienel.nl/,,merged/closed,Merged into Oproer; homepage scraped (now Rooie Nel bistro),data/breweries/rooie-dop/
+127,The Melchers Group,the-melchers-group,Soest,Flevoland,https://melchers.nl/,,pending,Group; limited scrape,data/breweries/the-melchers-group/
+128,Thissen's Brouwerij,thissens-brouwerij,Lith,Noord-Brabant,https://thissensbrouwerij.nl/,,pending,Small; contact page,data/breweries/thissens-brouwerij/
+129,Uthoka Sommelier & Brouwerij,uthoka-sommelier-brouwerij,Vught,Noord-Brabant,https://bierstudio.eu/,,pending,Sommelier focus,data/breweries/uthoka-sommelier-brouwerij/
+130,Voortsche Bieren,voortsche-bieren,Voorthuizen,Gelderland,https://www.voortschebieren.nl/,62318438,active,Own brouwlokaal; homepage scraped,data/breweries/voortsche-bieren/
+131,brouwerijdenattegijt.nl,brouwerij-de-natte-gijt,,,https://brouwerijdenattegijt.nl/,,pending,Website domain; 50 beers,data/breweries/brouwerij-de-natte-gijt/
+132,Brouwerij Vandeoirsprong,brouwerij-vandeoirsprong,Oirschot,Noord-Brabant,,,pending,15 beers listed,data/breweries/brouwerij-vandeoirsprong/
+133,De Brouwschuur,de-brouwschuur,Weert,Limburg,,,pending,15 beers,data/breweries/de-brouwschuur/
+134,sallandslandbier.nl,sallandslandbier,,,https://sallandslandbier.nl/,,pending,Domain; 13 beers,data/breweries/sallandslandbier/
+135,Slot Oostende,slot-oostende,Goes,Zeeland,,67265782,active,Historic building brewery; Jacoba van Beieren related,data/breweries/slot-oostende/
